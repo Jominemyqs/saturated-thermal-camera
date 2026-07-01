@@ -37,6 +37,8 @@ python scripts/00_make_synthetic.py
 python scripts/01_fit_single.py
 python scripts/02_sweep_censoring.py
 python scripts/03_plot_sweep.py
+python scripts/06_model_misspecification.py
+python scripts/07_plot_reconstruction.py
 ```
 
 Outputs are written to `outputs/`.
@@ -51,3 +53,5 @@ Outputs are written to `outputs/`.
 - `scripts/01_fit_single.py`: fit all methods on one image.
 - `scripts/02_sweep_censoring.py`: compare methods over censoring levels.
 - `scripts/03_plot_sweep.py`: plot summary metrics.
+- `scripts/06_model_misspecification.py`: compare methods when the true field is not the fitted Gaussian model.
+- `scripts/07_plot_reconstruction.py`: plot true, clipped, and fitted reconstruction fields.
