@@ -50,7 +50,7 @@ def main() -> None:
     true_params = true_params_obj.as_array()
     T_true = gaussian_temperature(X, Y, true_params)
 
-    # Keep the same nominal camera threshold as the 10% clean-censoring case.
+    # Keep the same nominal camera threshold as the 10% case
     frac_saturated = 0.10
     _, _, Tmax = censor_by_fraction(T_true, frac_saturated)
 

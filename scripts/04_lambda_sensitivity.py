@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 from pathlib import Path
 import sys
 
@@ -19,24 +20,72 @@ def plot_lambda_results(df: pd.DataFrame, metric: str, ylabel: str, out_path: Pa
     fig, ax = plt.subplots(figsize=(6.5, 4.0), constrained_layout=True)
 
     hinge = df[df["method"] == "hinge"].sort_values("hinge_lambda")
-    ax.semilogx(hinge["hinge_lambda"], hinge[metric], marker="o", label="hinge")
+    ax.semilogx(
+        hinge["hinge_lambda"],
+        hinge[metric],
+        color="#0072B2",
+        marker="o",
+        linewidth=1.8,
+        label="hinge",
+    )
 
     # Plot non-hinge methods as horizontal reference lines.
+    reference_styles = {
+        "exact": {"color": "#D55E00", "linestyle": "--", "marker": "s"},
+        "discard": {"color": "#CC79A7", "linestyle": ":", "marker": "D"},
+        "censored": {"color": "#009E73", "linestyle": "-.", "marker": "^"},
+    }
     for method in ["exact", "discard", "censored"]:
         row = df[df["method"] == method]
         if not row.empty:
-            ax.axhline(float(row.iloc[0][metric]), linestyle="--", linewidth=1.2, label=method)
+            value = float(row.iloc[0][metric])
+            style = reference_styles[method]
+            ax.semilogx(
+                hinge["hinge_lambda"],
+                np.full(len(hinge), value),
+                linewidth=1.8,
+                markersize=6,
+                markevery=[0, len(hinge) - 1],
+                label=method,
+                **style,
+            )
 
     ax.set_xlabel(r"Hinge weight $\lambda$")
     ax.set_ylabel(ylabel)
-    ax.set_title(ylabel + r" vs hinge weight $\lambda$")
+    frac = float(df["actual_frac_saturated"].iloc[0])
+    ax.set_title(f"{ylabel} vs hinge weight " + r"$\lambda$" + f" ({frac:.0%} saturated)")
     ax.grid(True, alpha=0.3)
     ax.legend()
     fig.savefig(out_path, dpi=200)
     plt.close(fig)
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Run hinge-weight sensitivity at a chosen censoring level.")
+    parser.add_argument(
+        "--frac-saturated",
+        type=float,
+        default=0.10,
+        help="Target fraction of hottest pixels to censor, e.g. 0.40 for 40%%.",
+    )
+    parser.add_argument(
+        "--output-suffix",
+        default="",
+        help="Optional suffix inserted into output filenames, e.g. 40pct.",
+    )
+    parser.add_argument("--n-starts", type=int, default=15, help="Number of optimizer starts per fit.")
+    parser.add_argument("--seed", type=int, default=7, help="Random seed for optimizer starts.")
+    return parser.parse_args()
+
+
+def output_path(out_dir: Path, stem: str, suffix: str, extension: str) -> Path:
+    if suffix:
+        return out_dir / f"{stem}_{suffix}{extension}"
+    return out_dir / f"{stem}{extension}"
+
+
 def main() -> None:
+    args = parse_args()
     out_dir = ROOT / "outputs"
     out_dir.mkdir(exist_ok=True)
 
@@ -45,7 +94,7 @@ def main() -> None:
     true_params = true_params_obj.as_array()
     T_true = gaussian_temperature(X, Y, true_params)
 
-    frac_saturated = 0.10
+    frac_saturated = args.frac_saturated
     T_obs, sat_mask, Tmax = censor_by_fraction(T_true, frac_saturated)
 
     rows = []
@@ -62,8 +111,8 @@ def main() -> None:
             Tmax,
             noise_sd=20.0,
             hinge_lambda=1.0,
-            n_starts=15,
-            seed=7,
+            n_starts=args.n_starts,
+            seed=args.seed,
         )
         metrics = compute_metrics(fit["params_hat"], true_params, X, Y, T_true, sat_mask)
         rows.append(
@@ -92,8 +141,8 @@ def main() -> None:
             Tmax,
             noise_sd=20.0,
             hinge_lambda=lam,
-            n_starts=15,
-            seed=7,
+            n_starts=args.n_starts,
+            seed=args.seed,
         )
         metrics = compute_metrics(fit["params_hat"], true_params, X, Y, T_true, sat_mask)
         rows.append(
@@ -110,12 +159,27 @@ def main() -> None:
         )
 
     df = pd.DataFrame(rows)
-    csv_path = out_dir / "lambda_sensitivity_results.csv"
+    csv_path = output_path(out_dir, "lambda_sensitivity_results", args.output_suffix, ".csv")
     df.to_csv(csv_path, index=False)
 
-    plot_lambda_results(df, "field_rel_l2", "Relative L2 field error", out_dir / "lambda_sensitivity_field_error.png")
-    plot_lambda_results(df, "peak_rel_error", "Relative peak temperature error", out_dir / "lambda_sensitivity_peak_error.png")
-    plot_lambda_results(df, "A_rel_error", "Relative amplitude parameter error", out_dir / "lambda_sensitivity_amplitude_error.png")
+    plot_lambda_results(
+        df,
+        "field_rel_l2",
+        "Relative L2 field error",
+        output_path(out_dir, "lambda_sensitivity_field_error", args.output_suffix, ".png"),
+    )
+    plot_lambda_results(
+        df,
+        "peak_rel_error",
+        "Relative peak temperature error",
+        output_path(out_dir, "lambda_sensitivity_peak_error", args.output_suffix, ".png"),
+    )
+    plot_lambda_results(
+        df,
+        "A_rel_error",
+        "Relative amplitude parameter error",
+        output_path(out_dir, "lambda_sensitivity_amplitude_error", args.output_suffix, ".png"),
+    )
 
     print(f"Saved {csv_path}")
     print(f"Saved lambda sensitivity plots to {out_dir}")

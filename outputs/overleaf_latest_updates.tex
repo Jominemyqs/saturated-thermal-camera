@@ -1,0 +1,54 @@
+% Paste this item immediately before the existing \end{enumerate}.
+\item \textbf{Sensitivity and robustness experiments.}
+
+\paragraph{Sensitivity to the hinge weight.}
+The hinge objective contains a tuning parameter $\lambda$ controlling how
+strongly violations at saturated pixels are penalized:
+\[
+    \mathcal L_{\mathrm{hinge}}(\theta)
+    = \sum_{i\in\mathcal U}\bigl(T_\theta(x_i)-Y_i\bigr)^2
+    + \lambda\sum_{i\in\mathcal S}
+      \bigl[T_{\max}-T_\theta(x_i)\bigr]_+^2,
+\]
+where $\mathcal U$ and $\mathcal S$ are the unsaturated and saturated pixel
+sets.  I varied $\lambda$ from $10^{-3}$ to $10^3$ with $10\%$ censoring.
+The reconstruction was insensitive to the precise value once
+$\lambda\gtrsim10^{-2}$: the relative field error stayed near $0.08$ and
+approached the censored-likelihood result.  Only the smallest value,
+$\lambda=10^{-3}$, noticeably weakened the saturated-pixel constraints.
+
+\paragraph{Added observation noise.}
+I next simulated noisy, censored measurements using
+\[
+    Z_i=T(x_i)+\varepsilon_i, \qquad
+    \varepsilon_i\sim\mathcal N(0,\sigma^2), \qquad
+    Y_i=\min\{Z_i,T_{\max}\}.
+\]
+The threshold $T_{\max}$ was fixed using the clean $10\%$ censoring case, and
+$\sigma$ was varied from $0$ to $80$.  The censored likelihood used the known
+simulated noise level.  Across the preliminary runs, the censored method was
+the most stable as the noise increased.  The hinge method was similar at low
+and moderate noise but degraded more at the largest noise levels, while the
+exact and discard methods generally had larger errors.  These results are
+still preliminary because only three noise realizations were used and the
+nonconvex optimization also introduced some run-to-run variability.
+
+\paragraph{Model misspecification.}
+To test whether the methods still help when the assumed field model is
+incorrect, I continued to fit the axis-aligned single-Gaussian model
+\[
+    T_\theta(x,y)=T_0+A\exp\!\left[-\frac{(x-x_c)^2}{2s_x^2}
+                                  -\frac{(y-y_c)^2}{2s_y^2}\right],
+\]
+but generated the true field from four different shapes: a matched Gaussian,
+a rotated Gaussian, a two-component wake, and a skewed one-sided wake.  The
+hottest $10\%$ of each field was censored.
+
+The censored loss gave the smallest relative field error for all four fields,
+with the hinge loss usually close behind.  Both methods continued to improve
+over treating saturated values as exact or discarding them for the two
+wake-like fields.  The rotated Gaussian was difficult for every method because
+the fitted model could not represent its orientation.  This suggests that
+using saturated pixels as inequality information remains useful under moderate
+model misspecification, but cannot compensate for a model class that omits an
+important feature of the true field.
