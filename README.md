@@ -1,6 +1,5 @@
 # Thermal camera censored Gaussian experiment
 
-This is a starter implementation for the first synthetic experiment in the truncated/saturated thermal-camera project.
 
 The synthetic field is
 
@@ -39,6 +38,7 @@ python scripts/02_sweep_censoring.py
 python scripts/03_plot_sweep.py
 python scripts/06_model_misspecification.py
 python scripts/07_plot_reconstruction.py
+python scripts/08_gp_1d_censored.py
 ```
 
 Outputs are written to `outputs/`.
@@ -55,3 +55,4 @@ Outputs are written to `outputs/`.
 - `scripts/03_plot_sweep.py`: plot summary metrics.
 - `scripts/06_model_misspecification.py`: compare methods when the true field is not the fitted Gaussian model.
 - `scripts/07_plot_reconstruction.py`: plot true, clipped, and fitted reconstruction fields.
+- `scripts/08_gp_1d_censored.py`: 1D GP proof-of-concept comparing clipped, discard, censored, and oracle observations.
