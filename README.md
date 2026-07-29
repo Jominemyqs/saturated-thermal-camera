@@ -45,8 +45,7 @@ python scripts/11_gp_2d_shape_density.py
 python scripts/12_gp_2d_multiseed.py
 python scripts/13_gp_2d_kernel_comparison.py
 python scripts/14_gp_2d_path_kernel.py
-python scripts/15_make_meeting_summary_pdf.py
-python scripts/16_gp_2d_path_censored_tuning.py
+python scripts/15_gp_2d_path_censored_tuning.py
 ```
 
 Outputs are written to `outputs/`.
@@ -70,6 +69,5 @@ Outputs are written to `outputs/`.
 - `scripts/12_gp_2d_multiseed.py`: repeat the 2D shape experiment over random seeds, comparing fixed lengthscale with lengthscale selected from unsaturated marginal likelihood.
 - `scripts/13_gp_2d_kernel_comparison.py`: compare isotropic and anisotropic 2D GP kernels, including unsaturated-MLL tuned and physics-informed anisotropic variants, with seed-0 reconstruction panels.
 - `scripts/14_gp_2d_path_kernel.py`: compare ordinary 2D kernels with a path-aligned kernel for the moving-laser field, with additional axis-Gaussian and rotated-wake reconstruction checks.
-- `scripts/15_make_meeting_summary_pdf.py`: generate a PDF summary of the GP experiments and results since the recent meeting.
-- `scripts/16_gp_2d_path_censored_tuning.py`: compare fixed path-aligned hyperparameters with hyperparameters selected by unsaturated marginal likelihood and full censored marginal likelihood.
+- `scripts/15_gp_2d_path_censored_tuning.py`: compare fixed path-aligned hyperparameters with hyperparameters selected by unsaturated marginal likelihood and full censored marginal likelihood.
 
