@@ -39,6 +39,14 @@ python scripts/03_plot_sweep.py
 python scripts/06_model_misspecification.py
 python scripts/07_plot_reconstruction.py
 python scripts/08_gp_1d_censored.py
+python scripts/09_gp_1d_robustness.py
+python scripts/10_gp_2d_censored.py
+python scripts/11_gp_2d_shape_density.py
+python scripts/12_gp_2d_multiseed.py
+python scripts/13_gp_2d_kernel_comparison.py
+python scripts/14_gp_2d_path_kernel.py
+python scripts/15_make_meeting_summary_pdf.py
+python scripts/16_gp_2d_path_censored_tuning.py
 ```
 
 Outputs are written to `outputs/`.
@@ -55,4 +63,13 @@ Outputs are written to `outputs/`.
 - `scripts/03_plot_sweep.py`: plot summary metrics.
 - `scripts/06_model_misspecification.py`: compare methods when the true field is not the fitted Gaussian model.
 - `scripts/07_plot_reconstruction.py`: plot true, clipped, and fitted reconstruction fields.
-- `scripts/08_gp_1d_censored.py`: 1D GP proof-of-concept comparing clipped, discard, censored, and oracle observations.
+- `scripts/08_gp_1d_censored.py`: 1D GP proof-of-concept comparing clipped, discard, censored, and oracle observations, including a lengthscale sweep, sampled censored-GP check, and one-standard-deviation uncertainty plots.
+- `scripts/09_gp_1d_robustness.py`: repeat the 1D GP experiment over random seeds, tune lengthscale by optimizing the unsaturated marginal likelihood, and summarize peak coverage.
+- `scripts/10_gp_2d_censored.py`: first 2D GP proof-of-concept on a clipped Gaussian field, including reconstruction and posterior-SD maps.
+- `scripts/11_gp_2d_shape_density.py`: test 2D GP reconstruction on axis-aligned, rotated-wake, and moving-laser-path fields while varying observation density and selecting lengthscale from unsaturated observations.
+- `scripts/12_gp_2d_multiseed.py`: repeat the 2D shape experiment over random seeds, comparing fixed lengthscale with lengthscale selected from unsaturated marginal likelihood.
+- `scripts/13_gp_2d_kernel_comparison.py`: compare isotropic and anisotropic 2D GP kernels, including unsaturated-MLL tuned and physics-informed anisotropic variants, with seed-0 reconstruction panels.
+- `scripts/14_gp_2d_path_kernel.py`: compare ordinary 2D kernels with a path-aligned kernel for the moving-laser field, with additional axis-Gaussian and rotated-wake reconstruction checks.
+- `scripts/15_make_meeting_summary_pdf.py`: generate a PDF summary of the GP experiments and results since the recent meeting.
+- `scripts/16_gp_2d_path_censored_tuning.py`: compare fixed path-aligned hyperparameters with hyperparameters selected by unsaturated marginal likelihood and full censored marginal likelihood.
+
