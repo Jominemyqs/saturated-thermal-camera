@@ -46,9 +46,69 @@ python scripts/12_gp_2d_multiseed.py
 python scripts/13_gp_2d_kernel_comparison.py
 python scripts/14_gp_2d_path_kernel.py
 python scripts/15_gp_2d_path_censored_tuning.py
+python scripts/16_thermal_diffusion_kernel.py
+python scripts/17_thermal_spatiotemporal_physics.py
 ```
 
+The fixed two-frame calibration and 33-trajectory ablation can then be run with:
+
+```bash
+python scripts/18_thermal_two_frame_ablation.py
+```
+
+Use `--stage sensitivity` to run only the compact residual-hyperparameter and
+two-versus-four-frame checks. After reviewing the selected setting, use
+`--stage full` to run the four-model ablation at all synthetic ceilings.
+
 Outputs are written to `outputs/`.
+
+The thermal-trajectory experiment expects the downloaded data in the sibling
+directory `../heat_eq_laser_trajectories`. A different location can be supplied
+with `--dataset-dir`.
+
+## Thermal trajectory experiment
+
+The raw-data loader reads the XDMF metadata and accesses the linked HDF5 fields
+lazily. It extracts the top surface, interpolates it to a regular grid, and
+provides temperature and vertical heat-flux histories.
+
+The first physics-shaped prior estimates an effective surface diffusivity from
+cooling pixels:
+
+```math
+\frac{\partial T}{\partial t}
+=
+\alpha_{\mathrm{eff}}\nabla^2T
+-\beta(T-T_{\mathrm{amb}}).
+```
+
+Pixels with substantial applied `HeatFluxZ` are excluded from this fit. The
+learned diffusivity enters a nonstationary Gibbs kernel through
+
+```math
+\ell_i^2 = \ell_0^2 + 2\alpha_{\mathrm{eff}}a_i,
+```
+
+where \(a_i\) is the time since the local temperature maximum. Script 16
+compares this diffusion-shaped kernel with an isotropic RBF using both a
+heat-source-scale base lengthscale and unsaturated-likelihood tuning. It uses
+leave-one-trajectory-out physical parameters and reports field error, peak
+error, coverage, and CRPS.
+
+Script 17 tests two refinements. First, its space-time heat covariance is
+
+```math
+k(r,\Delta t)
+=\sigma_f^2 e^{-\beta|\Delta t|}
+\frac{\ell_0^2}{\ell_0^2+2\alpha_{\mathrm{eff}}|\Delta t|}
+\exp\!\left[-\frac{r^2}{2(\ell_0^2+2\alpha_{\mathrm{eff}}|\Delta t|)}\right].
+```
+
+Second, its physics-informed mean diffuses the previous clipped camera frame
+and adds the current known laser-flux footprint. The source coupling is
+calibrated on other uncensored simulation trajectories and transferred to the
+held-out trajectory. The default comparison uses the final frame and the frame
+10 ms earlier; a longer four-frame history is retained as a sensitivity study.
 
 ## Main files
 
@@ -56,6 +116,8 @@ Outputs are written to `outputs/`.
 - `src/losses.py`: exact, discard, hinge, and censored objectives.
 - `src/fit.py`: parameter fitting with multi-start L-BFGS-B.
 - `src/metrics.py`: field, peak, and parameter errors.
+- `src/thermal_trajectory.py`: lazy XDMF/HDF5 trajectory loader and top-surface grid interpolation.
+- `src/diffusion.py`: effective-diffusivity fitting and local cooling-age calculation.
 - `scripts/00_make_synthetic.py`: generate one synthetic image.
 - `scripts/01_fit_single.py`: fit all methods on one image.
 - `scripts/02_sweep_censoring.py`: compare methods over censoring levels.
@@ -70,4 +132,6 @@ Outputs are written to `outputs/`.
 - `scripts/13_gp_2d_kernel_comparison.py`: compare isotropic and anisotropic 2D GP kernels, including unsaturated-MLL tuned and physics-informed anisotropic variants, with seed-0 reconstruction panels.
 - `scripts/14_gp_2d_path_kernel.py`: compare ordinary 2D kernels with a path-aligned kernel for the moving-laser field, with additional axis-Gaussian and rotated-wake reconstruction checks.
 - `scripts/15_gp_2d_path_censored_tuning.py`: compare fixed path-aligned hyperparameters with hyperparameters selected by unsaturated marginal likelihood and full censored marginal likelihood.
-
+- `scripts/16_thermal_diffusion_kernel.py`: load simulated laser trajectories, learn cooling diffusivity and source scale, and compare isotropic with diffusion-shaped censored GPs.
+- `scripts/17_thermal_spatiotemporal_physics.py`: compare snapshot, space-time heat-kernel, calibrated physics-mean, and combined censored GPs on held-out laser trajectories.
+- `scripts/18_thermal_two_frame_ablation.py`: calibrate the fixed two-frame residual, compare two and four frames, and run the four-model ablation across every thermal trajectory and synthetic ceiling.

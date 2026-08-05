@@ -3,6 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
 import sys
+from typing import Callable
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -28,13 +29,33 @@ COLORS = {
 @dataclass(frozen=True)
 class GP2DConfig:
     mean_temp: float = 473.15
+    mean_function: Callable[[np.ndarray], np.ndarray] | None = None
     signal_sd: float = 500.0
     kernel: str = "rbf"
     lengthscale: float = 0.70
     lengthscale_y: float | None = None
     angle_degrees: float = 0.0
+    diffusivity: float | None = None
+    cooling_rate: float = 0.0
     noise_sd: float = 20.0
     relative_jitter: float = 1e-6
+
+
+def gp_mean(points: np.ndarray, config: GP2DConfig) -> np.ndarray:
+    p = np.asarray(points, dtype=float)
+    if config.mean_function is None:
+        return np.full(len(p), config.mean_temp)
+    values = np.asarray(config.mean_function(p), dtype=float)
+    if values.ndim == 0:
+        values = np.full(len(p), float(values))
+    values = values.reshape(-1)
+    if len(values) != len(p):
+        raise ValueError(
+            f"Mean function returned {len(values)} values for {len(p)} points"
+        )
+    if not np.all(np.isfinite(values)):
+        raise ValueError("Mean function returned non-finite values")
+    return values
 
 
 def true_temperature_2d(points: np.ndarray) -> np.ndarray:
@@ -87,18 +108,51 @@ def rbf_kernel(points1: np.ndarray, points2: np.ndarray, config: GP2DConfig) -> 
     p1 = np.asarray(points1, dtype=float)
     p2 = np.asarray(points2, dtype=float)
     if config.kernel == "path_aligned":
-        z1 = path_aligned_coordinates(p1)
-        z2 = path_aligned_coordinates(p2)
+        z1 = path_aligned_coordinates(p1[:, :2])
+        z2 = path_aligned_coordinates(p2[:, :2])
         delta = z1[:, None, :] - z2[None, :, :]
         ell_s = config.lengthscale
         ell_r = 0.20 if config.lengthscale_y is None else config.lengthscale_y
         sqdist = (delta[:, :, 0] / ell_s) ** 2 + (delta[:, :, 1] / ell_r) ** 2
         return config.signal_sd**2 * np.exp(-0.5 * sqdist)
 
+    if config.kernel == "diffusion_gibbs":
+        if p1.shape[1] < 3 or p2.shape[1] < 3:
+            raise ValueError("Diffusion kernel points must include x, y, and cooling age")
+        if config.diffusivity is None or config.diffusivity < 0.0:
+            raise ValueError("Diffusion kernel requires a nonnegative diffusivity")
+        spatial_delta = p1[:, None, :2] - p2[None, :, :2]
+        distance_squared = np.sum(spatial_delta**2, axis=2)
+        ell1_squared = config.lengthscale**2 + 2.0 * config.diffusivity * np.maximum(p1[:, 2], 0.0)
+        ell2_squared = config.lengthscale**2 + 2.0 * config.diffusivity * np.maximum(p2[:, 2], 0.0)
+        denominator = ell1_squared[:, None] + ell2_squared[None, :]
+        prefactor = 2.0 * np.sqrt(ell1_squared[:, None] * ell2_squared[None, :]) / denominator
+        return config.signal_sd**2 * prefactor * np.exp(-distance_squared / denominator)
+
+    if config.kernel == "spatiotemporal_heat":
+        if p1.shape[1] < 3 or p2.shape[1] < 3:
+            raise ValueError("Space-time heat-kernel points must include x, y, and time")
+        if config.diffusivity is None or config.diffusivity < 0.0:
+            raise ValueError("Space-time heat kernel requires a nonnegative diffusivity")
+        if config.cooling_rate < 0.0:
+            raise ValueError("Space-time heat kernel requires a nonnegative cooling rate")
+        spatial_delta = p1[:, None, :2] - p2[None, :, :2]
+        distance_squared = np.sum(spatial_delta**2, axis=2)
+        time_difference = np.abs(p1[:, None, 2] - p2[None, :, 2])
+        scale_squared = config.lengthscale**2 + 2.0 * config.diffusivity * time_difference
+        spatial_prefactor = config.lengthscale**2 / scale_squared
+        temporal_decay = np.exp(-config.cooling_rate * time_difference)
+        return (
+            config.signal_sd**2
+            * spatial_prefactor
+            * temporal_decay
+            * np.exp(-0.5 * distance_squared / scale_squared)
+        )
+
     if config.kernel != "rbf":
         raise ValueError(f"Unknown GP kernel {config.kernel!r}")
 
-    delta = p1[:, None, :] - p2[None, :, :]
+    delta = p1[:, None, :2] - p2[None, :, :2]
     if config.lengthscale_y is None and config.angle_degrees == 0.0:
         sqdist = np.sum(delta**2, axis=2) / config.lengthscale**2
     else:
@@ -142,8 +196,10 @@ def gp_predict_exact(
     K_ss = rbf_kernel(x_pred, x_pred, config)
 
     cf = cho_factor(K, lower=True, check_finite=False)
-    alpha = cho_solve(cf, y_train - config.mean_temp, check_finite=False)
-    mean = config.mean_temp + K_s.dot(alpha)
+    train_mean = gp_mean(x_train, config)
+    pred_mean = gp_mean(x_pred, config)
+    alpha = cho_solve(cf, y_train - train_mean, check_finite=False)
+    mean = pred_mean + K_s.dot(alpha)
 
     v = cho_solve(cf, K_s.T, check_finite=False)
     cov = K_ss - K_s.dot(v)
@@ -160,7 +216,8 @@ def fit_censored_gp_laplace(
     config: GP2DConfig,
 ) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     n = len(x_obs)
-    mean_vec = np.full(n, config.mean_temp)
+    mean_vec = gp_mean(x_obs, config)
+    pred_mean = gp_mean(x_pred, config)
     K = rbf_kernel(x_obs, x_obs, config)
     jitter = config.relative_jitter * config.signal_sd**2
     K[np.diag_indices_from(K)] += jitter
@@ -218,7 +275,7 @@ def fit_censored_gp_laplace(
     K_s = rbf_kernel(x_pred, x_obs, config)
     K_ss = rbf_kernel(x_pred, x_pred, config)
     A = K_s.dot(K_inv_mat)
-    mean = config.mean_temp + A.dot(f_hat - mean_vec)
+    mean = pred_mean + A.dot(f_hat - mean_vec)
     conditional_cov = K_ss - A.dot(K_s.T)
     cov = conditional_cov + A.dot(Sigma).dot(A.T)
     sd = np.sqrt(np.maximum(np.diag(cov), 0.0))
@@ -250,7 +307,7 @@ def sample_censored_gp_ess(
     noise_var = config.noise_sd**2
     base_jitter = config.relative_jitter * config.signal_sd**2
     n_pred = len(x_pred)
-    mean_a = np.full(n_pred + len(x_sat), config.mean_temp)
+    mean_a = np.concatenate([gp_mean(x_pred, config), gp_mean(x_sat, config)])
 
     K_pp = rbf_kernel(x_pred, x_pred, config)
     K_pz = rbf_kernel(x_pred, x_sat, config)
@@ -263,7 +320,11 @@ def sample_censored_gp_ess(
     K_yy[np.diag_indices_from(K_yy)] += noise_var + base_jitter
     K_ay = np.vstack([rbf_kernel(x_pred, x_unsat, config), rbf_kernel(x_sat, x_unsat, config)])
     cf = cho_factor(K_yy, lower=True, check_finite=False)
-    alpha = cho_solve(cf, y_unsat - config.mean_temp, check_finite=False)
+    alpha = cho_solve(
+        cf,
+        y_unsat - gp_mean(x_unsat, config),
+        check_finite=False,
+    )
     mean_cond = mean_a + K_ay.dot(alpha)
     solved = cho_solve(cf, K_ay.T, check_finite=False)
     cov_cond = K_aa - K_ay.dot(solved)
@@ -304,6 +365,115 @@ def sample_censored_gp_ess(
     lower = np.quantile(sample_array, 0.025, axis=0)
     upper = np.quantile(sample_array, 0.975, axis=0)
     return mean, sd, lower, upper
+
+
+def sample_censored_gp_ess_fast(
+    x_obs: np.ndarray,
+    y_obs: np.ndarray,
+    sat_mask: np.ndarray,
+    threshold: float,
+    x_pred: np.ndarray,
+    config: GP2DConfig,
+    n_samples: int = 450,
+    burn_in: int = 250,
+    thin: int = 2,
+    seed: int = 123,
+) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    """Sample censored observations, then condition predictions analytically."""
+    rng = np.random.default_rng(seed)
+    unsat_mask = ~sat_mask
+    x_unsat = x_obs[unsat_mask]
+    y_unsat = y_obs[unsat_mask]
+    x_sat = x_obs[sat_mask]
+    noise_var = config.noise_sd**2
+    jitter = config.relative_jitter * config.signal_sd**2
+
+    if len(x_sat) == 0:
+        mean, sd = gp_predict_exact(x_obs, y_obs, x_pred, config)
+        draws = mean + rng.normal(size=(n_samples, len(x_pred))) * sd
+        return (
+            mean,
+            sd,
+            np.quantile(draws, 0.025, axis=0),
+            np.quantile(draws, 0.975, axis=0),
+            draws,
+        )
+
+    K_ss = rbf_kernel(x_sat, x_sat, config)
+    K_ss[np.diag_indices_from(K_ss)] += noise_var + jitter
+    if len(x_unsat):
+        K_uu = rbf_kernel(x_unsat, x_unsat, config)
+        K_uu[np.diag_indices_from(K_uu)] += noise_var + jitter
+        K_su = rbf_kernel(x_sat, x_unsat, config)
+        cf_uu = cho_factor(K_uu, lower=True, check_finite=False)
+        alpha = cho_solve(
+            cf_uu,
+            y_unsat - gp_mean(x_unsat, config),
+            check_finite=False,
+        )
+        sat_mean = gp_mean(x_sat, config) + K_su.dot(alpha)
+        sat_cov = K_ss - K_su.dot(
+            cho_solve(cf_uu, K_su.T, check_finite=False)
+        )
+    else:
+        sat_mean = gp_mean(x_sat, config)
+        sat_cov = K_ss
+
+    L_sat = cholesky_with_jitter(sat_cov, jitter)
+    current = np.maximum(sat_mean, threshold + 0.5 * config.noise_sd)
+    centered = current - sat_mean
+    saturated_samples: list[np.ndarray] = []
+    total_steps = burn_in + n_samples * thin
+    for step in range(total_steps):
+        nu = L_sat.dot(rng.normal(size=len(x_sat)))
+        theta = rng.uniform(0.0, 2.0 * np.pi)
+        theta_min = theta - 2.0 * np.pi
+        theta_max = theta
+        for _ in range(2500):
+            proposal_centered = centered * np.cos(theta) + nu * np.sin(theta)
+            proposal = sat_mean + proposal_centered
+            if np.all(proposal >= threshold):
+                centered = proposal_centered
+                current = proposal
+                break
+            if theta < 0.0:
+                theta_min = theta
+            else:
+                theta_max = theta
+            theta = rng.uniform(theta_min, theta_max)
+        else:
+            raise RuntimeError("Elliptical slice sampler could not find a feasible proposal")
+        if step >= burn_in and (step - burn_in) % thin == 0:
+            saturated_samples.append(current.copy())
+
+    observation_samples = np.empty((n_samples, len(x_obs)))
+    observation_samples[:, unsat_mask] = y_unsat
+    observation_samples[:, sat_mask] = np.asarray(saturated_samples)
+
+    K_oo = rbf_kernel(x_obs, x_obs, config)
+    K_oo[np.diag_indices_from(K_oo)] += noise_var + jitter
+    K_po = rbf_kernel(x_pred, x_obs, config)
+    cf_oo = cho_factor(K_oo, lower=True, check_finite=False)
+    alpha_samples = cho_solve(
+        cf_oo,
+        (observation_samples - gp_mean(x_obs, config)[None, :]).T,
+        check_finite=False,
+    )
+    conditional_means = gp_mean(x_pred, config)[None, :] + (K_po.dot(alpha_samples)).T
+    solved = cho_solve(cf_oo, K_po.T, check_finite=False)
+    conditional_variance = np.maximum(
+        config.signal_sd**2 - np.sum(K_po * solved.T, axis=1),
+        0.0,
+    )
+    mean = np.mean(conditional_means, axis=0)
+    variance = conditional_variance + np.var(conditional_means, axis=0, ddof=1)
+    sd = np.sqrt(np.maximum(variance, 0.0))
+    draws = conditional_means + rng.normal(size=conditional_means.shape) * np.sqrt(
+        conditional_variance
+    )
+    lower = np.quantile(draws, 0.025, axis=0)
+    upper = np.quantile(draws, 0.975, axis=0)
+    return mean, sd, lower, upper, draws
 
 
 def make_observations(

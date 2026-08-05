@@ -1,0 +1,4 @@
+trajectory,source_coupling,n_source_samples
+DiagonalScanPath_8,0.17023279888395162,2880
+HorizontalScanPath_13,0.16873856818612373,3507
+SpiralScanPath_13,0.17084279678399547,4780
