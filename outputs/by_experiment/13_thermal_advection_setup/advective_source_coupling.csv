@@ -1,0 +1,4 @@
+trajectory,fraction_saturated,source_coupling,n_source_samples,mean_type
+DiagonalScanPath_8,0.03,0.17034172385874424,2880,advective
+HorizontalScanPath_13,0.03,0.1682371441344533,3507,advective
+SpiralScanPath_13,0.03,0.1708910294825481,4780,advective

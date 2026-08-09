@@ -1,0 +1,166 @@
+method,symmetry_error,minimum_eigenvalue,maximum_diagonal_error,quadrature_reference_order,quadrature_relative_error,trajectory,family
+physics mean + space-time,0.0,11.668707205074982,0.0,,,DiagonalScanPath_1,Diagonal
+physics mean + advective space-time,0.0,8.844121956607102,0.0,,,DiagonalScanPath_1,Diagonal
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,DiagonalScanPath_1,Diagonal
+physics mean + advective forced space-time,0.0,6.117042277745742,1.7763568394002505e-15,48.0,0.0006217151450441928,DiagonalScanPath_1,Diagonal
+physics mean + advective forced + source amplitude,0.0,6.117042277745742,1.7763568394002505e-15,48.0,0.0006217151450441928,DiagonalScanPath_1,Diagonal
+physics mean + space-time,0.0,11.668707205074979,0.0,,,DiagonalScanPath_2,Diagonal
+physics mean + advective space-time,0.0,8.742520625568545,0.0,,,DiagonalScanPath_2,Diagonal
+physics mean + forced space-time,0.0,9.217529291725734,1.7763568394002505e-15,48.0,0.00020010626987570064,DiagonalScanPath_2,Diagonal
+physics mean + advective forced space-time,0.0,5.678840241915481,1.7763568394002505e-15,48.0,0.0006160022744524291,DiagonalScanPath_2,Diagonal
+physics mean + advective forced + source amplitude,0.0,5.678840241915481,1.7763568394002505e-15,48.0,0.0006160022744524291,DiagonalScanPath_2,Diagonal
+physics mean + space-time,0.0,11.668707205074982,0.0,,,DiagonalScanPath_3,Diagonal
+physics mean + advective space-time,0.0,11.679986037670217,0.0,,,DiagonalScanPath_3,Diagonal
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,DiagonalScanPath_3,Diagonal
+physics mean + advective forced space-time,0.0,9.560711781900407,1.7763568394002505e-15,48.0,0.00020010626987570064,DiagonalScanPath_3,Diagonal
+physics mean + advective forced + source amplitude,0.0,9.560711781900407,1.7763568394002505e-15,48.0,0.00020010626987570064,DiagonalScanPath_3,Diagonal
+physics mean + space-time,0.0,11.668707205074979,0.0,,,DiagonalScanPath_4,Diagonal
+physics mean + advective space-time,0.0,11.704021936753447,0.0,,,DiagonalScanPath_4,Diagonal
+physics mean + forced space-time,0.0,9.217529291725748,1.7763568394002505e-15,48.0,0.00020010626987570064,DiagonalScanPath_4,Diagonal
+physics mean + advective forced space-time,0.0,9.651297220549203,1.7763568394002505e-15,48.0,0.00020010626987570064,DiagonalScanPath_4,Diagonal
+physics mean + advective forced + source amplitude,0.0,9.651297220549203,1.7763568394002505e-15,48.0,0.00020010626987570064,DiagonalScanPath_4,Diagonal
+physics mean + space-time,0.0,11.668707205074975,0.0,,,DiagonalScanPath_5,Diagonal
+physics mean + advective space-time,0.0,11.629066137246964,0.0,,,DiagonalScanPath_5,Diagonal
+physics mean + forced space-time,0.0,9.217529291725743,1.7763568394002505e-15,48.0,0.00020010626987570064,DiagonalScanPath_5,Diagonal
+physics mean + advective forced space-time,0.0,9.456564525441394,1.7763568394002505e-15,48.0,0.00020010626987570064,DiagonalScanPath_5,Diagonal
+physics mean + advective forced + source amplitude,0.0,9.456564525441394,1.7763568394002505e-15,48.0,0.00020010626987570064,DiagonalScanPath_5,Diagonal
+physics mean + space-time,0.0,11.668707205074982,0.0,,,DiagonalScanPath_6,Diagonal
+physics mean + advective space-time,0.0,11.284456054359188,0.0,,,DiagonalScanPath_6,Diagonal
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,DiagonalScanPath_6,Diagonal
+physics mean + advective forced space-time,0.0,9.078465886090308,1.7763568394002505e-15,48.0,0.00023948758611428778,DiagonalScanPath_6,Diagonal
+physics mean + advective forced + source amplitude,0.0,9.078465886090308,1.7763568394002505e-15,48.0,0.00023948758611428778,DiagonalScanPath_6,Diagonal
+physics mean + space-time,0.0,11.668707205074982,0.0,,,DiagonalScanPath_7,Diagonal
+physics mean + advective space-time,0.0,9.75109864807017,0.0,,,DiagonalScanPath_7,Diagonal
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,DiagonalScanPath_7,Diagonal
+physics mean + advective forced space-time,0.0,6.93264329609741,1.7763568394002505e-15,48.0,0.0005080844797367354,DiagonalScanPath_7,Diagonal
+physics mean + advective forced + source amplitude,0.0,6.93264329609741,1.7763568394002505e-15,48.0,0.0005080844797367354,DiagonalScanPath_7,Diagonal
+physics mean + space-time,0.0,11.668707205074982,0.0,,,DiagonalScanPath_8,Diagonal
+physics mean + advective space-time,0.0,7.519644205582026,0.0,,,DiagonalScanPath_8,Diagonal
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,DiagonalScanPath_8,Diagonal
+physics mean + advective forced space-time,0.0,4.936845926867557,1.7763568394002505e-15,48.0,0.0007099219753664358,DiagonalScanPath_8,Diagonal
+physics mean + advective forced + source amplitude,0.0,4.936845926867557,1.7763568394002505e-15,48.0,0.0007099219753664358,DiagonalScanPath_8,Diagonal
+physics mean + space-time,0.0,11.668707205074982,0.0,,,HorizontalScanPath_1,Horizontal
+physics mean + advective space-time,0.0,7.284740422379059,0.0,,,HorizontalScanPath_1,Horizontal
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,HorizontalScanPath_1,Horizontal
+physics mean + advective forced space-time,0.0,4.75611338344042,1.7763568394002505e-15,48.0,0.0007197483312944669,HorizontalScanPath_1,Horizontal
+physics mean + advective forced + source amplitude,0.0,4.75611338344042,1.7763568394002505e-15,48.0,0.0007197483312944669,HorizontalScanPath_1,Horizontal
+physics mean + space-time,0.0,11.668707205074982,0.0,,,HorizontalScanPath_2,Horizontal
+physics mean + advective space-time,0.0,7.517465188172212,0.0,,,HorizontalScanPath_2,Horizontal
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,HorizontalScanPath_2,Horizontal
+physics mean + advective forced space-time,0.0,5.038328224655218,1.7763568394002505e-15,48.0,0.0007119198283799463,HorizontalScanPath_2,Horizontal
+physics mean + advective forced + source amplitude,0.0,5.038328224655218,1.7763568394002505e-15,48.0,0.0007119198283799463,HorizontalScanPath_2,Horizontal
+physics mean + space-time,0.0,11.668707205074982,0.0,,,HorizontalScanPath_3,Horizontal
+physics mean + advective space-time,0.0,7.425940549102982,0.0,,,HorizontalScanPath_3,Horizontal
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,HorizontalScanPath_3,Horizontal
+physics mean + advective forced space-time,0.0,4.849179028507286,1.7763568394002505e-15,48.0,0.0007141136546030021,HorizontalScanPath_3,Horizontal
+physics mean + advective forced + source amplitude,0.0,4.849179028507286,1.7763568394002505e-15,48.0,0.0007141136546030021,HorizontalScanPath_3,Horizontal
+physics mean + space-time,0.0,11.668707205074982,0.0,,,HorizontalScanPath_4,Horizontal
+physics mean + advective space-time,0.0,7.32682778648128,0.0,,,HorizontalScanPath_4,Horizontal
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,HorizontalScanPath_4,Horizontal
+physics mean + advective forced space-time,0.0,4.894804617623225,1.7763568394002505e-15,48.0,0.0007197528543903426,HorizontalScanPath_4,Horizontal
+physics mean + advective forced + source amplitude,0.0,4.894804617623225,1.7763568394002505e-15,48.0,0.0007197528543903426,HorizontalScanPath_4,Horizontal
+physics mean + space-time,0.0,11.668707205074982,0.0,,,HorizontalScanPath_5,Horizontal
+physics mean + advective space-time,0.0,7.4766465697838616,0.0,,,HorizontalScanPath_5,Horizontal
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,HorizontalScanPath_5,Horizontal
+physics mean + advective forced space-time,0.0,4.880183277410124,1.7763568394002505e-15,48.0,0.0007119261826921471,HorizontalScanPath_5,Horizontal
+physics mean + advective forced + source amplitude,0.0,4.880183277410124,1.7763568394002505e-15,48.0,0.0007119261826921471,HorizontalScanPath_5,Horizontal
+physics mean + space-time,0.0,11.668707205074972,0.0,,,HorizontalScanPath_6,Horizontal
+physics mean + advective space-time,0.0,7.46693824071088,0.0,,,HorizontalScanPath_6,Horizontal
+physics mean + forced space-time,0.0,9.217529291725747,1.7763568394002505e-15,48.0,0.00020010626987570064,HorizontalScanPath_6,Horizontal
+physics mean + advective forced space-time,0.0,5.000793848600685,1.7763568394002505e-15,48.0,0.000714113444651585,HorizontalScanPath_6,Horizontal
+physics mean + advective forced + source amplitude,0.0,5.000793848600685,1.7763568394002505e-15,48.0,0.000714113444651585,HorizontalScanPath_6,Horizontal
+physics mean + space-time,0.0,11.668707205074982,0.0,,,HorizontalScanPath_7,Horizontal
+physics mean + advective space-time,0.0,7.284746949872626,0.0,,,HorizontalScanPath_7,Horizontal
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,HorizontalScanPath_7,Horizontal
+physics mean + advective forced space-time,0.0,4.756187091523851,1.7763568394002505e-15,48.0,0.0007197480737045677,HorizontalScanPath_7,Horizontal
+physics mean + advective forced + source amplitude,0.0,4.756187091523851,1.7763568394002505e-15,48.0,0.0007197480737045677,HorizontalScanPath_7,Horizontal
+physics mean + space-time,0.0,11.668707205074975,0.0,,,HorizontalScanPath_8,Horizontal
+physics mean + advective space-time,0.0,7.51768904583084,0.0,,,HorizontalScanPath_8,Horizontal
+physics mean + forced space-time,0.0,9.217529291725743,1.7763568394002505e-15,48.0,0.00020010626987570064,HorizontalScanPath_8,Horizontal
+physics mean + advective forced space-time,0.0,5.038546168123611,1.7763568394002505e-15,48.0,0.0007119098327848029,HorizontalScanPath_8,Horizontal
+physics mean + advective forced + source amplitude,0.0,5.038546168123611,1.7763568394002505e-15,48.0,0.0007119098327848029,HorizontalScanPath_8,Horizontal
+physics mean + space-time,0.0,11.668707205074966,0.0,,,HorizontalScanPath_10,Horizontal
+physics mean + advective space-time,0.0,7.328983088146491,0.0,,,HorizontalScanPath_10,Horizontal
+physics mean + forced space-time,0.0,9.217529291725752,1.7763568394002505e-15,48.0,0.00020010626987570064,HorizontalScanPath_10,Horizontal
+physics mean + advective forced space-time,0.0,4.896477913858164,1.7763568394002505e-15,48.0,0.0007196709575978199,HorizontalScanPath_10,Horizontal
+physics mean + advective forced + source amplitude,0.0,4.896477913858164,1.7763568394002505e-15,48.0,0.0007196709575978199,HorizontalScanPath_10,Horizontal
+physics mean + space-time,0.0,11.668707205074982,0.0,,,HorizontalScanPath_11,Horizontal
+physics mean + advective space-time,0.0,7.478464672911181,0.0,,,HorizontalScanPath_11,Horizontal
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,HorizontalScanPath_11,Horizontal
+physics mean + advective forced space-time,0.0,4.881598746709581,1.7763568394002505e-15,48.0,0.0007118466997311129,HorizontalScanPath_11,Horizontal
+physics mean + advective forced + source amplitude,0.0,4.881598746709581,1.7763568394002505e-15,48.0,0.0007118466997311129,HorizontalScanPath_11,Horizontal
+physics mean + space-time,0.0,11.668707205074982,0.0,,,HorizontalScanPath_12,Horizontal
+physics mean + advective space-time,0.0,7.470642024662418,0.0,,,HorizontalScanPath_12,Horizontal
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,HorizontalScanPath_12,Horizontal
+physics mean + advective forced space-time,0.0,5.0036771162747105,1.7763568394002505e-15,48.0,0.000713955319609142,HorizontalScanPath_12,Horizontal
+physics mean + advective forced + source amplitude,0.0,5.0036771162747105,1.7763568394002505e-15,48.0,0.000713955319609142,HorizontalScanPath_12,Horizontal
+physics mean + space-time,0.0,11.668707205074966,0.0,,,HorizontalScanPath_13,Horizontal
+physics mean + advective space-time,0.0,7.289695422730825,0.0,,,HorizontalScanPath_13,Horizontal
+physics mean + forced space-time,0.0,9.217529291725752,1.7763568394002505e-15,48.0,0.00020010626987570064,HorizontalScanPath_13,Horizontal
+physics mean + advective forced space-time,0.0,4.759567996138733,1.7763568394002505e-15,48.0,0.0007195616261127864,HorizontalScanPath_13,Horizontal
+physics mean + advective forced + source amplitude,0.0,4.759567996138733,1.7763568394002505e-15,48.0,0.0007195616261127864,HorizontalScanPath_13,Horizontal
+physics mean + space-time,0.0,11.668707205074982,0.0,,,SpiralScanPath_1,Spiral
+physics mean + advective space-time,0.0,6.925319689556281,0.0,,,SpiralScanPath_1,Spiral
+physics mean + forced space-time,0.0,9.217529291725736,1.7763568394002505e-15,48.0,0.00020010626987570064,SpiralScanPath_1,Spiral
+physics mean + advective forced space-time,0.0,4.58062127702992,1.7763568394002505e-15,48.0,0.000730860571897507,SpiralScanPath_1,Spiral
+physics mean + advective forced + source amplitude,0.0,4.58062127702992,1.7763568394002505e-15,48.0,0.000730860571897507,SpiralScanPath_1,Spiral
+physics mean + space-time,0.0,11.668707205074982,0.0,,,SpiralScanPath_2,Spiral
+physics mean + advective space-time,0.0,8.182428258306967,0.0,,,SpiralScanPath_2,Spiral
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,SpiralScanPath_2,Spiral
+physics mean + advective forced space-time,0.0,5.515174469058237,1.7763568394002505e-15,48.0,0.0006640403382146425,SpiralScanPath_2,Spiral
+physics mean + advective forced + source amplitude,0.0,5.515174469058237,1.7763568394002505e-15,48.0,0.0006640403382146425,SpiralScanPath_2,Spiral
+physics mean + space-time,0.0,11.668707205074979,0.0,,,SpiralScanPath_3,Spiral
+physics mean + advective space-time,0.0,9.920012235766977,0.0,,,SpiralScanPath_3,Spiral
+physics mean + forced space-time,0.0,9.217529291725734,1.7763568394002505e-15,48.0,0.00020010626987570064,SpiralScanPath_3,Spiral
+physics mean + advective forced space-time,0.0,6.767734320298305,1.7763568394002505e-15,48.0,0.0004502452046502236,SpiralScanPath_3,Spiral
+physics mean + advective forced + source amplitude,0.0,6.767734320298305,1.7763568394002505e-15,48.0,0.0004502452046502236,SpiralScanPath_3,Spiral
+physics mean + space-time,0.0,11.668707205074982,0.0,,,SpiralScanPath_4,Spiral
+physics mean + advective space-time,0.0,9.447534218290778,0.0,,,SpiralScanPath_4,Spiral
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,SpiralScanPath_4,Spiral
+physics mean + advective forced space-time,0.0,6.425371915180783,1.7763568394002505e-15,48.0,0.000522748408766692,SpiralScanPath_4,Spiral
+physics mean + advective forced + source amplitude,0.0,6.425371915180783,1.7763568394002505e-15,48.0,0.000522748408766692,SpiralScanPath_4,Spiral
+physics mean + space-time,0.0,11.668707205074972,0.0,,,SpiralScanPath_5,Spiral
+physics mean + advective space-time,0.0,10.011066431777156,0.0,,,SpiralScanPath_5,Spiral
+physics mean + forced space-time,0.0,9.217529291725747,1.7763568394002505e-15,48.0,0.00020010626987570064,SpiralScanPath_5,Spiral
+physics mean + advective forced space-time,0.0,6.784598718095967,1.7763568394002505e-15,48.0,0.00042538683756704305,SpiralScanPath_5,Spiral
+physics mean + advective forced + source amplitude,0.0,6.784598718095967,1.7763568394002505e-15,48.0,0.00042538683756704305,SpiralScanPath_5,Spiral
+physics mean + space-time,0.0,11.668707205074982,0.0,,,SpiralScanPath_6,Spiral
+physics mean + advective space-time,0.0,10.231282751566916,0.0,,,SpiralScanPath_6,Spiral
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,SpiralScanPath_6,Spiral
+physics mean + advective forced space-time,0.0,6.964993494256449,1.7763568394002505e-15,48.0,0.0003698989168985969,SpiralScanPath_6,Spiral
+physics mean + advective forced + source amplitude,0.0,6.964993494256449,1.7763568394002505e-15,48.0,0.0003698989168985969,SpiralScanPath_6,Spiral
+physics mean + space-time,0.0,11.668707205074982,0.0,,,SpiralScanPath_7,Spiral
+physics mean + advective space-time,0.0,9.50070640964132,0.0,,,SpiralScanPath_7,Spiral
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,SpiralScanPath_7,Spiral
+physics mean + advective forced space-time,0.0,6.448962514402313,1.7763568394002505e-15,48.0,0.0005131121951922912,SpiralScanPath_7,Spiral
+physics mean + advective forced + source amplitude,0.0,6.448962514402313,1.7763568394002505e-15,48.0,0.0005131121951922912,SpiralScanPath_7,Spiral
+physics mean + space-time,0.0,11.668707205074966,0.0,,,SpiralScanPath_8,Spiral
+physics mean + advective space-time,0.0,9.79817702976783,0.0,,,SpiralScanPath_8,Spiral
+physics mean + forced space-time,0.0,9.217529291725752,1.7763568394002505e-15,48.0,0.00020010626987570064,SpiralScanPath_8,Spiral
+physics mean + advective forced space-time,0.0,6.653214125109929,1.7763568394002505e-15,48.0,0.00046586304281467147,SpiralScanPath_8,Spiral
+physics mean + advective forced + source amplitude,0.0,6.653214125109929,1.7763568394002505e-15,48.0,0.00046586304281467147,SpiralScanPath_8,Spiral
+physics mean + space-time,0.0,11.668707205074982,0.0,,,SpiralScanPath_9,Spiral
+physics mean + advective space-time,0.0,10.079231746056111,0.0,,,SpiralScanPath_9,Spiral
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,SpiralScanPath_9,Spiral
+physics mean + advective forced space-time,0.0,6.829699852191561,1.7763568394002505e-15,48.0,0.0004119911677606286,SpiralScanPath_9,Spiral
+physics mean + advective forced + source amplitude,0.0,6.829699852191561,1.7763568394002505e-15,48.0,0.0004119911677606286,SpiralScanPath_9,Spiral
+physics mean + space-time,0.0,11.66870720507497,0.0,,,SpiralScanPath_10,Spiral
+physics mean + advective space-time,0.0,10.192737972027178,0.0,,,SpiralScanPath_10,Spiral
+physics mean + forced space-time,0.0,9.217529291725743,1.7763568394002505e-15,48.0,0.00020010626987570064,SpiralScanPath_10,Spiral
+physics mean + advective forced space-time,0.0,6.918688083265187,1.7763568394002505e-15,48.0,0.0003770443685985685,SpiralScanPath_10,Spiral
+physics mean + advective forced + source amplitude,0.0,6.918688083265187,1.7763568394002505e-15,48.0,0.0003770443685985685,SpiralScanPath_10,Spiral
+physics mean + space-time,0.0,11.668707205074982,0.0,,,SpiralScanPath_11,Spiral
+physics mean + advective space-time,0.0,10.271801579899748,0.0,,,SpiralScanPath_11,Spiral
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,SpiralScanPath_11,Spiral
+physics mean + advective forced space-time,0.0,7.010766233967812,1.7763568394002505e-15,48.0,0.00034995508316085883,SpiralScanPath_11,Spiral
+physics mean + advective forced + source amplitude,0.0,7.010766233967812,1.7763568394002505e-15,48.0,0.00034995508316085883,SpiralScanPath_11,Spiral
+physics mean + space-time,0.0,11.668707205074979,0.0,,,SpiralScanPath_12,Spiral
+physics mean + advective space-time,0.0,10.342613051858242,0.0,,,SpiralScanPath_12,Spiral
+physics mean + forced space-time,0.0,9.217529291725748,1.7763568394002505e-15,48.0,0.00020010626987570064,SpiralScanPath_12,Spiral
+physics mean + advective forced space-time,0.0,7.102185011895816,1.7763568394002505e-15,48.0,0.0003274067103541552,SpiralScanPath_12,Spiral
+physics mean + advective forced + source amplitude,0.0,7.102185011895816,1.7763568394002505e-15,48.0,0.0003274067103541552,SpiralScanPath_12,Spiral
+physics mean + space-time,0.0,11.668707205074982,0.0,,,SpiralScanPath_13,Spiral
+physics mean + advective space-time,0.0,9.70844068663361,0.0,,,SpiralScanPath_13,Spiral
+physics mean + forced space-time,0.0,9.21752929172574,1.7763568394002505e-15,48.0,0.00020010626987570064,SpiralScanPath_13,Spiral
+physics mean + advective forced space-time,0.0,6.587109408248969,1.7763568394002505e-15,48.0,0.0004799936920851653,SpiralScanPath_13,Spiral
+physics mean + advective forced + source amplitude,0.0,6.587109408248969,1.7763568394002505e-15,48.0,0.0004799936920851653,SpiralScanPath_13,Spiral

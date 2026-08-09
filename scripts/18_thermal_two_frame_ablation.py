@@ -668,6 +668,7 @@ def summarize_ablation(results: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFram
         "excess_field_rel_l2",
         "hot_region_rel_l2",
         "peak_absolute_error_K",
+        "mean_crps_K",
         "hot_region_crps_K",
         "hot_region_95_coverage",
         "true_peak_in_95",
@@ -742,6 +743,63 @@ def plot_family_results(family: pd.DataFrame, out_path: Path) -> None:
     axes[1, 0].set_ylabel("Mean hot-region 95% coverage")
     axes[0, 0].legend(frameon=False, fontsize=8)
     figure.suptitle("Held-out trajectories: ablation by family and censoring level")
+    figure.savefig(out_path, dpi=220)
+    plt.close(figure)
+
+
+def plot_family_crps(family: pd.DataFrame, out_path: Path) -> None:
+    fractions = sorted(family["fraction_saturated"].unique())
+    families = ["Diagonal", "Horizontal", "Spiral"]
+    x = np.arange(len(families))
+    width = 0.19
+    figure, axes = plt.subplots(
+        2,
+        len(fractions),
+        figsize=(16.5, 7.6),
+        sharey="row",
+        constrained_layout=True,
+    )
+    for column, fraction in enumerate(fractions):
+        subset = family[np.isclose(family["fraction_saturated"], fraction)]
+        indexed = subset.set_index(["family", "method"])
+        for method_index, method in enumerate(METHOD_ORDER):
+            positions = x + (method_index - 1.5) * width
+            domain_values = [
+                indexed.loc[(name, method), "mean_crps_K_mean"]
+                for name in families
+            ]
+            hot_values = [
+                indexed.loc[(name, method), "hot_region_crps_K_mean"]
+                for name in families
+            ]
+            axes[0, column].bar(
+                positions,
+                domain_values,
+                width,
+                color=METHOD_COLORS[method],
+                label=method,
+            )
+            axes[1, column].bar(
+                positions,
+                hot_values,
+                width,
+                color=METHOD_COLORS[method],
+            )
+        axes[0, column].set_title(f"{fraction:.0%} censored")
+        for row in range(2):
+            axes[row, column].set_xticks(x, families)
+            axes[row, column].spines[["top", "right"]].set_visible(False)
+        axes[1, column].set_xlabel("Trajectory family")
+    axes[0, 0].set_ylabel("All-domain CRPS (K)\nfixed pixel domain")
+    axes[1, 0].set_ylabel(
+        "Hot-region CRPS (K)\nregion is the hottest censored fraction"
+    )
+    axes[0, 0].legend(frameon=False, fontsize=8)
+    figure.suptitle(
+        "Held-out trajectories: CRPS by family and censoring level\n"
+        "Diagnostic only: hot-region membership and observation count both change "
+        "across columns"
+    )
     figure.savefig(out_path, dpi=220)
     plt.close(figure)
 
@@ -888,8 +946,8 @@ def write_readme(
         "- `trajectory_family_summary.csv`\n"
         "- `ablation_by_ceiling.csv` and `ablation_table_3pct.csv`\n"
         "- `interval_calibration_scales.csv`\n"
-        "- `residual_sensitivity.png`, `family_ablation.png`, and "
-        "`uncertainty_calibration.png`\n",
+        "- `residual_sensitivity.png`, `family_ablation.png`, "
+        "`family_ablation_crps.png`, and `uncertainty_calibration.png`\n",
         encoding="ascii",
     )
 
@@ -1023,6 +1081,7 @@ def main() -> None:
         by_ceiling.to_csv(args.output_dir / "ablation_by_ceiling.csv", index=False)
         main_table.to_csv(args.output_dir / "ablation_table_3pct.csv", index=False)
         plot_family_results(family, args.output_dir / "family_ablation.png")
+        plot_family_crps(family, args.output_dir / "family_ablation_crps.png")
         plot_uncertainty_calibration(
             by_ceiling, args.output_dir / "uncertainty_calibration.png"
         )

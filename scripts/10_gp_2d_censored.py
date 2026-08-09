@@ -37,6 +37,12 @@ class GP2DConfig:
     angle_degrees: float = 0.0
     diffusivity: float | None = None
     cooling_rate: float = 0.0
+    advection_path: Callable[[np.ndarray], np.ndarray] | None = None
+    forcing_lengthscale: float | None = None
+    forcing_quadrature_order: int = 20
+    source_amplitude_basis: Callable[[np.ndarray], np.ndarray] | None = None
+    source_amplitude_fraction_sd: float = 0.0
+    source_amplitude_timescale: float | None = None
     noise_sd: float = 20.0
     relative_jitter: float = 1e-6
 
@@ -129,7 +135,13 @@ def rbf_kernel(points1: np.ndarray, points2: np.ndarray, config: GP2DConfig) -> 
         prefactor = 2.0 * np.sqrt(ell1_squared[:, None] * ell2_squared[None, :]) / denominator
         return config.signal_sd**2 * prefactor * np.exp(-distance_squared / denominator)
 
-    if config.kernel == "spatiotemporal_heat":
+    if config.kernel in {
+        "spatiotemporal_heat",
+        "spatiotemporal_advection",
+        "spatiotemporal_forced_heat",
+        "spatiotemporal_advective_forced_heat",
+        "spatiotemporal_advective_forced_heat_source_amplitude",
+    }:
         if p1.shape[1] < 3 or p2.shape[1] < 3:
             raise ValueError("Space-time heat-kernel points must include x, y, and time")
         if config.diffusivity is None or config.diffusivity < 0.0:
@@ -137,8 +149,104 @@ def rbf_kernel(points1: np.ndarray, points2: np.ndarray, config: GP2DConfig) -> 
         if config.cooling_rate < 0.0:
             raise ValueError("Space-time heat kernel requires a nonnegative cooling rate")
         spatial_delta = p1[:, None, :2] - p2[None, :, :2]
+        if config.kernel in {
+            "spatiotemporal_advection",
+            "spatiotemporal_advective_forced_heat",
+            "spatiotemporal_advective_forced_heat_source_amplitude",
+        }:
+            if config.advection_path is None:
+                raise ValueError("Advection heat kernel requires an advection path")
+            path1 = np.asarray(config.advection_path(p1[:, 2]), dtype=float)
+            path2 = np.asarray(config.advection_path(p2[:, 2]), dtype=float)
+            if path1.shape != (len(p1), 2) or path2.shape != (len(p2), 2):
+                raise ValueError("Advection path must return one two-dimensional point per time")
+            spatial_delta = spatial_delta - (
+                path1[:, None, :] - path2[None, :, :]
+            )
         distance_squared = np.sum(spatial_delta**2, axis=2)
         time_difference = np.abs(p1[:, None, 2] - p2[None, :, 2])
+
+        if config.kernel in {
+            "spatiotemporal_forced_heat",
+            "spatiotemporal_advective_forced_heat",
+            "spatiotemporal_advective_forced_heat_source_amplitude",
+        }:
+            if config.cooling_rate <= 0.0:
+                raise ValueError(
+                    "A stationary forced heat kernel requires a positive cooling rate"
+                )
+            forcing_lengthscale = (
+                config.lengthscale
+                if config.forcing_lengthscale is None
+                else config.forcing_lengthscale
+            )
+            if forcing_lengthscale <= 0.0:
+                raise ValueError("Stochastic forcing requires a positive lengthscale")
+            if config.forcing_quadrature_order <= 0:
+                raise ValueError("Forcing quadrature order must be positive")
+
+            # W is white in time and has an RBF spatial covariance. Integrating the
+            # heat semigroup from the infinite past gives the stationary covariance.
+            nodes, weights = np.polynomial.laguerre.laggauss(
+                config.forcing_quadrature_order
+            )
+            ell_squared = forcing_lengthscale**2
+            covariance = np.zeros_like(distance_squared)
+            for node, weight in zip(nodes, weights):
+                propagated_time = time_difference + node / config.cooling_rate
+                scale_squared = (
+                    ell_squared + 2.0 * config.diffusivity * propagated_time
+                )
+                covariance += (
+                    weight
+                    * ell_squared
+                    / scale_squared
+                    * np.exp(-0.5 * distance_squared / scale_squared)
+                )
+            covariance *= np.exp(-config.cooling_rate * time_difference)
+
+            zero_lag_scale = (
+                ell_squared
+                + 2.0
+                * config.diffusivity
+                * nodes
+                / config.cooling_rate
+            )
+            zero_lag_integral = np.sum(weights * ell_squared / zero_lag_scale)
+            covariance = config.signal_sd**2 * covariance / zero_lag_integral
+            if (
+                config.kernel
+                == "spatiotemporal_advective_forced_heat_source_amplitude"
+            ):
+                if config.source_amplitude_basis is None:
+                    raise ValueError("Source-amplitude kernel requires a source basis")
+                if config.source_amplitude_fraction_sd < 0.0:
+                    raise ValueError(
+                        "Source-amplitude fractional scale must be nonnegative"
+                    )
+                timescale = config.source_amplitude_timescale
+                if timescale is None or timescale <= 0.0:
+                    raise ValueError(
+                        "Source-amplitude kernel requires a positive timescale"
+                    )
+                basis1 = np.asarray(
+                    config.source_amplitude_basis(p1),
+                    dtype=float,
+                ).reshape(-1)
+                basis2 = np.asarray(
+                    config.source_amplitude_basis(p2),
+                    dtype=float,
+                ).reshape(-1)
+                if basis1.shape != (len(p1),) or basis2.shape != (len(p2),):
+                    raise ValueError("Source basis must return one value per point")
+                covariance += (
+                    config.source_amplitude_fraction_sd**2
+                    * basis1[:, None]
+                    * basis2[None, :]
+                    * np.exp(-time_difference / timescale)
+                )
+            return covariance
+
         scale_squared = config.lengthscale**2 + 2.0 * config.diffusivity * time_difference
         spatial_prefactor = config.lengthscale**2 / scale_squared
         temporal_decay = np.exp(-config.cooling_rate * time_difference)
@@ -165,6 +273,22 @@ def rbf_kernel(points1: np.ndarray, points2: np.ndarray, config: GP2DConfig) -> 
         y_rot = -np.sin(theta) * dx + np.cos(theta) * dy
         sqdist = (x_rot / ell_x) ** 2 + (y_rot / ell_y) ** 2
     return config.signal_sd**2 * np.exp(-0.5 * sqdist)
+
+
+def kernel_diagonal(
+    points: np.ndarray,
+    config: GP2DConfig,
+    *,
+    chunk_size: int = 512,
+) -> np.ndarray:
+    """Evaluate the exact kernel diagonal without building the full matrix."""
+    p = np.asarray(points, dtype=float)
+    diagonal = np.empty(len(p), dtype=float)
+    for start in range(0, len(p), chunk_size):
+        stop = min(start + chunk_size, len(p))
+        block = rbf_kernel(p[start:stop], p[start:stop], config)
+        diagonal[start:stop] = np.diag(block)
+    return diagonal
 
 
 def log_mills_ratio(z: np.ndarray) -> np.ndarray:
@@ -461,8 +585,9 @@ def sample_censored_gp_ess_fast(
     )
     conditional_means = gp_mean(x_pred, config)[None, :] + (K_po.dot(alpha_samples)).T
     solved = cho_solve(cf_oo, K_po.T, check_finite=False)
+    prior_variance = kernel_diagonal(x_pred, config)
     conditional_variance = np.maximum(
-        config.signal_sd**2 - np.sum(K_po * solved.T, axis=1),
+        prior_variance - np.sum(K_po * solved.T, axis=1),
         0.0,
     )
     mean = np.mean(conditional_means, axis=0)

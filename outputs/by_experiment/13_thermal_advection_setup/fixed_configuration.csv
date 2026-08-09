@@ -1,0 +1,2 @@
+diffusivity,cooling_rate,signal_sd,signal_multiplier,noise_multiplier,beta_multiplier,length_multiplier,regular_source_coupling,advective_source_coupling,forcing_length_multiplier,forcing_quadrature_order,source_amplitude_fraction_sd,source_amplitude_timescale_s,observation_stride,seed
+3.6109129986233175e-06,12.422901570529978,3.4305133895116966,1.0,2.0,1.0,1.25,0.17022272061337845,0.17034172385874424,1.0,24,0.25,0.0005,5,41

@@ -1,2 +1,0 @@
-setting,signal_multiplier,noise_multiplier,beta_multiplier,length_multiplier
-noise x2 + length x1.25,1.0,2.0,1.0,1.25

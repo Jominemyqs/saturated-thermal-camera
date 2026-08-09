@@ -1,0 +1,2 @@
+source_amplitude_fraction_sd,source_amplitude_timescale_multiplier,source_amplitude_timescale_s,fixed_top_01_crps_K,mean_crps_K,excess_field_rel_l2,peak_absolute_error_K,hot_region_95_coverage
+0.25,1.0,0.0005000000000000004,2.6671392044139517,0.5758904305693172,0.3667936193653926,6.919507524919955,0.9298245614035089
