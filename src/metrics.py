@@ -7,6 +7,26 @@ from src.gaussian_field import gaussian_temperature
 PARAM_NAMES = ["T0", "A", "xc", "yc", "sx", "sy"]
 
 
+def empirical_crps(draws: np.ndarray, truth: np.ndarray) -> np.ndarray:
+    """Unbiased empirical CRPS using distinct ordered sample pairs."""
+    sample_array = np.asarray(draws, dtype=float)
+    target = np.asarray(truth, dtype=float).reshape(-1)
+    if sample_array.ndim != 2:
+        raise ValueError("CRPS draws must have shape (n_samples, n_targets)")
+    if sample_array.shape[1] != len(target):
+        raise ValueError("CRPS draws and truth must contain the same targets")
+    n_samples = len(sample_array)
+    if n_samples < 2:
+        raise ValueError("Unbiased empirical CRPS requires at least two draws")
+    first_term = np.mean(np.abs(sample_array - target[None, :]), axis=0)
+    ordered = np.sort(sample_array, axis=0)
+    weights = 2.0 * np.arange(1, n_samples + 1) - n_samples - 1.0
+    second_term = np.sum(weights[:, None] * ordered, axis=0) / (
+        n_samples * (n_samples - 1)
+    )
+    return first_term - second_term
+
+
 def relative_l2(pred: np.ndarray, truth: np.ndarray, mask: np.ndarray | None = None) -> float:
     if mask is not None:
         pred = pred[mask]

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from pathlib import Path
 import sys
 from typing import Callable
@@ -43,6 +43,8 @@ class GP2DConfig:
     source_amplitude_basis: Callable[[np.ndarray], np.ndarray] | None = None
     source_amplitude_fraction_sd: float = 0.0
     source_amplitude_timescale: float | None = None
+    covariance_adjustment: Callable[[np.ndarray, np.ndarray], np.ndarray] | None = None
+    variance_adjustment: Callable[[np.ndarray], np.ndarray] | None = None
     noise_sd: float = 20.0
     relative_jitter: float = 1e-6
 
@@ -113,6 +115,27 @@ def path_aligned_coordinates(points: np.ndarray) -> np.ndarray:
 def rbf_kernel(points1: np.ndarray, points2: np.ndarray, config: GP2DConfig) -> np.ndarray:
     p1 = np.asarray(points1, dtype=float)
     p2 = np.asarray(points2, dtype=float)
+    if config.covariance_adjustment is not None:
+        base_config = replace(
+            config,
+            covariance_adjustment=None,
+            variance_adjustment=None,
+        )
+        base = rbf_kernel(p1, p2, base_config)
+        adjustment = np.asarray(
+            config.covariance_adjustment(p1, p2), dtype=float
+        )
+        if adjustment.shape != base.shape:
+            raise ValueError(
+                "Covariance adjustment returned shape "
+                f"{adjustment.shape}, expected {base.shape}"
+            )
+        if not np.all(np.isfinite(adjustment)):
+            raise ValueError("Covariance adjustment returned non-finite values")
+        return base + adjustment
+
+    if config.kernel == "zero":
+        return np.zeros((len(p1), len(p2)), dtype=float)
     if config.kernel == "path_aligned":
         z1 = path_aligned_coordinates(p1[:, :2])
         z2 = path_aligned_coordinates(p2[:, :2])
@@ -283,6 +306,25 @@ def kernel_diagonal(
 ) -> np.ndarray:
     """Evaluate the exact kernel diagonal without building the full matrix."""
     p = np.asarray(points, dtype=float)
+    if (
+        config.covariance_adjustment is not None
+        and config.variance_adjustment is not None
+    ):
+        base_config = replace(
+            config,
+            covariance_adjustment=None,
+            variance_adjustment=None,
+        )
+        base = kernel_diagonal(p, base_config, chunk_size=chunk_size)
+        adjustment = np.asarray(config.variance_adjustment(p), dtype=float).reshape(-1)
+        if adjustment.shape != (len(p),):
+            raise ValueError(
+                "Variance adjustment returned shape "
+                f"{adjustment.shape}, expected {(len(p),)}"
+            )
+        if not np.all(np.isfinite(adjustment)) or np.any(adjustment < -1e-12):
+            raise ValueError("Variance adjustment must be finite and nonnegative")
+        return base + np.maximum(adjustment, 0.0)
     diagonal = np.empty(len(p), dtype=float)
     for start in range(0, len(p), chunk_size):
         stop = min(start + chunk_size, len(p))

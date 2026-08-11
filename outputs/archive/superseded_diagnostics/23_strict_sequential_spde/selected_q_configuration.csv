@@ -1,0 +1,2 @@
+forcing_length_multiplier,forcing_amplitude_multiplier,selection_objective,development_trajectories
+0.5,2.0,0.5 * all-domain CRPS + 0.5 * fixed top-1% CRPS,DiagonalScanPath_8;HorizontalScanPath_13;SpiralScanPath_13

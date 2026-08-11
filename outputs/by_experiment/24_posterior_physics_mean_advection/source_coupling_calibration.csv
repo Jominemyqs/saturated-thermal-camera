@@ -1,0 +1,4 @@
+trajectory,fraction_saturated,source_coupling,n_source_samples
+DiagonalScanPath_8,0.03,0.17022272061337845,2880
+HorizontalScanPath_13,0.03,0.16874008165342513,3507
+SpiralScanPath_13,0.03,0.17084545869257492,4780

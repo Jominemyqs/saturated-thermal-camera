@@ -1,0 +1,2 @@
+diffusivity,cooling_rate,signal_sd,source_coupling,fraction_saturated,observation_stride,measurement_noise_sd_K,previous_noise_sd_K,current_rbf_noise_sd_K,length_multiplier,previous_samples,current_samples,seed,crps_estimator
+3.6109129986233175e-06,12.422901570529978,3.4305133895116966,0.17022272061337845,0.03,5,0.25,0.25,0.5,1.25,180,180,41,unbiased_M_times_M_minus_1

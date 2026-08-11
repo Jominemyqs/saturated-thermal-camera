@@ -1,0 +1,2 @@
+diffusivity,cooling_rate,signal_sd,source_coupling,forcing_length_multiplier,forcing_amplitude_multiplier,crps_estimator,seed
+3.6109129986233175e-06,12.422901570529978,3.4305133895116966,0.17022272061337845,0.5,2.0,unbiased_M_times_M_minus_1,41

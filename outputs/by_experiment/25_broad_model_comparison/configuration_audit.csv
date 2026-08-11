@@ -1,0 +1,12 @@
+parameter,values,matches_across_source_experiments
+fraction_saturated,0.03 | 0.03 | 0.03,True
+observation_stride,5 | 5 | 5,True
+seed,41 | 41 | 41,True
+diffusivity,3.6109129986233175e-06 | 3.6109129986233175e-06 | 3.6109129986233175e-06,True
+cooling_rate,12.422901570529978 | 12.422901570529978 | 12.422901570529978,True
+signal_sd,3.4305133895116966 | 3.4305133895116966 | 3.4305133895116966,True
+source_coupling,0.1702227206133784 | 0.1702227206133784 | 0.1702227206133784,True
+length_multiplier,1.25 | 1.25 | 1.25,True
+crps_estimator,unbiased_M_times_M_minus_1 | unbiased_M_times_M_minus_1 | unbiased_M_times_M_minus_1,True
+heldout_trajectory_count,30 | 30 | 30 | 30 | 30 | 30 | 30 | 30 | 30,True
+retained_posterior_RBF_reproduction,maximum metric difference 4.547e-13,True

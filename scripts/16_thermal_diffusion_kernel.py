@@ -15,6 +15,7 @@ import pandas as pd
 from scipy.linalg import cho_factor, cho_solve
 
 from src.diffusion import cooling_age, estimate_effective_diffusivity
+from src.metrics import empirical_crps as unbiased_empirical_crps
 from src.thermal_trajectory import SurfaceGridProjector, ThermalTrajectory
 
 matplotlib.use("Agg")
@@ -345,14 +346,7 @@ def select_lengthscale(
 
 
 def empirical_crps(draws: np.ndarray, truth: np.ndarray) -> np.ndarray:
-    sample_array = np.asarray(draws, dtype=float)
-    target = np.asarray(truth, dtype=float).reshape(-1)
-    first_term = np.mean(np.abs(sample_array - target[None, :]), axis=0)
-    ordered = np.sort(sample_array, axis=0)
-    n_samples = len(ordered)
-    weights = 2.0 * np.arange(1, n_samples + 1) - n_samples - 1.0
-    second_term = np.sum(weights[:, None] * ordered, axis=0) / n_samples**2
-    return first_term - second_term
+    return unbiased_empirical_crps(draws, truth)
 
 
 def sample_censored_multiple_chains(
