@@ -19,18 +19,28 @@ The five experiments to use in current notes and presentations are:
 3. the posterior-physics-mean propagation ablation in script 22;
 4. the controlled posterior-physics-mean advection experiment in script 26.
 5. the broad retained-model comparison and architecture audit in script 27.
+6. the architecture-aware one-step sequential comparison in script 28.
+
+Script 28 is a deliberately limited one-step sequential GP exploration. It
+uses the canonical RBF previous censored posterior, compares stationary and
+advective stochastic residual propagation without reusing the previous
+observations, and labels the older joint two-frame result only as a historical
+reference. Its global scores are strong, but its hot-region intervals are too
+narrow, so it remains a supporting diagnostic.
 
 Run the current advection comparison with:
 
 ```bash
 python scripts/26_thermal_posterior_physics_advection.py
 python scripts/27_thermal_broad_model_comparison.py
+python scripts/28_thermal_one_step_sequential_gp.py
 ```
 
 See `EXPERIMENT_INVENTORY.md` for canonical and supporting experiments.
-Superseded sequential SPDE/filtering, joint/double-use, and broad
-restart branches were removed after the controlled audit and are not current
-model results.
+Superseded sequential SPDE/filtering, joint/double-use, and broad-restart
+drivers were removed after the controlled audit and are not current model
+results. Historical outputs remain available until the cleanup list is
+explicitly confirmed.
 
 
 The synthetic field is
@@ -151,6 +161,8 @@ held-out trajectory. The default comparison uses the final frame and the frame
 - `src/thermal_trajectory.py`: lazy XDMF/HDF5 trajectory loader and top-surface grid interpolation.
 - `src/diffusion.py`: effective-diffusivity fitting and local cooling-age calculation.
 - `src/censored_gp.py`: reusable spatial RBF censored-GP inference.
+- `src/dense_censored_gp.py`: censored inference for a precomputed dense Gaussian prior.
+- `src/stochastic_heat_gp.py`: stationary stochastic heat covariance and one-step moment-matched propagation.
 - `src/thermal_posterior_physics.py`: previous-frame censored posterior and ordinary/advective posterior physics means.
 - `scripts/00_make_synthetic.py`: generate one synthetic image.
 - `scripts/01_fit_single.py`: fit all methods on one image.
@@ -173,3 +185,4 @@ held-out trajectory. The default comparison uses the final frame and the frame
 - `scripts/21_thermal_stochastic_spde_ablation.py`: supporting stochastic heat-process covariance ablation.
 - `scripts/22_thermal_previous_posterior_propagation.py`: observed-clipped, posterior physics mean, and full-posterior propagation ablation with an RBF residual.
 - `scripts/26_thermal_posterior_physics_advection.py`: controlled ordinary-versus-advective posterior physics mean comparison with an identical RBF residual.
+- `scripts/28_thermal_one_step_sequential_gp.py`: exploratory one-step sequential combination of the posterior physics mean and stochastic space-time residual covariance.

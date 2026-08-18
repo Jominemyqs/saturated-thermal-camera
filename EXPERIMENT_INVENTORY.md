@@ -19,6 +19,7 @@ censored likelihood.
 | Topic | Driver/output | Status |
 | --- | --- | --- |
 | Stochastic heat-process covariance | `scripts/21_thermal_stochastic_spde_ablation.py`; `outputs/by_experiment/19_stochastic_spde_ablation/` | Retained supporting RBF vs stochastic ST vs advective stochastic ST ablation; not mandatory in the main model |
+| Architecture-aware one-step sequential GP | `scripts/28_thermal_one_step_sequential_gp.py`; `outputs/by_experiment/26_one_step_sequential_gp/` | Uses the canonical RBF previous posterior, separates controlled sequential rows from the legacy joint reference, and shows improved field/global scores but substantial hot-tail undercoverage |
 | Toy parametric and GP studies | `scripts/00` through `15`; `outputs/by_experiment/01` through `12` | Retained background and prior-sensitivity evidence |
 | Thermal diffusion and two-frame studies | `scripts/16` through `18` and their named output folders | Retained implementation and supporting sensitivity studies |
 
@@ -28,6 +29,8 @@ censored likelihood.
 | --- | --- |
 | `src/metrics.py` | Unbiased empirical CRPS and field metrics |
 | `src/censored_gp.py` | Current-frame RBF covariance and censored GP sampling |
+| `src/dense_censored_gp.py` | Censored inference from either a dense Gaussian prior or observation/prediction covariance blocks |
+| `src/stochastic_heat_gp.py` | Stationary stochastic heat covariance, finite-step innovation, and one-step residual propagation |
 | `src/thermal_posterior_physics.py` | Trajectory preparation, previous censored posterior, diffusion/cooling, source displacement, and posterior physics means |
 | `src/thermal_trajectory.py` | XDMF/HDF5 loading and surface-grid projection |
 | `src/diffusion.py` | Effective diffusivity and cooling-rate estimation |
@@ -36,5 +39,7 @@ censored likelihood.
 ## Smoke/debug
 
 Smoke outputs are written under `/private/tmp` and are not part of the
-repository. Superseded sequential, joint, broad-restart, and duplicate
-top-level output folders were removed after the August 11 controlled audit.
+repository. Superseded sequential, joint, and broad-restart driver scripts
+were removed after the August 11 controlled audit. Their historical outputs
+and duplicate top-level output folders remain available pending a separately
+confirmed cleanup pass.
