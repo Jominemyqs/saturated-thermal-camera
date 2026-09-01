@@ -5,14 +5,22 @@ import unittest
 import numpy as np
 
 from src.censored_gp import RBFConfig, rbf_covariance, sample_censored_ess_fast
-from src.dense_censored_gp import sample_censored_gaussian_blocks
+from src.dense_censored_gp import (
+    censored_gaussian_mixture_component_weights,
+    sample_censored_gaussian_blocks,
+    sample_censored_gaussian_mixture_blocks,
+)
 from src.stochastic_heat_gp import (
     StochasticHeatConfig,
     finite_step_innovation_covariance,
     sequential_moment_matched_covariance,
     stochastic_heat_covariance,
 )
-from src.thermal_posterior_physics import translate_field
+from src.thermal_posterior_physics import (
+    PreparedTrajectory,
+    infer_previous_coherent_posterior,
+    translate_field,
+)
 
 
 class TranslationConventionTest(unittest.TestCase):
@@ -60,6 +68,54 @@ class FixedResidualTest(unittest.TestCase):
             rbf_covariance(points, points, first),
             rbf_covariance(points, points, second),
         )
+
+
+class CoherentPreviousPosteriorTest(unittest.TestCase):
+    def test_unsaturated_latent_pixels_retain_posterior_uncertainty(self):
+        xs = np.array([0.0, 0.5])
+        ys = np.array([0.0, 0.5])
+        grid_x, grid_y = np.meshgrid(xs, ys)
+        points = np.column_stack([grid_x.ravel(), grid_y.ravel()])
+        history = np.array([[[0.1, 0.2], [0.3, 1.4]]])
+        prepared = PreparedTrajectory(
+            name="toy",
+            xs=xs,
+            ys=ys,
+            points=points,
+            times=np.array([0.0]),
+            history=history,
+            heat_flux=np.zeros_like(history),
+            truth=history[0],
+            age=np.zeros((2, 2)),
+            ambient=0.0,
+            source_lengthscale=0.5,
+            signal_scale=1.0,
+        )
+        frame = {
+            "time_index": 0,
+            "time": 0.0,
+            "clipped_full": np.minimum(history[0], 1.0),
+            "saturated_full": history[0] >= 1.0,
+        }
+
+        mean, draws, diagnostics = infer_previous_coherent_posterior(
+            prepared,
+            frame=frame,
+            fixed_mask=np.ones((2, 2), dtype=bool),
+            threshold=1.0,
+            signal_sd=1.0,
+            lengthscale=0.6,
+            noise_sd=0.1,
+            n_samples=24,
+            burn_in=12,
+            thin=1,
+            seed=5,
+        )
+
+        self.assertEqual(mean.shape, (2, 2))
+        self.assertEqual(draws.shape, (24, 2, 2))
+        self.assertGreater(np.min(np.std(draws[:, :1, :], axis=0)), 0.0)
+        self.assertGreater(diagnostics["previous_unsaturated_posterior_sd_K"], 0.0)
 
 
 class SequentialStochasticHeatTest(unittest.TestCase):
@@ -161,6 +217,77 @@ class GaussianBlockSamplerTest(unittest.TestCase):
         )
         for expected_item, actual_item in zip(expected, actual):
             np.testing.assert_allclose(actual_item, expected_item, atol=1e-12)
+
+    def test_mixture_weights_match_uncensored_gaussian_likelihood(self):
+        observations = {
+            "y_obs": np.array([0.8]),
+            "sat_mask": np.array([False]),
+            "threshold": 2.0,
+        }
+        component_means = np.array([[-1.0], [1.0]])
+        covariance = np.array([[0.5]])
+        noise_sd = 0.5
+        actual = censored_gaussian_mixture_component_weights(
+            observations,
+            component_observation_means=component_means,
+            observed_covariance=covariance,
+            noise_sd=noise_sd,
+            relative_jitter=0.0,
+        )
+        variance = covariance[0, 0] + noise_sd**2
+        log_expected = -0.5 * (observations["y_obs"][0] - component_means[:, 0]) ** 2 / variance
+        expected = np.exp(log_expected - np.max(log_expected))
+        expected /= np.sum(expected)
+        np.testing.assert_allclose(actual, expected, rtol=0.0, atol=1e-12)
+
+    def test_saturation_reweights_mixture_toward_hot_component(self):
+        observations = {
+            "y_obs": np.array([2.0]),
+            "sat_mask": np.array([True]),
+            "threshold": 2.0,
+        }
+        actual = censored_gaussian_mixture_component_weights(
+            observations,
+            component_observation_means=np.array([[0.0], [3.0]]),
+            observed_covariance=np.array([[0.25]]),
+            noise_sd=0.25,
+            relative_jitter=0.0,
+        )
+        self.assertGreater(actual[1], 0.99)
+
+    def test_mixture_sampler_returns_calibrated_shapes_and_diagnostics(self):
+        observations = {
+            "y_obs": np.array([0.2, 1.0]),
+            "sat_mask": np.array([False, True]),
+            "threshold": 1.0,
+        }
+        component_prediction_means = np.array(
+            [[0.0, 0.7, 0.4], [0.3, 1.2, 0.8]]
+        )
+        prediction, diagnostics = sample_censored_gaussian_mixture_blocks(
+            observations,
+            component_prediction_means=component_prediction_means,
+            component_observation_means=component_prediction_means[:, :2],
+            observed_covariance=np.array([[0.4, 0.1], [0.1, 0.5]]),
+            pred_observed_covariance=np.array(
+                [[0.4, 0.1], [0.1, 0.5], [0.2, 0.15]]
+            ),
+            prediction_variance=np.array([0.4, 0.5, 0.6]),
+            noise_sd=0.2,
+            n_samples=24,
+            burn_in=12,
+            thin=1,
+            seed=9,
+        )
+        mean, sd, lower, upper, draws = prediction
+        self.assertEqual(mean.shape, (3,))
+        self.assertEqual(sd.shape, (3,))
+        self.assertEqual(lower.shape, (3,))
+        self.assertEqual(upper.shape, (3,))
+        self.assertEqual(draws.shape, (24, 3))
+        self.assertTrue(np.all(np.isfinite(draws)))
+        self.assertGreaterEqual(diagnostics["mixture_component_weight_ess"], 1.0)
+        self.assertLessEqual(diagnostics["mixture_component_weight_ess"], 2.0)
 
 
 if __name__ == "__main__":

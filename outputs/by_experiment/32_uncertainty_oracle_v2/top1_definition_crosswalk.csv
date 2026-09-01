@@ -1,0 +1,4 @@
+source,top_1pct_rule,top_1pct_pixels,top_1pct_crps_K
+retained architecture comparison,truth >= empirical 99th percentile,26,2.749229122294025
+oracle diagnostic v1,exact percentile ranks >= 99,25,2.8387054103684175
+canonical oracle diagnostic v2,truth >= empirical 99th percentile,26,2.749229122294025

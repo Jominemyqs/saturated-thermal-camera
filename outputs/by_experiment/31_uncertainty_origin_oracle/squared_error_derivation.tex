@@ -1,0 +1,57 @@
+\subsection{Squared-error benefit of posterior-mean propagation}
+
+Let \(T\) be a latent temperature with finite second moment and let \(Y\)
+denote the available observation information. For any estimator \(a(Y)\),
+conditioning on \(Y\) gives the orthogonal decomposition
+\[
+\mathbb{E}\!\left[(T-a(Y))^2\mid Y\right]
+=
+\operatorname{Var}(T\mid Y)
++
+\left(a(Y)-\mathbb{E}[T\mid Y]\right)^2.
+\]
+Therefore \(a^*(Y)=\mathbb{E}[T\mid Y]\) minimizes conditional squared error.
+For a noiseless saturated observation \(Y=\{T\geq c\}\), the clipped
+estimator is \(a=c\), whereas generally
+\(
+\mu_c=\mathbb{E}[T\mid T\geq c]>c
+\).
+Consequently,
+\[
+\mathbb{E}\!\left[(T-\mu_c)^2\mid T\geq c\right]
+\leq
+\mathbb{E}\!\left[(T-c)^2\mid T\geq c\right],
+\]
+with strict inequality unless \(c=\mu_c\). With measurement noise, the same
+statement holds after replacing the conditioning event by
+\(\{T+\varepsilon\geq c\}\).
+
+The argument also extends through an affine one-step transition. Suppose
+\[
+T_n=b+B T_{n-1}+\eta_n,
+\qquad
+\mathbb{E}[\eta_n\mid Y_{n-1}]=0,
+\]
+where \(B\) is fixed given the model parameters. Then
+\[
+\mathbb{E}[T_n\mid Y_{n-1}]
+=b+B\,\mathbb{E}[T_{n-1}\mid Y_{n-1}].
+\]
+For a candidate previous-state estimate \(a(Y_{n-1})\), the conditional
+squared Euclidean prediction error satisfies
+\[
+\mathbb{E}\!\left[
+\left\|T_n-(b+B a)\right\|^2
+\mid Y_{n-1}
+\right]
+=
+\operatorname{tr}\!\left\{\operatorname{Var}(T_n\mid Y_{n-1})\right\}
++
+\left\|B\left(a-\mathbb{E}[T_{n-1}\mid Y_{n-1}]\right)\right\|^2.
+\]
+Thus propagating the previous conditional mean is optimal within this affine
+model under squared loss, and improves on clipped propagation whenever the
+clipped-state error survives under \(B\). This is a model-based statement: it
+requires finite second moments, a correctly specified affine conditional mean,
+and zero conditional-mean transition error. It does not guarantee improvement
+under transition misspecification or for non-squared probabilistic scores.

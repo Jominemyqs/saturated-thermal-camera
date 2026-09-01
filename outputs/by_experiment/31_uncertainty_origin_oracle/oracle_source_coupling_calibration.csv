@@ -1,0 +1,4 @@
+trajectory,source_coupling,n_source_samples,calibration_previous_state
+DiagonalScanPath_8,0.05879328381542505,2880,true latent previous frame
+HorizontalScanPath_13,0.058792583585881984,3507,true latent previous frame
+SpiralScanPath_13,0.05942886418705892,4780,true latent previous frame

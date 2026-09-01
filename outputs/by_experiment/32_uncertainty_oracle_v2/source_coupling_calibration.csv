@@ -1,0 +1,5 @@
+state_representation,source_coupling,n_source_pixels,calibration_scope
+hybrid previous state,0.1674107507986483,24.0,final one-step transition pooled over three development trajectories
+coherent latent previous state,0.16631448799013043,24.0,final one-step transition pooled over three development trajectories
+true previous state,0.05208180059855976,24.0,final one-step transition pooled over three development trajectories
+frozen project baseline,0.1702227206133784,,retained observed-clipped project calibration

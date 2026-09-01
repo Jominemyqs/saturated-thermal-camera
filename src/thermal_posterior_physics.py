@@ -6,7 +6,8 @@ from pathlib import Path
 import numpy as np
 from scipy.ndimage import gaussian_filter, shift as shift_image
 
-from src.censored_gp import RBFConfig, sample_multiple_chains
+from src.censored_gp import RBFConfig, rbf_covariance, sample_multiple_chains
+from src.dense_censored_gp import DenseGaussianPrior, sample_censored_dense_prior
 from src.diffusion import cooling_age, estimate_effective_diffusivity
 from src.metrics import empirical_crps
 from src.thermal_trajectory import SurfaceGridProjector, ThermalTrajectory
@@ -290,6 +291,80 @@ def infer_previous_censored_posterior(
         "previous_saturated_fraction": float(np.mean(saturated)),
         "previous_clipped_hot_mae_K": float(
             np.mean(np.abs(clipped[saturated] - previous_truth[saturated]))
+        ),
+        "previous_posterior_hot_mae_K": float(
+            np.mean(np.abs(posterior_mean[saturated] - previous_truth[saturated]))
+        ),
+    }
+    return posterior_mean, draws, diagnostics
+
+
+def infer_previous_coherent_posterior(
+    prepared: PreparedTrajectory,
+    *,
+    frame: dict[str, object],
+    fixed_mask: np.ndarray,
+    threshold: float,
+    signal_sd: float,
+    lengthscale: float,
+    noise_sd: float,
+    n_samples: int,
+    burn_in: int,
+    thin: int,
+    seed: int,
+) -> tuple[np.ndarray, np.ndarray, dict[str, float]]:
+    """Infer a joint latent previous field from noisy and censored observations.
+
+    Unlike ``infer_previous_censored_posterior``, this function does not pin
+    unsaturated latent temperatures to their noisy camera values. The two
+    methods condition on the same observation locations and differ only in
+    how the latent field is represented after conditioning.
+    """
+    observations, _, saturated = previous_posterior_observations(
+        prepared,
+        frame=frame,
+        fixed_mask=fixed_mask,
+        threshold=threshold,
+    )
+    time = float(frame["time"])
+    prediction_points = np.column_stack(
+        [prepared.points, np.full(len(prepared.points), time)]
+    )
+    config = RBFConfig(
+        mean_temp=prepared.ambient,
+        signal_sd=signal_sd,
+        lengthscale=lengthscale,
+        noise_sd=noise_sd,
+    )
+    prior = DenseGaussianPrior(
+        points=prediction_points,
+        mean=np.full(len(prediction_points), prepared.ambient),
+        covariance=rbf_covariance(prediction_points, prediction_points, config),
+        noise_sd=noise_sd,
+        relative_jitter=config.relative_jitter,
+    )
+    prediction = sample_censored_dense_prior(
+        observations,
+        prior,
+        n_samples=n_samples,
+        burn_in=burn_in,
+        thin=thin,
+        seed=seed,
+    )
+    posterior_mean = prediction[0].reshape(prepared.truth.shape)
+    draws = prediction[4].reshape(n_samples, *prepared.truth.shape)
+    previous_truth = prepared.history[int(frame["time_index"])]
+    posterior_sd = np.std(draws, axis=0, ddof=1)
+    diagnostics = {
+        "previous_n_observations": int(len(observations["y_obs"])),
+        "previous_n_saturated": int(np.sum(saturated)),
+        "previous_saturated_fraction": float(np.mean(saturated)),
+        "previous_mean_posterior_sd_K": float(np.mean(posterior_sd)),
+        "previous_unsaturated_posterior_sd_K": float(
+            np.mean(posterior_sd[~saturated])
+        ),
+        "previous_saturated_posterior_sd_K": float(
+            np.mean(posterior_sd[saturated])
         ),
         "previous_posterior_hot_mae_K": float(
             np.mean(np.abs(posterior_mean[saturated] - previous_truth[saturated]))

@@ -12,7 +12,7 @@ previous censored camera frame
 -> current censored likelihood
 ```
 
-The five experiments to use in current notes and presentations are:
+The ten experiments to use in current notes and presentations are:
 
 1. corrected unbiased CRPS in `src/metrics.py` and script 19;
 2. the supporting stochastic space-time kernel ablation in script 21;
@@ -20,6 +20,14 @@ The five experiments to use in current notes and presentations are:
 4. the controlled posterior-physics-mean advection experiment in script 26.
 5. the broad retained-model comparison and architecture audit in script 27.
 6. the architecture-aware one-step sequential comparison in script 28.
+7. the focused mean-only versus moment-matched versus posterior-sample mixture
+   propagation experiment in script 29;
+8. the frozen hottest-tail uncertainty-scale diagnostic and variance-matched
+   RBF control in script 30;
+9. the final seven-architecture consolidation and scale-aware interpretation in
+   script 32;
+10. the frozen uncertainty-origin and true-previous-state oracle diagnostic in
+    script 33.
 
 Script 28 is a deliberately limited one-step sequential GP exploration. It
 uses the canonical RBF previous censored posterior, compares stationary and
@@ -34,6 +42,10 @@ Run the current advection comparison with:
 python scripts/26_thermal_posterior_physics_advection.py
 python scripts/27_thermal_broad_model_comparison.py
 python scripts/28_thermal_one_step_sequential_gp.py
+python scripts/29_thermal_full_posterior_sequential.py
+python scripts/30_hottest_tail_diagnostic.py
+python scripts/32_thermal_final_architecture_comparison.py
+python scripts/33_thermal_uncertainty_origin_oracle.py
 ```
 
 See `EXPERIMENT_INVENTORY.md` for canonical and supporting experiments.
@@ -158,12 +170,14 @@ held-out trajectory. The default comparison uses the final frame and the frame
 - `src/losses.py`: exact, discard, hinge, and censored objectives.
 - `src/fit.py`: parameter fitting with multi-start L-BFGS-B.
 - `src/metrics.py`: field, peak, and parameter errors.
+- `src/uncertainty_diagnostics.py`: percentile/region calibration summaries and explicit zero-posterior-SD diagnostics.
 - `src/thermal_trajectory.py`: lazy XDMF/HDF5 trajectory loader and top-surface grid interpolation.
 - `src/diffusion.py`: effective-diffusivity fitting and local cooling-age calculation.
 - `src/censored_gp.py`: reusable spatial RBF censored-GP inference.
 - `src/dense_censored_gp.py`: censored inference for a precomputed dense Gaussian prior.
 - `src/stochastic_heat_gp.py`: stationary stochastic heat covariance and one-step moment-matched propagation.
-- `src/thermal_posterior_physics.py`: previous-frame censored posterior and ordinary/advective posterior physics means.
+- `src/thermal_posterior_physics.py`: hybrid and coherent full-latent previous-frame censored posteriors and ordinary/advective posterior physics means.
+- `src/thermal_plotting.py`: shared tail-focused thermal normalization and fixed excess-temperature contours for comparable reconstruction figures.
 - `scripts/00_make_synthetic.py`: generate one synthetic image.
 - `scripts/01_fit_single.py`: fit all methods on one image.
 - `scripts/02_sweep_censoring.py`: compare methods over censoring levels.
@@ -186,3 +200,9 @@ held-out trajectory. The default comparison uses the final frame and the frame
 - `scripts/22_thermal_previous_posterior_propagation.py`: observed-clipped, posterior physics mean, and full-posterior propagation ablation with an RBF residual.
 - `scripts/26_thermal_posterior_physics_advection.py`: controlled ordinary-versus-advective posterior physics mean comparison with an identical RBF residual.
 - `scripts/28_thermal_one_step_sequential_gp.py`: exploratory one-step sequential combination of the posterior physics mean and stochastic space-time residual covariance.
+- `scripts/29_thermal_full_posterior_sequential.py`: controlled mean-only, moment-matched, and full-posterior sequential uncertainty propagation comparison.
+- `scripts/30_hottest_tail_diagnostic.py`: frozen held-out hottest-tail coverage diagnostic with pixel maps, percentile calibration, covariance-scale checks, and a variance-matched RBF control.
+- `scripts/31_prepare_friday_meeting.py`: regenerate the three-figure Friday meeting package and concise post-sequential narrative from saved experiment outputs.
+- `scripts/32_thermal_final_architecture_comparison.py`: consolidate the retained architectures under a common frozen protocol and separate covariance-scale effects from architecture effects.
+- `scripts/33_thermal_uncertainty_origin_oracle.py`: diagnose previous-versus-current hot-tail underdispersion, compare error with posterior SD by temperature percentile, and run the controlled true-previous-state oracle benchmark.
+- `scripts/34_thermal_uncertainty_oracle_v2.py`: canonical three-stage previous-posterior/current-forecast/current-posterior audit with hybrid versus coherent latent-state inference and strict versus development-recalibrated oracle controls.

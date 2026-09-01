@@ -1,0 +1,4 @@
+method,overall_crps_K,top_1pct_crps_K,above_ceiling_coverage_95,top_1pct_coverage_95,top_1pct_signed_error_K,posterior_representation
+Strict mean-only sequential advective ST,0.2105800240693919,2.8080419939737875,0.7166666666666667,0.3,-2.634391914424778,previous posterior collapsed to mean; C only
+Posterior physics mean + sequential advective ST (moment-matched),0.2098894035644207,2.749229122294025,0.7706140350877193,0.3884615384615384,-2.622394691421904,Gaussian moment match C + B Sigma B^T
+Posterior-sample mixture sequential advective ST,0.2099409573634608,2.7447599451586484,0.7728070175438596,0.3987179487179487,-2.619753925657082,censored-region posterior-sample mixture with shared C

@@ -1,0 +1,22 @@
+metric,method,clipped_value,method_value,oracle_value,fraction_oracle_improvement_recovered,interpretation_valid
+field_excess_rel_l2,Posterior-mean previous state + ST innovation,0.45719660975346815,0.40723775720255595,0.36624672306994793,0.5493008773584823,True
+field_excess_rel_l2,Moment-matched sequential advective ST,0.45719660975346815,0.407393048136946,0.36624672306994793,0.5475934432972348,True
+field_excess_rel_l2,Posterior-sample mixture sequential advective ST,0.45719660975346815,0.407157475717369,0.36624672306994793,0.5501835775807081,True
+overall_rmse_K,Posterior-mean previous state + ST innovation,0.5556768273306705,0.4950901375344149,0.44536421660225306,0.5492272315575609,True
+overall_rmse_K,Moment-matched sequential advective ST,0.5556768273306705,0.49510663548743883,0.44536421660225306,0.5490776751930165,True
+overall_rmse_K,Posterior-sample mixture sequential advective ST,0.5556768273306705,0.49497483577808216,0.44536421660225306,0.5502724588944118,True
+overall_crps_K,Posterior-mean previous state + ST innovation,0.21822346011308308,0.21058002406939197,0.17391844012025476,0.17251851020332137,True
+overall_crps_K,Moment-matched sequential advective ST,0.21822346011308308,0.20988940356442073,0.17391844012025476,0.1881063714678694,True
+overall_crps_K,Posterior-sample mixture sequential advective ST,0.21822346011308308,0.20994095736346083,0.17391844012025476,0.1869427606840702,True
+top_1pct_rmse_K,Posterior-mean previous state + ST innovation,5.081271992720567,4.385729736417994,4.3738365485264605,0.983188306453769,True
+top_1pct_rmse_K,Moment-matched sequential advective ST,5.081271992720567,4.383701891815464,4.3738365485264605,0.9860547794573082,True
+top_1pct_rmse_K,Posterior-sample mixture sequential advective ST,5.081271992720567,4.37853269241327,4.3738365485264605,0.9933617350878441,True
+top_1pct_mae_K,Posterior-mean previous state + ST innovation,4.139750061114571,3.257067513025109,1.833460472799444,0.38272841041367667,True
+top_1pct_mae_K,Moment-matched sequential advective ST,4.139750061114571,3.25029784564967,1.833460472799444,0.3856637171547459,True
+top_1pct_mae_K,Posterior-sample mixture sequential advective ST,4.139750061114571,3.2451683663214417,1.833460472799444,0.38788784345450333,True
+top_1pct_crps_K,Posterior-mean previous state + ST innovation,3.7562836991859703,2.9008675547041074,1.6954917176059123,0.4150909709120641,True
+top_1pct_crps_K,Moment-matched sequential advective ST,3.7562836991859703,2.8387054103684175,1.6954917176059123,0.44525517229255895,True
+top_1pct_crps_K,Posterior-sample mixture sequential advective ST,3.7562836991859703,2.834572883429648,1.6954917176059123,0.44726048237514227,True
+peak_absolute_error_K,Posterior-mean previous state + ST innovation,7.835702720341382,7.620219455551298,14.063520248015118,,False
+peak_absolute_error_K,Moment-matched sequential advective ST,7.835702720341382,7.639359342017392,14.063520248015118,,False
+peak_absolute_error_K,Posterior-sample mixture sequential advective ST,7.835702720341382,7.635436638109591,14.063520248015118,,False
