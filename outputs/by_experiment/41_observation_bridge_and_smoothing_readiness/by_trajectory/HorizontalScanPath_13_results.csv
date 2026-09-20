@@ -1,0 +1,3 @@
+trajectory,family,role,protocol,field_excess_rel_l2,overall_rmse_K,overall_crps_K,top_1pct_rmse_K,top_1pct_bias_K,top_1pct_crps_K,top_1pct_coverage_95,top_1pct_width_95_K,peak_absolute_error_K
+HorizontalScanPath_13,Horizontal,development,sparse_stride5,0.3634768472875485,0.4697705666026307,0.21311959512134973,2.808273806211477,-0.7405825206106601,1.3706598620577615,0.88,8.327571347378612,9.116187015944035
+HorizontalScanPath_13,Horizontal,development,stride5_unsaturated_all_censored,0.40958096405921035,0.529357187374114,0.22459824100714731,2.71448328565477,-0.08015087877975702,1.3705775421506265,0.88,7.141823598186665,8.682763742247971

@@ -2,17 +2,33 @@
 
 ## Current thermal-camera workflow
 
-The current primary architecture is:
+The September 20 active research focus is **censoring-severity failure
+decomposition**, not another model branch. See [ACTIVE_RESEARCH.md](ACTIVE_RESEARCH.md).
+Keep script 45's observation audit and script 47's matched six-ceiling A/B/C
+comparison. Script 49 adds prior/posterior error, standardized-residual,
+posterior-shape and source-relative diagnostics, with exact replay checks.
+
+The retained B/C architectures are:
 
 ```text
 previous censored camera frame
 -> previous-frame censored RBF posterior
 -> posterior physics mean
--> current-frame spatial RBF residual
+-> spatial RBF residual (B) OR sequential stationary ST predictive covariance (C)
 -> current censored likelihood
 ```
 
-The ten experiments to use in current notes and presentations are:
+The final likelihood uses current observations only, with stride-5 unsaturated
+plus all observed-censored locations. Nested-response, source-history and
+smoothing drivers/results are deferred under the dated archive; no unique code
+or results were deleted. The calibration baseline remains for provenance and
+shared inference dependencies, not as a new active calibration branch.
+
+## Historical development record
+
+The following older experiments explain the project's development, but are
+not the current presentation checklist. In particular, short-chain historical
+tables must not be mixed with the converged matched-ceiling values.
 
 1. corrected unbiased CRPS in `src/metrics.py` and script 19;
 2. the supporting stochastic space-time kernel ablation in script 21;

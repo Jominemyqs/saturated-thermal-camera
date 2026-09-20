@@ -1,0 +1,181 @@
+trajectory,family,role,level_index,level,target_censored_fraction,ceiling_K,reference_ceiling_K,actual_censored_fraction,ceiling_source,same_reference_noise_realization
+DiagonalScanPath_1,Diagonal,evaluation,0,reference,0.03,294.6560504149699,294.6560504149699,0.031187524990004,frozen reference ceiling,True
+DiagonalScanPath_1,Diagonal,evaluation,1,target_5pct,0.05,294.27809319118984,294.6560504149699,0.05037984806077569,reference-observation quantile,True
+DiagonalScanPath_1,Diagonal,evaluation,2,target_7.5pct,0.075,293.9041445009907,294.6560504149699,0.07516993202718912,reference-observation quantile,True
+DiagonalScanPath_1,Diagonal,evaluation,3,target_10pct,0.1,293.7171829163888,294.6560504149699,0.10035985605757697,reference-observation quantile,True
+DiagonalScanPath_1,Diagonal,evaluation,4,target_15pct,0.15,293.5492340373749,294.6560504149699,0.15033986405437824,reference-observation quantile,True
+DiagonalScanPath_1,Diagonal,evaluation,5,target_20pct,0.2,293.46641561318813,294.6560504149699,0.20031987205117952,reference-observation quantile,True
+DiagonalScanPath_2,Diagonal,evaluation,0,reference,0.03,294.7833581687172,294.7833581687172,0.03198720511795282,frozen reference ceiling,True
+DiagonalScanPath_2,Diagonal,evaluation,1,target_5pct,0.05,294.38366332322425,294.7833581687172,0.05037984806077569,reference-observation quantile,True
+DiagonalScanPath_2,Diagonal,evaluation,2,target_7.5pct,0.075,294.1278487013346,294.7833581687172,0.07516993202718912,reference-observation quantile,True
+DiagonalScanPath_2,Diagonal,evaluation,3,target_10pct,0.1,293.9158405133969,294.7833581687172,0.10035985605757697,reference-observation quantile,True
+DiagonalScanPath_2,Diagonal,evaluation,4,target_15pct,0.15,293.6822024079517,294.7833581687172,0.15033986405437824,reference-observation quantile,True
+DiagonalScanPath_2,Diagonal,evaluation,5,target_20pct,0.2,293.54008091733806,294.7833581687172,0.20031987205117952,reference-observation quantile,True
+DiagonalScanPath_3,Diagonal,evaluation,0,reference,0.03,294.9015209525281,294.9015209525281,0.03638544582167133,frozen reference ceiling,True
+DiagonalScanPath_3,Diagonal,evaluation,1,target_5pct,0.05,294.560468319108,294.9015209525281,0.05037984806077569,reference-observation quantile,True
+DiagonalScanPath_3,Diagonal,evaluation,2,target_7.5pct,0.075,294.3066337663805,294.9015209525281,0.07516993202718912,reference-observation quantile,True
+DiagonalScanPath_3,Diagonal,evaluation,3,target_10pct,0.1,294.0531900984871,294.9015209525281,0.10035985605757697,reference-observation quantile,True
+DiagonalScanPath_3,Diagonal,evaluation,4,target_15pct,0.15,293.7205806556136,294.9015209525281,0.15033986405437824,reference-observation quantile,True
+DiagonalScanPath_3,Diagonal,evaluation,5,target_20pct,0.2,293.5780237504657,294.9015209525281,0.20031987205117952,reference-observation quantile,True
+DiagonalScanPath_4,Diagonal,evaluation,0,reference,0.03,295.3585248883726,295.3585248883726,0.03078768492602959,frozen reference ceiling,True
+DiagonalScanPath_4,Diagonal,evaluation,1,target_5pct,0.05,294.8366822650531,295.3585248883726,0.05037984806077569,reference-observation quantile,True
+DiagonalScanPath_4,Diagonal,evaluation,2,target_7.5pct,0.075,294.3944477086342,295.3585248883726,0.07516993202718912,reference-observation quantile,True
+DiagonalScanPath_4,Diagonal,evaluation,3,target_10pct,0.1,294.1457971572278,295.3585248883726,0.10035985605757697,reference-observation quantile,True
+DiagonalScanPath_4,Diagonal,evaluation,4,target_15pct,0.15,293.7562075993655,295.3585248883726,0.15033986405437824,reference-observation quantile,True
+DiagonalScanPath_4,Diagonal,evaluation,5,target_20pct,0.2,293.5909668961615,295.3585248883726,0.20031987205117952,reference-observation quantile,True
+DiagonalScanPath_5,Diagonal,evaluation,0,reference,0.03,295.50866552712534,295.50866552712534,0.03158736505397841,frozen reference ceiling,True
+DiagonalScanPath_5,Diagonal,evaluation,1,target_5pct,0.05,295.02142272710296,295.50866552712534,0.05037984806077569,reference-observation quantile,True
+DiagonalScanPath_5,Diagonal,evaluation,2,target_7.5pct,0.075,294.5541047717835,295.50866552712534,0.07516993202718912,reference-observation quantile,True
+DiagonalScanPath_5,Diagonal,evaluation,3,target_10pct,0.1,294.20635056211137,295.50866552712534,0.10035985605757697,reference-observation quantile,True
+DiagonalScanPath_5,Diagonal,evaluation,4,target_15pct,0.15,293.7777767008382,295.50866552712534,0.15033986405437824,reference-observation quantile,True
+DiagonalScanPath_5,Diagonal,evaluation,5,target_20pct,0.2,293.61313791188536,295.50866552712534,0.20031987205117952,reference-observation quantile,True
+DiagonalScanPath_6,Diagonal,evaluation,0,reference,0.03,295.76268867732483,295.76268867732483,0.03078768492602959,frozen reference ceiling,True
+DiagonalScanPath_6,Diagonal,evaluation,1,target_5pct,0.05,295.11715899022414,295.76268867732483,0.05037984806077569,reference-observation quantile,True
+DiagonalScanPath_6,Diagonal,evaluation,2,target_7.5pct,0.075,294.57871152103627,295.76268867732483,0.07516993202718912,reference-observation quantile,True
+DiagonalScanPath_6,Diagonal,evaluation,3,target_10pct,0.1,294.23933668301055,295.76268867732483,0.10035985605757697,reference-observation quantile,True
+DiagonalScanPath_6,Diagonal,evaluation,4,target_15pct,0.15,293.78650329057746,295.76268867732483,0.15033986405437824,reference-observation quantile,True
+DiagonalScanPath_6,Diagonal,evaluation,5,target_20pct,0.2,293.60353964459557,295.76268867732483,0.20031987205117952,reference-observation quantile,True
+DiagonalScanPath_7,Diagonal,evaluation,0,reference,0.03,295.92680693793324,295.92680693793324,0.030387844862055178,frozen reference ceiling,True
+DiagonalScanPath_7,Diagonal,evaluation,1,target_5pct,0.05,295.2620578276572,295.92680693793324,0.05037984806077569,reference-observation quantile,True
+DiagonalScanPath_7,Diagonal,evaluation,2,target_7.5pct,0.075,294.7048056597936,295.92680693793324,0.07516993202718912,reference-observation quantile,True
+DiagonalScanPath_7,Diagonal,evaluation,3,target_10pct,0.1,294.33569524357466,295.92680693793324,0.10035985605757697,reference-observation quantile,True
+DiagonalScanPath_7,Diagonal,evaluation,4,target_15pct,0.15,293.83418214457384,295.92680693793324,0.15033986405437824,reference-observation quantile,True
+DiagonalScanPath_7,Diagonal,evaluation,5,target_20pct,0.2,293.6173844367176,295.92680693793324,0.20031987205117952,reference-observation quantile,True
+HorizontalScanPath_1,Horizontal,evaluation,0,reference,0.03,294.63123831934564,294.63123831934564,0.03198720511795282,frozen reference ceiling,True
+HorizontalScanPath_1,Horizontal,evaluation,1,target_5pct,0.05,294.20825640203134,294.63123831934564,0.05037984806077569,reference-observation quantile,True
+HorizontalScanPath_1,Horizontal,evaluation,2,target_7.5pct,0.075,293.8766937079928,294.63123831934564,0.07516993202718912,reference-observation quantile,True
+HorizontalScanPath_1,Horizontal,evaluation,3,target_10pct,0.1,293.7107319103548,294.63123831934564,0.10035985605757697,reference-observation quantile,True
+HorizontalScanPath_1,Horizontal,evaluation,4,target_15pct,0.15,293.5477392959682,294.63123831934564,0.15033986405437824,reference-observation quantile,True
+HorizontalScanPath_1,Horizontal,evaluation,5,target_20pct,0.2,293.467490349412,294.63123831934564,0.20031987205117952,reference-observation quantile,True
+HorizontalScanPath_10,Horizontal,evaluation,0,reference,0.03,296.06802208777685,296.06802208777685,0.032387045181927226,frozen reference ceiling,True
+HorizontalScanPath_10,Horizontal,evaluation,1,target_5pct,0.05,295.3981259555306,296.06802208777685,0.05037984806077569,reference-observation quantile,True
+HorizontalScanPath_10,Horizontal,evaluation,2,target_7.5pct,0.075,294.7999939677911,296.06802208777685,0.07516993202718912,reference-observation quantile,True
+HorizontalScanPath_10,Horizontal,evaluation,3,target_10pct,0.1,294.3373386020571,296.06802208777685,0.10035985605757697,reference-observation quantile,True
+HorizontalScanPath_10,Horizontal,evaluation,4,target_15pct,0.15,293.83778456263036,296.06802208777685,0.15033986405437824,reference-observation quantile,True
+HorizontalScanPath_10,Horizontal,evaluation,5,target_20pct,0.2,293.62960180924995,296.06802208777685,0.20031987205117952,reference-observation quantile,True
+HorizontalScanPath_11,Horizontal,evaluation,0,reference,0.03,296.2091569703494,296.2091569703494,0.02958816473410636,frozen reference ceiling,True
+HorizontalScanPath_11,Horizontal,evaluation,1,target_5pct,0.05,295.5002842656077,296.2091569703494,0.05037984806077569,reference-observation quantile,True
+HorizontalScanPath_11,Horizontal,evaluation,2,target_7.5pct,0.075,294.833434067864,296.2091569703494,0.07516993202718912,reference-observation quantile,True
+HorizontalScanPath_11,Horizontal,evaluation,3,target_10pct,0.1,294.3930801694012,296.2091569703494,0.10035985605757697,reference-observation quantile,True
+HorizontalScanPath_11,Horizontal,evaluation,4,target_15pct,0.15,293.84240367584505,296.2091569703494,0.15033986405437824,reference-observation quantile,True
+HorizontalScanPath_11,Horizontal,evaluation,5,target_20pct,0.2,293.6310259178298,296.2091569703494,0.20031987205117952,reference-observation quantile,True
+HorizontalScanPath_12,Horizontal,evaluation,0,reference,0.03,296.3525815864646,296.3525815864646,0.031187524990004,frozen reference ceiling,True
+HorizontalScanPath_12,Horizontal,evaluation,1,target_5pct,0.05,295.5117739642993,296.3525815864646,0.05037984806077569,reference-observation quantile,True
+HorizontalScanPath_12,Horizontal,evaluation,2,target_7.5pct,0.075,294.83624071802836,296.3525815864646,0.07516993202718912,reference-observation quantile,True
+HorizontalScanPath_12,Horizontal,evaluation,3,target_10pct,0.1,294.4165744542677,296.3525815864646,0.10035985605757697,reference-observation quantile,True
+HorizontalScanPath_12,Horizontal,evaluation,4,target_15pct,0.15,293.8367590268282,296.3525815864646,0.15033986405437824,reference-observation quantile,True
+HorizontalScanPath_12,Horizontal,evaluation,5,target_20pct,0.2,293.6302867036322,296.3525815864646,0.20031987205117952,reference-observation quantile,True
+HorizontalScanPath_2,Horizontal,evaluation,0,reference,0.03,294.6301695664475,294.6301695664475,0.03078768492602959,frozen reference ceiling,True
+HorizontalScanPath_2,Horizontal,evaluation,1,target_5pct,0.05,294.22403029012474,294.6301695664475,0.05037984806077569,reference-observation quantile,True
+HorizontalScanPath_2,Horizontal,evaluation,2,target_7.5pct,0.075,293.9594393672763,294.6301695664475,0.07516993202718912,reference-observation quantile,True
+HorizontalScanPath_2,Horizontal,evaluation,3,target_10pct,0.1,293.79292587499856,294.6301695664475,0.10035985605757697,reference-observation quantile,True
+HorizontalScanPath_2,Horizontal,evaluation,4,target_15pct,0.15,293.63062672885263,294.6301695664475,0.15033986405437824,reference-observation quantile,True
+HorizontalScanPath_2,Horizontal,evaluation,5,target_20pct,0.2,293.51252355739297,294.6301695664475,0.20031987205117952,reference-observation quantile,True
+HorizontalScanPath_3,Horizontal,evaluation,0,reference,0.03,294.64317213251667,294.64317213251667,0.03278688524590164,frozen reference ceiling,True
+HorizontalScanPath_3,Horizontal,evaluation,1,target_5pct,0.05,294.35397682553565,294.64317213251667,0.05037984806077569,reference-observation quantile,True
+HorizontalScanPath_3,Horizontal,evaluation,2,target_7.5pct,0.075,294.1414057042616,294.64317213251667,0.07516993202718912,reference-observation quantile,True
+HorizontalScanPath_3,Horizontal,evaluation,3,target_10pct,0.1,293.97957998763076,294.64317213251667,0.10035985605757697,reference-observation quantile,True
+HorizontalScanPath_3,Horizontal,evaluation,4,target_15pct,0.15,293.7123360864242,294.64317213251667,0.15033986405437824,reference-observation quantile,True
+HorizontalScanPath_3,Horizontal,evaluation,5,target_20pct,0.2,293.5700691517091,294.64317213251667,0.20031987205117952,reference-observation quantile,True
+HorizontalScanPath_4,Horizontal,evaluation,0,reference,0.03,294.825260500259,294.825260500259,0.03358656537385046,frozen reference ceiling,True
+HorizontalScanPath_4,Horizontal,evaluation,1,target_5pct,0.05,294.57853355406934,294.825260500259,0.05037984806077569,reference-observation quantile,True
+HorizontalScanPath_4,Horizontal,evaluation,2,target_7.5pct,0.075,294.29760848374445,294.825260500259,0.07516993202718912,reference-observation quantile,True
+HorizontalScanPath_4,Horizontal,evaluation,3,target_10pct,0.1,294.11780144176737,294.825260500259,0.10035985605757697,reference-observation quantile,True
+HorizontalScanPath_4,Horizontal,evaluation,4,target_15pct,0.15,293.7458650854788,294.825260500259,0.15033986405437824,reference-observation quantile,True
+HorizontalScanPath_4,Horizontal,evaluation,5,target_20pct,0.2,293.57098562168835,294.825260500259,0.20031987205117952,reference-observation quantile,True
+HorizontalScanPath_5,Horizontal,evaluation,0,reference,0.03,295.0840552279015,295.0840552279015,0.031187524990004,frozen reference ceiling,True
+HorizontalScanPath_5,Horizontal,evaluation,1,target_5pct,0.05,294.74149853334137,295.0840552279015,0.05037984806077569,reference-observation quantile,True
+HorizontalScanPath_5,Horizontal,evaluation,2,target_7.5pct,0.075,294.4225915096562,295.0840552279015,0.07516993202718912,reference-observation quantile,True
+HorizontalScanPath_5,Horizontal,evaluation,3,target_10pct,0.1,294.1129402509706,295.0840552279015,0.10035985605757697,reference-observation quantile,True
+HorizontalScanPath_5,Horizontal,evaluation,4,target_15pct,0.15,293.7185814015664,295.0840552279015,0.15033986405437824,reference-observation quantile,True
+HorizontalScanPath_5,Horizontal,evaluation,5,target_20pct,0.2,293.5813835425857,295.0840552279015,0.20031987205117952,reference-observation quantile,True
+HorizontalScanPath_6,Horizontal,evaluation,0,reference,0.03,295.31752139540873,295.31752139540873,0.032387045181927226,frozen reference ceiling,True
+HorizontalScanPath_6,Horizontal,evaluation,1,target_5pct,0.05,294.85680519560503,295.31752139540873,0.05037984806077569,reference-observation quantile,True
+HorizontalScanPath_6,Horizontal,evaluation,2,target_7.5pct,0.075,294.4711950726978,295.31752139540873,0.07516993202718912,reference-observation quantile,True
+HorizontalScanPath_6,Horizontal,evaluation,3,target_10pct,0.1,294.14832222379135,295.31752139540873,0.10035985605757697,reference-observation quantile,True
+HorizontalScanPath_6,Horizontal,evaluation,4,target_15pct,0.15,293.7528770240489,295.31752139540873,0.15033986405437824,reference-observation quantile,True
+HorizontalScanPath_6,Horizontal,evaluation,5,target_20pct,0.2,293.58608801232094,295.31752139540873,0.20031987205117952,reference-observation quantile,True
+HorizontalScanPath_7,Horizontal,evaluation,0,reference,0.03,295.52522559779794,295.52522559779794,0.032387045181927226,frozen reference ceiling,True
+HorizontalScanPath_7,Horizontal,evaluation,1,target_5pct,0.05,295.0182770061354,295.52522559779794,0.05037984806077569,reference-observation quantile,True
+HorizontalScanPath_7,Horizontal,evaluation,2,target_7.5pct,0.075,294.5764558215017,295.52522559779794,0.07516993202718912,reference-observation quantile,True
+HorizontalScanPath_7,Horizontal,evaluation,3,target_10pct,0.1,294.1967295706152,295.52522559779794,0.10035985605757697,reference-observation quantile,True
+HorizontalScanPath_7,Horizontal,evaluation,4,target_15pct,0.15,293.75988045814535,295.52522559779794,0.15033986405437824,reference-observation quantile,True
+HorizontalScanPath_7,Horizontal,evaluation,5,target_20pct,0.2,293.58216932464046,295.52522559779794,0.20031987205117952,reference-observation quantile,True
+HorizontalScanPath_8,Horizontal,evaluation,0,reference,0.03,295.71434881764065,295.71434881764065,0.032387045181927226,frozen reference ceiling,True
+HorizontalScanPath_8,Horizontal,evaluation,1,target_5pct,0.05,295.1877028582759,295.71434881764065,0.05037984806077569,reference-observation quantile,True
+HorizontalScanPath_8,Horizontal,evaluation,2,target_7.5pct,0.075,294.5977749294631,295.71434881764065,0.07516993202718912,reference-observation quantile,True
+HorizontalScanPath_8,Horizontal,evaluation,3,target_10pct,0.1,294.233881730295,295.71434881764065,0.10035985605757697,reference-observation quantile,True
+HorizontalScanPath_8,Horizontal,evaluation,4,target_15pct,0.15,293.7822010693023,295.71434881764065,0.15033986405437824,reference-observation quantile,True
+HorizontalScanPath_8,Horizontal,evaluation,5,target_20pct,0.2,293.58969660600656,295.71434881764065,0.20031987205117952,reference-observation quantile,True
+SpiralScanPath_1,Spiral,evaluation,0,reference,0.03,294.5644045668491,294.5644045668491,0.03078768492602959,frozen reference ceiling,True
+SpiralScanPath_1,Spiral,evaluation,1,target_5pct,0.05,293.81331409404754,294.5644045668491,0.05037984806077569,reference-observation quantile,True
+SpiralScanPath_1,Spiral,evaluation,2,target_7.5pct,0.075,293.6415574661454,294.5644045668491,0.07516993202718912,reference-observation quantile,True
+SpiralScanPath_1,Spiral,evaluation,3,target_10pct,0.1,293.5620598731056,294.5644045668491,0.10035985605757697,reference-observation quantile,True
+SpiralScanPath_1,Spiral,evaluation,4,target_15pct,0.15,293.46890644977,294.5644045668491,0.15033986405437824,reference-observation quantile,True
+SpiralScanPath_1,Spiral,evaluation,5,target_20pct,0.2,293.4040758119578,294.5644045668491,0.20031987205117952,reference-observation quantile,True
+SpiralScanPath_10,Spiral,evaluation,0,reference,0.03,296.24464913741537,296.24464913741537,0.03198720511795282,frozen reference ceiling,True
+SpiralScanPath_10,Spiral,evaluation,1,target_5pct,0.05,295.8578970294162,296.24464913741537,0.05037984806077569,reference-observation quantile,True
+SpiralScanPath_10,Spiral,evaluation,2,target_7.5pct,0.075,295.49248252229785,296.24464913741537,0.07516993202718912,reference-observation quantile,True
+SpiralScanPath_10,Spiral,evaluation,3,target_10pct,0.1,295.10487498826063,296.24464913741537,0.10035985605757697,reference-observation quantile,True
+SpiralScanPath_10,Spiral,evaluation,4,target_15pct,0.15,293.8718879236406,296.24464913741537,0.15033986405437824,reference-observation quantile,True
+SpiralScanPath_10,Spiral,evaluation,5,target_20pct,0.2,293.6064974707694,296.24464913741537,0.20031987205117952,reference-observation quantile,True
+SpiralScanPath_11,Spiral,evaluation,0,reference,0.03,296.3525026623504,296.3525026623504,0.03278688524590164,frozen reference ceiling,True
+SpiralScanPath_11,Spiral,evaluation,1,target_5pct,0.05,295.9246814710634,296.3525026623504,0.05037984806077569,reference-observation quantile,True
+SpiralScanPath_11,Spiral,evaluation,2,target_7.5pct,0.075,295.58043247639444,296.3525026623504,0.07516993202718912,reference-observation quantile,True
+SpiralScanPath_11,Spiral,evaluation,3,target_10pct,0.1,295.1876502234943,296.3525026623504,0.10035985605757697,reference-observation quantile,True
+SpiralScanPath_11,Spiral,evaluation,4,target_15pct,0.15,293.9572135185845,296.3525026623504,0.15033986405437824,reference-observation quantile,True
+SpiralScanPath_11,Spiral,evaluation,5,target_20pct,0.2,293.6317176082199,296.3525026623504,0.20031987205117952,reference-observation quantile,True
+SpiralScanPath_12,Spiral,evaluation,0,reference,0.03,296.4285472031083,296.4285472031083,0.03078768492602959,frozen reference ceiling,True
+SpiralScanPath_12,Spiral,evaluation,1,target_5pct,0.05,296.0291877165216,296.4285472031083,0.05037984806077569,reference-observation quantile,True
+SpiralScanPath_12,Spiral,evaluation,2,target_7.5pct,0.075,295.6971924070116,296.4285472031083,0.07516993202718912,reference-observation quantile,True
+SpiralScanPath_12,Spiral,evaluation,3,target_10pct,0.1,295.2895117716579,296.4285472031083,0.10035985605757697,reference-observation quantile,True
+SpiralScanPath_12,Spiral,evaluation,4,target_15pct,0.15,293.99747057118356,296.4285472031083,0.15033986405437824,reference-observation quantile,True
+SpiralScanPath_12,Spiral,evaluation,5,target_20pct,0.2,293.6695071355875,296.4285472031083,0.20031987205117952,reference-observation quantile,True
+SpiralScanPath_2,Spiral,evaluation,0,reference,0.03,294.77953556616137,294.77953556616137,0.03078768492602959,frozen reference ceiling,True
+SpiralScanPath_2,Spiral,evaluation,1,target_5pct,0.05,294.3823330803093,294.77953556616137,0.05037984806077569,reference-observation quantile,True
+SpiralScanPath_2,Spiral,evaluation,2,target_7.5pct,0.075,294.01754742628884,294.77953556616137,0.07516993202718912,reference-observation quantile,True
+SpiralScanPath_2,Spiral,evaluation,3,target_10pct,0.1,293.71529417871386,294.77953556616137,0.10035985605757697,reference-observation quantile,True
+SpiralScanPath_2,Spiral,evaluation,4,target_15pct,0.15,293.54137779612887,294.77953556616137,0.15033986405437824,reference-observation quantile,True
+SpiralScanPath_2,Spiral,evaluation,5,target_20pct,0.2,293.45303391426967,294.77953556616137,0.20031987205117952,reference-observation quantile,True
+SpiralScanPath_3,Spiral,evaluation,0,reference,0.03,295.09034972544174,295.09034972544174,0.03358656537385046,frozen reference ceiling,True
+SpiralScanPath_3,Spiral,evaluation,1,target_5pct,0.05,294.80104010070636,295.09034972544174,0.05037984806077569,reference-observation quantile,True
+SpiralScanPath_3,Spiral,evaluation,2,target_7.5pct,0.075,294.4608192919309,295.09034972544174,0.07516993202718912,reference-observation quantile,True
+SpiralScanPath_3,Spiral,evaluation,3,target_10pct,0.1,293.8391900019463,295.09034972544174,0.10035985605757697,reference-observation quantile,True
+SpiralScanPath_3,Spiral,evaluation,4,target_15pct,0.15,293.5693748304214,295.09034972544174,0.15033986405437824,reference-observation quantile,True
+SpiralScanPath_3,Spiral,evaluation,5,target_20pct,0.2,293.4810768600913,295.09034972544174,0.20031987205117952,reference-observation quantile,True
+SpiralScanPath_4,Spiral,evaluation,0,reference,0.03,295.3171456785458,295.3171456785458,0.03158736505397841,frozen reference ceiling,True
+SpiralScanPath_4,Spiral,evaluation,1,target_5pct,0.05,294.9692967151779,295.3171456785458,0.05037984806077569,reference-observation quantile,True
+SpiralScanPath_4,Spiral,evaluation,2,target_7.5pct,0.075,294.6082531826162,295.3171456785458,0.07516993202718912,reference-observation quantile,True
+SpiralScanPath_4,Spiral,evaluation,3,target_10pct,0.1,294.0975421718707,295.3171456785458,0.10035985605757697,reference-observation quantile,True
+SpiralScanPath_4,Spiral,evaluation,4,target_15pct,0.15,293.6170569605893,295.3171456785458,0.15033986405437824,reference-observation quantile,True
+SpiralScanPath_4,Spiral,evaluation,5,target_20pct,0.2,293.49912122276544,295.3171456785458,0.20031987205117952,reference-observation quantile,True
+SpiralScanPath_5,Spiral,evaluation,0,reference,0.03,295.5160834229293,295.5160834229293,0.032387045181927226,frozen reference ceiling,True
+SpiralScanPath_5,Spiral,evaluation,1,target_5pct,0.05,295.2163230791929,295.5160834229293,0.05037984806077569,reference-observation quantile,True
+SpiralScanPath_5,Spiral,evaluation,2,target_7.5pct,0.075,294.9057944632607,295.5160834229293,0.07516993202718912,reference-observation quantile,True
+SpiralScanPath_5,Spiral,evaluation,3,target_10pct,0.1,294.3423585387524,295.5160834229293,0.10035985605757697,reference-observation quantile,True
+SpiralScanPath_5,Spiral,evaluation,4,target_15pct,0.15,293.65429490749705,295.5160834229293,0.15033986405437824,reference-observation quantile,True
+SpiralScanPath_5,Spiral,evaluation,5,target_20pct,0.2,293.5169731858883,295.5160834229293,0.20031987205117952,reference-observation quantile,True
+SpiralScanPath_6,Spiral,evaluation,0,reference,0.03,295.69040467376334,295.69040467376334,0.032387045181927226,frozen reference ceiling,True
+SpiralScanPath_6,Spiral,evaluation,1,target_5pct,0.05,295.3705958720671,295.69040467376334,0.05037984806077569,reference-observation quantile,True
+SpiralScanPath_6,Spiral,evaluation,2,target_7.5pct,0.075,295.07212329937147,295.69040467376334,0.07516993202718912,reference-observation quantile,True
+SpiralScanPath_6,Spiral,evaluation,3,target_10pct,0.1,294.48598287469855,295.69040467376334,0.10035985605757697,reference-observation quantile,True
+SpiralScanPath_6,Spiral,evaluation,4,target_15pct,0.15,293.69271871887213,295.69040467376334,0.15033986405437824,reference-observation quantile,True
+SpiralScanPath_6,Spiral,evaluation,5,target_20pct,0.2,293.5462216854871,295.69040467376334,0.20031987205117952,reference-observation quantile,True
+SpiralScanPath_7,Spiral,evaluation,0,reference,0.03,295.8140795498944,295.8140795498944,0.03318672530987605,frozen reference ceiling,True
+SpiralScanPath_7,Spiral,evaluation,1,target_5pct,0.05,295.50488495420535,295.8140795498944,0.05037984806077569,reference-observation quantile,True
+SpiralScanPath_7,Spiral,evaluation,2,target_7.5pct,0.075,295.1355468103287,295.8140795498944,0.07516993202718912,reference-observation quantile,True
+SpiralScanPath_7,Spiral,evaluation,3,target_10pct,0.1,294.70835430749145,295.8140795498944,0.10035985605757697,reference-observation quantile,True
+SpiralScanPath_7,Spiral,evaluation,4,target_15pct,0.15,293.7162576554685,295.8140795498944,0.15033986405437824,reference-observation quantile,True
+SpiralScanPath_7,Spiral,evaluation,5,target_20pct,0.2,293.5401773875542,295.8140795498944,0.20031987205117952,reference-observation quantile,True
+SpiralScanPath_8,Spiral,evaluation,0,reference,0.03,295.9806504909343,295.9806504909343,0.03438624550179928,frozen reference ceiling,True
+SpiralScanPath_8,Spiral,evaluation,1,target_5pct,0.05,295.5992006256562,295.9806504909343,0.05037984806077569,reference-observation quantile,True
+SpiralScanPath_8,Spiral,evaluation,2,target_7.5pct,0.075,295.245009257165,295.9806504909343,0.07516993202718912,reference-observation quantile,True
+SpiralScanPath_8,Spiral,evaluation,3,target_10pct,0.1,294.88315437906476,295.9806504909343,0.10035985605757697,reference-observation quantile,True
+SpiralScanPath_8,Spiral,evaluation,4,target_15pct,0.15,293.7897867473018,295.9806504909343,0.15033986405437824,reference-observation quantile,True
+SpiralScanPath_8,Spiral,evaluation,5,target_20pct,0.2,293.5764784272881,295.9806504909343,0.20031987205117952,reference-observation quantile,True
+SpiralScanPath_9,Spiral,evaluation,0,reference,0.03,296.12811830237854,296.12811830237854,0.03198720511795282,frozen reference ceiling,True
+SpiralScanPath_9,Spiral,evaluation,1,target_5pct,0.05,295.7760414906734,296.12811830237854,0.05037984806077569,reference-observation quantile,True
+SpiralScanPath_9,Spiral,evaluation,2,target_7.5pct,0.075,295.38426676489865,296.12811830237854,0.07516993202718912,reference-observation quantile,True
+SpiralScanPath_9,Spiral,evaluation,3,target_10pct,0.1,294.9675304020563,296.12811830237854,0.10035985605757697,reference-observation quantile,True
+SpiralScanPath_9,Spiral,evaluation,4,target_15pct,0.15,293.8488013243716,296.12811830237854,0.15033986405437824,reference-observation quantile,True
+SpiralScanPath_9,Spiral,evaluation,5,target_20pct,0.2,293.6047920369698,296.12811830237854,0.20031987205117952,reference-observation quantile,True

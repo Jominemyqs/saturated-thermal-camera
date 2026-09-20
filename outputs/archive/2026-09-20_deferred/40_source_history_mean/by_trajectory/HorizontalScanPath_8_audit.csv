@@ -1,0 +1,11 @@
+trajectory,metric,saved_experiment38,reproduced,absolute_difference
+HorizontalScanPath_8,field_excess_rel_l2,0.5536926079655902,0.5536926079655902,0.0
+HorizontalScanPath_8,overall_rmse_K,0.6110724535761397,0.6110724535761397,0.0
+HorizontalScanPath_8,overall_crps_K,0.2415849243590362,0.24158492435903411,2.0816681711721685e-15
+HorizontalScanPath_8,top_1pct_rmse_K,2.9447744952496553,2.9447744952496553,0.0
+HorizontalScanPath_8,top_1pct_mae_K,2.317799815755559,2.317799815755559,0.0
+HorizontalScanPath_8,top_1pct_bias_K,0.3511113192456991,0.35111131924569916,5.551115123125783e-17
+HorizontalScanPath_8,top_1pct_crps_K,1.6067719855210094,1.606771985521004,5.329070518200751e-15
+HorizontalScanPath_8,top_1pct_coverage_95,0.88,0.88,0.0
+HorizontalScanPath_8,top_1pct_width_95_K,7.370078962797936,7.370078962797936,0.0
+HorizontalScanPath_8,peak_absolute_error_K,8.85138740247254,8.85138740247254,0.0

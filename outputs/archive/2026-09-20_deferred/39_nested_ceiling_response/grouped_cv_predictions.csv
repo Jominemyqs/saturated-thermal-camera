@@ -1,0 +1,605 @@
+trajectory,pixel_index,target,model,observed_target_K,predicted_target_K
+DiagonalScanPath_8,1069,known measurement,single-threshold features,0.16790386895428355,0.022052700947396475
+DiagonalScanPath_8,1072,known measurement,single-threshold features,0.20508724153791036,0.15807855298621754
+DiagonalScanPath_8,1073,known measurement,single-threshold features,0.12401694884965764,0.1643374384273959
+DiagonalScanPath_8,1129,known measurement,single-threshold features,0.2770496969928331,0.08184318499781201
+DiagonalScanPath_8,1130,known measurement,single-threshold features,0.04372519514964779,0.10788879218016278
+DiagonalScanPath_8,1131,known measurement,single-threshold features,0.2374341513477134,0.300909500855836
+DiagonalScanPath_8,1132,known measurement,single-threshold features,0.17624314503029836,0.3893588979011613
+DiagonalScanPath_8,1133,known measurement,single-threshold features,0.2530270822388161,0.35627036713759114
+DiagonalScanPath_8,1134,known measurement,single-threshold features,0.6204704228098308,0.3310877921520623
+DiagonalScanPath_8,1135,known measurement,single-threshold features,0.2370013750365274,0.2671805935313001
+DiagonalScanPath_8,1191,known measurement,single-threshold features,0.1695809653787137,0.33089538798647444
+DiagonalScanPath_8,1192,known measurement,single-threshold features,0.056643963737030845,0.4436145674208206
+DiagonalScanPath_8,1194,known measurement,single-threshold features,0.5620508366208696,0.5001712858656424
+DiagonalScanPath_8,1195,known measurement,single-threshold features,0.6498222214556222,0.47484315336176464
+DiagonalScanPath_8,1196,known measurement,single-threshold features,0.7506614088337074,0.39283163067708066
+DiagonalScanPath_8,1197,known measurement,single-threshold features,0.5902313788051856,0.23046557009054974
+DiagonalScanPath_8,1252,known measurement,single-threshold features,0.07772070569740208,0.3710761067479367
+DiagonalScanPath_8,1253,known measurement,single-threshold features,0.16877579631301387,0.5243088948742118
+DiagonalScanPath_8,1254,known measurement,single-threshold features,0.6099398824469517,0.5841034929570221
+DiagonalScanPath_8,1255,known measurement,single-threshold features,0.7030758625990075,0.5905107225923559
+DiagonalScanPath_8,1258,known measurement,single-threshold features,0.7180713157536616,0.3213582801653107
+DiagonalScanPath_8,1259,known measurement,single-threshold features,0.08693152318420516,0.15189723948791684
+DiagonalScanPath_8,1311,known measurement,single-threshold features,0.5028425376722225,0.1737609088425984
+DiagonalScanPath_8,1312,known measurement,single-threshold features,0.745732804074521,0.28798267604036676
+DiagonalScanPath_8,1313,known measurement,single-threshold features,0.36775339211732216,0.4675612439744621
+DiagonalScanPath_8,1314,known measurement,single-threshold features,0.6331790300430953,0.5271102485971557
+DiagonalScanPath_8,1371,known measurement,single-threshold features,0.19961715958669402,0.21234934732166832
+DiagonalScanPath_8,1372,known measurement,single-threshold features,0.5928454368403209,0.33543950649825544
+DiagonalScanPath_8,1373,known measurement,single-threshold features,0.4445222280928647,0.4430945959617882
+DiagonalScanPath_8,1381,known measurement,single-threshold features,0.09760819676017718,0.2834245788267338
+DiagonalScanPath_8,1430,known measurement,single-threshold features,0.00936409106333258,0.06526396817662766
+DiagonalScanPath_8,1433,known measurement,single-threshold features,0.5690161711006567,0.44499302207878916
+DiagonalScanPath_8,1442,known measurement,single-threshold features,0.017571373162297732,0.33438067461276333
+DiagonalScanPath_8,1491,known measurement,single-threshold features,0.7044170681587048,0.1873901662317423
+DiagonalScanPath_8,1492,known measurement,single-threshold features,0.2171832572025778,0.3456656445867048
+DiagonalScanPath_8,1551,known measurement,single-threshold features,0.3392203683154662,0.11657394799608789
+DiagonalScanPath_8,1553,known measurement,single-threshold features,0.549438840384255,0.41900477363755356
+DiagonalScanPath_8,1613,known measurement,single-threshold features,0.11439374021796311,0.25704724592399814
+DiagonalScanPath_8,1614,known measurement,single-threshold features,0.521955288177935,0.42290926827601727
+DiagonalScanPath_8,1674,known measurement,single-threshold features,0.145801140984247,0.15130512167656895
+DiagonalScanPath_8,1675,known measurement,single-threshold features,0.33821788125470675,0.31577452977018317
+DiagonalScanPath_8,1676,known measurement,single-threshold features,0.6758705000952432,0.4217813366679425
+DiagonalScanPath_8,1737,known measurement,single-threshold features,0.031402548119331186,0.248683895131142
+DiagonalScanPath_8,1738,known measurement,single-threshold features,0.6088634052681527,0.31942578245685527
+DiagonalScanPath_8,1747,known measurement,single-threshold features,0.03602088526457692,2.4253443025850605
+DiagonalScanPath_8,1797,known measurement,single-threshold features,0.10926397391892806,0.02729900343453323
+DiagonalScanPath_8,1802,known measurement,single-threshold features,0.513390235057102,0.29829968068637924
+HorizontalScanPath_13,1249,known measurement,single-threshold features,0.11591562271394196,0.20327176095295754
+HorizontalScanPath_13,1251,known measurement,single-threshold features,0.3938576934404523,0.11614027118730952
+HorizontalScanPath_13,1307,known measurement,single-threshold features,0.04788257168797827,0.24207838427934522
+HorizontalScanPath_13,1308,known measurement,single-threshold features,0.23504019058276526,0.1671002412592184
+HorizontalScanPath_13,1310,known measurement,single-threshold features,0.20080252603418103,0.2887146751027745
+HorizontalScanPath_13,1314,known measurement,single-threshold features,0.15196157343046934,0.28125117724126697
+HorizontalScanPath_13,1315,known measurement,single-threshold features,0.08538049730674402,0.16822537553624659
+HorizontalScanPath_13,1367,known measurement,single-threshold features,0.2386289474891896,0.27311200818919457
+HorizontalScanPath_13,1368,known measurement,single-threshold features,0.22324837949037146,0.31190961259203054
+HorizontalScanPath_13,1370,known measurement,single-threshold features,0.3142363023470125,0.34197773973630236
+HorizontalScanPath_13,1371,known measurement,single-threshold features,0.2345081110557885,0.3397641647254854
+HorizontalScanPath_13,1372,known measurement,single-threshold features,0.2671298453738018,0.331059307197207
+HorizontalScanPath_13,1373,known measurement,single-threshold features,0.4712772027178289,0.3337865268887348
+HorizontalScanPath_13,1374,known measurement,single-threshold features,0.4368213378712653,0.33571126613605295
+HorizontalScanPath_13,1375,known measurement,single-threshold features,0.28262561090400595,0.3351113917385823
+HorizontalScanPath_13,1376,known measurement,single-threshold features,0.2897001602702858,0.3021605404010621
+HorizontalScanPath_13,1377,known measurement,single-threshold features,0.30632149151836074,0.19936875716582614
+HorizontalScanPath_13,1378,known measurement,single-threshold features,0.09441063314761777,0.13294004097002787
+HorizontalScanPath_13,1426,known measurement,single-threshold features,0.020524242743022114,0.12211304452211835
+HorizontalScanPath_13,1428,known measurement,single-threshold features,0.5841836302365095,0.33196556841491853
+HorizontalScanPath_13,1429,known measurement,single-threshold features,0.5224544235284156,0.3518499197556159
+HorizontalScanPath_13,1430,known measurement,single-threshold features,0.8443464717251459,0.3766019804418385
+HorizontalScanPath_13,1431,known measurement,single-threshold features,0.5209140017940399,0.37328139295055884
+HorizontalScanPath_13,1432,known measurement,single-threshold features,0.6501033802327356,0.3650067227239352
+HorizontalScanPath_13,1433,known measurement,single-threshold features,0.7850805245518586,0.36652937861333984
+HorizontalScanPath_13,1435,known measurement,single-threshold features,0.6347599618880508,0.36484209123542277
+HorizontalScanPath_13,1436,known measurement,single-threshold features,0.8765021923577478,0.36637070403297695
+HorizontalScanPath_13,1437,known measurement,single-threshold features,0.7797965025761187,0.34686969079229896
+HorizontalScanPath_13,1438,known measurement,single-threshold features,0.16647999363749477,0.22953176442533488
+HorizontalScanPath_13,1487,known measurement,single-threshold features,0.003365585734400156,0.2774539754938175
+HorizontalScanPath_13,1488,known measurement,single-threshold features,0.23096419391873724,0.3265909140403037
+HorizontalScanPath_13,1490,known measurement,single-threshold features,0.59882275006089,0.36562353958589583
+HorizontalScanPath_13,1491,known measurement,single-threshold features,0.7327104229644874,0.38219598445784503
+HorizontalScanPath_13,1492,known measurement,single-threshold features,0.8711778898522766,0.38047542575714366
+HorizontalScanPath_13,1497,known measurement,single-threshold features,0.855053204709975,0.39132629618198256
+HorizontalScanPath_13,1499,known measurement,single-threshold features,0.6293915423671592,0.35623746137856155
+HorizontalScanPath_13,1501,known measurement,single-threshold features,0.2650508924493806,0.1660831988369677
+HorizontalScanPath_13,1548,known measurement,single-threshold features,0.29275256300070396,0.30909987506956527
+HorizontalScanPath_13,1550,known measurement,single-threshold features,0.920891765779686,0.38152170300394744
+HorizontalScanPath_13,1551,known measurement,single-threshold features,0.7708381222330445,0.38007321453878296
+HorizontalScanPath_13,1560,known measurement,single-threshold features,0.8944940780319257,0.36560926935396043
+HorizontalScanPath_13,1609,known measurement,single-threshold features,0.46662749861138764,0.31692879861596057
+HorizontalScanPath_13,1624,known measurement,single-threshold features,0.8735414882909254,0.26853471137725476
+HorizontalScanPath_13,1686,known measurement,single-threshold features,0.0769471421016874,0.12640137378790783
+HorizontalScanPath_13,1803,known measurement,single-threshold features,0.948700646605289,0.26155373117399494
+HorizontalScanPath_13,1804,known measurement,single-threshold features,0.926969824953062,0.26060683441674215
+HorizontalScanPath_13,1805,known measurement,single-threshold features,0.6007129840092489,0.2599872810966434
+HorizontalScanPath_13,1806,known measurement,single-threshold features,0.20311477553872237,0.245603852020436
+SpiralScanPath_13,699,known measurement,single-threshold features,0.019805499530320958,0.34748190758976305
+SpiralScanPath_13,701,known measurement,single-threshold features,0.33647568311147324,0.3677985625813315
+SpiralScanPath_13,702,known measurement,single-threshold features,0.3921368970330832,0.3650249523809355
+SpiralScanPath_13,703,known measurement,single-threshold features,0.17725016264881788,0.3632492575265399
+SpiralScanPath_13,817,known measurement,single-threshold features,0.28253646083669537,0.34425508796631427
+SpiralScanPath_13,891,known measurement,single-threshold features,0.3432773845825068,0.3502280360640186
+SpiralScanPath_13,938,known measurement,single-threshold features,0.3851431263369136,0.254199423634878
+SpiralScanPath_13,943,known measurement,single-threshold features,0.13745854959023518,0.4230514113612308
+SpiralScanPath_13,944,known measurement,single-threshold features,0.09398994364966029,0.2438631947497068
+SpiralScanPath_13,946,known measurement,single-threshold features,0.056436960020334936,0.2513076721949794
+SpiralScanPath_13,948,known measurement,single-threshold features,0.0505238508912953,0.45231611501467334
+SpiralScanPath_13,1003,known measurement,single-threshold features,0.06156803910215558,0.43040193746372574
+SpiralScanPath_13,1010,known measurement,single-threshold features,0.1801208065235187,0.29574752579313374
+SpiralScanPath_13,1059,known measurement,single-threshold features,0.04173256551979421,0.3857286249214072
+SpiralScanPath_13,1061,known measurement,single-threshold features,0.26753255673423837,0.509109042708006
+SpiralScanPath_13,1062,known measurement,single-threshold features,0.3471841387428185,0.48933624254004704
+SpiralScanPath_13,1069,known measurement,single-threshold features,0.06636528753244875,0.1463084596878564
+SpiralScanPath_13,1070,known measurement,single-threshold features,0.19390856963838132,0.1291260756967986
+SpiralScanPath_13,1120,known measurement,single-threshold features,0.009116238288129352,0.39595657494570546
+SpiralScanPath_13,1123,known measurement,single-threshold features,0.2850976040908222,0.4495762939167501
+SpiralScanPath_13,1124,known measurement,single-threshold features,0.31397406290318486,0.38366257166019707
+SpiralScanPath_13,1134,known measurement,single-threshold features,0.23928714195551493,0.2810140468191377
+SpiralScanPath_13,1181,known measurement,single-threshold features,0.26819818655508243,0.4025866336081092
+SpiralScanPath_13,1182,known measurement,single-threshold features,0.36985338089380093,0.4855089315314753
+SpiralScanPath_13,1184,known measurement,single-threshold features,0.19606571148574403,0.19707558510581102
+SpiralScanPath_13,1194,known measurement,single-threshold features,0.009075263109764364,0.19506068845101784
+SpiralScanPath_13,1242,known measurement,single-threshold features,0.041040193799744884,0.40468282462760513
+SpiralScanPath_13,1244,known measurement,single-threshold features,0.2910610934101783,0.45255706455500344
+SpiralScanPath_13,1255,known measurement,single-threshold features,0.02351797853395965,0.12516978398266404
+SpiralScanPath_13,1303,known measurement,single-threshold features,0.1913900205153709,0.38650334500426275
+SpiralScanPath_13,1304,known measurement,single-threshold features,0.3861894646145174,0.47615756640912077
+SpiralScanPath_13,1306,known measurement,single-threshold features,0.2569261867096202,0.23773304554279484
+SpiralScanPath_13,1364,known measurement,single-threshold features,0.1272594419939992,0.24182116498908687
+SpiralScanPath_13,1365,known measurement,single-threshold features,0.3408955067287138,0.45645738793631596
+SpiralScanPath_13,1366,known measurement,single-threshold features,0.14439769503866273,0.4588711680038238
+SpiralScanPath_13,1367,known measurement,single-threshold features,0.13947778858988613,0.2764272535183948
+SpiralScanPath_13,1426,known measurement,single-threshold features,0.24293030900884105,0.40856773277068087
+SpiralScanPath_13,1427,known measurement,single-threshold features,0.3508537802454157,0.438200848148867
+SpiralScanPath_13,1428,known measurement,single-threshold features,0.21930234930391634,0.4296123184940611
+SpiralScanPath_13,1487,known measurement,single-threshold features,0.044497424232474714,0.21913810024892433
+SpiralScanPath_13,1488,known measurement,single-threshold features,0.1519176470376351,0.3974577140578681
+SpiralScanPath_13,1491,known measurement,single-threshold features,0.10414641886603704,0.353916130079178
+SpiralScanPath_13,1550,known measurement,single-threshold features,0.041877536870742915,0.3942813459026108
+SpiralScanPath_13,1552,known measurement,single-threshold features,0.06866209726496209,0.16966416290070455
+SpiralScanPath_13,1558,known measurement,single-threshold features,0.2017452209588555,0.2692654318346566
+SpiralScanPath_13,1559,known measurement,single-threshold features,0.03379545322508193,0.09235042170372393
+SpiralScanPath_13,1611,known measurement,single-threshold features,0.10766966140590739,0.19356131711796823
+SpiralScanPath_13,1612,known measurement,single-threshold features,0.09250357834622491,0.36068434657936344
+SpiralScanPath_13,1613,known measurement,single-threshold features,0.16198198934586117,0.38110632144821793
+SpiralScanPath_13,1614,known measurement,single-threshold features,0.3470855995432771,0.34786139267802385
+SpiralScanPath_13,1616,known measurement,single-threshold features,0.06395467800894039,0.14495530688864974
+SpiralScanPath_13,1617,known measurement,single-threshold features,0.14931424542118066,0.25627021826947893
+SpiralScanPath_13,1674,known measurement,single-threshold features,0.053599215970109526,0.32261555027058514
+SpiralScanPath_13,1675,known measurement,single-threshold features,0.2684495574014818,0.32524061444572505
+SpiralScanPath_13,1678,known measurement,single-threshold features,0.10217862064058636,0.1319616025070799
+SpiralScanPath_13,1737,known measurement,single-threshold features,0.07787916092877367,0.12545624229749885
+DiagonalScanPath_8,1069,known measurement,single + nested-response features,0.16790386895428355,0.039496032307068496
+DiagonalScanPath_8,1072,known measurement,single + nested-response features,0.20508724153791036,0.1782318032216462
+DiagonalScanPath_8,1073,known measurement,single + nested-response features,0.12401694884965764,0.15889204272884788
+DiagonalScanPath_8,1129,known measurement,single + nested-response features,0.2770496969928331,0.08188056766197982
+DiagonalScanPath_8,1130,known measurement,single + nested-response features,0.04372519514964779,0.119926710742016
+DiagonalScanPath_8,1131,known measurement,single + nested-response features,0.2374341513477134,0.30280160762567676
+DiagonalScanPath_8,1132,known measurement,single + nested-response features,0.17624314503029836,0.3937084169900241
+DiagonalScanPath_8,1133,known measurement,single + nested-response features,0.2530270822388161,0.3564063337173158
+DiagonalScanPath_8,1134,known measurement,single + nested-response features,0.6204704228098308,0.3325864807715757
+DiagonalScanPath_8,1135,known measurement,single + nested-response features,0.2370013750365274,0.26775977786198785
+DiagonalScanPath_8,1191,known measurement,single + nested-response features,0.1695809653787137,0.3308845895029551
+DiagonalScanPath_8,1192,known measurement,single + nested-response features,0.056643963737030845,0.4451202057860062
+DiagonalScanPath_8,1194,known measurement,single + nested-response features,0.5620508366208696,0.4991689724387408
+DiagonalScanPath_8,1195,known measurement,single + nested-response features,0.6498222214556222,0.476401626572055
+DiagonalScanPath_8,1196,known measurement,single + nested-response features,0.7506614088337074,0.398987710529937
+DiagonalScanPath_8,1197,known measurement,single + nested-response features,0.5902313788051856,0.22980004087183942
+DiagonalScanPath_8,1252,known measurement,single + nested-response features,0.07772070569740208,0.38247333689819296
+DiagonalScanPath_8,1253,known measurement,single + nested-response features,0.16877579631301387,0.5258172006644446
+DiagonalScanPath_8,1254,known measurement,single + nested-response features,0.6099398824469517,0.5843002760332215
+DiagonalScanPath_8,1255,known measurement,single + nested-response features,0.7030758625990075,0.5854812123819467
+DiagonalScanPath_8,1258,known measurement,single + nested-response features,0.7180713157536616,0.32804153411050874
+DiagonalScanPath_8,1259,known measurement,single + nested-response features,0.08693152318420516,0.18294986384517767
+DiagonalScanPath_8,1311,known measurement,single + nested-response features,0.5028425376722225,0.1756111007515953
+DiagonalScanPath_8,1312,known measurement,single + nested-response features,0.745732804074521,0.30247105488218
+DiagonalScanPath_8,1313,known measurement,single + nested-response features,0.36775339211732216,0.46823188714504893
+DiagonalScanPath_8,1314,known measurement,single + nested-response features,0.6331790300430953,0.5281620484520266
+DiagonalScanPath_8,1371,known measurement,single + nested-response features,0.19961715958669402,0.2170028458322837
+DiagonalScanPath_8,1372,known measurement,single + nested-response features,0.5928454368403209,0.33679760905661127
+DiagonalScanPath_8,1373,known measurement,single + nested-response features,0.4445222280928647,0.44891769283026695
+DiagonalScanPath_8,1381,known measurement,single + nested-response features,0.09760819676017718,0.28565193455733023
+DiagonalScanPath_8,1430,known measurement,single + nested-response features,0.00936409106333258,0.07979958559353012
+DiagonalScanPath_8,1433,known measurement,single + nested-response features,0.5690161711006567,0.44540266261091865
+DiagonalScanPath_8,1442,known measurement,single + nested-response features,0.017571373162297732,0.33678730429376097
+DiagonalScanPath_8,1491,known measurement,single + nested-response features,0.7044170681587048,0.18542326883586338
+DiagonalScanPath_8,1492,known measurement,single + nested-response features,0.2171832572025778,0.3492485918603291
+DiagonalScanPath_8,1551,known measurement,single + nested-response features,0.3392203683154662,0.10131980220953712
+DiagonalScanPath_8,1553,known measurement,single + nested-response features,0.549438840384255,0.4190830205756543
+DiagonalScanPath_8,1613,known measurement,single + nested-response features,0.11439374021796311,0.26207407121089593
+DiagonalScanPath_8,1614,known measurement,single + nested-response features,0.521955288177935,0.42673824895035883
+DiagonalScanPath_8,1674,known measurement,single + nested-response features,0.145801140984247,0.17388264567705794
+DiagonalScanPath_8,1675,known measurement,single + nested-response features,0.33821788125470675,0.32108444399427877
+DiagonalScanPath_8,1676,known measurement,single + nested-response features,0.6758705000952432,0.42048576465373844
+DiagonalScanPath_8,1737,known measurement,single + nested-response features,0.031402548119331186,0.252212400398443
+DiagonalScanPath_8,1738,known measurement,single + nested-response features,0.6088634052681527,0.3239009633491008
+DiagonalScanPath_8,1747,known measurement,single + nested-response features,0.03602088526457692,2.4221821162637234
+DiagonalScanPath_8,1797,known measurement,single + nested-response features,0.10926397391892806,0.04394092207674172
+DiagonalScanPath_8,1802,known measurement,single + nested-response features,0.513390235057102,0.29140715834789627
+HorizontalScanPath_13,1249,known measurement,single + nested-response features,0.11591562271394196,0.1932163377227681
+HorizontalScanPath_13,1251,known measurement,single + nested-response features,0.3938576934404523,0.11723633994457301
+HorizontalScanPath_13,1307,known measurement,single + nested-response features,0.04788257168797827,0.24646650293069816
+HorizontalScanPath_13,1308,known measurement,single + nested-response features,0.23504019058276526,0.1778814937369531
+HorizontalScanPath_13,1310,known measurement,single + nested-response features,0.20080252603418103,0.28163494694560554
+HorizontalScanPath_13,1314,known measurement,single + nested-response features,0.15196157343046934,0.28145443240642937
+HorizontalScanPath_13,1315,known measurement,single + nested-response features,0.08538049730674402,0.1769389234548278
+HorizontalScanPath_13,1367,known measurement,single + nested-response features,0.2386289474891896,0.2745335479844553
+HorizontalScanPath_13,1368,known measurement,single + nested-response features,0.22324837949037146,0.3158892008145039
+HorizontalScanPath_13,1370,known measurement,single + nested-response features,0.3142363023470125,0.3443195188853624
+HorizontalScanPath_13,1371,known measurement,single + nested-response features,0.2345081110557885,0.3381988424727388
+HorizontalScanPath_13,1372,known measurement,single + nested-response features,0.2671298453738018,0.32707659282285423
+HorizontalScanPath_13,1373,known measurement,single + nested-response features,0.4712772027178289,0.3291810395502677
+HorizontalScanPath_13,1374,known measurement,single + nested-response features,0.4368213378712653,0.33433421323195034
+HorizontalScanPath_13,1375,known measurement,single + nested-response features,0.28262561090400595,0.337358881028348
+HorizontalScanPath_13,1376,known measurement,single + nested-response features,0.2897001602702858,0.30363920613766177
+HorizontalScanPath_13,1377,known measurement,single + nested-response features,0.30632149151836074,0.20824549679714333
+HorizontalScanPath_13,1378,known measurement,single + nested-response features,0.09441063314761777,0.1474139709071153
+HorizontalScanPath_13,1426,known measurement,single + nested-response features,0.020524242743022114,0.1267193823736279
+HorizontalScanPath_13,1428,known measurement,single + nested-response features,0.5841836302365095,0.3324095515966693
+HorizontalScanPath_13,1429,known measurement,single + nested-response features,0.5224544235284156,0.3534971209799153
+HorizontalScanPath_13,1430,known measurement,single + nested-response features,0.8443464717251459,0.37652608160672807
+HorizontalScanPath_13,1431,known measurement,single + nested-response features,0.5209140017940399,0.37552804802364054
+HorizontalScanPath_13,1432,known measurement,single + nested-response features,0.6501033802327356,0.36545391262810345
+HorizontalScanPath_13,1433,known measurement,single + nested-response features,0.7850805245518586,0.36466909201515396
+HorizontalScanPath_13,1435,known measurement,single + nested-response features,0.6347599618880508,0.3621637664317443
+HorizontalScanPath_13,1436,known measurement,single + nested-response features,0.8765021923577478,0.37032949376415936
+HorizontalScanPath_13,1437,known measurement,single + nested-response features,0.7797965025761187,0.34934442498111445
+HorizontalScanPath_13,1438,known measurement,single + nested-response features,0.16647999363749477,0.23800403322351776
+HorizontalScanPath_13,1487,known measurement,single + nested-response features,0.003365585734400156,0.2733354746523106
+HorizontalScanPath_13,1488,known measurement,single + nested-response features,0.23096419391873724,0.3244052352809558
+HorizontalScanPath_13,1490,known measurement,single + nested-response features,0.59882275006089,0.36571684675921856
+HorizontalScanPath_13,1491,known measurement,single + nested-response features,0.7327104229644874,0.37973758285011483
+HorizontalScanPath_13,1492,known measurement,single + nested-response features,0.8711778898522766,0.37580862621495636
+HorizontalScanPath_13,1497,known measurement,single + nested-response features,0.855053204709975,0.38956847762694863
+HorizontalScanPath_13,1499,known measurement,single + nested-response features,0.6293915423671592,0.35544363135004226
+HorizontalScanPath_13,1501,known measurement,single + nested-response features,0.2650508924493806,0.17528138829205425
+HorizontalScanPath_13,1548,known measurement,single + nested-response features,0.29275256300070396,0.31032422650042607
+HorizontalScanPath_13,1550,known measurement,single + nested-response features,0.920891765779686,0.3799521745465162
+HorizontalScanPath_13,1551,known measurement,single + nested-response features,0.7708381222330445,0.3765402579587378
+HorizontalScanPath_13,1560,known measurement,single + nested-response features,0.8944940780319257,0.3665650043218711
+HorizontalScanPath_13,1609,known measurement,single + nested-response features,0.46662749861138764,0.31353906589913866
+HorizontalScanPath_13,1624,known measurement,single + nested-response features,0.8735414882909254,0.26993294146694574
+HorizontalScanPath_13,1686,known measurement,single + nested-response features,0.0769471421016874,0.1359701502424274
+HorizontalScanPath_13,1803,known measurement,single + nested-response features,0.948700646605289,0.2586596158112733
+HorizontalScanPath_13,1804,known measurement,single + nested-response features,0.926969824953062,0.26207131232327135
+HorizontalScanPath_13,1805,known measurement,single + nested-response features,0.6007129840092489,0.26183782963551716
+HorizontalScanPath_13,1806,known measurement,single + nested-response features,0.20311477553872237,0.2454970205411729
+SpiralScanPath_13,699,known measurement,single + nested-response features,0.019805499530320958,0.3547400372356092
+SpiralScanPath_13,701,known measurement,single + nested-response features,0.33647568311147324,0.3770994253645808
+SpiralScanPath_13,702,known measurement,single + nested-response features,0.3921368970330832,0.3707225333235912
+SpiralScanPath_13,703,known measurement,single + nested-response features,0.17725016264881788,0.3618576170771344
+SpiralScanPath_13,817,known measurement,single + nested-response features,0.28253646083669537,0.35600913320590916
+SpiralScanPath_13,891,known measurement,single + nested-response features,0.3432773845825068,0.34869972506964103
+SpiralScanPath_13,938,known measurement,single + nested-response features,0.3851431263369136,0.21728295883474982
+SpiralScanPath_13,943,known measurement,single + nested-response features,0.13745854959023518,0.4088328431105857
+SpiralScanPath_13,944,known measurement,single + nested-response features,0.09398994364966029,0.2509991685336781
+SpiralScanPath_13,946,known measurement,single + nested-response features,0.056436960020334936,0.25487551718206425
+SpiralScanPath_13,948,known measurement,single + nested-response features,0.0505238508912953,0.4545180139420747
+SpiralScanPath_13,1003,known measurement,single + nested-response features,0.06156803910215558,0.434027001444796
+SpiralScanPath_13,1010,known measurement,single + nested-response features,0.1801208065235187,0.2612701278028816
+SpiralScanPath_13,1059,known measurement,single + nested-response features,0.04173256551979421,0.4092399567119581
+SpiralScanPath_13,1061,known measurement,single + nested-response features,0.26753255673423837,0.5112755554315431
+SpiralScanPath_13,1062,known measurement,single + nested-response features,0.3471841387428185,0.48848345643555474
+SpiralScanPath_13,1069,known measurement,single + nested-response features,0.06636528753244875,0.20817229257954228
+SpiralScanPath_13,1070,known measurement,single + nested-response features,0.19390856963838132,0.17648119694339653
+SpiralScanPath_13,1120,known measurement,single + nested-response features,0.009116238288129352,0.41568852227808084
+SpiralScanPath_13,1123,known measurement,single + nested-response features,0.2850976040908222,0.4392001828359024
+SpiralScanPath_13,1124,known measurement,single + nested-response features,0.31397406290318486,0.3602557533564398
+SpiralScanPath_13,1134,known measurement,single + nested-response features,0.23928714195551493,0.34743162075513906
+SpiralScanPath_13,1181,known measurement,single + nested-response features,0.26819818655508243,0.40325195115717927
+SpiralScanPath_13,1182,known measurement,single + nested-response features,0.36985338089380093,0.47442343581138713
+SpiralScanPath_13,1184,known measurement,single + nested-response features,0.19606571148574403,0.27222899749399676
+SpiralScanPath_13,1194,known measurement,single + nested-response features,0.009075263109764364,0.2592066873232517
+SpiralScanPath_13,1242,known measurement,single + nested-response features,0.041040193799744884,0.3957637776051728
+SpiralScanPath_13,1244,known measurement,single + nested-response features,0.2910610934101783,0.423563095722147
+SpiralScanPath_13,1255,known measurement,single + nested-response features,0.02351797853395965,0.19711475028331193
+SpiralScanPath_13,1303,known measurement,single + nested-response features,0.1913900205153709,0.3955524376499625
+SpiralScanPath_13,1304,known measurement,single + nested-response features,0.3861894646145174,0.4773004751394221
+SpiralScanPath_13,1306,known measurement,single + nested-response features,0.2569261867096202,0.18297652661377353
+SpiralScanPath_13,1364,known measurement,single + nested-response features,0.1272594419939992,0.21310224535550595
+SpiralScanPath_13,1365,known measurement,single + nested-response features,0.3408955067287138,0.4607070248389832
+SpiralScanPath_13,1366,known measurement,single + nested-response features,0.14439769503866273,0.46768649490542996
+SpiralScanPath_13,1367,known measurement,single + nested-response features,0.13947778858988613,0.22387342884419395
+SpiralScanPath_13,1426,known measurement,single + nested-response features,0.24293030900884105,0.40121767056185337
+SpiralScanPath_13,1427,known measurement,single + nested-response features,0.3508537802454157,0.4469215469797748
+SpiralScanPath_13,1428,known measurement,single + nested-response features,0.21930234930391634,0.4421279231360248
+SpiralScanPath_13,1487,known measurement,single + nested-response features,0.044497424232474714,0.16821356618200703
+SpiralScanPath_13,1488,known measurement,single + nested-response features,0.1519176470376351,0.3985665316322984
+SpiralScanPath_13,1491,known measurement,single + nested-response features,0.10414641886603704,0.34394776790031356
+SpiralScanPath_13,1550,known measurement,single + nested-response features,0.041877536870742915,0.383702441120112
+SpiralScanPath_13,1552,known measurement,single + nested-response features,0.06866209726496209,0.23928742270882997
+SpiralScanPath_13,1558,known measurement,single + nested-response features,0.2017452209588555,0.24730370379442432
+SpiralScanPath_13,1559,known measurement,single + nested-response features,0.03379545322508193,0.11376957395648962
+SpiralScanPath_13,1611,known measurement,single + nested-response features,0.10766966140590739,0.14583116027891102
+SpiralScanPath_13,1612,known measurement,single + nested-response features,0.09250357834622491,0.3538648487550873
+SpiralScanPath_13,1613,known measurement,single + nested-response features,0.16198198934586117,0.380394217688603
+SpiralScanPath_13,1614,known measurement,single + nested-response features,0.3470855995432771,0.33994773976920944
+SpiralScanPath_13,1616,known measurement,single + nested-response features,0.06395467800894039,0.08631580168896102
+SpiralScanPath_13,1617,known measurement,single + nested-response features,0.14931424542118066,0.2321273440648051
+SpiralScanPath_13,1674,known measurement,single + nested-response features,0.053599215970109526,0.3338021796928935
+SpiralScanPath_13,1675,known measurement,single + nested-response features,0.2684495574014818,0.3252329193485049
+SpiralScanPath_13,1678,known measurement,single + nested-response features,0.10217862064058636,0.08183212491526609
+SpiralScanPath_13,1737,known measurement,single + nested-response features,0.07787916092877367,0.21021205403260176
+DiagonalScanPath_8,1069,latent truth (evaluation only),single-threshold features,-0.2058241143270152,-0.17392316132850932
+DiagonalScanPath_8,1072,latent truth (evaluation only),single-threshold features,0.10090445575838203,-0.05027181350871518
+DiagonalScanPath_8,1073,latent truth (evaluation only),single-threshold features,0.09298523306961215,0.11989456402459686
+DiagonalScanPath_8,1129,latent truth (evaluation only),single-threshold features,-0.15724840145639973,0.006482772178429241
+DiagonalScanPath_8,1130,latent truth (evaluation only),single-threshold features,-0.024803264442425643,-0.06604930858992064
+DiagonalScanPath_8,1131,latent truth (evaluation only),single-threshold features,0.11491744326593789,0.3191495986325852
+DiagonalScanPath_8,1132,latent truth (evaluation only),single-threshold features,0.2518047016978926,0.4463875754378599
+DiagonalScanPath_8,1133,latent truth (evaluation only),single-threshold features,0.36251686911595016,0.39680136193761006
+DiagonalScanPath_8,1134,latent truth (evaluation only),single-threshold features,0.39646531575311883,0.36341393634113445
+DiagonalScanPath_8,1135,latent truth (evaluation only),single-threshold features,0.26914032084158634,0.2756449154924574
+DiagonalScanPath_8,1191,latent truth (evaluation only),single-threshold features,0.1553974097288915,0.3608444586040269
+DiagonalScanPath_8,1192,latent truth (evaluation only),single-threshold features,0.31777965887226856,0.5193894646847018
+DiagonalScanPath_8,1194,latent truth (evaluation only),single-threshold features,0.6694231928955787,0.599751198700972
+DiagonalScanPath_8,1195,latent truth (evaluation only),single-threshold features,0.7924647080457135,0.564672454155262
+DiagonalScanPath_8,1196,latent truth (evaluation only),single-threshold features,0.7199218819097837,0.4521453177313608
+DiagonalScanPath_8,1197,latent truth (evaluation only),single-threshold features,0.312964588386194,0.21672812994588603
+DiagonalScanPath_8,1252,latent truth (evaluation only),single-threshold features,0.34416525877031745,0.32758981424727884
+DiagonalScanPath_8,1253,latent truth (evaluation only),single-threshold features,0.5370239385033528,0.6325520127101756
+DiagonalScanPath_8,1254,latent truth (evaluation only),single-threshold features,0.765906010197682,0.7194826690708358
+DiagonalScanPath_8,1255,latent truth (evaluation only),single-threshold features,1.0362353563223792,0.7266450917251486
+DiagonalScanPath_8,1258,latent truth (evaluation only),single-threshold features,0.7672026963749659,0.3410417226159577
+DiagonalScanPath_8,1259,latent truth (evaluation only),single-threshold features,-0.11329110560541267,-0.032631729088675177
+DiagonalScanPath_8,1311,latent truth (evaluation only),single-threshold features,0.1718272859217791,0.12632327912812444
+DiagonalScanPath_8,1312,latent truth (evaluation only),single-threshold features,0.35379767767580006,0.2055928554151455
+DiagonalScanPath_8,1313,latent truth (evaluation only),single-threshold features,0.553217585122411,0.5521888002586335
+DiagonalScanPath_8,1314,latent truth (evaluation only),single-threshold features,0.7849040293534699,0.6379322810436711
+DiagonalScanPath_8,1371,latent truth (evaluation only),single-threshold features,0.15632434800426154,0.18504243461854467
+DiagonalScanPath_8,1372,latent truth (evaluation only),single-threshold features,0.3519417347827698,0.37337371785515006
+DiagonalScanPath_8,1373,latent truth (evaluation only),single-threshold features,0.5599420805051523,0.518689371952517
+DiagonalScanPath_8,1381,latent truth (evaluation only),single-threshold features,-0.05897503498573542,0.28101255866296626
+DiagonalScanPath_8,1430,latent truth (evaluation only),single-threshold features,-0.09468561919248941,-0.14214632190527765
+DiagonalScanPath_8,1433,latent truth (evaluation only),single-threshold features,0.5575102799766682,0.5249735084130487
+DiagonalScanPath_8,1442,latent truth (evaluation only),single-threshold features,0.20047205763114562,0.35688774506492754
+DiagonalScanPath_8,1491,latent truth (evaluation only),single-threshold features,0.023834915782799726,0.14957710329277663
+DiagonalScanPath_8,1492,latent truth (evaluation only),single-threshold features,0.27487351953692496,0.3784772120834652
+DiagonalScanPath_8,1551,latent truth (evaluation only),single-threshold features,-0.1625158598922667,0.04845866772359439
+DiagonalScanPath_8,1553,latent truth (evaluation only),single-threshold features,0.41620220689196685,0.48844287067682185
+DiagonalScanPath_8,1613,latent truth (evaluation only),single-threshold features,0.14224568103469437,0.2503183997755699
+DiagonalScanPath_8,1614,latent truth (evaluation only),single-threshold features,0.46894818370486746,0.492200321581048
+DiagonalScanPath_8,1674,latent truth (evaluation only),single-threshold features,0.019573603000480944,-0.03805490333501349
+DiagonalScanPath_8,1675,latent truth (evaluation only),single-threshold features,0.3387621762490767,0.33116694887288906
+DiagonalScanPath_8,1676,latent truth (evaluation only),single-threshold features,0.6226879546108535,0.49050575672440266
+DiagonalScanPath_8,1737,latent truth (evaluation only),single-threshold features,0.18772170511419972,0.23524600653780753
+DiagonalScanPath_8,1738,latent truth (evaluation only),single-threshold features,0.47292877090040975,0.343833140346288
+DiagonalScanPath_8,1747,latent truth (evaluation only),single-threshold features,0.22354679145058753,3.113009042248491
+DiagonalScanPath_8,1797,latent truth (evaluation only),single-threshold features,-0.5662427900267062,-0.23866450681039147
+DiagonalScanPath_8,1802,latent truth (evaluation only),single-threshold features,0.784459464732663,0.3062306828121068
+HorizontalScanPath_13,1249,latent truth (evaluation only),single-threshold features,-0.05363788234518552,0.0984070664156445
+HorizontalScanPath_13,1251,latent truth (evaluation only),single-threshold features,-0.051612497987434836,-0.0917441616422534
+HorizontalScanPath_13,1307,latent truth (evaluation only),single-threshold features,-0.03261880333047884,0.1816765168841909
+HorizontalScanPath_13,1308,latent truth (evaluation only),single-threshold features,0.059236541514280816,0.031499323060759116
+HorizontalScanPath_13,1310,latent truth (evaluation only),single-threshold features,0.14574643640759177,0.28941076749690364
+HorizontalScanPath_13,1314,latent truth (evaluation only),single-threshold features,0.06930800630237854,0.27220948410396323
+HorizontalScanPath_13,1315,latent truth (evaluation only),single-threshold features,-0.019132787277271746,0.028562872306781284
+HorizontalScanPath_13,1367,latent truth (evaluation only),single-threshold features,0.06462786107960028,0.25589785961498274
+HorizontalScanPath_13,1368,latent truth (evaluation only),single-threshold features,0.2051108151737253,0.3383867220233787
+HorizontalScanPath_13,1370,latent truth (evaluation only),single-threshold features,0.344635999963657,0.4153349707267341
+HorizontalScanPath_13,1371,latent truth (evaluation only),single-threshold features,0.3707071694553292,0.40997461279757746
+HorizontalScanPath_13,1372,latent truth (evaluation only),single-threshold features,0.37858625591456985,0.39369295519061576
+HorizontalScanPath_13,1373,latent truth (evaluation only),single-threshold features,0.370637000187628,0.39872068489957624
+HorizontalScanPath_13,1374,latent truth (evaluation only),single-threshold features,0.34467611666150333,0.3976435443607972
+HorizontalScanPath_13,1375,latent truth (evaluation only),single-threshold features,0.2935939875551412,0.39707862786159254
+HorizontalScanPath_13,1376,latent truth (evaluation only),single-threshold features,0.20535539409621606,0.3208935332936281
+HorizontalScanPath_13,1377,latent truth (evaluation only),single-threshold features,0.06415473678623584,0.10002640029444894
+HorizontalScanPath_13,1378,latent truth (evaluation only),single-threshold features,-0.14471727766039066,-0.05067871251818301
+HorizontalScanPath_13,1426,latent truth (evaluation only),single-threshold features,-0.16706280891219194,-0.0754372583841767
+HorizontalScanPath_13,1428,latent truth (evaluation only),single-threshold features,0.37137904969711144,0.39164164165747495
+HorizontalScanPath_13,1429,latent truth (evaluation only),single-threshold features,0.5065190678225235,0.4387882846825272
+HorizontalScanPath_13,1430,latent truth (evaluation only),single-threshold features,0.5838937021412676,0.49896058869459325
+HorizontalScanPath_13,1431,latent truth (evaluation only),single-threshold features,0.6241496886019604,0.4923915327611072
+HorizontalScanPath_13,1432,latent truth (evaluation only),single-threshold features,0.6408934149274614,0.4722875052544129
+HorizontalScanPath_13,1433,latent truth (evaluation only),single-threshold features,0.6415759788191622,0.47485350065397447
+HorizontalScanPath_13,1435,latent truth (evaluation only),single-threshold features,0.5999330186698444,0.4718484856028196
+HorizontalScanPath_13,1436,latent truth (evaluation only),single-threshold features,0.5475329617440821,0.47492838913015656
+HorizontalScanPath_13,1437,latent truth (evaluation only),single-threshold features,0.45744092655820623,0.4283300962588596
+HorizontalScanPath_13,1438,latent truth (evaluation only),single-threshold features,0.30998250622951673,0.1783343882248097
+HorizontalScanPath_13,1487,latent truth (evaluation only),single-threshold features,0.14718354143008128,0.26288697017146345
+HorizontalScanPath_13,1488,latent truth (evaluation only),single-threshold features,0.5098474697771849,0.3790969163419537
+HorizontalScanPath_13,1490,latent truth (evaluation only),single-threshold features,0.864568635466469,0.4753963635820463
+HorizontalScanPath_13,1491,latent truth (evaluation only),single-threshold features,0.9296377016826227,0.5153708021734588
+HorizontalScanPath_13,1492,latent truth (evaluation only),single-threshold features,0.9594653383356331,0.5119942551087837
+HorizontalScanPath_13,1497,latent truth (evaluation only),single-threshold features,0.8807450280194757,0.5371019291864902
+HorizontalScanPath_13,1499,latent truth (evaluation only),single-threshold features,0.655647107473726,0.4526207751106771
+HorizontalScanPath_13,1501,latent truth (evaluation only),single-threshold features,0.06823650903976386,0.02865974558549436
+HorizontalScanPath_13,1548,latent truth (evaluation only),single-threshold features,0.39787136122737365,0.33808907940350164
+HorizontalScanPath_13,1550,latent truth (evaluation only),single-threshold features,1.0446873391546205,0.5164520312281655
+HorizontalScanPath_13,1551,latent truth (evaluation only),single-threshold features,1.177497346929556,0.5141363971612551
+HorizontalScanPath_13,1560,latent truth (evaluation only),single-threshold features,1.2661420147816784,0.47876180553002723
+HorizontalScanPath_13,1609,latent truth (evaluation only),single-threshold features,0.4605584465568313,0.3678188425387594
+HorizontalScanPath_13,1624,latent truth (evaluation only),single-threshold features,0.8125486803336912,0.2578152325356824
+HorizontalScanPath_13,1686,latent truth (evaluation only),single-threshold features,-0.12302711416066359,-0.04182637102024073
+HorizontalScanPath_13,1803,latent truth (evaluation only),single-threshold features,1.1268594256825963,0.29922090944594815
+HorizontalScanPath_13,1804,latent truth (evaluation only),single-threshold features,0.9873294156275279,0.287999488943212
+HorizontalScanPath_13,1805,latent truth (evaluation only),single-threshold features,0.7862847209140682,0.2803244689867893
+HorizontalScanPath_13,1806,latent truth (evaluation only),single-threshold features,0.39557755452761967,0.2354076697993089
+SpiralScanPath_13,699,latent truth (evaluation only),single-threshold features,-0.08901630425458507,0.2762330670619737
+SpiralScanPath_13,701,latent truth (evaluation only),single-threshold features,0.4776158953293361,0.3107532358451977
+SpiralScanPath_13,702,latent truth (evaluation only),single-threshold features,0.4657373234036868,0.30762957449520323
+SpiralScanPath_13,703,latent truth (evaluation only),single-threshold features,0.1836962652774332,0.30564092051100183
+SpiralScanPath_13,817,latent truth (evaluation only),single-threshold features,-0.3015686618947484,0.26844211078204805
+SpiralScanPath_13,891,latent truth (evaluation only),single-threshold features,0.6824082582199935,0.2819655488950973
+SpiralScanPath_13,938,latent truth (evaluation only),single-threshold features,0.3166859346581532,0.10502989597920143
+SpiralScanPath_13,943,latent truth (evaluation only),single-threshold features,0.14832494508175387,0.39930392402522796
+SpiralScanPath_13,944,latent truth (evaluation only),single-threshold features,-0.05925400909615064,0.08262205021604338
+SpiralScanPath_13,946,latent truth (evaluation only),single-threshold features,-0.13875383350995207,0.09779560252207622
+SpiralScanPath_13,948,latent truth (evaluation only),single-threshold features,0.3079550690452493,0.4495808347144642
+SpiralScanPath_13,1003,latent truth (evaluation only),single-threshold features,-0.04791857201161065,0.41228877161007715
+SpiralScanPath_13,1010,latent truth (evaluation only),single-threshold features,-0.004915866202338748,0.1800919171832711
+SpiralScanPath_13,1059,latent truth (evaluation only),single-threshold features,0.18014406499872848,0.3389431712511798
+SpiralScanPath_13,1061,latent truth (evaluation only),single-threshold features,0.8998818465992144,0.5444133737056295
+SpiralScanPath_13,1062,latent truth (evaluation only),single-threshold features,0.4533164945119097,0.5103872868656087
+SpiralScanPath_13,1069,latent truth (evaluation only),single-threshold features,-0.4382686859853493,-0.06791430560733624
+SpiralScanPath_13,1070,latent truth (evaluation only),single-threshold features,-0.37164581045090017,-0.1093641052973029
+SpiralScanPath_13,1120,latent truth (evaluation only),single-threshold features,0.3621872524610126,0.3554792450591513
+SpiralScanPath_13,1123,latent truth (evaluation only),single-threshold features,0.17849951595991342,0.4436016555514514
+SpiralScanPath_13,1124,latent truth (evaluation only),single-threshold features,-0.22534981702870027,0.33313463961764256
+SpiralScanPath_13,1134,latent truth (evaluation only),single-threshold features,0.366130717904241,0.15350619972885737
+SpiralScanPath_13,1181,latent truth (evaluation only),single-threshold features,0.4111897563014395,0.36491161765204283
+SpiralScanPath_13,1182,latent truth (evaluation only),single-threshold features,0.7677604697930747,0.5039539712500072
+SpiralScanPath_13,1184,latent truth (evaluation only),single-threshold features,0.03383930738232266,-0.009874181848972735
+SpiralScanPath_13,1194,latent truth (evaluation only),single-threshold features,-0.2684285165039455,0.014176075480365757
+SpiralScanPath_13,1242,latent truth (evaluation only),single-threshold features,0.3678338648576869,0.36829031193254597
+SpiralScanPath_13,1244,latent truth (evaluation only),single-threshold features,0.43133634446263613,0.44534978328128105
+SpiralScanPath_13,1255,latent truth (evaluation only),single-threshold features,-0.25424162058874344,-0.11067019211576351
+SpiralScanPath_13,1303,latent truth (evaluation only),single-threshold features,0.25295000077369423,0.3389283871942217
+SpiralScanPath_13,1304,latent truth (evaluation only),single-threshold features,0.6018123341728483,0.4882794727589537
+SpiralScanPath_13,1306,latent truth (evaluation only),single-threshold features,0.025784335262699187,0.07573529018264688
+SpiralScanPath_13,1364,latent truth (evaluation only),single-threshold features,0.06374002908751208,0.08377814942076747
+SpiralScanPath_13,1365,latent truth (evaluation only),single-threshold features,0.50048928300032,0.45710475890121344
+SpiralScanPath_13,1366,latent truth (evaluation only),single-threshold features,0.4457972215176369,0.4606550662050325
+SpiralScanPath_13,1367,latent truth (evaluation only),single-threshold features,0.12435280872557541,0.14556909309297872
+SpiralScanPath_13,1426,latent truth (evaluation only),single-threshold features,0.33333981733539986,0.3771956873643207
+SpiralScanPath_13,1427,latent truth (evaluation only),single-threshold features,0.45082536967476017,0.426857902835148
+SpiralScanPath_13,1428,latent truth (evaluation only),single-threshold features,0.2536993015600615,0.4119262759216311
+SpiralScanPath_13,1487,latent truth (evaluation only),single-threshold features,0.05437496750005266,0.04592894039865458
+SpiralScanPath_13,1488,latent truth (evaluation only),single-threshold features,0.3610827928516187,0.35831216095298574
+SpiralScanPath_13,1491,latent truth (evaluation only),single-threshold features,-0.045592132508545546,0.28572193424955955
+SpiralScanPath_13,1550,latent truth (evaluation only),single-threshold features,0.2983527533965571,0.3526526885324687
+SpiralScanPath_13,1552,latent truth (evaluation only),single-threshold features,0.15603134757736825,-0.045337667146186755
+SpiralScanPath_13,1558,latent truth (evaluation only),single-threshold features,-0.05185537874069723,0.142452296892793
+SpiralScanPath_13,1559,latent truth (evaluation only),single-threshold features,-0.08560691721078229,-0.17011340846537606
+SpiralScanPath_13,1611,latent truth (evaluation only),single-threshold features,0.02526279995748837,0.0032571561257797033
+SpiralScanPath_13,1612,latent truth (evaluation only),single-threshold features,0.18871799921942056,0.2980467668388558
+SpiralScanPath_13,1613,latent truth (evaluation only),single-threshold features,0.21118208470960553,0.3313832220732207
+SpiralScanPath_13,1614,latent truth (evaluation only),single-threshold features,0.16670514626895283,0.27580108356762445
+SpiralScanPath_13,1616,latent truth (evaluation only),single-threshold features,0.06572940878953659,-0.07738071553416737
+SpiralScanPath_13,1617,latent truth (evaluation only),single-threshold features,0.03516304932696812,0.11816118794963548
+SpiralScanPath_13,1674,latent truth (evaluation only),single-threshold features,-0.014517444497357701,0.23305255753087306
+SpiralScanPath_13,1675,latent truth (evaluation only),single-threshold features,0.047793172355000024,0.23845867894175973
+SpiralScanPath_13,1678,latent truth (evaluation only),single-threshold features,-0.04262116604269295,-0.09622616780044263
+SpiralScanPath_13,1737,latent truth (evaluation only),single-threshold features,-0.3297514666632537,-0.11796209174787645
+DiagonalScanPath_8,1069,latent truth (evaluation only),single + nested-response features,-0.2058241143270152,-0.1971248743012024
+DiagonalScanPath_8,1072,latent truth (evaluation only),single + nested-response features,0.10090445575838203,-0.05376454904547878
+DiagonalScanPath_8,1073,latent truth (evaluation only),single + nested-response features,0.09298523306961215,0.12250624889474131
+DiagonalScanPath_8,1129,latent truth (evaluation only),single + nested-response features,-0.15724840145639973,0.004918805696787348
+DiagonalScanPath_8,1130,latent truth (evaluation only),single + nested-response features,-0.024803264442425643,-0.09188831823312488
+DiagonalScanPath_8,1131,latent truth (evaluation only),single + nested-response features,0.11491744326593789,0.31533751580691244
+DiagonalScanPath_8,1132,latent truth (evaluation only),single + nested-response features,0.2518047016978926,0.45471072486996295
+DiagonalScanPath_8,1133,latent truth (evaluation only),single + nested-response features,0.36251686911595016,0.4076953137513982
+DiagonalScanPath_8,1134,latent truth (evaluation only),single + nested-response features,0.39646531575311883,0.3721258023729569
+DiagonalScanPath_8,1135,latent truth (evaluation only),single + nested-response features,0.26914032084158634,0.2769987556690914
+DiagonalScanPath_8,1191,latent truth (evaluation only),single + nested-response features,0.1553974097288915,0.35930570696795716
+DiagonalScanPath_8,1192,latent truth (evaluation only),single + nested-response features,0.31777965887226856,0.5166551411065313
+DiagonalScanPath_8,1194,latent truth (evaluation only),single + nested-response features,0.6694231928955787,0.6114273064774615
+DiagonalScanPath_8,1195,latent truth (evaluation only),single + nested-response features,0.7924647080457135,0.5673303719542624
+DiagonalScanPath_8,1196,latent truth (evaluation only),single + nested-response features,0.7199218819097837,0.45364814793222985
+DiagonalScanPath_8,1197,latent truth (evaluation only),single + nested-response features,0.312964588386194,0.2053518047874988
+DiagonalScanPath_8,1252,latent truth (evaluation only),single + nested-response features,0.34416525877031745,0.3075578852034131
+DiagonalScanPath_8,1253,latent truth (evaluation only),single + nested-response features,0.5370239385033528,0.631098027314686
+DiagonalScanPath_8,1254,latent truth (evaluation only),single + nested-response features,0.765906010197682,0.7242505969410479
+DiagonalScanPath_8,1255,latent truth (evaluation only),single + nested-response features,1.0362353563223792,0.731341524712062
+DiagonalScanPath_8,1258,latent truth (evaluation only),single + nested-response features,0.7672026963749659,0.3333652750261863
+DiagonalScanPath_8,1259,latent truth (evaluation only),single + nested-response features,-0.11329110560541267,-0.08333531801076782
+DiagonalScanPath_8,1311,latent truth (evaluation only),single + nested-response features,0.1718272859217791,0.12412438318101138
+DiagonalScanPath_8,1312,latent truth (evaluation only),single + nested-response features,0.35379767767580006,0.18706673976762672
+DiagonalScanPath_8,1313,latent truth (evaluation only),single + nested-response features,0.553217585122411,0.5547373210991638
+DiagonalScanPath_8,1314,latent truth (evaluation only),single + nested-response features,0.7849040293534699,0.646429680627294
+DiagonalScanPath_8,1371,latent truth (evaluation only),single + nested-response features,0.15632434800426154,0.18401143175482487
+DiagonalScanPath_8,1372,latent truth (evaluation only),single + nested-response features,0.3519417347827698,0.37722931337470217
+DiagonalScanPath_8,1373,latent truth (evaluation only),single + nested-response features,0.5599420805051523,0.51632254667819
+DiagonalScanPath_8,1381,latent truth (evaluation only),single + nested-response features,-0.05897503498573542,0.27151750891069937
+DiagonalScanPath_8,1430,latent truth (evaluation only),single + nested-response features,-0.09468561919248941,-0.16722398333181346
+DiagonalScanPath_8,1433,latent truth (evaluation only),single + nested-response features,0.5575102799766682,0.533581659072575
+DiagonalScanPath_8,1442,latent truth (evaluation only),single + nested-response features,0.20047205763114562,0.35148213806278983
+DiagonalScanPath_8,1491,latent truth (evaluation only),single + nested-response features,0.023834915782799726,0.14116963364006255
+DiagonalScanPath_8,1492,latent truth (evaluation only),single + nested-response features,0.27487351953692496,0.3794064272117258
+DiagonalScanPath_8,1551,latent truth (evaluation only),single + nested-response features,-0.1625158598922667,0.049770017119530274
+DiagonalScanPath_8,1553,latent truth (evaluation only),single + nested-response features,0.41620220689196685,0.4895665112816178
+DiagonalScanPath_8,1613,latent truth (evaluation only),single + nested-response features,0.14224568103469437,0.24587770500074704
+DiagonalScanPath_8,1614,latent truth (evaluation only),single + nested-response features,0.46894818370486746,0.49614840785405956
+DiagonalScanPath_8,1674,latent truth (evaluation only),single + nested-response features,0.019573603000480944,-0.045348541253294045
+DiagonalScanPath_8,1675,latent truth (evaluation only),single + nested-response features,0.3387621762490767,0.3350639672566786
+DiagonalScanPath_8,1676,latent truth (evaluation only),single + nested-response features,0.6226879546108535,0.4898612494651331
+DiagonalScanPath_8,1737,latent truth (evaluation only),single + nested-response features,0.18772170511419972,0.2325810587593255
+DiagonalScanPath_8,1738,latent truth (evaluation only),single + nested-response features,0.47292877090040975,0.3281561291059464
+DiagonalScanPath_8,1747,latent truth (evaluation only),single + nested-response features,0.22354679145058753,3.1061590575067375
+DiagonalScanPath_8,1797,latent truth (evaluation only),single + nested-response features,-0.5662427900267062,-0.22484627623867398
+DiagonalScanPath_8,1802,latent truth (evaluation only),single + nested-response features,0.784459464732663,0.32379429024577505
+HorizontalScanPath_13,1249,latent truth (evaluation only),single + nested-response features,-0.05363788234518552,0.0756068855604582
+HorizontalScanPath_13,1251,latent truth (evaluation only),single + nested-response features,-0.051612497987434836,-0.09649190132706946
+HorizontalScanPath_13,1307,latent truth (evaluation only),single + nested-response features,-0.03261880333047884,0.19090591550586222
+HorizontalScanPath_13,1308,latent truth (evaluation only),single + nested-response features,0.059236541514280816,0.054196292694643974
+HorizontalScanPath_13,1310,latent truth (evaluation only),single + nested-response features,0.14574643640759177,0.27344703043214347
+HorizontalScanPath_13,1314,latent truth (evaluation only),single + nested-response features,0.06930800630237854,0.27032404726892895
+HorizontalScanPath_13,1315,latent truth (evaluation only),single + nested-response features,-0.019132787277271746,0.04758195304279669
+HorizontalScanPath_13,1367,latent truth (evaluation only),single + nested-response features,0.06462786107960028,0.2581307620056817
+HorizontalScanPath_13,1368,latent truth (evaluation only),single + nested-response features,0.2051108151737253,0.3445737800617854
+HorizontalScanPath_13,1370,latent truth (evaluation only),single + nested-response features,0.344635999963657,0.418044613454391
+HorizontalScanPath_13,1371,latent truth (evaluation only),single + nested-response features,0.3707071694553292,0.40629441212648654
+HorizontalScanPath_13,1372,latent truth (evaluation only),single + nested-response features,0.37858625591456985,0.38440084400662733
+HorizontalScanPath_13,1373,latent truth (evaluation only),single + nested-response features,0.370637000187628,0.3886657508671272
+HorizontalScanPath_13,1374,latent truth (evaluation only),single + nested-response features,0.34467611666150333,0.39360717883154955
+HorizontalScanPath_13,1375,latent truth (evaluation only),single + nested-response features,0.2935939875551412,0.39898848604475073
+HorizontalScanPath_13,1376,latent truth (evaluation only),single + nested-response features,0.20535539409621606,0.320944775197154
+HorizontalScanPath_13,1377,latent truth (evaluation only),single + nested-response features,0.06415473678623584,0.12018773781553703
+HorizontalScanPath_13,1378,latent truth (evaluation only),single + nested-response features,-0.14471727766039066,-0.02092378291090133
+HorizontalScanPath_13,1426,latent truth (evaluation only),single + nested-response features,-0.16706280891219194,-0.06393502247533606
+HorizontalScanPath_13,1428,latent truth (evaluation only),single + nested-response features,0.37137904969711144,0.3922531373960816
+HorizontalScanPath_13,1429,latent truth (evaluation only),single + nested-response features,0.5065190678225235,0.44080021564866145
+HorizontalScanPath_13,1430,latent truth (evaluation only),single + nested-response features,0.5838937021412676,0.4979295107221573
+HorizontalScanPath_13,1431,latent truth (evaluation only),single + nested-response features,0.6241496886019604,0.49534500924157526
+HorizontalScanPath_13,1432,latent truth (evaluation only),single + nested-response features,0.6408934149274614,0.47215743274963373
+HorizontalScanPath_13,1433,latent truth (evaluation only),single + nested-response features,0.6415759788191622,0.4710730117052222
+HorizontalScanPath_13,1435,latent truth (evaluation only),single + nested-response features,0.5999330186698444,0.46583349872120683
+HorizontalScanPath_13,1436,latent truth (evaluation only),single + nested-response features,0.5475329617440821,0.48081217073785393
+HorizontalScanPath_13,1437,latent truth (evaluation only),single + nested-response features,0.45744092655820623,0.43127629818032764
+HorizontalScanPath_13,1438,latent truth (evaluation only),single + nested-response features,0.30998250622951673,0.19759714331714337
+HorizontalScanPath_13,1487,latent truth (evaluation only),single + nested-response features,0.14718354143008128,0.25496745607361454
+HorizontalScanPath_13,1488,latent truth (evaluation only),single + nested-response features,0.5098474697771849,0.3745006634347834
+HorizontalScanPath_13,1490,latent truth (evaluation only),single + nested-response features,0.864568635466469,0.4753143946121593
+HorizontalScanPath_13,1491,latent truth (evaluation only),single + nested-response features,0.9296377016826227,0.5107737309303457
+HorizontalScanPath_13,1492,latent truth (evaluation only),single + nested-response features,0.9594653383356331,0.5024717042864073
+HorizontalScanPath_13,1497,latent truth (evaluation only),single + nested-response features,0.8807450280194757,0.5335214860830474
+HorizontalScanPath_13,1499,latent truth (evaluation only),single + nested-response features,0.655647107473726,0.4504423951421508
+HorizontalScanPath_13,1501,latent truth (evaluation only),single + nested-response features,0.06823650903976386,0.04973330393510687
+HorizontalScanPath_13,1548,latent truth (evaluation only),single + nested-response features,0.39787136122737365,0.3397797329989648
+HorizontalScanPath_13,1550,latent truth (evaluation only),single + nested-response features,1.0446873391546205,0.5125511030259321
+HorizontalScanPath_13,1551,latent truth (evaluation only),single + nested-response features,1.177497346929556,0.5071712312489544
+HorizontalScanPath_13,1560,latent truth (evaluation only),single + nested-response features,1.2661420147816784,0.47996925579459737
+HorizontalScanPath_13,1609,latent truth (evaluation only),single + nested-response features,0.4605584465568313,0.36113972860196
+HorizontalScanPath_13,1624,latent truth (evaluation only),single + nested-response features,0.8125486803336912,0.2605064956680381
+HorizontalScanPath_13,1686,latent truth (evaluation only),single + nested-response features,-0.12302711416066359,-0.02415259405204509
+HorizontalScanPath_13,1803,latent truth (evaluation only),single + nested-response features,1.1268594256825963,0.29304627301468084
+HorizontalScanPath_13,1804,latent truth (evaluation only),single + nested-response features,0.9873294156275279,0.28652953361025907
+HorizontalScanPath_13,1805,latent truth (evaluation only),single + nested-response features,0.7862847209140682,0.28187762587445536
+HorizontalScanPath_13,1806,latent truth (evaluation only),single + nested-response features,0.39557755452761967,0.23492494143582104
+SpiralScanPath_13,699,latent truth (evaluation only),single + nested-response features,-0.08901630425458507,0.2937702692852491
+SpiralScanPath_13,701,latent truth (evaluation only),single + nested-response features,0.4776158953293361,0.32919463059380627
+SpiralScanPath_13,702,latent truth (evaluation only),single + nested-response features,0.4657373234036868,0.320977347109332
+SpiralScanPath_13,703,latent truth (evaluation only),single + nested-response features,0.1836962652774332,0.30100723132903984
+SpiralScanPath_13,817,latent truth (evaluation only),single + nested-response features,-0.3015686618947484,0.2836040390845819
+SpiralScanPath_13,891,latent truth (evaluation only),single + nested-response features,0.6824082582199935,0.2743849194854271
+SpiralScanPath_13,938,latent truth (evaluation only),single + nested-response features,0.3166859346581532,0.04772733243621169
+SpiralScanPath_13,943,latent truth (evaluation only),single + nested-response features,0.14832494508175387,0.38331625021819327
+SpiralScanPath_13,944,latent truth (evaluation only),single + nested-response features,-0.05925400909615064,-0.0031387458678437397
+SpiralScanPath_13,946,latent truth (evaluation only),single + nested-response features,-0.13875383350995207,-0.0025073299056589393
+SpiralScanPath_13,948,latent truth (evaluation only),single + nested-response features,0.3079550690452493,0.45502680499123765
+SpiralScanPath_13,1003,latent truth (evaluation only),single + nested-response features,-0.04791857201161065,0.43972808496019583
+SpiralScanPath_13,1010,latent truth (evaluation only),single + nested-response features,-0.004915866202338748,0.13747769880494795
+SpiralScanPath_13,1059,latent truth (evaluation only),single + nested-response features,0.18014406499872848,0.3518999214645256
+SpiralScanPath_13,1061,latent truth (evaluation only),single + nested-response features,0.8998818465992144,0.5558996150627757
+SpiralScanPath_13,1062,latent truth (evaluation only),single + nested-response features,0.4533164945119097,0.5228518378852194
+SpiralScanPath_13,1069,latent truth (evaluation only),single + nested-response features,-0.4382686859853493,-0.18837919078136672
+SpiralScanPath_13,1070,latent truth (evaluation only),single + nested-response features,-0.37164581045090017,-0.02916677565163936
+SpiralScanPath_13,1120,latent truth (evaluation only),single + nested-response features,0.3621872524610126,0.3612372964882502
+SpiralScanPath_13,1123,latent truth (evaluation only),single + nested-response features,0.17849951595991342,0.4371553836941413
+SpiralScanPath_13,1124,latent truth (evaluation only),single + nested-response features,-0.22534981702870027,0.3120967758047393
+SpiralScanPath_13,1134,latent truth (evaluation only),single + nested-response features,0.366130717904241,0.06062520645513992
+SpiralScanPath_13,1181,latent truth (evaluation only),single + nested-response features,0.4111897563014395,0.35565465894382897
+SpiralScanPath_13,1182,latent truth (evaluation only),single + nested-response features,0.7677604697930747,0.49808955620196016
+SpiralScanPath_13,1184,latent truth (evaluation only),single + nested-response features,0.03383930738232266,-0.08514384296312486
+SpiralScanPath_13,1194,latent truth (evaluation only),single + nested-response features,-0.2684285165039455,-0.08065578988679525
+SpiralScanPath_13,1242,latent truth (evaluation only),single + nested-response features,0.3678338648576869,0.3557731509798641
+SpiralScanPath_13,1244,latent truth (evaluation only),single + nested-response features,0.43133634446263613,0.4020323153875901
+SpiralScanPath_13,1255,latent truth (evaluation only),single + nested-response features,-0.25424162058874344,-0.18536844005342784
+SpiralScanPath_13,1303,latent truth (evaluation only),single + nested-response features,0.25295000077369423,0.34199188593698543
+SpiralScanPath_13,1304,latent truth (evaluation only),single + nested-response features,0.6018123341728483,0.488441508956758
+SpiralScanPath_13,1306,latent truth (evaluation only),single + nested-response features,0.025784335262699187,0.0011308658720255715
+SpiralScanPath_13,1364,latent truth (evaluation only),single + nested-response features,0.06374002908751208,0.013373031537990077
+SpiralScanPath_13,1365,latent truth (evaluation only),single + nested-response features,0.50048928300032,0.4499673970870585
+SpiralScanPath_13,1366,latent truth (evaluation only),single + nested-response features,0.4457972215176369,0.4647210419403985
+SpiralScanPath_13,1367,latent truth (evaluation only),single + nested-response features,0.12435280872557541,0.08260975715018093
+SpiralScanPath_13,1426,latent truth (evaluation only),single + nested-response features,0.33333981733539986,0.36182922191100747
+SpiralScanPath_13,1427,latent truth (evaluation only),single + nested-response features,0.45082536967476017,0.4367696332655373
+SpiralScanPath_13,1428,latent truth (evaluation only),single + nested-response features,0.2536993015600615,0.4445092861005493
+SpiralScanPath_13,1487,latent truth (evaluation only),single + nested-response features,0.05437496750005266,-0.01959587933552187
+SpiralScanPath_13,1488,latent truth (evaluation only),single + nested-response features,0.3610827928516187,0.36379032122217275
+SpiralScanPath_13,1491,latent truth (evaluation only),single + nested-response features,-0.045592132508545546,0.2760777078690976
+SpiralScanPath_13,1550,latent truth (evaluation only),single + nested-response features,0.2983527533965571,0.3547626895550941
+SpiralScanPath_13,1552,latent truth (evaluation only),single + nested-response features,0.15603134757736825,-0.14037875043867587
+SpiralScanPath_13,1558,latent truth (evaluation only),single + nested-response features,-0.05185537874069723,0.10719269343199062
+SpiralScanPath_13,1559,latent truth (evaluation only),single + nested-response features,-0.08560691721078229,-0.22705190040837248
+SpiralScanPath_13,1611,latent truth (evaluation only),single + nested-response features,0.02526279995748837,-0.056571918774184105
+SpiralScanPath_13,1612,latent truth (evaluation only),single + nested-response features,0.18871799921942056,0.2970057830466485
+SpiralScanPath_13,1613,latent truth (evaluation only),single + nested-response features,0.21118208470960553,0.3489992381846637
+SpiralScanPath_13,1614,latent truth (evaluation only),single + nested-response features,0.16670514626895283,0.2984863599150188
+SpiralScanPath_13,1616,latent truth (evaluation only),single + nested-response features,0.06572940878953659,-0.14574769626535905
+SpiralScanPath_13,1617,latent truth (evaluation only),single + nested-response features,0.03516304932696812,0.10029814560948108
+SpiralScanPath_13,1674,latent truth (evaluation only),single + nested-response features,-0.014517444497357701,0.24759863237389187
+SpiralScanPath_13,1675,latent truth (evaluation only),single + nested-response features,0.047793172355000024,0.25146786518308006
+SpiralScanPath_13,1678,latent truth (evaluation only),single + nested-response features,-0.04262116604269295,-0.15075509829104322
+SpiralScanPath_13,1737,latent truth (evaluation only),single + nested-response features,-0.3297514666632537,-0.18420474999273165

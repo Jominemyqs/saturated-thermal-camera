@@ -1,0 +1,5 @@
+target,model,rmse_K,mae_K,bias_K,spearman_rho,r_squared,selected_penalties,n_pixels,outer_validation
+known measurement,single-threshold features,0.30774091770564954,0.20178095548122948,0.0033538623908524363,0.34269780411293127,-0.46728447088634284,DiagonalScanPath_8=10; HorizontalScanPath_13=100; SpiralScanPath_13=100,151,leave one development trajectory out
+known measurement,single + nested-response features,0.30863455083348634,0.20382649300763983,0.005686935966297616,0.3283095155106308,-0.4758183883427649,DiagonalScanPath_8=10; HorizontalScanPath_13=100; SpiralScanPath_13=100,151,leave one development trajectory out
+latent truth (evaluation only),single-threshold features,0.32978628205746285,0.18339957959894376,0.005756378215775124,0.7963959567793655,0.09634462636112862,DiagonalScanPath_8=10; HorizontalScanPath_13=100; SpiralScanPath_13=100,151,leave one development trajectory out
+latent truth (evaluation only),single + nested-response features,0.33024849904300596,0.1849746956321644,-0.0032688738059048956,0.7888672011153712,0.09380978733474199,DiagonalScanPath_8=10; HorizontalScanPath_13=100; SpiralScanPath_13=100,151,leave one development trajectory out

@@ -1,0 +1,12 @@
+calibrator,term,coefficient,feature_mean,feature_sd
+global inflation,global_scale,2.263548276569668,,
+severity inflation,intercept,0.9313578021764473,,
+severity inflation,observed_censored_fraction,0.0,0.07530321204851392,0.020404470466266998
+feature inflation,intercept,0.34632769181919465,,
+feature inflation,observed_censored_fraction,0.0,0.07530321204851392,0.020404470466266998
+feature inflation,local_censored_fraction,-0.221566629755629,0.7010263439393827,0.2191053042959168
+feature inflation,posterior_standardized_gap,0.7574879707527791,1.984380408544173,0.5379535425415725
+feature inflation,prior_standardized_gap,0.00792463895779748,1.2570047765851018,0.7969298910300178
+feature inflation,posterior_exceedance_probability,0.505826099464809,0.9540807502132265,0.07575905521225663
+feature inflation,log_posterior_sd,0.3010909363103493,0.3799189825973146,0.5243685332654457
+feature inflation,normalized_heat_flux,-0.1561322230098242,0.0009830962282717755,0.004017336589085016

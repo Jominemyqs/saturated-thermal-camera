@@ -7,6 +7,7 @@ from scipy.linalg import cho_factor, cho_solve
 from scipy.stats import _mvn, norm
 
 from src.censored_gp import cholesky_with_jitter
+from src.truncated_gaussian import sample_lower_truncated_gaussian_hmc
 
 
 @dataclass(frozen=True)
@@ -16,6 +17,30 @@ class DenseGaussianPrior:
     covariance: np.ndarray
     noise_sd: float
     relative_jitter: float = 1e-7
+
+
+def pool_gaussian_predictions(
+    predictions: list[
+        tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]
+    ],
+) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    """Pool independent posterior chains without discarding within-chain variance."""
+    if not predictions:
+        raise ValueError("At least one prediction is required")
+    means = np.asarray([prediction[0] for prediction in predictions], dtype=float)
+    variances = np.asarray(
+        [np.asarray(prediction[1], dtype=float) ** 2 for prediction in predictions]
+    )
+    draws = np.vstack([np.asarray(prediction[4], dtype=float) for prediction in predictions])
+    mean = np.mean(means, axis=0)
+    variance = np.mean(variances + means**2, axis=0) - mean**2
+    return (
+        mean,
+        np.sqrt(np.maximum(variance, 0.0)),
+        np.quantile(draws, 0.025, axis=0),
+        np.quantile(draws, 0.975, axis=0),
+        draws,
+    )
 
 
 def _point_indices(reference: np.ndarray, query: np.ndarray) -> np.ndarray:
@@ -186,6 +211,8 @@ def sample_censored_gaussian_blocks(
     thin: int,
     seed: int,
     relative_jitter: float = 1e-7,
+    truncated_sampler: str = "ess",
+    prediction_covariance: np.ndarray | None = None,
 ) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     """Sample a censored Gaussian prior from observation/prediction blocks."""
     y_obs = np.asarray(observations["y_obs"], dtype=float).reshape(-1)
@@ -231,36 +258,55 @@ def sample_censored_gaussian_blocks(
             sat_covariance = sat_covariance - sat_unsat.dot(
                 cho_solve(unsat_factor, sat_unsat.T, check_finite=False)
             )
-        sat_factor = cholesky_with_jitter(sat_covariance, jitter)
-        current = np.maximum(sat_mean, threshold + 0.5 * noise_sd)
-        centered = current - sat_mean
-        saturated_samples = []
-        for step in range(burn_in + n_samples * thin):
-            direction = sat_factor.dot(rng.normal(size=len(sat_indices)))
-            angle = rng.uniform(0.0, 2.0 * np.pi)
-            lower_angle = angle - 2.0 * np.pi
-            upper_angle = angle
-            for _ in range(2500):
-                proposal_centered = (
-                    centered * np.cos(angle) + direction * np.sin(angle)
-                )
-                proposal = sat_mean + proposal_centered
-                if np.all(proposal >= threshold):
-                    centered = proposal_centered
-                    current = proposal
-                    break
-                if angle < 0.0:
-                    lower_angle = angle
+        if truncated_sampler == "hmc":
+            saturated_samples = sample_lower_truncated_gaussian_hmc(
+                sat_mean,
+                sat_covariance,
+                threshold,
+                n_samples=n_samples,
+                burn_in=burn_in,
+                thin=thin,
+                seed=seed + 1_000_003,
+                relative_jitter=relative_jitter,
+            )
+        elif truncated_sampler == "ess":
+            sat_factor = cholesky_with_jitter(sat_covariance, jitter)
+            current = np.maximum(sat_mean, threshold + 0.5 * noise_sd)
+            centered = current - sat_mean
+            saturated_samples_list = []
+            for step in range(burn_in + n_samples * thin):
+                direction = sat_factor.dot(rng.normal(size=len(sat_indices)))
+                angle = rng.uniform(0.0, 2.0 * np.pi)
+                lower_angle = angle - 2.0 * np.pi
+                upper_angle = angle
+                for _ in range(2500):
+                    proposal_centered = (
+                        centered * np.cos(angle) + direction * np.sin(angle)
+                    )
+                    proposal = sat_mean + proposal_centered
+                    if np.all(proposal >= threshold):
+                        centered = proposal_centered
+                        current = proposal
+                        break
+                    if angle < 0.0:
+                        lower_angle = angle
+                    else:
+                        upper_angle = angle
+                    angle = rng.uniform(lower_angle, upper_angle)
                 else:
-                    upper_angle = angle
-                angle = rng.uniform(lower_angle, upper_angle)
-            else:
-                raise RuntimeError("No feasible censored elliptical-slice proposal")
-            if step >= burn_in and (step - burn_in) % thin == 0:
-                saturated_samples.append(current.copy())
+                    raise RuntimeError(
+                        "No feasible censored elliptical-slice proposal"
+                    )
+                if step >= burn_in and (step - burn_in) % thin == 0:
+                    saturated_samples_list.append(current.copy())
+            saturated_samples = np.asarray(saturated_samples_list)
+        else:
+            raise ValueError(
+                f"Unknown truncated Gaussian sampler: {truncated_sampler}"
+            )
         observation_samples = np.empty((n_samples, len(y_obs)))
         observation_samples[:, unsat_mask] = y_obs[unsat_mask]
-        observation_samples[:, sat_mask] = np.asarray(saturated_samples)
+        observation_samples[:, sat_mask] = saturated_samples
     else:
         observation_samples = np.repeat(y_obs[None, :], n_samples, axis=0)
 
@@ -281,9 +327,19 @@ def sample_censored_gaussian_blocks(
     variance = conditional_variance + np.var(
         conditional_means, axis=0, ddof=1
     )
-    draws = conditional_means + rng.normal(size=conditional_means.shape) * np.sqrt(
-        conditional_variance
-    )
+    if prediction_covariance is None:
+        draws = conditional_means + rng.normal(size=conditional_means.shape) * np.sqrt(
+            conditional_variance
+        )
+    else:
+        full = np.asarray(prediction_covariance, dtype=float)
+        if full.shape != (len(pred_mean), len(pred_mean)):
+            raise ValueError("Full prediction covariance has the wrong shape")
+        np.testing.assert_allclose(np.diag(full), pred_variance, rtol=1e-8, atol=1e-10)
+        conditional_covariance = full - k_po.dot(solved)
+        conditional_covariance = 0.5 * (conditional_covariance + conditional_covariance.T)
+        factor = cholesky_with_jitter(conditional_covariance, jitter)
+        draws = conditional_means + rng.normal(size=conditional_means.shape).dot(factor.T)
     return (
         mean,
         np.sqrt(np.maximum(variance, 0.0)),

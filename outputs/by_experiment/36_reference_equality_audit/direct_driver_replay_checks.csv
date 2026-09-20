@@ -1,0 +1,11 @@
+trajectory,method,component,array_equal,max_absolute_difference
+DiagonalScanPath_1,Posterior physics mean + sequential advective ST (moment-matched),posterior_mean,True,0.0
+DiagonalScanPath_1,Posterior physics mean + sequential advective ST (moment-matched),posterior_sd,True,0.0
+DiagonalScanPath_1,Posterior physics mean + sequential advective ST (moment-matched),lower_95,True,0.0
+DiagonalScanPath_1,Posterior physics mean + sequential advective ST (moment-matched),upper_95,True,0.0
+DiagonalScanPath_1,Posterior physics mean + sequential advective ST (moment-matched),posterior_draws,True,0.0
+DiagonalScanPath_1,Advective posterior mean + sequential advective ST (moment-matched),posterior_mean,True,0.0
+DiagonalScanPath_1,Advective posterior mean + sequential advective ST (moment-matched),posterior_sd,True,0.0
+DiagonalScanPath_1,Advective posterior mean + sequential advective ST (moment-matched),lower_95,True,0.0
+DiagonalScanPath_1,Advective posterior mean + sequential advective ST (moment-matched),upper_95,True,0.0
+DiagonalScanPath_1,Advective posterior mean + sequential advective ST (moment-matched),posterior_draws,True,0.0

@@ -1,0 +1,9 @@
+method,prior_mean,residual_covariance,previous_information,current_observation_set,posterior_representation,status
+Current-only ambient mean + RBF,ambient,spatial RBF,none,fixed-stride current only,Gaussian; 4 x 350 current draws,canonical current-only control
+Posterior physics mean + RBF,diffusive posterior physics mean,spatial RBF,converged previous censored posterior mean,fixed-stride current only,Gaussian; 4 x 350 current draws,canonical
+Advective posterior physics mean + RBF,advective posterior physics mean,spatial RBF,converged previous censored posterior mean,fixed-stride current only,Gaussian; 4 x 350 current draws,canonical
+Posterior physics mean + sequential ST,diffusive posterior physics mean,Q + diffusive B Sigma B^T,converged previous censored posterior mean and covariance,fixed-stride current only,Gaussian moment match; 4 x 350 current draws,canonical
+Posterior physics mean + sequential advective ST,diffusive posterior physics mean,Q + advective B Sigma B^T,converged previous censored posterior mean and covariance,fixed-stride current only,Gaussian moment match; 4 x 350 current draws,canonical
+Advective posterior physics mean + sequential advective ST,advective posterior physics mean,Q + advective B Sigma B^T,converged previous censored posterior mean and covariance,fixed-stride current only,Gaussian moment match; 4 x 350 current draws,canonical
+Posterior-sample mixture + sequential advective ST,diffusive posterior physics mean,Q within components; advectively propagated centered draws,balanced 2800-component subset of 8000 converged previous draws,fixed-stride current only,finite Gaussian mixture; 1400 current draws,canonical non-Gaussian propagation control
+Current-only ambient mean + RBF (all saturated diagnostic),ambient,spatial RBF,none,fixed stride plus every observed-saturated current pixel,"Gaussian; 4 x 2000 current draws, long burn-in",diagnostic only; observation set differs

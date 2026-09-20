@@ -258,6 +258,7 @@ def infer_previous_censored_posterior(
     burn_in: int,
     thin: int,
     seed: int,
+    truncated_sampler: str = "ess",
 ) -> tuple[np.ndarray, np.ndarray, dict[str, float]]:
     observations, clipped, saturated = previous_posterior_observations(
         prepared,
@@ -282,6 +283,7 @@ def infer_previous_censored_posterior(
             burn_in=burn_in,
             thin=thin,
             seed=seed,
+            truncated_sampler=truncated_sampler,
         )
         draws[:, saturated] = prediction[4]
     posterior_mean = np.mean(draws, axis=0)

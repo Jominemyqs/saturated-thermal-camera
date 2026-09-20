@@ -1,0 +1,49 @@
+level_index,level,metric,difference_definition,mean_difference,median_difference,sequential_win_count,paired_trajectory_count,win_definition
+0,reference,field_excess_rel_l2,sequential minus single-frame,-0.2955154049179971,-0.3164317743485557,30.0,30,lower is better
+0,reference,overall_rmse_K,sequential minus single-frame,-0.37723287353456075,-0.44732926257097877,30.0,30,lower is better
+0,reference,overall_crps_K,sequential minus single-frame,-0.5423082039960595,-0.5442722184153552,30.0,30,lower is better
+0,reference,top_1pct_rmse_K,sequential minus single-frame,-3.6548154448208843,-4.5214170334852835,30.0,30,lower is better
+0,reference,top_1pct_crps_K,sequential minus single-frame,-1.2634549248610958,-1.457496958629295,30.0,30,lower is better
+0,reference,top_1pct_coverage_95,sequential minus single-frame,-0.007999999999999981,0.0,11.0,30,closer to nominal 0.95
+0,reference,top_1pct_interval_width_95_K,sequential minus single-frame,-0.08173437485766707,-0.16644169984538149,,30,not ranked; interpret jointly with coverage
+0,reference,hidden_observation_rmse_K,sequential minus single-frame,,,0.0,0,lower is better
+1,target_5pct,field_excess_rel_l2,sequential minus single-frame,-0.2466898553157149,-0.2705166381358802,30.0,30,lower is better
+1,target_5pct,overall_rmse_K,sequential minus single-frame,-0.31765770151889255,-0.3777076159774508,30.0,30,lower is better
+1,target_5pct,overall_crps_K,sequential minus single-frame,-0.5195919008909872,-0.5200268388604621,30.0,30,lower is better
+1,target_5pct,top_1pct_rmse_K,sequential minus single-frame,-3.919579773611446,-4.7414593057895855,30.0,30,lower is better
+1,target_5pct,top_1pct_crps_K,sequential minus single-frame,-1.4574364425108342,-1.6056454263804256,30.0,30,lower is better
+1,target_5pct,top_1pct_coverage_95,sequential minus single-frame,0.018666666666666654,0.019999999999999962,15.0,30,closer to nominal 0.95
+1,target_5pct,top_1pct_interval_width_95_K,sequential minus single-frame,0.740074425098796,0.8222146413977147,,30,not ranked; interpret jointly with coverage
+1,target_5pct,hidden_observation_rmse_K,sequential minus single-frame,-0.27147112541310403,-0.2940959695354015,23.0,30,lower is better
+2,target_7.5pct,field_excess_rel_l2,sequential minus single-frame,-0.2114140734055382,-0.21591281586198408,27.0,30,lower is better
+2,target_7.5pct,overall_rmse_K,sequential minus single-frame,-0.27253617594935947,-0.300394332359463,27.0,30,lower is better
+2,target_7.5pct,overall_crps_K,sequential minus single-frame,-0.48011769156854195,-0.4847679667785695,30.0,30,lower is better
+2,target_7.5pct,top_1pct_rmse_K,sequential minus single-frame,-4.308328632469443,-5.219113429221544,30.0,30,lower is better
+2,target_7.5pct,top_1pct_crps_K,sequential minus single-frame,-2.1412759944396287,-2.2438634446304677,30.0,30,lower is better
+2,target_7.5pct,top_1pct_coverage_95,sequential minus single-frame,0.14533333333333334,0.12,26.0,30,closer to nominal 0.95
+2,target_7.5pct,top_1pct_interval_width_95_K,sequential minus single-frame,1.6675414061137137,1.407397474215244,,30,not ranked; interpret jointly with coverage
+2,target_7.5pct,hidden_observation_rmse_K,sequential minus single-frame,0.42562702515755674,0.3707654206491129,4.0,30,lower is better
+3,target_10pct,field_excess_rel_l2,sequential minus single-frame,-0.23529948221351388,-0.2131956985150792,30.0,30,lower is better
+3,target_10pct,overall_rmse_K,sequential minus single-frame,-0.29907586255900453,-0.2720994258838632,30.0,30,lower is better
+3,target_10pct,overall_crps_K,sequential minus single-frame,-0.45834113296127366,-0.4651857654659233,30.0,30,lower is better
+3,target_10pct,top_1pct_rmse_K,sequential minus single-frame,-4.391391192240633,-5.4059384530918715,30.0,30,lower is better
+3,target_10pct,top_1pct_crps_K,sequential minus single-frame,-2.5993482854301635,-2.763546515225042,30.0,30,lower is better
+3,target_10pct,top_1pct_coverage_95,sequential minus single-frame,0.356,0.38,28.0,30,closer to nominal 0.95
+3,target_10pct,top_1pct_interval_width_95_K,sequential minus single-frame,1.9436577128350985,1.9247718801432943,,30,not ranked; interpret jointly with coverage
+3,target_10pct,hidden_observation_rmse_K,sequential minus single-frame,0.6705444381883626,0.6720211436195369,2.0,30,lower is better
+4,target_15pct,field_excess_rel_l2,sequential minus single-frame,-0.28716052126359,-0.316608422133921,30.0,30,lower is better
+4,target_15pct,overall_rmse_K,sequential minus single-frame,-0.3706626967840915,-0.46207952205037195,30.0,30,lower is better
+4,target_15pct,overall_crps_K,sequential minus single-frame,-0.4554636942836726,-0.4543573312875828,30.0,30,lower is better
+4,target_15pct,top_1pct_rmse_K,sequential minus single-frame,-3.7656115135123502,-4.823737847525397,30.0,30,lower is better
+4,target_15pct,top_1pct_crps_K,sequential minus single-frame,-2.0268910390116015,-2.4597114424582833,30.0,30,lower is better
+4,target_15pct,top_1pct_coverage_95,sequential minus single-frame,0.022666666666666672,0.0,14.0,30,closer to nominal 0.95
+4,target_15pct,top_1pct_interval_width_95_K,sequential minus single-frame,1.083010623174458,1.0472322795406102,,30,not ranked; interpret jointly with coverage
+4,target_15pct,hidden_observation_rmse_K,sequential minus single-frame,0.006548420385177015,0.016678471941763584,14.0,30,lower is better
+5,target_20pct,field_excess_rel_l2,sequential minus single-frame,-0.2818279943702752,-0.29660442583791213,30.0,30,lower is better
+5,target_20pct,overall_rmse_K,sequential minus single-frame,-0.3611091867101468,-0.444637886485628,30.0,30,lower is better
+5,target_20pct,overall_crps_K,sequential minus single-frame,-0.4011579019718919,-0.3996921754940569,30.0,30,lower is better
+5,target_20pct,top_1pct_rmse_K,sequential minus single-frame,-3.6499567676575335,-4.754123158849744,30.0,30,lower is better
+5,target_20pct,top_1pct_crps_K,sequential minus single-frame,-1.9652785800516501,-2.478105527591605,30.0,30,lower is better
+5,target_20pct,top_1pct_coverage_95,sequential minus single-frame,0.018666666666666668,0.0,13.0,30,closer to nominal 0.95
+5,target_20pct,top_1pct_interval_width_95_K,sequential minus single-frame,1.133543088716137,1.1192402045584426,,30,not ranked; interpret jointly with coverage
+5,target_20pct,hidden_observation_rmse_K,sequential minus single-frame,0.04014190480431398,0.0458828605352109,7.0,30,lower is better

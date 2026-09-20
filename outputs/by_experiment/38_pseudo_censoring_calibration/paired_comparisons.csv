@@ -1,0 +1,13 @@
+method,metric,difference,mean_difference,median_difference,calibrated_lower_count,calibrated_higher_count,paired_cases
+global inflation,overall_crps_K,calibrated minus uncalibrated,-0.02699315703806683,-0.025465748650648656,180,0,180
+global inflation,top_1pct_crps_K,calibrated minus uncalibrated,0.11082985935736074,0.10659456559101776,10,170,180
+global inflation,top_1pct_coverage_95,calibrated minus uncalibrated,0.14155555555555555,0.12,0,180,180
+global inflation,top_1pct_width_95_K,calibrated minus uncalibrated,9.783238779855875,9.804297396433618,0,180,180
+severity inflation,overall_crps_K,calibrated minus uncalibrated,-0.02699315703806683,-0.025465748650648656,180,0,180
+severity inflation,top_1pct_crps_K,calibrated minus uncalibrated,0.11082985935736074,0.10659456559101776,10,170,180
+severity inflation,top_1pct_coverage_95,calibrated minus uncalibrated,0.14155555555555555,0.12,0,180,180
+severity inflation,top_1pct_width_95_K,calibrated minus uncalibrated,9.783238779855875,9.804297396433618,0,180,180
+feature inflation,overall_crps_K,calibrated minus uncalibrated,-0.026852937248788785,-0.024889508689551088,180,0,180
+feature inflation,top_1pct_crps_K,calibrated minus uncalibrated,0.17093972163238616,0.17190666155654177,1,179,180
+feature inflation,top_1pct_coverage_95,calibrated minus uncalibrated,0.0677777777777778,0.07999999999999996,0,140,180
+feature inflation,top_1pct_width_95_K,calibrated minus uncalibrated,7.029591829613711,7.58773136651481,0,180,180

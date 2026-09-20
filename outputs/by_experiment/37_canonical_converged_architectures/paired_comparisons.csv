@@ -1,0 +1,169 @@
+left_method,right_method,metric,difference_definition,mean_difference,median_difference,right_lower_count,paired_trajectory_count
+Current-only ambient mean + RBF,Posterior physics mean + RBF,field_excess_rel_l2,right minus left,-0.42352074671174356,-0.4461123023396279,30,30
+Current-only ambient mean + RBF,Posterior physics mean + RBF,overall_rmse_K,right minus left,-0.541970370005069,-0.5704734766581587,30,30
+Current-only ambient mean + RBF,Posterior physics mean + RBF,overall_crps_K,right minus left,-0.03935219211568776,-0.034940645264904036,30,30
+Current-only ambient mean + RBF,Posterior physics mean + RBF,top_1pct_rmse_K,right minus left,-7.0673825186062205,-7.724023175139953,30,30
+Current-only ambient mean + RBF,Posterior physics mean + RBF,top_1pct_crps_K,right minus left,-4.178791449302897,-4.327660630629727,30,30
+Current-only ambient mean + RBF,Posterior physics mean + RBF,top_1pct_coverage_95,right minus left,0.22933333333333336,0.24,0,30
+Current-only ambient mean + RBF,Posterior physics mean + RBF,top_1pct_interval_width_95_K,right minus left,0.247719019322608,0.24870084321152408,3,30
+Current-only ambient mean + RBF,Posterior physics mean + RBF,peak_absolute_error_K,right minus left,-21.770199925563748,-22.400321761118306,30,30
+Current-only ambient mean + RBF,Advective posterior physics mean + RBF,field_excess_rel_l2,right minus left,-0.4400242045118984,-0.4616406687063773,30,30
+Current-only ambient mean + RBF,Advective posterior physics mean + RBF,overall_rmse_K,right minus left,-0.5618145945845598,-0.5868258754436531,30,30
+Current-only ambient mean + RBF,Advective posterior physics mean + RBF,overall_crps_K,right minus left,-0.04241612871240686,-0.040223132881242074,30,30
+Current-only ambient mean + RBF,Advective posterior physics mean + RBF,top_1pct_rmse_K,right minus left,-6.972694650000048,-7.611179976868684,30,30
+Current-only ambient mean + RBF,Advective posterior physics mean + RBF,top_1pct_crps_K,right minus left,-4.142986359398383,-4.243391779021457,30,30
+Current-only ambient mean + RBF,Advective posterior physics mean + RBF,top_1pct_coverage_95,right minus left,0.23066666666666671,0.24,0,30
+Current-only ambient mean + RBF,Advective posterior physics mean + RBF,top_1pct_interval_width_95_K,right minus left,0.23147345384267565,0.26507117452117157,5,30
+Current-only ambient mean + RBF,Advective posterior physics mean + RBF,peak_absolute_error_K,right minus left,-21.34829240661583,-21.484480513997568,30,30
+Current-only ambient mean + RBF,Posterior physics mean + sequential ST,field_excess_rel_l2,right minus left,-0.4500628346099555,-0.47667405183601746,30,30
+Current-only ambient mean + RBF,Posterior physics mean + sequential ST,overall_rmse_K,right minus left,-0.5747219631445717,-0.61477196048082,30,30
+Current-only ambient mean + RBF,Posterior physics mean + sequential ST,overall_crps_K,right minus left,-0.5525610305965037,-0.5493704744982737,30,30
+Current-only ambient mean + RBF,Posterior physics mean + sequential ST,top_1pct_rmse_K,right minus left,-7.087358031130917,-7.718699127772181,30,30
+Current-only ambient mean + RBF,Posterior physics mean + sequential ST,top_1pct_crps_K,right minus left,-4.209665995225413,-4.317195487565614,30,30
+Current-only ambient mean + RBF,Posterior physics mean + sequential ST,top_1pct_coverage_95,right minus left,0.14533333333333334,0.12,0,30
+Current-only ambient mean + RBF,Posterior physics mean + sequential ST,top_1pct_interval_width_95_K,right minus left,-4.422022531888875,-4.481015052506367,30,30
+Current-only ambient mean + RBF,Posterior physics mean + sequential ST,peak_absolute_error_K,right minus left,-21.784780915984538,-22.45998276724839,30,30
+Current-only ambient mean + RBF,Posterior physics mean + sequential advective ST,field_excess_rel_l2,right minus left,-0.4500499719700873,-0.4788071446643547,30,30
+Current-only ambient mean + RBF,Posterior physics mean + sequential advective ST,overall_rmse_K,right minus left,-0.5746685275740033,-0.6154983132761869,30,30
+Current-only ambient mean + RBF,Posterior physics mean + sequential advective ST,overall_crps_K,right minus left,-0.5492729039051325,-0.5463785184136862,30,30
+Current-only ambient mean + RBF,Posterior physics mean + sequential advective ST,top_1pct_rmse_K,right minus left,-7.079172762750674,-7.7221956632399085,30,30
+Current-only ambient mean + RBF,Posterior physics mean + sequential advective ST,top_1pct_crps_K,right minus left,-4.200492819569872,-4.318300475744387,30,30
+Current-only ambient mean + RBF,Posterior physics mean + sequential advective ST,top_1pct_coverage_95,right minus left,0.14133333333333334,0.12,0,30
+Current-only ambient mean + RBF,Posterior physics mean + sequential advective ST,top_1pct_interval_width_95_K,right minus left,-5.296633470427161,-5.131217162151635,30,30
+Current-only ambient mean + RBF,Posterior physics mean + sequential advective ST,peak_absolute_error_K,right minus left,-21.768874001728175,-22.453680618647837,30,30
+Current-only ambient mean + RBF,Advective posterior physics mean + sequential advective ST,field_excess_rel_l2,right minus left,-0.46678500516110427,-0.4915926110899055,30,30
+Current-only ambient mean + RBF,Advective posterior physics mean + sequential advective ST,overall_rmse_K,right minus left,-0.5947447256350287,-0.6380595018921833,30,30
+Current-only ambient mean + RBF,Advective posterior physics mean + sequential advective ST,overall_crps_K,right minus left,-0.5586069794657538,-0.5580759157750196,30,30
+Current-only ambient mean + RBF,Advective posterior physics mean + sequential advective ST,top_1pct_rmse_K,right minus left,-6.972018862438229,-7.591276122505616,30,30
+Current-only ambient mean + RBF,Advective posterior physics mean + sequential advective ST,top_1pct_crps_K,right minus left,-4.149318505373327,-4.231173794106439,30,30
+Current-only ambient mean + RBF,Advective posterior physics mean + sequential advective ST,top_1pct_coverage_95,right minus left,0.12266666666666667,0.12,0,30
+Current-only ambient mean + RBF,Advective posterior physics mean + sequential advective ST,top_1pct_interval_width_95_K,right minus left,-5.31421861172052,-5.145922285417019,30,30
+Current-only ambient mean + RBF,Advective posterior physics mean + sequential advective ST,peak_absolute_error_K,right minus left,-21.34100255564653,-21.4901451025967,30,30
+Current-only ambient mean + RBF,Posterior-sample mixture + sequential advective ST,field_excess_rel_l2,right minus left,-0.45120047947749187,-0.47788974490806724,30,30
+Current-only ambient mean + RBF,Posterior-sample mixture + sequential advective ST,overall_rmse_K,right minus left,-0.5760828173775426,-0.6145624492024129,30,30
+Current-only ambient mean + RBF,Posterior-sample mixture + sequential advective ST,overall_crps_K,right minus left,-0.5508551295905096,-0.5478630672857427,30,30
+Current-only ambient mean + RBF,Posterior-sample mixture + sequential advective ST,top_1pct_rmse_K,right minus left,-7.076833766159351,-7.727624068668674,30,30
+Current-only ambient mean + RBF,Posterior-sample mixture + sequential advective ST,top_1pct_crps_K,right minus left,-4.221239810050583,-4.3494559992544675,30,30
+Current-only ambient mean + RBF,Posterior-sample mixture + sequential advective ST,top_1pct_coverage_95,right minus left,0.14133333333333337,0.13999999999999996,0,30
+Current-only ambient mean + RBF,Posterior-sample mixture + sequential advective ST,top_1pct_interval_width_95_K,right minus left,-5.384733212203552,-5.2329063261375595,30,30
+Current-only ambient mean + RBF,Posterior-sample mixture + sequential advective ST,peak_absolute_error_K,right minus left,-21.78147734786842,-22.50005114103888,30,30
+Posterior physics mean + RBF,Advective posterior physics mean + RBF,field_excess_rel_l2,right minus left,-0.016503457800154733,-0.012086146725518415,30,30
+Posterior physics mean + RBF,Advective posterior physics mean + RBF,overall_rmse_K,right minus left,-0.019844224579490984,-0.01752572177024614,30,30
+Posterior physics mean + RBF,Advective posterior physics mean + RBF,overall_crps_K,right minus left,-0.003063936596719112,-0.0027543790793755907,30,30
+Posterior physics mean + RBF,Advective posterior physics mean + RBF,top_1pct_rmse_K,right minus left,0.09468786860617265,0.09619644751280676,0,30
+Posterior physics mean + RBF,Advective posterior physics mean + RBF,top_1pct_crps_K,right minus left,0.035805089904513906,0.02777284358184484,6,30
+Posterior physics mean + RBF,Advective posterior physics mean + RBF,top_1pct_coverage_95,right minus left,0.001333333333333331,0.0,3,30
+Posterior physics mean + RBF,Advective posterior physics mean + RBF,top_1pct_interval_width_95_K,right minus left,-0.016245565479932368,-0.0021579436077896474,16,30
+Posterior physics mean + RBF,Advective posterior physics mean + RBF,peak_absolute_error_K,right minus left,0.4219075189479194,0.4073188625882551,2,30
+Posterior physics mean + RBF,Posterior physics mean + sequential ST,field_excess_rel_l2,right minus left,-0.026542087898211886,-0.02364627539344863,30,30
+Posterior physics mean + RBF,Posterior physics mean + sequential ST,overall_rmse_K,right minus left,-0.03275159313950284,-0.032440309048946625,30,30
+Posterior physics mean + RBF,Posterior physics mean + sequential ST,overall_crps_K,right minus left,-0.5132088384808161,-0.5133710754745466,30,30
+Posterior physics mean + RBF,Posterior physics mean + sequential ST,top_1pct_rmse_K,right minus left,-0.0199755125246967,-0.009997597483581755,19,30
+Posterior physics mean + RBF,Posterior physics mean + sequential ST,top_1pct_crps_K,right minus left,-0.030874545922517135,-0.027236695697913316,22,30
+Posterior physics mean + RBF,Posterior physics mean + sequential ST,top_1pct_coverage_95,right minus left,-0.08400000000000002,-0.08000000000000002,30,30
+Posterior physics mean + RBF,Posterior physics mean + sequential ST,top_1pct_interval_width_95_K,right minus left,-4.669741551211483,-4.6947731850505265,30,30
+Posterior physics mean + RBF,Posterior physics mean + sequential ST,peak_absolute_error_K,right minus left,-0.014580990420788946,-0.0019737899631024902,16,30
+Posterior physics mean + RBF,Posterior physics mean + sequential advective ST,field_excess_rel_l2,right minus left,-0.0265292252583438,-0.024478871244237504,30,30
+Posterior physics mean + RBF,Posterior physics mean + sequential advective ST,overall_rmse_K,right minus left,-0.03269815756893447,-0.03371914974255952,30,30
+Posterior physics mean + RBF,Posterior physics mean + sequential advective ST,overall_crps_K,right minus left,-0.5099207117894448,-0.5098620726353796,30,30
+Posterior physics mean + RBF,Posterior physics mean + sequential advective ST,top_1pct_rmse_K,right minus left,-0.01179024414445468,-0.0036463339761136915,20,30
+Posterior physics mean + RBF,Posterior physics mean + sequential advective ST,top_1pct_crps_K,right minus left,-0.021701370266975748,-0.02791534444391508,20,30
+Posterior physics mean + RBF,Posterior physics mean + sequential advective ST,top_1pct_coverage_95,right minus left,-0.08800000000000002,-0.08000000000000007,30,30
+Posterior physics mean + RBF,Posterior physics mean + sequential advective ST,top_1pct_interval_width_95_K,right minus left,-5.544352489749768,-5.349992357287082,30,30
+Posterior physics mean + RBF,Posterior physics mean + sequential advective ST,peak_absolute_error_K,right minus left,0.0013259238355658454,0.003851841906367781,12,30
+Posterior physics mean + RBF,Advective posterior physics mean + sequential advective ST,field_excess_rel_l2,right minus left,-0.04326425844936076,-0.041523150300042555,30,30
+Posterior physics mean + RBF,Advective posterior physics mean + sequential advective ST,overall_rmse_K,right minus left,-0.05277435562995983,-0.05396797382608992,30,30
+Posterior physics mean + RBF,Advective posterior physics mean + sequential advective ST,overall_crps_K,right minus left,-0.5192547873500659,-0.5190620283852849,30,30
+Posterior physics mean + RBF,Advective posterior physics mean + sequential advective ST,top_1pct_rmse_K,right minus left,0.09536365616799385,0.11743308277231534,5,30
+Posterior physics mean + RBF,Advective posterior physics mean + sequential advective ST,top_1pct_crps_K,right minus left,0.02947294392956922,0.049694197600013146,12,30
+Posterior physics mean + RBF,Advective posterior physics mean + sequential advective ST,top_1pct_coverage_95,right minus left,-0.1066666666666667,-0.10000000000000003,30,30
+Posterior physics mean + RBF,Advective posterior physics mean + sequential advective ST,top_1pct_interval_width_95_K,right minus left,-5.561937631043128,-5.347796281385563,30,30
+Posterior physics mean + RBF,Advective posterior physics mean + sequential advective ST,peak_absolute_error_K,right minus left,0.42919736991721796,0.39661504477015797,4,30
+Posterior physics mean + RBF,Posterior-sample mixture + sequential advective ST,field_excess_rel_l2,right minus left,-0.02767973276574839,-0.0255817523812778,30,30
+Posterior physics mean + RBF,Posterior-sample mixture + sequential advective ST,overall_rmse_K,right minus left,-0.034112447372473716,-0.034732893226682215,30,30
+Posterior physics mean + RBF,Posterior-sample mixture + sequential advective ST,overall_crps_K,right minus left,-0.5115029374748219,-0.5113282084895634,30,30
+Posterior physics mean + RBF,Posterior-sample mixture + sequential advective ST,top_1pct_rmse_K,right minus left,-0.009451247553129767,-0.007928689510711129,18,30
+Posterior physics mean + RBF,Posterior-sample mixture + sequential advective ST,top_1pct_crps_K,right minus left,-0.0424483607476871,-0.0442582886139794,19,30
+Posterior physics mean + RBF,Posterior-sample mixture + sequential advective ST,top_1pct_coverage_95,right minus left,-0.08800000000000002,-0.08000000000000002,30,30
+Posterior physics mean + RBF,Posterior-sample mixture + sequential advective ST,top_1pct_interval_width_95_K,right minus left,-5.632452231526162,-5.450441866919089,30,30
+Posterior physics mean + RBF,Posterior-sample mixture + sequential advective ST,peak_absolute_error_K,right minus left,-0.011277422304671821,-0.007147911771880899,17,30
+Advective posterior physics mean + RBF,Posterior physics mean + sequential ST,field_excess_rel_l2,right minus left,-0.010038630098057147,-0.0107163965226941,23,30
+Advective posterior physics mean + RBF,Posterior physics mean + sequential ST,overall_rmse_K,right minus left,-0.01290736856001186,-0.01529669788484439,23,30
+Advective posterior physics mean + RBF,Posterior physics mean + sequential ST,overall_crps_K,right minus left,-0.510144901884097,-0.5103177026372638,30,30
+Advective posterior physics mean + RBF,Posterior physics mean + sequential ST,top_1pct_rmse_K,right minus left,-0.11466338113086934,-0.1175570792280991,30,30
+Advective posterior physics mean + RBF,Posterior physics mean + sequential ST,top_1pct_crps_K,right minus left,-0.06667963582703103,-0.06477273030499053,30,30
+Advective posterior physics mean + RBF,Posterior physics mean + sequential ST,top_1pct_coverage_95,right minus left,-0.08533333333333334,-0.08000000000000002,30,30
+Advective posterior physics mean + RBF,Posterior physics mean + sequential ST,top_1pct_interval_width_95_K,right minus left,-4.65349598573155,-4.672197292089806,30,30
+Advective posterior physics mean + RBF,Posterior physics mean + sequential ST,peak_absolute_error_K,right minus left,-0.43648850936870837,-0.41623114331099487,28,30
+Advective posterior physics mean + RBF,Posterior physics mean + sequential advective ST,field_excess_rel_l2,right minus left,-0.010025767458189068,-0.011517204420402521,22,30
+Advective posterior physics mean + RBF,Posterior physics mean + sequential advective ST,overall_rmse_K,right minus left,-0.012853932989443484,-0.014378856045961341,22,30
+Advective posterior physics mean + RBF,Posterior physics mean + sequential advective ST,overall_crps_K,right minus left,-0.5068567751927257,-0.5070467056952386,30,30
+Advective posterior physics mean + RBF,Posterior physics mean + sequential advective ST,top_1pct_rmse_K,right minus left,-0.10647811275062732,-0.11519991762073922,30,30
+Advective posterior physics mean + RBF,Posterior physics mean + sequential advective ST,top_1pct_crps_K,right minus left,-0.05750646017148965,-0.05492939448395362,29,30
+Advective posterior physics mean + RBF,Posterior physics mean + sequential advective ST,top_1pct_coverage_95,right minus left,-0.08933333333333335,-0.08000000000000007,30,30
+Advective posterior physics mean + RBF,Posterior physics mean + sequential advective ST,top_1pct_interval_width_95_K,right minus left,-5.528106924269835,-5.403878194714682,30,30
+Advective posterior physics mean + RBF,Posterior physics mean + sequential advective ST,peak_absolute_error_K,right minus left,-0.42058159511235355,-0.41099158613462805,28,30
+Advective posterior physics mean + RBF,Advective posterior physics mean + sequential advective ST,field_excess_rel_l2,right minus left,-0.02676080064920602,-0.025869741156689968,30,30
+Advective posterior physics mean + RBF,Advective posterior physics mean + sequential advective ST,overall_rmse_K,right minus left,-0.03293013105046884,-0.032558158623606004,30,30
+Advective posterior physics mean + RBF,Advective posterior physics mean + sequential advective ST,overall_crps_K,right minus left,-0.5161908507533469,-0.5165671469258603,30,30
+Advective posterior physics mean + RBF,Advective posterior physics mean + sequential advective ST,top_1pct_rmse_K,right minus left,0.0006757875618212062,0.0009194646701937703,14,30
+Advective posterior physics mean + RBF,Advective posterior physics mean + sequential advective ST,top_1pct_crps_K,right minus left,-0.006332145974944684,0.00809970705934493,14,30
+Advective posterior physics mean + RBF,Advective posterior physics mean + sequential advective ST,top_1pct_coverage_95,right minus left,-0.10800000000000004,-0.12,30,30
+Advective posterior physics mean + RBF,Advective posterior physics mean + sequential advective ST,top_1pct_interval_width_95_K,right minus left,-5.545692065563194,-5.37977770897218,30,30
+Advective posterior physics mean + RBF,Advective posterior physics mean + sequential advective ST,peak_absolute_error_K,right minus left,0.007289850969298565,0.0020885211369829904,14,30
+Advective posterior physics mean + RBF,Posterior-sample mixture + sequential advective ST,field_excess_rel_l2,right minus left,-0.011176274965593662,-0.012369711173903397,21,30
+Advective posterior physics mean + RBF,Posterior-sample mixture + sequential advective ST,overall_rmse_K,right minus left,-0.014268222792982723,-0.016253261366264815,21,30
+Advective posterior physics mean + RBF,Posterior-sample mixture + sequential advective ST,overall_crps_K,right minus left,-0.5084390008781028,-0.5083342647044042,30,30
+Advective posterior physics mean + RBF,Posterior-sample mixture + sequential advective ST,top_1pct_rmse_K,right minus left,-0.10413911615930241,-0.0936325447159112,30,30
+Advective posterior physics mean + RBF,Posterior-sample mixture + sequential advective ST,top_1pct_crps_K,right minus left,-0.07825345065220099,-0.08628308632444426,28,30
+Advective posterior physics mean + RBF,Posterior-sample mixture + sequential advective ST,top_1pct_coverage_95,right minus left,-0.08933333333333335,-0.08000000000000002,30,30
+Advective posterior physics mean + RBF,Posterior-sample mixture + sequential advective ST,top_1pct_interval_width_95_K,right minus left,-5.616206666046228,-5.472254768845534,30,30
+Advective posterior physics mean + RBF,Posterior-sample mixture + sequential advective ST,peak_absolute_error_K,right minus left,-0.4331849412525912,-0.40041876276185917,28,30
+Posterior physics mean + sequential ST,Posterior physics mean + sequential advective ST,field_excess_rel_l2,right minus left,1.2862639868079413e-05,-0.00044225578666329257,19,30
+Posterior physics mean + sequential ST,Posterior physics mean + sequential advective ST,overall_rmse_K,right minus left,5.343557056837571e-05,-0.0005110251298550694,19,30
+Posterior physics mean + sequential ST,Posterior physics mean + sequential advective ST,overall_crps_K,right minus left,0.0032881266913713384,0.0039115845039361385,0,30
+Posterior physics mean + sequential ST,Posterior physics mean + sequential advective ST,top_1pct_rmse_K,right minus left,0.008185268380242021,0.0011342073028448585,12,30
+Posterior physics mean + sequential ST,Posterior physics mean + sequential advective ST,top_1pct_crps_K,right minus left,0.009173175655541387,0.003186571859221221,11,30
+Posterior physics mean + sequential ST,Posterior physics mean + sequential advective ST,top_1pct_coverage_95,right minus left,-0.004000000000000011,0.0,6,30
+Posterior physics mean + sequential ST,Posterior physics mean + sequential advective ST,top_1pct_interval_width_95_K,right minus left,-0.8746109385382864,-0.8078145581447393,30,30
+Posterior physics mean + sequential ST,Posterior physics mean + sequential advective ST,peak_absolute_error_K,right minus left,0.01590691425635479,2.9018319111173696e-05,15,30
+Posterior physics mean + sequential ST,Advective posterior physics mean + sequential advective ST,field_excess_rel_l2,right minus left,-0.016722170551148878,-0.012658394964082581,29,30
+Posterior physics mean + sequential ST,Advective posterior physics mean + sequential advective ST,overall_rmse_K,right minus left,-0.020022762490456984,-0.017092322397630144,29,30
+Posterior physics mean + sequential ST,Advective posterior physics mean + sequential advective ST,overall_crps_K,right minus left,-0.00604594886924984,-0.005812110309972904,30,30
+Posterior physics mean + sequential ST,Advective posterior physics mean + sequential advective ST,top_1pct_rmse_K,right minus left,0.11533916869269055,0.13351612110430056,0,30
+Posterior physics mean + sequential ST,Advective posterior physics mean + sequential advective ST,top_1pct_crps_K,right minus left,0.06034748985208636,0.05231350931691381,3,30
+Posterior physics mean + sequential ST,Advective posterior physics mean + sequential advective ST,top_1pct_coverage_95,right minus left,-0.022666666666666672,0.0,13,30
+Posterior physics mean + sequential ST,Advective posterior physics mean + sequential advective ST,top_1pct_interval_width_95_K,right minus left,-0.8921960798316461,-0.8551436812820317,30,30
+Posterior physics mean + sequential ST,Advective posterior physics mean + sequential advective ST,peak_absolute_error_K,right minus left,0.4437783603380069,0.4080692355144322,2,30
+Posterior physics mean + sequential ST,Posterior-sample mixture + sequential advective ST,field_excess_rel_l2,right minus left,-0.0011376448675365137,-0.002039848391028609,23,30
+Posterior physics mean + sequential ST,Posterior-sample mixture + sequential advective ST,overall_rmse_K,right minus left,-0.0013608542329708632,-0.002112107851563294,23,30
+Posterior physics mean + sequential ST,Posterior-sample mixture + sequential advective ST,overall_crps_K,right minus left,0.001705901005994198,0.002366928073013766,11,30
+Posterior physics mean + sequential ST,Posterior-sample mixture + sequential advective ST,top_1pct_rmse_K,right minus left,0.010524264971566933,0.0006618547178938172,14,30
+Posterior physics mean + sequential ST,Posterior-sample mixture + sequential advective ST,top_1pct_crps_K,right minus left,-0.011573814825169964,-0.022151545752446822,21,30
+Posterior physics mean + sequential ST,Posterior-sample mixture + sequential advective ST,top_1pct_coverage_95,right minus left,-0.004,0.0,6,30
+Posterior physics mean + sequential ST,Posterior-sample mixture + sequential advective ST,top_1pct_interval_width_95_K,right minus left,-0.9627106803146784,-0.8461742356225832,30,30
+Posterior physics mean + sequential ST,Posterior-sample mixture + sequential advective ST,peak_absolute_error_K,right minus left,0.0033035681161171244,-0.007383632786513772,19,30
+Posterior physics mean + sequential advective ST,Advective posterior physics mean + sequential advective ST,field_excess_rel_l2,right minus left,-0.01673503319101696,-0.014014054461221254,30,30
+Posterior physics mean + sequential advective ST,Advective posterior physics mean + sequential advective ST,overall_rmse_K,right minus left,-0.020076198061025355,-0.01743878274266064,30,30
+Posterior physics mean + sequential advective ST,Advective posterior physics mean + sequential advective ST,overall_crps_K,right minus left,-0.00933407556062118,-0.009161895594108252,30,30
+Posterior physics mean + sequential advective ST,Advective posterior physics mean + sequential advective ST,top_1pct_rmse_K,right minus left,0.10715390031244852,0.1299261283376547,0,30
+Posterior physics mean + sequential advective ST,Advective posterior physics mean + sequential advective ST,top_1pct_crps_K,right minus left,0.051174314196544966,0.0434062352158604,5,30
+Posterior physics mean + sequential advective ST,Advective posterior physics mean + sequential advective ST,top_1pct_coverage_95,right minus left,-0.01866666666666666,0.0,13,30
+Posterior physics mean + sequential advective ST,Advective posterior physics mean + sequential advective ST,top_1pct_interval_width_95_K,right minus left,-0.01758514129335949,-0.012788445097135615,21,30
+Posterior physics mean + sequential advective ST,Advective posterior physics mean + sequential advective ST,peak_absolute_error_K,right minus left,0.4278714460816521,0.40674008257010996,3,30
+Posterior physics mean + sequential advective ST,Posterior-sample mixture + sequential advective ST,field_excess_rel_l2,right minus left,-0.001150507507404593,-0.0010804493916672653,23,30
+Posterior physics mean + sequential advective ST,Posterior-sample mixture + sequential advective ST,overall_rmse_K,right minus left,-0.0014142898035392388,-0.0013152741687481595,23,30
+Posterior physics mean + sequential advective ST,Posterior-sample mixture + sequential advective ST,overall_crps_K,right minus left,-0.0015822256853771403,-0.0015491262931641159,28,30
+Posterior physics mean + sequential advective ST,Posterior-sample mixture + sequential advective ST,top_1pct_rmse_K,right minus left,0.0023389965913249116,-0.0011101773662831604,17,30
+Posterior physics mean + sequential advective ST,Posterior-sample mixture + sequential advective ST,top_1pct_crps_K,right minus left,-0.02074699048071135,-0.020166439275515424,26,30
+Posterior physics mean + sequential advective ST,Posterior-sample mixture + sequential advective ST,top_1pct_coverage_95,right minus left,1.1102230246251566e-17,0.0,4,30
+Posterior physics mean + sequential advective ST,Posterior-sample mixture + sequential advective ST,top_1pct_interval_width_95_K,right minus left,-0.08809974177639207,-0.0949862140603499,26,30
+Posterior physics mean + sequential advective ST,Posterior-sample mixture + sequential advective ST,peak_absolute_error_K,right minus left,-0.012603346140237667,-0.008073353226535573,18,30
+Advective posterior physics mean + sequential advective ST,Posterior-sample mixture + sequential advective ST,field_excess_rel_l2,right minus left,0.015584525683612366,0.012412309292672008,1,30
+Advective posterior physics mean + sequential advective ST,Posterior-sample mixture + sequential advective ST,overall_rmse_K,right minus left,0.018661908257486117,0.016952150186759163,1,30
+Advective posterior physics mean + sequential advective ST,Posterior-sample mixture + sequential advective ST,overall_crps_K,right minus left,0.007751849875244039,0.008128043437194657,0,30
+Advective posterior physics mean + sequential advective ST,Posterior-sample mixture + sequential advective ST,top_1pct_rmse_K,right minus left,-0.10481490372112362,-0.1039917503497585,30,30
+Advective posterior physics mean + sequential advective ST,Posterior-sample mixture + sequential advective ST,top_1pct_crps_K,right minus left,-0.07192130467725631,-0.05602372164077163,29,30
+Advective posterior physics mean + sequential advective ST,Posterior-sample mixture + sequential advective ST,top_1pct_coverage_95,right minus left,0.01866666666666667,0.0,2,30
+Advective posterior physics mean + sequential advective ST,Posterior-sample mixture + sequential advective ST,top_1pct_interval_width_95_K,right minus left,-0.07051460048303258,-0.08510983263708116,24,30
+Advective posterior physics mean + sequential advective ST,Posterior-sample mixture + sequential advective ST,peak_absolute_error_K,right minus left,-0.4404747922218898,-0.389714944943762,28,30

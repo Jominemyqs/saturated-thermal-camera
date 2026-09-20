@@ -1,0 +1,2 @@
+trajectory,loglik_max_difference,weights_max_difference,target_draws_sha256,n_future_observations,ess,max_weight
+DiagonalScanPath_8,7.958078640513122e-13,2.2412627309620348e-15,db1239bde0f70bc07a7428660d280182fce2ea2d6cf446a927d42fc6e31df85b,172,2.2346415803975224,0.5922959133016762

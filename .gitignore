@@ -3,3 +3,6 @@ tmp/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Reproducible per-trajectory arrays stay local; publish tables and figures.
+outputs/**/by_trajectory/**/*.npz

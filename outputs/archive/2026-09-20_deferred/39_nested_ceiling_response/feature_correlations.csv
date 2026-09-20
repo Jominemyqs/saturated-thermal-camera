@@ -1,0 +1,29 @@
+target,feature_set,feature,spearman_rho,n_pixels
+known measurement,single threshold,posterior_exceedance_K,0.46011153712094804,151
+known measurement,single threshold,posterior_sd_K,0.3877413733008016,151
+known measurement,single threshold,local_censored_fraction,0.6096739012461831,151
+known measurement,single threshold,posterior_standardized_gap,0.49072499128616237,151
+known measurement,single threshold,prior_standardized_gap,0.5108016730568141,151
+known measurement,single threshold,posterior_exceedance_probability,0.49072499128616237,151
+known measurement,single threshold,log_posterior_sd,0.3877413733008016,151
+known measurement,single threshold,normalized_heat_flux,0.2711571976298361,151
+known measurement,nested response,dmu_dc_near,0.4091425583827117,151
+known measurement,nested response,dsd_dc_near,0.16237364935517598,151
+known measurement,nested response,dmu_dc_far,0.10799930289299407,151
+known measurement,nested response,dsd_dc_far,0.17830602997560122,151
+known measurement,nested response,dmu_dc_change,0.2305820843499477,151
+known measurement,nested response,dsd_dc_change,0.08440223074241895,151
+latent truth (evaluation only),single threshold,posterior_exceedance_K,0.6098675496688741,151
+latent truth (evaluation only),single threshold,posterior_sd_K,0.551924015336354,151
+latent truth (evaluation only),single threshold,local_censored_fraction,0.7977111792681927,151
+latent truth (evaluation only),single threshold,posterior_standardized_gap,0.6167305681422097,151
+latent truth (evaluation only),single threshold,prior_standardized_gap,0.6157302195887068,151
+latent truth (evaluation only),single threshold,posterior_exceedance_probability,0.6167305681422097,151
+latent truth (evaluation only),single threshold,log_posterior_sd,0.551924015336354,151
+latent truth (evaluation only),single threshold,normalized_heat_flux,0.4424538166608574,151
+latent truth (evaluation only),nested response,dmu_dc_near,0.5301463924712443,151
+latent truth (evaluation only),nested response,dsd_dc_near,0.2549146043917741,151
+latent truth (evaluation only),nested response,dmu_dc_far,0.0950784245381666,151
+latent truth (evaluation only),nested response,dsd_dc_far,0.21204600906239107,151
+latent truth (evaluation only),nested response,dmu_dc_change,0.3279191355873126,151
+latent truth (evaluation only),nested response,dsd_dc_change,0.1322202858138724,151

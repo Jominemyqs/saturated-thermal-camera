@@ -6,6 +6,8 @@ from typing import Callable
 import numpy as np
 from scipy.linalg import cho_factor, cho_solve
 
+from src.truncated_gaussian import sample_lower_truncated_gaussian_hmc
+
 
 @dataclass(frozen=True)
 class RBFConfig:
@@ -95,6 +97,7 @@ def sample_censored_ess_fast(
     burn_in: int,
     thin: int,
     seed: int,
+    truncated_sampler: str = "ess",
 ) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     """Sample censored observations, then condition predictions analytically."""
     x_obs = np.asarray(observations["x_obs"], dtype=float)
@@ -150,38 +153,55 @@ def sample_censored_ess_fast(
     else:
         sat_mean = gp_mean(x_sat, config)
 
-    sat_factor = cholesky_with_jitter(sat_covariance, jitter)
-    current = np.maximum(sat_mean, threshold + 0.5 * config.noise_sd)
-    centered = current - sat_mean
-    saturated_samples: list[np.ndarray] = []
-    total_steps = burn_in + n_samples * thin
-    for step in range(total_steps):
-        direction = sat_factor.dot(rng.normal(size=len(x_sat)))
-        angle = rng.uniform(0.0, 2.0 * np.pi)
-        lower_angle = angle - 2.0 * np.pi
-        upper_angle = angle
-        for _ in range(2500):
-            proposal_centered = (
-                centered * np.cos(angle) + direction * np.sin(angle)
-            )
-            proposal = sat_mean + proposal_centered
-            if np.all(proposal >= threshold):
-                centered = proposal_centered
-                current = proposal
-                break
-            if angle < 0.0:
-                lower_angle = angle
+    if truncated_sampler == "hmc":
+        saturated_samples = sample_lower_truncated_gaussian_hmc(
+            sat_mean,
+            sat_covariance,
+            threshold,
+            n_samples=n_samples,
+            burn_in=burn_in,
+            thin=thin,
+            seed=seed + 1_000_003,
+            relative_jitter=config.relative_jitter,
+        )
+    elif truncated_sampler == "ess":
+        sat_factor = cholesky_with_jitter(sat_covariance, jitter)
+        current = np.maximum(sat_mean, threshold + 0.5 * config.noise_sd)
+        centered = current - sat_mean
+        saturated_samples_list: list[np.ndarray] = []
+        total_steps = burn_in + n_samples * thin
+        for step in range(total_steps):
+            direction = sat_factor.dot(rng.normal(size=len(x_sat)))
+            angle = rng.uniform(0.0, 2.0 * np.pi)
+            lower_angle = angle - 2.0 * np.pi
+            upper_angle = angle
+            for _ in range(2500):
+                proposal_centered = (
+                    centered * np.cos(angle) + direction * np.sin(angle)
+                )
+                proposal = sat_mean + proposal_centered
+                if np.all(proposal >= threshold):
+                    centered = proposal_centered
+                    current = proposal
+                    break
+                if angle < 0.0:
+                    lower_angle = angle
+                else:
+                    upper_angle = angle
+                angle = rng.uniform(lower_angle, upper_angle)
             else:
-                upper_angle = angle
-            angle = rng.uniform(lower_angle, upper_angle)
-        else:
-            raise RuntimeError("Elliptical slice sampler found no feasible proposal")
-        if step >= burn_in and (step - burn_in) % thin == 0:
-            saturated_samples.append(current.copy())
+                raise RuntimeError(
+                    "Elliptical slice sampler found no feasible proposal"
+                )
+            if step >= burn_in and (step - burn_in) % thin == 0:
+                saturated_samples_list.append(current.copy())
+        saturated_samples = np.asarray(saturated_samples_list)
+    else:
+        raise ValueError(f"Unknown truncated Gaussian sampler: {truncated_sampler}")
 
     observation_samples = np.empty((n_samples, len(x_obs)))
     observation_samples[:, unsat_mask] = y_unsat
-    observation_samples[:, sat_mask] = np.asarray(saturated_samples)
+    observation_samples[:, sat_mask] = saturated_samples
     observation_covariance = rbf_covariance(x_obs, x_obs, config)
     observation_covariance[np.diag_indices_from(observation_covariance)] += (
         noise_variance + jitter
@@ -233,6 +253,7 @@ def sample_multiple_chains(
     burn_in: int,
     thin: int,
     seed: int,
+    truncated_sampler: str = "ess",
 ) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     means = []
     variances = []
@@ -245,6 +266,7 @@ def sample_multiple_chains(
             burn_in=burn_in,
             thin=thin,
             seed=seed + 10_000 * chain,
+            truncated_sampler=truncated_sampler,
         )
         means.append(result[0])
         variances.append(result[1] ** 2)

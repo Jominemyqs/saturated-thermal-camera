@@ -1,0 +1,55 @@
+feature_set,feature,target,split,spearman_rho,n_examples
+single threshold,posterior_exceedance_K,known measurement residual,all development,-0.6493775350980279,2633
+single threshold,posterior_sd_K,known measurement residual,all development,-0.5592201330362689,2633
+single threshold,local_censored_fraction,known measurement residual,all development,-0.12006985753623826,2633
+single threshold,posterior_standardized_gap,known measurement residual,all development,-0.6052884141084216,2633
+single threshold,prior_standardized_gap,known measurement residual,all development,-0.4299253053530072,2633
+single threshold,posterior_exceedance_probability,known measurement residual,all development,-0.6052884141084216,2633
+single threshold,log_posterior_sd,known measurement residual,all development,-0.5592201330362689,2633
+single threshold,normalized_heat_flux,known measurement residual,all development,0.18603871255005958,2633
+single threshold,anchor_drop_from_reference_K,known measurement residual,all development,0.04044898002476771,2633
+smooth nested response,mu_slope_at_anchor,known measurement residual,all development,-0.38532765767169375,2633
+smooth nested response,sd_slope_at_anchor,known measurement residual,all development,-0.3707518857417787,2633
+smooth nested response,mu_curvature,known measurement residual,all development,-0.19885200702838976,2633
+smooth nested response,sd_curvature,known measurement residual,all development,-0.21414471347591235,2633
+smooth nested response,mu_total_response_K,known measurement residual,all development,-0.6147208202110122,2633
+smooth nested response,sd_total_response_K,known measurement residual,all development,-0.5413236839920693,2633
+smooth nested response,mu_integrated_response_K,known measurement residual,all development,0.5906034844389021,2633
+smooth nested response,sd_integrated_response_K,known measurement residual,all development,0.4915772712692704,2633
+smooth nested response,response_ceiling_span_K,known measurement residual,all development,0.02289141247373573,2633
+single threshold,posterior_exceedance_K,known measurement residual,moderate pseudo-exceedance,-0.882313418558155,1843
+single threshold,posterior_sd_K,known measurement residual,moderate pseudo-exceedance,-0.8065682138283209,1843
+single threshold,local_censored_fraction,known measurement residual,moderate pseudo-exceedance,-0.41994488432734284,1843
+single threshold,posterior_standardized_gap,known measurement residual,moderate pseudo-exceedance,-0.7880570317409339,1843
+single threshold,prior_standardized_gap,known measurement residual,moderate pseudo-exceedance,-0.6929569367422941,1843
+single threshold,posterior_exceedance_probability,known measurement residual,moderate pseudo-exceedance,-0.7880570317409339,1843
+single threshold,log_posterior_sd,known measurement residual,moderate pseudo-exceedance,-0.8065682138283209,1843
+single threshold,normalized_heat_flux,known measurement residual,moderate pseudo-exceedance,0.14798400146243784,1843
+single threshold,anchor_drop_from_reference_K,known measurement residual,moderate pseudo-exceedance,-0.12045689848160918,1843
+smooth nested response,mu_slope_at_anchor,known measurement residual,moderate pseudo-exceedance,-0.561174062942598,1843
+smooth nested response,sd_slope_at_anchor,known measurement residual,moderate pseudo-exceedance,-0.5155431958380652,1843
+smooth nested response,mu_curvature,known measurement residual,moderate pseudo-exceedance,-0.33814322229701266,1843
+smooth nested response,sd_curvature,known measurement residual,moderate pseudo-exceedance,-0.31832581993513503,1843
+smooth nested response,mu_total_response_K,known measurement residual,moderate pseudo-exceedance,-0.6367759601948918,1843
+smooth nested response,sd_total_response_K,known measurement residual,moderate pseudo-exceedance,-0.7623270606310419,1843
+smooth nested response,mu_integrated_response_K,known measurement residual,moderate pseudo-exceedance,0.6589387810522331,1843
+smooth nested response,sd_integrated_response_K,known measurement residual,moderate pseudo-exceedance,0.705786683444933,1843
+smooth nested response,response_ceiling_span_K,known measurement residual,moderate pseudo-exceedance,0.15096999516566126,1843
+single threshold,posterior_exceedance_K,known measurement residual,larger unseen pseudo-exceedance,-0.4161067070237821,790
+single threshold,posterior_sd_K,known measurement residual,larger unseen pseudo-exceedance,-0.16836945355614527,790
+single threshold,local_censored_fraction,known measurement residual,larger unseen pseudo-exceedance,0.09212483477931527,790
+single threshold,posterior_standardized_gap,known measurement residual,larger unseen pseudo-exceedance,-0.3504762724171013,790
+single threshold,prior_standardized_gap,known measurement residual,larger unseen pseudo-exceedance,-0.03669384975253743,790
+single threshold,posterior_exceedance_probability,known measurement residual,larger unseen pseudo-exceedance,-0.3504762724171013,790
+single threshold,log_posterior_sd,known measurement residual,larger unseen pseudo-exceedance,-0.16836945355614527,790
+single threshold,normalized_heat_flux,known measurement residual,larger unseen pseudo-exceedance,0.28769428757937676,790
+single threshold,anchor_drop_from_reference_K,known measurement residual,larger unseen pseudo-exceedance,0.17133305288925502,790
+smooth nested response,mu_slope_at_anchor,known measurement residual,larger unseen pseudo-exceedance,-0.10143961458889768,790
+smooth nested response,sd_slope_at_anchor,known measurement residual,larger unseen pseudo-exceedance,-0.054080867282071295,790
+smooth nested response,mu_curvature,known measurement residual,larger unseen pseudo-exceedance,0.04401934284160247,790
+smooth nested response,sd_curvature,known measurement residual,larger unseen pseudo-exceedance,0.02592513468682275,790
+smooth nested response,mu_total_response_K,known measurement residual,larger unseen pseudo-exceedance,-0.3391332570349872,790
+smooth nested response,sd_total_response_K,known measurement residual,larger unseen pseudo-exceedance,-0.14848874694721936,790
+smooth nested response,mu_integrated_response_K,known measurement residual,larger unseen pseudo-exceedance,0.32917668186406884,790
+smooth nested response,sd_integrated_response_K,known measurement residual,larger unseen pseudo-exceedance,0.13728380605632978,790
+smooth nested response,response_ceiling_span_K,known measurement residual,larger unseen pseudo-exceedance,-0.048142698139413194,790

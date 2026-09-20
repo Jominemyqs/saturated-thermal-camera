@@ -25,6 +25,9 @@ The original RBF marginal SD is `3.431 K`; the one-step stochastic innovation SD
 - `tail_coverage_vs_width.png`: top-1% coverage versus interval width, including the matched-RBF diagnostic.
 - `reconstruction_comparison.png`: tail-enhanced shared-scale reconstruction panel for all seven architectures on `SpiralScanPath_13`.
 - `reconstruction_comparison_linear.png`: the same fields with the original shared linear color scale.
+- `quantitative_comparison_table.png`: slide-ready quantitative companion for the eight displayed outputs (camera reference plus seven GP architectures), averaged over all 30 held-out trajectories.
+- `quantitative_comparison_bars.png`: bar-chart version separating whole-field and hottest-tail point/probabilistic metrics.
+- `quantitative_comparison.csv` and `.md`: source values for the quantitative companion; the camera reference has no CRPS or interval metrics because it is not a predictive distribution.
 - `reproduction_checks.csv`: rerun agreement with the frozen historical outputs.
 
 ## Reuse and reruns

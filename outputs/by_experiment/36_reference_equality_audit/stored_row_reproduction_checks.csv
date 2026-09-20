@@ -1,0 +1,28 @@
+source,stage,metric,max_absolute_difference,mean_absolute_difference,exact_within_1e-12
+experiment_30,E30 ordinary mean; short previous/current chains,field_excess_rel_l2,5.551115123125783e-17,1.850371707708594e-17,True
+experiment_30,E30 ordinary mean; short previous/current chains,overall_rmse_K,5.551115123125783e-17,2.3550185370836655e-17,True
+experiment_30,E30 ordinary mean; short previous/current chains,overall_crps_K,8.326672684688674e-17,3.700743415417188e-17,True
+experiment_30,E30 ordinary mean; short previous/current chains,peak_absolute_error_K,1.7763568394002505e-15,2.691449756667046e-16,True
+experiment_30,E30 ordinary mean; short previous/current chains,top_1pct_rmse_K,4.440892098500626e-16,2.6914497566670462e-17,True
+experiment_30,E30 ordinary mean; short previous/current chains,top_1pct_crps_K,4.440892098500626e-16,4.0371746350005693e-17,True
+experiment_30,E30 ordinary mean; short previous/current chains,top_1pct_bias_K,4.440892098500626e-16,1.3457248783335231e-17,True
+experiment_30,E30 ordinary mean; short previous/current chains,top_1pct_coverage_95,8.326672684688674e-17,2.8596653664587365e-17,True
+experiment_30,E30 ordinary mean; short previous/current chains,top_1pct_interval_width_95_K,4.440892098500626e-16,4.0371746350005693e-17,True
+experiment_30,E30 advective mean; short previous/current chains,field_excess_rel_l2,5.551115123125783e-17,2.5232341468753557e-17,True
+experiment_30,E30 advective mean; short previous/current chains,overall_rmse_K,5.551115123125783e-17,2.0185873175002847e-17,True
+experiment_30,E30 advective mean; short previous/current chains,overall_crps_K,8.326672684688674e-17,3.700743415417188e-17,True
+experiment_30,E30 advective mean; short previous/current chains,peak_absolute_error_K,1.7763568394002505e-15,3.0278809762504267e-16,True
+experiment_30,E30 advective mean; short previous/current chains,top_1pct_rmse_K,4.440892098500626e-16,4.0371746350005693e-17,True
+experiment_30,E30 advective mean; short previous/current chains,top_1pct_crps_K,4.440892098500626e-16,1.3457248783335231e-17,True
+experiment_30,E30 advective mean; short previous/current chains,top_1pct_bias_K,4.440892098500626e-16,1.3457248783335231e-17,True
+experiment_30,E30 advective mean; short previous/current chains,top_1pct_coverage_95,9.71445146547012e-17,3.111988781146272e-17,True
+experiment_30,E30 advective mean; short previous/current chains,top_1pct_interval_width_95_K,4.440892098500626e-16,5.3828995133340925e-17,True
+experiment_35,"E35 reference; converged previous/current, rank top-1% mask",field_excess_rel_l2,7.771561172376096e-16,2.8428438054795674e-16,True
+experiment_35,"E35 reference; converged previous/current, rank top-1% mask",overall_rmse_K,9.992007221626409e-16,3.2297397080004555e-16,True
+experiment_35,"E35 reference; converged previous/current, rank top-1% mask",overall_crps_K,5.162537064506978e-15,2.134656088256551e-15,True
+experiment_35,"E35 reference; converged previous/current, rank top-1% mask",top_1pct_rmse_K,2.042810365310288e-14,4.212118869183927e-15,True
+experiment_35,"E35 reference; converged previous/current, rank top-1% mask",top_1pct_crps_K,5.417888360170764e-14,1.9916728199336143e-14,True
+experiment_35,"E35 reference; converged previous/current, rank top-1% mask",top_1pct_bias_K,1.582067810090848e-14,4.059463203297968e-15,True
+experiment_35,"E35 reference; converged previous/current, rank top-1% mask",top_1pct_coverage_95,0.0,0.0,True
+experiment_35,"E35 reference; converged previous/current, rank top-1% mask",top_1pct_interval_width_95_K,9.769962616701378e-15,3.202825210433785e-15,True
+experiment_35,"E35 reference; converged previous/current, rank top-1% mask",peak_absolute_error_K,1.1390888232654106e-13,5.6106213950895935e-15,True

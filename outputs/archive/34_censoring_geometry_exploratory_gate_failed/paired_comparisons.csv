@@ -1,0 +1,22 @@
+candidate,reference,metric,mean_change_candidate_minus_reference,median_change_candidate_minus_reference,candidate_win_count,n_trajectories,better_direction
+observed-mask geometry preferences,standard censored GP,field_excess_rel_l2,0.007669847548890685,0.006166305888403667,14,30,lower
+observed-mask geometry preferences,standard censored GP,overall_crps_K,0.006774590105357089,0.004928043807596816,8,30,lower
+observed-mask geometry preferences,standard censored GP,saturated_rmse_K,0.2151545707065822,0.22324416700316219,6,30,lower
+observed-mask geometry preferences,standard censored GP,saturated_mae_K,0.40028760808749647,0.3199609791918967,0,30,lower
+observed-mask geometry preferences,standard censored GP,top_1pct_crps_K,0.32473311119709963,0.16113053943634958,8,30,lower
+observed-mask geometry preferences,standard censored GP,peak_absolute_error_K,-3.2887463335617344,-3.3319982543720528,30,30,lower
+observed-mask geometry preferences,standard censored GP,saturated_rank_spearman,0.07499314949693607,0.0991405809066696,23,30,higher
+observed-mask geometry preferences,matched random local preferences,field_excess_rel_l2,-0.036768301740074956,-0.04437240471613796,25,30,lower
+observed-mask geometry preferences,matched random local preferences,overall_crps_K,-0.004905398492947033,-0.009220938076244578,21,30,lower
+observed-mask geometry preferences,matched random local preferences,saturated_rmse_K,0.004013404470816735,-0.02666526352048404,16,30,lower
+observed-mask geometry preferences,matched random local preferences,saturated_mae_K,0.4874092375129024,0.3735676315902976,1,30,lower
+observed-mask geometry preferences,matched random local preferences,top_1pct_crps_K,-0.12879998955260585,-0.24109600336423065,20,30,lower
+observed-mask geometry preferences,matched random local preferences,peak_absolute_error_K,-2.2797619892371075,-2.2853954131688283,26,30,lower
+observed-mask geometry preferences,matched random local preferences,saturated_rank_spearman,0.46221321274964317,0.45699037804300957,30,30,higher
+matched random local preferences,standard censored GP,field_excess_rel_l2,0.04443814928896564,0.04428990868907162,1,30,lower
+matched random local preferences,standard censored GP,overall_crps_K,0.011679988598304122,0.01315465161324103,1,30,lower
+matched random local preferences,standard censored GP,saturated_rmse_K,0.21114116623576548,0.21721866021621716,3,30,lower
+matched random local preferences,standard censored GP,saturated_mae_K,-0.08712162942540583,-0.08988712131167875,22,30,lower
+matched random local preferences,standard censored GP,top_1pct_crps_K,0.45353310074970543,0.44963535184169223,1,30,lower
+matched random local preferences,standard censored GP,peak_absolute_error_K,-1.0089843443246271,-0.7587655587543054,28,30,lower
+matched random local preferences,standard censored GP,saturated_rank_spearman,-0.38722006325270714,-0.3983816922930586,0,30,higher

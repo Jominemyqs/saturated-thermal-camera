@@ -1,0 +1,6 @@
+trajectory,metric,absolute_difference
+DiagonalScanPath_8,runner_mean_exact,0.0
+DiagonalScanPath_8,runner_sd_exact,0.0
+DiagonalScanPath_8,runner_lower_exact,0.0
+DiagonalScanPath_8,runner_upper_exact,0.0
+DiagonalScanPath_8,runner_draws_exact,0.0

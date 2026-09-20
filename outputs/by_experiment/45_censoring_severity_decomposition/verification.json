@@ -1,0 +1,17 @@
+{
+  "trajectories": 33,
+  "development": 3,
+  "heldout": 30,
+  "ceiling_cases": 198,
+  "model_cases": 396,
+  "metric_equality_checks": 10296,
+  "maximum_metric_difference": 0.0,
+  "invalid_sd_count": 0,
+  "previous_rhat_max": 1.010503655805649,
+  "current_rhat_max": 1.0112319727001766,
+  "source_fingerprints_unchanged": true,
+  "paired_observations_previous_posterior_mean_seed_identical": true,
+  "exact_top25_masks": true,
+  "observed_masks_camera_derived": true,
+  "finite_diagnostic_fields": true
+}

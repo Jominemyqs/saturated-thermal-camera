@@ -1,0 +1,2 @@
+input,levels,n_trajectories,n_matched_pixels,gate_passed,minimum_rmse_reduction,minimum_spearman_gain,truth_used_for_features_or_fitting
+/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/38_pseudo_censoring_calibration/calibration_examples.csv,"5%, 7.5%, 10%",3,151,False,0.05,0.1,False

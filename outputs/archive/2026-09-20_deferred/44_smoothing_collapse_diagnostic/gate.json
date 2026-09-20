@@ -1,0 +1,7 @@
+{
+  "full_likelihood_reliability_passed": false,
+  "gate_source": "Experiment 42 ESS/max-weight/repeat thresholds, evaluated over three repeats",
+  "smc_implemented": false,
+  "heldout_evaluated": false,
+  "longer_lags_evaluated": false
+}
