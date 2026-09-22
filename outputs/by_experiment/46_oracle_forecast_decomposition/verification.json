@@ -1,0 +1,14 @@
+{
+  "trajectories": 33,
+  "development": 3,
+  "heldout": 30,
+  "cases": 198,
+  "exact_baseline_arrays": true,
+  "oracle_identical_across_ceilings": true,
+  "unsaturated_pinned_verified": true,
+  "decomposition_max_abs_K": 0.0,
+  "baseline_metric_max_abs_K": 4.440892098500626e-16,
+  "pinned_mean_roundoff_max_K": 1.2960299500264227e-11,
+  "no_gp_inference": true,
+  "no_refitting": true
+}

@@ -1,0 +1,5 @@
+{
+  "scripts/50_thermal_oracle_forecast_decomposition.py": "a1d8de6b81fbe0a83ce858196ffe20c9ba2414c8a0606578e54202448e6bb07c",
+  "src/thermal_posterior_physics.py": "c99fe3a5ffbaeedabb16e8b9fdee0ba3fcc8f19f791600bbb62ab10459ab4836",
+  "outputs/by_experiment/45_censoring_severity_decomposition/fixed_configuration.csv": "c7f15cf77dff969a9604f8a8186e856e120d2170e010280495e4f10d890c333e"
+}
