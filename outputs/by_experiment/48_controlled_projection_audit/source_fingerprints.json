@@ -1,0 +1,8 @@
+{
+  "scripts/52_thermal_controlled_projection_audit.py": "3f348cd933e66acbab2db039dba3bfdb967af7becf6b0b914020f508dc056364",
+  "src/projection_audit.py": "3646310f61efc3814378238a765f6dab0fe28d8f8273241aced526f067407408",
+  "src/native_surface.py": "f2f2ab484ed3f9e27721f9a9b39f0b7f71cf3c4d494fc023604579aee76e098e",
+  "src/thermal_posterior_physics.py": "c99fe3a5ffbaeedabb16e8b9fdee0ba3fcc8f19f791600bbb62ab10459ab4836",
+  "src/thermal_trajectory.py": "c08a9396e1ec3382be230ea0f82f627d56f04a5a5b57795a4e5f60d325e5b207",
+  "outputs/by_experiment/43_matched_ceiling_model_gap/fixed_configuration.csv": "c7f15cf77dff969a9604f8a8186e856e120d2170e010280495e4f10d890c333e"
+}

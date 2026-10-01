@@ -1,0 +1,30 @@
+{
+  "development_trajectories": [
+    "DiagonalScanPath_8",
+    "HorizontalScanPath_13",
+    "SpiralScanPath_13"
+  ],
+  "no_gp_inference": true,
+  "no_refitting": true,
+  "no_native_fem_propagation": true,
+  "numerical_grids": [
+    [
+      601,
+      401
+    ],
+    [
+      1201,
+      801
+    ],
+    [
+      2401,
+      1601
+    ]
+  ],
+  "evaluation_grid": [
+    601,
+    401
+  ],
+  "comparison": "same fine-grid operator, frozen parameters, fixed native hot-area mask",
+  "runtime_seconds": 11.91033275
+}

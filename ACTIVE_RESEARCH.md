@@ -38,6 +38,35 @@ Read outputs/by_experiment/46_oracle_forecast_decomposition/README.md. This
 attribution oracle is not a guaranteed performance upper bound. No remedy is
 active; source/physics and previous-inference changes require a separate decision.
 
+## Native representation pilot
+
+Script 51 / output 47 adds an isolated native-surface adapter and compares native
+versus projected temperature/source fields on the three development trajectories.
+It runs B/C inference on DiagonalScanPath_8 without interpolating those inference
+fields. Canonical code and coefficients are unchanged. Projection changes narrow
+peaks substantially, even when area means are nearly preserved; this does not yet
+explain the oracle residual causally. Native propagation uses an explicit 2D P1
+surface FEM approximation, not the original 3D solver. Read output 47's README
+before comparing its metrics with regular-grid results: observations, boundaries
+and area-weighted hot-region definitions differ. No held-out native sweep is run.
+
+## Controlled projection audit
+
+Script 52 / output 48 isolates representation before further GP work. On the
+three development trajectories it reproduces the saved coarse-grid oracle
+exactly, then passes native and projected inputs through the SAME fine-grid
+implementation of the frozen Gaussian diffusion/cooling/source formula. No
+native FEM operator, GP, refitting or new observations are introduced.
+
+Projection lowers hot-area input-forecast bias by 0.47-0.79 K, but native-input
+oracle bias remains +2.04 to +2.98 K. Projecting the reference and the remaining
+coarse-pipeline numerical effect partly cancel that reduction. Narrow peaks
+change strongly; removing projection alone does not repair the frozen mean.
+Read output 48's README: its fixed native hottest-1%-area scores are not the old
+top-25 scores. The native pilot remains supporting feasibility evidence, not a
+replacement baseline. A small observation/evaluation-matched GP follow-up can
+be considered separately; none was run in this audit.
+
 ## Deferred, not deleted
 
 Nested response, source-history and smoothing outputs/drivers were moved to
