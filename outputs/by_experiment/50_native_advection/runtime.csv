@@ -1,0 +1,13 @@
+trajectory,model,current_seconds,path_total_seconds
+DiagonalScanPath_8,B,10.920905040999997,138.60194900000002
+DiagonalScanPath_8,B_mean_advection,10.390819750000006,138.601951584
+DiagonalScanPath_8,C,10.243185084000004,138.601952084
+DiagonalScanPath_8,C_mean_advection,10.597201334000005,138.601952917
+DiagonalScanPath_8,C_uncertainty_advection,10.604387375000002,138.601953167
+DiagonalScanPath_8,C_both_advection,10.597845042000003,138.60195329200002
+SpiralScanPath_13,B,16.931127083000007,182.225696458
+SpiralScanPath_13,B_mean_advection,17.244956416000008,182.225697291
+SpiralScanPath_13,C,15.589133041999986,182.22569762499998
+SpiralScanPath_13,C_mean_advection,17.45884479199998,182.225697791
+SpiralScanPath_13,C_uncertainty_advection,15.687847834000024,182.22569791600003
+SpiralScanPath_13,C_both_advection,17.782605875,182.225698166

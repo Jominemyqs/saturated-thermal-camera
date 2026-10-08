@@ -1,5 +1,7 @@
 # Thermal camera censored Gaussian experiment
 
+**October 8 review:** [Adrienne's native B/C parameter, noise and code guide](docs/adrienne_review/README.md) documents executed outputs 49/51/52/53 and their provenance; historical notes below are preserved.
+
 ## Current thermal-camera workflow
 
 The September 20 active research focus is **censoring-severity failure

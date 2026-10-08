@@ -1,0 +1,6 @@
+{
+  "scripts/54_thermal_native_advection.py": "9e07678fa16be6b371610d4a6b2da71947313615227496932e0e9132b53703ed",
+  "src/matched_projection.py": "eb804ff4422256e753ffbc08a618bc7547c22191af296ab6311f3e7f2939319b",
+  "src/native_diagnostics.py": "cab94a127a5ac0bf378bd72d081da671a0905d9d772df4a2c533f60584257531",
+  "src/pseudo_censoring_runner.py": "887e1b247936257a6d04cbe181bad8545e0aef2229f04b12960ad4d460d7ee6f"
+}

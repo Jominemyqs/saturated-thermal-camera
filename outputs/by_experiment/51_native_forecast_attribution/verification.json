@@ -1,0 +1,14 @@
+{
+  "paths": [
+    "DiagonalScanPath_8",
+    "SpiralScanPath_13"
+  ],
+  "gp_inference": false,
+  "parameter_fitting": false,
+  "cached_forecast_exact": true,
+  "source_identical_for_oracle": true,
+  "cross_section_node_ids_reused": true,
+  "truth_usage": "oracle/evaluation only; no inference or input selection changed",
+  "operator": "unchanged native-input map: P1 lift, floor, Gaussian diffusion/cooling, zero extension, bilinear node evaluation",
+  "runtime_seconds": 2.7781222080000028
+}

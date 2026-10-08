@@ -1,0 +1,8 @@
+{
+  "scripts/57_thermal_native_observation_retention.py": "68314586837e89336b32d17389290bf272f1b362a8f4ddd0788d48bd06409902",
+  "src/native_ceiling_diagnostics.py": "cb4672b12db7991f0083a04825677882208e445efe93484defb6bbec22b5f682",
+  "src/matched_projection.py": "eb804ff4422256e753ffbc08a618bc7547c22191af296ab6311f3e7f2939319b",
+  "src/pseudo_censoring_runner.py": "887e1b247936257a6d04cbe181bad8545e0aef2229f04b12960ad4d460d7ee6f",
+  "src/stochastic_heat_gp.py": "de5d51c2fd3d1243a815c69fadd6b826e47dbf9dc43f909f6d2dbc761c9a9087",
+  "outputs/by_experiment/52_native_higher_ceiling/frozen_configuration.csv": "c7f15cf77dff969a9604f8a8186e856e120d2170e010280495e4f10d890c333e"
+}

@@ -1,0 +1,23 @@
+{
+  "paths": [
+    "DiagonalScanPath_8",
+    "SpiralScanPath_13"
+  ],
+  "previous_posterior_inferred_once": true,
+  "final_likelihood_current_only": true,
+  "shared_camera_masks_seeds_kernels_verified": true,
+  "no_refit": true,
+  "no_FEM_operator": true,
+  "common_grid": [
+    601,
+    401
+  ],
+  "resolution_check_grid": [
+    1201,
+    801
+  ],
+  "previous_representation": "Hybrid marginal draws with unsaturated noisy values pinned",
+  "comparison": "projection of previous state/samples/source on or off; both fits/evaluation use native coordinates",
+  "replay_metric_max_abs": 3.552713678800501e-15,
+  "peak_process_RSS_MiB": 2546.359375
+}

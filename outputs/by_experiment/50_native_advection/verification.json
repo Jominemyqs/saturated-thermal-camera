@@ -1,0 +1,14 @@
+{
+  "baseline_reproduced": true,
+  "previous_draws_shared": true,
+  "current_only_likelihood": true,
+  "no_refit": true,
+  "native_inputs_only": true,
+  "paths": [
+    "DiagonalScanPath_8",
+    "SpiralScanPath_13"
+  ],
+  "innovation_Q_unchanged_under_homogeneous_advection": true,
+  "source_definition_unconfirmed": true,
+  "previous_representation": "hybrid marginal samples, not full joint posterior"
+}

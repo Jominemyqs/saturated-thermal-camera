@@ -67,6 +67,93 @@ top-25 scores. The native pilot remains supporting feasibility evidence, not a
 replacement baseline. A small observation/evaluation-matched GP follow-up can
 be considered separately; none was run in this audit.
 
+## Matched projection-on/off GP pilot
+
+Script 53 / output 49 runs B and C on DiagonalScanPath_8 and SpiralScanPath_13.
+All four fits per path use the same native camera observations, previous hybrid
+posterior, current likelihood, seeds, Gaussian heat operator and area-weighted
+evaluation. Only the prior inputs are native or passed through the existing
+61 x 41 representation; C also propagates the corresponding previous uncertainty.
+No native FEM operator, coefficient refit or held-out expansion is introduced.
+
+Projected inputs reduce hot-area RMSE and CRPS in all four model/path pairs.
+This is not a universal UQ improvement: spiral C coverage falls from 76.4% to
+67.2% as intervals narrow. Native peaks remain more overpredicted under the
+frozen coefficients. Projection may compensate for predictor mismatch; this
+does not establish that coarsening is physically preferable. Read output 49's
+README before comparing with historical grid/top-25 metrics. The repeat run
+reproduces metrics within 4e-15; the canonical baseline remains unchanged.
+
+## Meeting follow-up: native diagnostics and transport
+
+Forward development now uses explicitly labeled native-input cases while
+preserving the regular-grid baseline. This does not mean native scores were
+better or that the approximate surface operator is the original 3D solver.
+
+Script 54 adds cached shared-scale signed errors and native-node uncertainty
+sections in output 49/native_diagnostics. Positive average bias is not uniform
+overprediction: B/C underpredict on 32-37% of surface area in these examples.
+
+Output 50 isolates mean transport and previous-uncertainty transport on the
+same two native development cases. B/C controls reproduce output 49 exactly.
+Mean transport worsens hot RMSE/CRPS on both paths; uncertainty transport is
+mixed. Do not promote it or expand the sweep. HeatFluxZ centroid displacement
+is a proxy, with its export definition still unresolved. The next physics
+decision awaits the original PDE/boundary/source setup; missing depth transfer
+remains a hypothesis, not an established cause.
+
+## Native forecast component attribution
+
+Script 55 / output 51 uses cached native previous means and the unchanged
+operator, with no GP inference or fitting. Exact replay of the output-49
+forecast separates propagated previous excess from the numerical source.
+The exaggerated current maximum appears on source addition; the predecessor
+already lacks much of the shoulder. With true previous input, shoulder
+structure improves but the source-plus-propagation combination overshoots the
+peak more. This diagnoses numerical imbalance, not the physical source's true
+magnitude. A scalar source reduction is not justified by this diagnostic alone.
+Read output 51's README and fixed-section component plots; await the export
+definition and PDE/boundary information before selecting a remedy.
+
+## Higher-ceiling native comparison and export clarification
+
+Script 56 / output 52 compares the reference ceiling with 320 and 325 K on the
+same two native development cases. Both previous/current cameras are generated
+from the same original noisy signals; reference B/C predictions reproduce output
+49 exactly under its documented single-thread runtime. Parameters, numerical
+candidate nodes, sections and fixed hottest-1%-area evaluation are unchanged.
+Higher ceilings reveal the shoulder but expose a larger positive peak forecast
+error under the frozen gradient contribution. They do not uniformly improve
+hot-area RMSE/CRPS. Current likelihoods are not nested: newly unsaturated nodes
+outside the numerical candidates lose their inequality without contributing
+their values. Do not claim these curves establish that more observed information
+intrinsically harms inference. No remedy or full-camera likelihood was tested.
+
+Adrienne's notebook expression identifies HeatFluxZ as projected dT/dz, K/m,
+conditional on that export matching these files. This supersedes the earlier
+unresolved-source description: the frozen increment is an empirical
+gradient-based contribution, not automatically known laser heating. The thesis
+provides 3D boundaries but does not prove depth effects cause the mismatch.
+All 33 stored trajectories have dt=0.0005 s; the thesis states 0.005 s. Preserve
+stored time and resolve that provenance difference with the notebook. Read
+output 52/PHYSICS_PROVENANCE.md before changing units, signs or coefficients.
+
+## Current-observation retention control
+
+Script 57 / output 53 isolates the high-ceiling current observation policy for C
+on the same two native development cases, at 320/325 K. Cached previous draws,
+forecast and prior covariance remain fixed within each paired comparison.
+Keeping numerical candidates plus the observed reference saturation set lets
+newly revealed nodes contribute their values. The four existing-policy replays
+match output 52 exactly, including posterior draws.
+
+Retention improves hot-area RMSE/CRPS in all four pairs and reduces peak error,
+but does not fix the extreme peak. Intervals narrow substantially, hot-area
+coverage falls, and whole-field CRPS is mixed. Thus discarded current information
+and remaining predictor/UQ mismatch are separate findings. This pilot does not
+justify rewriting historical results or adding an inflation rule. Read output
+53's README and paired tables; no physics coefficient or covariance was refit.
+
 ## Deferred, not deleted
 
 Nested response, source-history and smoothing outputs/drivers were moved to
