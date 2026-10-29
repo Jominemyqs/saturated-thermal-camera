@@ -1,0 +1,16 @@
+{
+  "outputs/by_experiment/56_within_step_integration/frozen_configuration.json": "ccd6eef2afbfb7d80d4515ea4fa3fa8a3568ddb389c67b2033b37806a3ad21b0",
+  "outputs/by_experiment/56_within_step_integration/gradient_provenance.json": "7af2c20a3fdfb30ed55402b981fe871f7e33ab59ab15c2014c94cbc6a203ba7e",
+  "outputs/by_experiment/56_within_step_integration/frozen_sections.csv": "d06deb9898b647056cfc5f19cee844cd57366c21e77c47da04a304a272f3e854",
+  "scripts/61_thermal_remapping_attribution.py": "50cb57de1c8c33e3048fee13941b3f38ccfa67ebc96776426af327859b884092",
+  "src/remapping_attribution.py": "fa6fd8cd13654919d91f734261be6fa3cd63dbe00eddccd9d5882d0eda69e398",
+  "src/matched_projection.py": "eb804ff4422256e753ffbc08a618bc7547c22191af296ab6311f3e7f2939319b",
+  "src/within_step_integration.py": "2a6f46ef50dd4e79243e35716694728ea82919bd0348c6d3eac52b6cf52f664d",
+  "tests/test_remapping_attribution.py": "c023eed44e28f84a2658f551f7cd944988ae3128b7ec556800c2624ba4a5cc06",
+  "outputs/by_experiment/56_within_step_integration/by_trajectory/DiagonalScanPath_8/level_0.npz": "2c0562d01283548282b0a71b5a5f262f66ece4fceea9847bef8c864e712e1b96",
+  "outputs/by_experiment/56_within_step_integration/by_trajectory/DiagonalScanPath_8/level_1.npz": "429bc3aacaf38b9a67f31e123292d18273f128bdab5f452715ca0fd9e97f60a0",
+  "outputs/by_experiment/56_within_step_integration/by_trajectory/DiagonalScanPath_8/level_2.npz": "a4afc07013e8916e4e968ce1d08407968ecd7cd1b21a7266fcf244108720025f",
+  "outputs/by_experiment/56_within_step_integration/by_trajectory/SpiralScanPath_13/level_0.npz": "b350cdb3c961c900e0c00defa19b295cfbd65ba881b75bd75258e5f4f54e15c5",
+  "outputs/by_experiment/56_within_step_integration/by_trajectory/SpiralScanPath_13/level_1.npz": "ad86f9df01f2cfea9ac35549cd6ffdcf5ecc3eaac9517265f8f1c4e3fb0a9705",
+  "outputs/by_experiment/56_within_step_integration/by_trajectory/SpiralScanPath_13/level_2.npz": "d4fd0af5428db38263733b020c683b5e2ec619fcbf1d173c1b1cd7d00a4ca4c0"
+}

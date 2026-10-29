@@ -1,0 +1,23 @@
+{
+  "seed": 10200060,
+  "samples_per_chain": 800,
+  "burn_in": 300,
+  "thin": 1,
+  "retries": 0,
+  "numerical_count": 114,
+  "lower_count": 1243,
+  "upper_count": 0,
+  "observation_count": 1357,
+  "classical_rhat_max": 1.0045083628607359,
+  "classical_censored_rhat_max": 1.0025180944161656,
+  "noisy_classical_rhat_max": 1.00480937549573,
+  "rank_rhat_max": 1.0041687738825515,
+  "ess_bulk_min": 1458.1309061891866,
+  "ess_tail_min": 1765.5205080254118,
+  "diagnostics_finite": true,
+  "seconds": 38.715472917,
+  "process_peak_rss_MiB": 2012.609375,
+  "prior_diagonal_sha256": "b1615fed8b70f1f2849d2f4789fce2d649b83a35cc9da1362b297a3739f2a016",
+  "prior_mean_sha256": "65402269bc3b76e88427b3e2990a1e081ec0535a7ccdd1dc55f3a77332d3d3ba",
+  "reliable_for_expansion": true
+}

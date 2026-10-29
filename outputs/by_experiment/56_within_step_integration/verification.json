@@ -1,0 +1,21 @@
+{
+  "baseline_exact": true,
+  "source_exact": true,
+  "oracle_ceiling_invariant": true,
+  "all33_catalogued": 33,
+  "development_cases_only": [
+    "DiagonalScanPath_8",
+    "SpiralScanPath_13"
+  ],
+  "geometry_and_hot_weights_unchanged": true,
+  "previous_inference_rerun": false,
+  "current_gp_inference": false,
+  "parameters_fitted": false,
+  "stage1_gate_pass": false,
+  "eligible_candidates": [],
+  "runtime_seconds": 25.826272583,
+  "peak_process_RSS_MiB": 1265.078125,
+  "units_provenance": "supplied notebook derivative export; HDF data values not independently unit-labelled",
+  "numerical_limitation": "positive-age native P1 lift/fine-grid/bilinear map; zero-age endpoint used directly; not exact native semigroup",
+  "next_step": "STOP after Stage 1; no GP inference"
+}

@@ -1,0 +1,28 @@
+{
+  "original_source_and_input_hashes_rechecked": 23,
+  "all_unchanged": true,
+  "direct_49_reference_and_53_retained_cache_checks": [
+    "DiagonalScanPath_8",
+    "SpiralScanPath_13"
+  ],
+  "additional_input_fingerprints": {
+    "outputs/by_experiment/49_matched_native_grid_gp/by_trajectory/DiagonalScanPath_8/matched.npz": "f9697f31fa649d0c372bbc710334b3503d14e05a42e2411e55c60e8c9e165f42",
+    "outputs/by_experiment/53_native_observation_retention/by_trajectory/DiagonalScanPath_8/level_1.npz": "571cd0f49a4fcfff1c10250deb843513c0330071118b2d0ad039401f766276ca",
+    "outputs/by_experiment/53_native_observation_retention/by_trajectory/DiagonalScanPath_8/level_2.npz": "45adcee5687af3b12b2feb3bedf947cff96586ac8d87a516c1b1693706f98f00",
+    "outputs/by_experiment/49_matched_native_grid_gp/by_trajectory/SpiralScanPath_13/matched.npz": "1051607f2b39ac73f41edbb4a6468dd2101a8d3b279e2f8ae06df71ab0171a8f",
+    "outputs/by_experiment/53_native_observation_retention/by_trajectory/SpiralScanPath_13/level_1.npz": "9b00c12619a29bb55aea8e70d8aabad9a96c90fd25fee0b79f4b1ef68139ae0e",
+    "outputs/by_experiment/53_native_observation_retention/by_trajectory/SpiralScanPath_13/level_2.npz": "ea54ce8500900723d440e3da06d52b3587c82d1fa24e94e72095484fe94701d7"
+  },
+  "documentation_links_resolve": true,
+  "compilation": "src scripts tests: passed",
+  "git_diff_check": "passed",
+  "tests": "98 unittest tests passed in 4.862 s; 10 new integration/operator tests",
+  "test_warning": "Existing severity_diagnostics.py skewness test emitted a precision-loss warning on near-identical draws; suite passed.",
+  "extra_operator_test_sha256": "5fe4abd052e0a184a60d121f7aea0978b7e1709b9c65daad11dddcd5696e06e6",
+  "known_exception": "Frozen off-grid P1/bilinear propagation is not an identity at zero elapsed time; identity tests use matching-node/identity maps. No historical operator modified.",
+  "figure_visual_checks": [
+    "cross_sections_DiagonalScanPath_8_level0_inferred.png",
+    "source_sections_SpiralScanPath_13.png",
+    "error_maps_SpiralScanPath_13_level2_inferred.png"
+  ]
+}

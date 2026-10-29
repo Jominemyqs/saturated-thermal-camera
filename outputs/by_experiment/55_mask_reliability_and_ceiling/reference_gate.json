@@ -1,0 +1,41 @@
+{
+  "proceed_to_high_ceilings": false,
+  "thresholds": {
+    "rank_rhat_max": 1.01,
+    "ess_bulk_min": 400.0,
+    "ess_tail_min": 400.0,
+    "arm_seconds_max": 300.0,
+    "process_peak_rss_MiB_max": 4096.0
+  },
+  "failed": [
+    {
+      "trajectory": "SpiralScanPath_13",
+      "level": 0,
+      "ceiling_K": 296.4901280292387,
+      "arm": "Cmask",
+      "repeat": 0,
+      "seed": 3200041,
+      "samples_per_chain": 800,
+      "burn_in": 300,
+      "thin": 1,
+      "retries": 0,
+      "numerical_count": 114,
+      "lower_count": 1243,
+      "upper_count": 256,
+      "observation_count": 1613,
+      "classical_rhat_max": 1.0038977837427328,
+      "classical_censored_rhat_max": 1.0034105359232566,
+      "noisy_classical_rhat_max": 1.0031772188944537,
+      "rank_rhat_max": 1.0061595125717926,
+      "ess_bulk_min": 1667.0513407157907,
+      "ess_tail_min": 1998.7391380188017,
+      "diagnostics_finite": true,
+      "seconds": 318.90356499999996,
+      "process_peak_rss_MiB": 2043.546875,
+      "prior_diagonal_sha256": "b1615fed8b70f1f2849d2f4789fce2d649b83a35cc9da1362b297a3739f2a016",
+      "prior_mean_sha256": "65402269bc3b76e88427b3e2990a1e081ec0535a7ccdd1dc55f3a77332d3d3ba",
+      "reliable_for_expansion": false
+    }
+  ],
+  "decision": "One bounded 800/300 check; no further retries or threshold changes"
+}

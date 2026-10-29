@@ -1,0 +1,58 @@
+{
+  "selected_kappa": {
+    "endpoint": 0.6,
+    "combined_GL4": 0.6
+  },
+  "training_names": [
+    "DiagonalScanPath_8",
+    "HorizontalScanPath_13",
+    "SpiralScanPath_13"
+  ],
+  "objective": "Mean of three trajectory-specific whole-field native-area MSEs; oracle previous state; separate kappa per shape",
+  "heldout_names": [
+    "DiagonalScanPath_1",
+    "DiagonalScanPath_2",
+    "DiagonalScanPath_3",
+    "DiagonalScanPath_4",
+    "DiagonalScanPath_5",
+    "DiagonalScanPath_6",
+    "DiagonalScanPath_7",
+    "HorizontalScanPath_1",
+    "HorizontalScanPath_10",
+    "HorizontalScanPath_11",
+    "HorizontalScanPath_12",
+    "HorizontalScanPath_2",
+    "HorizontalScanPath_3",
+    "HorizontalScanPath_4",
+    "HorizontalScanPath_5",
+    "HorizontalScanPath_6",
+    "HorizontalScanPath_7",
+    "HorizontalScanPath_8",
+    "SpiralScanPath_1",
+    "SpiralScanPath_10",
+    "SpiralScanPath_11",
+    "SpiralScanPath_12",
+    "SpiralScanPath_2",
+    "SpiralScanPath_3",
+    "SpiralScanPath_4",
+    "SpiralScanPath_5",
+    "SpiralScanPath_6",
+    "SpiralScanPath_7",
+    "SpiralScanPath_8",
+    "SpiralScanPath_9"
+  ],
+  "heldout_data_loaded_before_selection": false,
+  "effective_gamma": {
+    "endpoint": 0.10213363236802704,
+    "combined_GL4": 0.10213363236802704
+  },
+  "original_gamma": 0.1702227206133784,
+  "unconstrained_development_optimum_diagnostic": {
+    "endpoint": 0.34514423945100603,
+    "combined_GL4": 0.1410437610633554
+  },
+  "boundary_solution": {
+    "endpoint": true,
+    "combined_GL4": true
+  }
+}

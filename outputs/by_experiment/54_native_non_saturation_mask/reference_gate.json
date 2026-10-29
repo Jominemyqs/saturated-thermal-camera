@@ -1,0 +1,37 @@
+{
+  "proceed_to_high_ceilings": false,
+  "reason": "All reference arms/repeats must pass preset inference/runtime checks; effect need not be positive",
+  "failed": [
+    {
+      "trajectory": "DiagonalScanPath_8",
+      "arm": "Cmask",
+      "repeat": 0,
+      "rank_rhat_max": 1.0113175972418698,
+      "ess_bulk_min": 954.8573525589784,
+      "ess_tail_min": 990.0826661584149
+    },
+    {
+      "trajectory": "SpiralScanPath_13",
+      "arm": "C0",
+      "repeat": 0,
+      "rank_rhat_max": 1.0111894567764987,
+      "ess_bulk_min": 706.3757011529138,
+      "ess_tail_min": 972.6652263151142
+    },
+    {
+      "trajectory": "SpiralScanPath_13",
+      "arm": "Cnumeric",
+      "repeat": 0,
+      "rank_rhat_max": 1.009256533713595,
+      "ess_bulk_min": 345.7574375436837,
+      "ess_tail_min": 947.0230737839444
+    }
+  ],
+  "thresholds": {
+    "rank_rhat_max": 1.01,
+    "ess_bulk_min": 400.0,
+    "ess_tail_min": 400.0,
+    "arm_seconds_max": 300.0,
+    "process_peak_rss_MiB_max": 4096.0
+  }
+}

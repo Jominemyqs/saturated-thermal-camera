@@ -1,0 +1,7 @@
+trajectory,level,baseline_exact,old_evolution_trapezoid_exact,oracle_ceiling_invariant,dt_s,source_identity_max_abs_K
+DiagonalScanPath_8,0,True,True,True,0.0005000000000000004,0.0
+DiagonalScanPath_8,1,True,True,True,0.0005000000000000004,0.0
+DiagonalScanPath_8,2,True,True,True,0.0005000000000000004,0.0
+SpiralScanPath_13,0,True,True,True,0.0005000000000000004,0.0
+SpiralScanPath_13,1,True,True,True,0.0005000000000000004,0.0
+SpiralScanPath_13,2,True,True,True,0.0005000000000000004,0.0

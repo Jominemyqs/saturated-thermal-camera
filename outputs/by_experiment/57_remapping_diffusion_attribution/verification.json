@@ -1,0 +1,11 @@
+{
+  "baseline_exact": true,
+  "old_evolution_trapezoid_exact": true,
+  "prior_inputs_unchanged": true,
+  "oracle_ceiling_invariant": true,
+  "gp_inference": false,
+  "parameters_fitted": false,
+  "elapsed_seconds": 3.096317083,
+  "peak_RSS_MiB": 297.953125,
+  "limitation": "Numerical evolution conditional on frozen interpolant/boundaries, not isolated 3D physical diffusion; no new spatial refinement."
+}

@@ -1,0 +1,13 @@
+{
+  "cached_kappa_one_exact": true,
+  "development_count": 3,
+  "heldout_count": 30,
+  "selection_saved_before_heldout_loading": true,
+  "selection_hash_unchanged": true,
+  "original_inputs_unchanged": true,
+  "no_previous_or_current_sampling": true,
+  "original_gamma_modified": false,
+  "new_calibration": "Only experiment-local scalar kappa per shape, supervised with development simulator truth",
+  "elapsed_seconds": 8.271168750000001,
+  "peak_RSS_MiB": 763.40625
+}

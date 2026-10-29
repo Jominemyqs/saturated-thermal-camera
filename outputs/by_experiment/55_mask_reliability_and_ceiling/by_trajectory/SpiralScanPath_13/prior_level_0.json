@@ -1,0 +1,11 @@
+{
+  "previous_draws_sha256": "49b88f344e6733408be51da5bfd7288a4a41defc92610c302f9cb1ff8cab229c",
+  "previous_mean_sha256": "a0d5925d219f94cf2a509a4612c3cd0d449bd018de2c195e132d49a7ca0b843c",
+  "physics_mean_sha256": "65402269bc3b76e88427b3e2990a1e081ec0535a7ccdd1dc55f3a77332d3d3ba",
+  "features_sha256": "c0773a608a66fbd63fa7a3dc11b84669923d435a7c9f33bae9e78113895e66fe",
+  "prior_variance_sha256": "b1615fed8b70f1f2849d2f4789fce2d649b83a35cc9da1362b297a3739f2a016",
+  "camera_sha256": "999e661738e701dcefde4185d017ee3a0783e2f4fe228196d4aacd92f6eae55c",
+  "current_seed": 3200041,
+  "original_cache": "outputs/by_experiment/52_native_higher_ceiling/by_trajectory/SpiralScanPath_13/level_0.npz",
+  "build_seconds": 10.868063333
+}

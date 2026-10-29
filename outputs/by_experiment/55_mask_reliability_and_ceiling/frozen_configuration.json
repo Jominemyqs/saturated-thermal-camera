@@ -1,0 +1,23 @@
+{
+  "parent": "54_native_non_saturation_mask",
+  "samples_per_chain": 800,
+  "burn_in": 300,
+  "thin": 1,
+  "chains": 4,
+  "evaluation_draws_per_chain": 300,
+  "additional_retry": false,
+  "location_budget": 256,
+  "location_selection": "reuse exact experiment-54 IDs",
+  "gate": {
+    "rank_rhat_max": 1.01,
+    "ess_bulk_min": 400.0,
+    "ess_tail_min": 400.0,
+    "arm_seconds_max": 300.0,
+    "process_peak_rss_MiB_max": 4096.0
+  },
+  "classical_rhat_limit": 1.05,
+  "reference_jobs": "C0/Cmask at both paired seeds; Cnumeric at primary seed",
+  "secondary_jobs": "C0/Cmask/Cnumeric at primary seed only; contingent on reference gate",
+  "changed": "current chain length and burn-in only; unchanged model and evaluation draw count",
+  "head": "d28f8d86f944728bb57fa0926a4b66b10f055aba"
+}

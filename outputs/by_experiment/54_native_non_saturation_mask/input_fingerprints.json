@@ -1,0 +1,12 @@
+{
+  "outputs/by_experiment/52_native_higher_ceiling/by_trajectory/DiagonalScanPath_8/level_2.npz": "ef6ab8d83baea98ff3dda190e9522d57d1d3b29af2a07cc541480e1e8c5a292c",
+  "outputs/by_experiment/52_native_higher_ceiling/by_trajectory/DiagonalScanPath_8/level_1.npz": "d7e058a7208c469b2c07aff8c38774e036439ab6bdb056e0ceb270d8065df3bd",
+  "outputs/by_experiment/52_native_higher_ceiling/by_trajectory/DiagonalScanPath_8/level_0.npz": "4953a85f25fef10d26f78bf42f747430a12fb4233a50cba409a6862c4365fc1a",
+  "outputs/by_experiment/52_native_higher_ceiling/by_trajectory/SpiralScanPath_13/level_2.npz": "275ed95decfc3643e10f1a72806afeb5e59518f9ef3c1470576b290bd401c3ee",
+  "outputs/by_experiment/52_native_higher_ceiling/by_trajectory/SpiralScanPath_13/level_1.npz": "130e1e933bd9fd862093b0faa7e694a6c26f0a9b3a01e88f38cf9f50d893fa7b",
+  "outputs/by_experiment/52_native_higher_ceiling/by_trajectory/SpiralScanPath_13/level_0.npz": "3cddc9e2e38915bc6f97ba3720b6d38bd4143ec9dbef53577bef2a32cc024e62",
+  "outputs/by_experiment/53_native_observation_retention/by_trajectory/DiagonalScanPath_8/level_2.npz": "45adcee5687af3b12b2feb3bedf947cff96586ac8d87a516c1b1693706f98f00",
+  "outputs/by_experiment/53_native_observation_retention/by_trajectory/DiagonalScanPath_8/level_1.npz": "571cd0f49a4fcfff1c10250deb843513c0330071118b2d0ad039401f766276ca",
+  "outputs/by_experiment/53_native_observation_retention/by_trajectory/SpiralScanPath_13/level_2.npz": "ea54ce8500900723d440e3da06d52b3587c82d1fa24e94e72095484fe94701d7",
+  "outputs/by_experiment/53_native_observation_retention/by_trajectory/SpiralScanPath_13/level_1.npz": "9b00c12619a29bb55aea8e70d8aabad9a96c90fd25fee0b79f4b1ef68139ae0e"
+}

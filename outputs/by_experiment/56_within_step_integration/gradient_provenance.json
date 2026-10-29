@@ -1,0 +1,48 @@
+[
+  {
+    "trajectory": "DiagonalScanPath_8",
+    "xdmf": "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/heat_eq_laser_trajectories/Copy of DiagonalScanPath_8.xdmf",
+    "xdmf_sha256": "4f32cef4d534700174b7ba9c4cf01e683b4e679f30a536a7de9a27d41c2ca7dd",
+    "h5": "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/heat_eq_laser_trajectories/Copy of DiagonalScanPath_8.h5",
+    "previous_time_s": 0.1770000000000001,
+    "current_time_s": 0.1775000000000001,
+    "dt_s": 0.0005000000000000004,
+    "previous_gradient_sha256": "3ba37edaa0cf604ac8afd2983c4e5abd01e89a35e96db71b2584c3c140cb6c5c",
+    "current_gradient_sha256": "96500da1d13a92d200d63fafe9d8067e326e70f8f41ad982f79469848a6c751f",
+    "surface_node_indices_sha256": "58dad53c52b1d8aa5e45e9106f34d20a622c1e9ee78f512a3188fdd87e25d21f",
+    "previous_gradient_dataset": "/VisualisationVector/707",
+    "current_gradient_dataset": "/VisualisationVector/709",
+    "zero_age_resampling_increment_max_difference_K": 4.724862523866695,
+    "coordinate_min_m": [
+      -0.0075,
+      -0.005
+    ],
+    "coordinate_max_m": [
+      0.007499999999999998,
+      0.005
+    ]
+  },
+  {
+    "trajectory": "SpiralScanPath_13",
+    "xdmf": "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/heat_eq_laser_trajectories/Copy of SpiralScanPath_13.xdmf",
+    "xdmf_sha256": "008b1038b6cfd7a4d884db11e60b77f504b4d713cfa75076ec51f4f9d7e1ebe8",
+    "h5": "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/heat_eq_laser_trajectories/Copy of SpiralScanPath_13.h5",
+    "previous_time_s": 0.2715000000000002,
+    "current_time_s": 0.2720000000000002,
+    "dt_s": 0.0005000000000000004,
+    "previous_gradient_sha256": "44972e3e372a800ac7de09c353752378719691e74daaeea707f09afd6f7f0969",
+    "current_gradient_sha256": "220f5dc15679f6bfe1e73085f3d3fb98aed17604d33b28145ad12abd8704a49e",
+    "surface_node_indices_sha256": "58dad53c52b1d8aa5e45e9106f34d20a622c1e9ee78f512a3188fdd87e25d21f",
+    "previous_gradient_dataset": "/VisualisationVector/1085",
+    "current_gradient_dataset": "/VisualisationVector/1087",
+    "zero_age_resampling_increment_max_difference_K": 5.757581395107592,
+    "coordinate_min_m": [
+      -0.0075,
+      -0.005
+    ],
+    "coordinate_max_m": [
+      0.007499999999999998,
+      0.005
+    ]
+  }
+]

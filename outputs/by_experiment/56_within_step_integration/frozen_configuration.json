@@ -1,0 +1,112 @@
+{
+  "experiment": 56,
+  "driver": "scripts/60_thermal_within_step_integration.py",
+  "revision": "d28f8d86f944728bb57fa0926a4b66b10f055aba",
+  "scope": "deterministic only until gate; two development cases; no held-out inference",
+  "trajectories": [
+    "DiagonalScanPath_8",
+    "SpiralScanPath_13"
+  ],
+  "levels": [
+    "cached_reference",
+    "320 K",
+    "325 K"
+  ],
+  "inherited_options": {
+    "diffusivity": 3.6109129986233175e-06,
+    "cooling_rate": 12.422901570529978,
+    "signal_sd": 3.4305133895116966,
+    "source_coupling": 0.1702227206133784,
+    "nx": 61,
+    "ny": 41,
+    "target_fractions": "(0.03, 0.05, 0.075, 0.1, 0.15, 0.2)",
+    "training_fractions": "(0.05, 0.075, 0.1)",
+    "observation_stride": 5,
+    "previous_frame_offset": 1,
+    "measurement_noise_sd": 0.25,
+    "previous_noise_sd": 0.25,
+    "current_noise_sd": 0.5,
+    "length_multiplier": 1.25,
+    "forcing_length_multiplier": 1.0,
+    "quadrature_order": 24,
+    "heat_flux_cutoff": 300.0,
+    "source_flux_threshold": 10000.0,
+    "previous_chains": 4,
+    "previous_samples_per_chain": 400,
+    "previous_burn_in": 100,
+    "previous_thin": 1,
+    "previous_retry_samples_per_chain": 800,
+    "previous_retry_burn_in": 300,
+    "previous_retry_thin": 1,
+    "current_chains": 4,
+    "current_samples_per_chain": 400,
+    "current_burn_in": 100,
+    "current_thin": 1,
+    "current_retry_samples_per_chain": 800,
+    "current_retry_burn_in": 300,
+    "current_retry_thin": 1,
+    "evaluation_draws_per_chain": 300,
+    "calibration_draws": 300,
+    "maximum_rhat": 1.05,
+    "truncated_sampler": "hmc",
+    "seed": 41,
+    "dataset_trajectories": 33,
+    "development_trajectories": 3,
+    "heldout_trajectories": 30,
+    "base_model": "posterior physics mean + sequential stationary ST",
+    "current_observation_protocol": "fixed-stride unsaturated plus every observed-censored pixel",
+    "calibration_target": "known reference-camera measurement in deliberately hidden band",
+    "truth_used_for_calibration": false,
+    "crps_estimator": "unbiased_M_times_M_minus_1",
+    "top_1pct_rule": "exact hottest 25 of 2501 pixels",
+    "models": "{\"A\": \"Current-only ambient mean + RBF\", \"B\": \"Posterior physics mean + RBF\", \"C\": \"Posterior physics mean + sequential stationary ST\"}",
+    "calibration_applied": false
+  },
+  "effective_evaluation": "native physical-area weights; exact 1% with fractional last node",
+  "metadata_caveat": "Inherited top-25/grid and calibration-target CSV labels are historical; not executed here.",
+  "fine_grids": [
+    [
+      601,
+      401
+    ],
+    [
+      1201,
+      801
+    ],
+    [
+      1801,
+      1201
+    ]
+  ],
+  "refinement_scope": "source contribution only; predecessor contribution held at frozen 601x401",
+  "shoulder_definition": "saved native sections; 0.25 <= abs(along_mm) <= 1.0; area-weighted section-node diagnostics",
+  "gate": {
+    "hot_rmse_relative_improvement": 0.05,
+    "peak_absolute_improvement_K": 1.0,
+    "shoulder_allowed_relative_increase": 0.05,
+    "shoulder_allowed_absolute_increase_K": 0.1,
+    "whole_allowed_relative_increase": 0.02,
+    "whole_allowed_absolute_increase_K": 0.02,
+    "oracle_hot_allowed_relative_increase": 0.02,
+    "oracle_hot_allowed_absolute_increase_K": 0.1,
+    "oracle_peak_allowed_increase_K": 0.25,
+    "quadrature_relative_source_L2": 0.01,
+    "quadrature_hot_rmse_difference_K": 0.1,
+    "refinement_relative_source_L2": 0.01,
+    "refinement_hot_rmse_difference_K": 0.1
+  },
+  "gate_scope": "every inferred case must improve; oracle cases must not materially deteriorate; all six cases, fixed tolerances",
+  "quadrature": "linearly interpolate individually thresholded endpoints; GL2 and GL4; no unseen snapshot assumption validation",
+  "units": {
+    "coordinates": "m (dataset convention)",
+    "time": "s",
+    "temperature": "K",
+    "HeatFluxZ": "K/m per supplied derivative export; no independent HDF unit confirmation",
+    "gamma": "empirical; m/s if stated coordinate/time units hold",
+    "integral": "K*m^2, NOT energy"
+  },
+  "gp_inference": false,
+  "parameters_refitted": false,
+  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "numpy": "2.0.2"
+}

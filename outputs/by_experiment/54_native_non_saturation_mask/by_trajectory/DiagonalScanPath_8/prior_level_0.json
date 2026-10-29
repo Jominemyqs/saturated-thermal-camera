@@ -1,0 +1,11 @@
+{
+  "previous_draws_sha256": "631d9eec2e161435b404eadae46f599bd0f6edc7c7d7570ab1522ea1479667dd",
+  "previous_mean_sha256": "36f6e6ed42da18f0c431cc37bf87b2ff350dbcdfdb31cfd0c4aa693723fffd9f",
+  "physics_mean_sha256": "ac01b914dade4abdec5806b6e4ebc8b6db73599a3c0de006db3e5a1642fedc63",
+  "features_sha256": "de77387bce3ddaed02e81f624899f017585e13937b015b24223c37047b8a576a",
+  "prior_variance_sha256": "ade98e722f98135e341e7290b0d2a0abe606fb79220b2c7a3f80d2f989e0c4a4",
+  "camera_sha256": "4fd68a693103ee2b2b3e35d1fafd7f876a00af2d9f3b7dd6e1b845e55c8738a1",
+  "current_seed": 700041,
+  "original_cache": "outputs/by_experiment/52_native_higher_ceiling/by_trajectory/DiagonalScanPath_8/level_0.npz",
+  "build_seconds": 11.193794791
+}

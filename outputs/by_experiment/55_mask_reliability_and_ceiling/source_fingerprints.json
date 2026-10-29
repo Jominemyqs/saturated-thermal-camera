@@ -1,0 +1,7 @@
+{
+  "scripts/59_thermal_mask_reliability_check.py": "26a28bb6386bd2986c80cc717965585c31b093f7dd860f900fac2b3b1d20521a",
+  "scripts/58_thermal_native_non_saturation_mask.py": "c17e8869707a25da7865c9ebba8abc930f8ff53c8b1af4ff8c9a6a9b6a9c6e4c",
+  "src/native_mask_pilot.py": "2f1df5100d556e41148146881ee8f9618f175c47c04c22ab11fa70f768d0c371",
+  "outputs/by_experiment/54_native_non_saturation_mask/source_fingerprints.json": "eacff5ef7761d87ff27c314d44b3b7b8744207d4b5648e38c6eb4d9c5916781a",
+  "outputs/by_experiment/54_native_non_saturation_mask/input_fingerprints.json": "8238fd46efd444b4fef5b3ed9ac86fcff7475c7ca81c0362aa95714af0d4a11f"
+}
