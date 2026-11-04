@@ -1,0 +1,17 @@
+{
+  "cases": 6,
+  "input_fingerprints_unchanged": true,
+  "marginal_previous_variances_identical_analytically": true,
+  "unsaturated_latent_uncertainty_added": false,
+  "current_posterior_inference": false,
+  "fitting": false,
+  "baseline_replaced": false,
+  "seconds": 65.451205584,
+  "peak_RSS_MiB": 865.515625,
+  "limitations": [
+    "Analytic residual effect, conditional-mean covariance uses cached MCMC draws",
+    "Residual repeats are not independent HMC repeats",
+    "Pinned unsaturated values unchanged; not a complete latent posterior",
+    "No coverage/CRPS improvement is established without a current update"
+  ]
+}

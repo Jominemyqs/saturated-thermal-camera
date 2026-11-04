@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-04",
+  "output_number": 62,
+  "driver": "scripts/66_thermal_physics_input_provenance.py",
+  "scope": "two paths, final two saved frames; inspection only",
+  "retained_surrogate_parameters": {
+    "diffusivity": "3.6109129986233175e-06",
+    "cooling_rate": "12.422901570529978",
+    "source_coupling": "0.1702227206133784",
+    "source_flux_threshold": "10000.0",
+    "heat_flux_cutoff": "300.0"
+  },
+  "generator_code_confirmed": false,
+  "reconstruction_gate": "STOP: exact generator, trajectory, power/width/absorption/switch and sign/material provenance unresolved",
+  "prescribed_flux_reconstructed": false,
+  "conductivity_gradient_compared": false,
+  "gp_inference": false,
+  "fitting": false,
+  "physics_propagation": false,
+  "baseline_changed": false,
+  "unit_note": "Raw coordinates/times lack explicit SI-unit attributes; units are supplied-context/downstream conventions"
+}

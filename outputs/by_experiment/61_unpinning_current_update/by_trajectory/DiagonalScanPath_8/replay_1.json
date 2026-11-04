@@ -1,0 +1,18 @@
+{
+  "trajectory": "DiagonalScanPath_8",
+  "level": 1,
+  "exact": true,
+  "source": "outputs/by_experiment/53_native_observation_retention/by_trajectory/DiagonalScanPath_8/level_1.npz",
+  "seconds": 5.260526125,
+  "chain_mean_max_rmse_from_pooled_K": 0.02492924742612738,
+  "rhat_median": 0.9997187472103403,
+  "rhat_max": 1.0075975164137416,
+  "rhat_over_1_05_fraction": 0.0,
+  "selected_rhat_median": 0.9996317768200044,
+  "selected_rhat_max": 1.0019207874160987,
+  "selected_rhat_over_1_05_fraction": 0.0,
+  "current_retried": false,
+  "current_samples_per_chain_used": 400,
+  "current_burn_in_used": 100,
+  "current_thin_used": 1
+}

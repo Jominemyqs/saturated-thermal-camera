@@ -1,0 +1,210 @@
+[
+  {
+    "trajectory": "DiagonalScanPath_8",
+    "stored_frames": 355,
+    "first_saved_time": 0.0005,
+    "last_saved_time": 0.1775000000000001,
+    "saved_interval_min": 0.0004999999999999727,
+    "saved_interval_max": 0.0005000000000000282,
+    "final_saved_interval": 0.0005000000000000004,
+    "solver_timestep": "unresolved",
+    "node_count": 26414,
+    "tetrahedra": 130664,
+    "surface_nodes": 6275,
+    "surface_triangles": 12448,
+    "coordinate_bounds": [
+      [
+        -0.0075,
+        -0.005,
+        -0.001
+      ],
+      [
+        0.007499999999999998,
+        0.005,
+        0.001
+      ]
+    ],
+    "surface_area_in_stored_coordinate_units_squared": 0.00014999999999999996,
+    "surface_indices_sha256": "58dad53c52b1d8aa5e45e9106f34d20a622c1e9ee78f512a3188fdd87e25d21f",
+    "geometry_sha256": "808b86baa1c221f84f83abb199f0fb1d776ed2526522440d6e6a9b20e7fcb5a2",
+    "topology_sha256": "6b512df5774292bf54080d3435a3e3ddec2e75f988e4d565805ad9adca9b4598",
+    "top_geometric_outward_normal": [
+      0,
+      0,
+      1
+    ],
+    "normal_note": "Geometric max-z exterior; generator facet marker and flux convention unresolved",
+    "fields": [
+      "Temperature",
+      "HeatFluxZ"
+    ],
+    "hdf_root_attributes": {},
+    "hdf_object_count": 716,
+    "hdf_objects_with_attributes": 712,
+    "hdf_distinct_attribute_values": {
+      "partition": [
+        "[0]"
+      ]
+    },
+    "xdmf_information": [],
+    "last_two_frames": [
+      {
+        "index_zero_based": 353,
+        "time_value": 0.1770000000000001,
+        "time_unit": "seconds in downstream code; no unit declaration in XDMF",
+        "temperature_dataset": "/VisualisationVector/706",
+        "gradient_dataset": "/VisualisationVector/707",
+        "surface_temperature_sha256": "b4ca655bffd0612049f414005c66711732d9bdcb84eb80fe5b33d169e08e9b45",
+        "surface_gradient_sha256": "3ba37edaa0cf604ac8afd2983c4e5abd01e89a35e96db71b2584c3c140cb6c5c",
+        "finite": true,
+        "time_attribute": {
+          "Value": "1.770000000000001e-01"
+        },
+        "fields": [
+          {
+            "Name": "Temperature",
+            "AttributeType": "Scalar",
+            "Center": "Node"
+          },
+          {
+            "Name": "HeatFluxZ",
+            "AttributeType": "Scalar",
+            "Center": "Node"
+          }
+        ]
+      },
+      {
+        "index_zero_based": 354,
+        "time_value": 0.1775000000000001,
+        "time_unit": "seconds in downstream code; no unit declaration in XDMF",
+        "temperature_dataset": "/VisualisationVector/708",
+        "gradient_dataset": "/VisualisationVector/709",
+        "surface_temperature_sha256": "85a7339e7a96e1e9b5e5edc0e7872de33f64b4aa2dab9742d2ba4c6f82d2a1a2",
+        "surface_gradient_sha256": "96500da1d13a92d200d63fafe9d8067e326e70f8f41ad982f79469848a6c751f",
+        "finite": true,
+        "time_attribute": {
+          "Value": "1.775000000000001e-01"
+        },
+        "fields": [
+          {
+            "Name": "Temperature",
+            "AttributeType": "Scalar",
+            "Center": "Node"
+          },
+          {
+            "Name": "HeatFluxZ",
+            "AttributeType": "Scalar",
+            "Center": "Node"
+          }
+        ]
+      }
+    ],
+    "cache52_geometry_area_truth_exact": true,
+    "output56_gradient_hashes_exact": true,
+    "cached_surrogate_ambient_K": 293.1497049086644
+  },
+  {
+    "trajectory": "SpiralScanPath_13",
+    "stored_frames": 544,
+    "first_saved_time": 0.0005,
+    "last_saved_time": 0.2720000000000002,
+    "saved_interval_min": 0.0004999999999999449,
+    "saved_interval_max": 0.0005000000000001115,
+    "final_saved_interval": 0.0005000000000000004,
+    "solver_timestep": "unresolved",
+    "node_count": 26414,
+    "tetrahedra": 130664,
+    "surface_nodes": 6275,
+    "surface_triangles": 12448,
+    "coordinate_bounds": [
+      [
+        -0.0075,
+        -0.005,
+        -0.001
+      ],
+      [
+        0.007499999999999998,
+        0.005,
+        0.001
+      ]
+    ],
+    "surface_area_in_stored_coordinate_units_squared": 0.00014999999999999996,
+    "surface_indices_sha256": "58dad53c52b1d8aa5e45e9106f34d20a622c1e9ee78f512a3188fdd87e25d21f",
+    "geometry_sha256": "808b86baa1c221f84f83abb199f0fb1d776ed2526522440d6e6a9b20e7fcb5a2",
+    "topology_sha256": "6b512df5774292bf54080d3435a3e3ddec2e75f988e4d565805ad9adca9b4598",
+    "top_geometric_outward_normal": [
+      0,
+      0,
+      1
+    ],
+    "normal_note": "Geometric max-z exterior; generator facet marker and flux convention unresolved",
+    "fields": [
+      "Temperature",
+      "HeatFluxZ"
+    ],
+    "hdf_root_attributes": {},
+    "hdf_object_count": 1094,
+    "hdf_objects_with_attributes": 1090,
+    "hdf_distinct_attribute_values": {
+      "partition": [
+        "[0]"
+      ]
+    },
+    "xdmf_information": [],
+    "last_two_frames": [
+      {
+        "index_zero_based": 542,
+        "time_value": 0.2715000000000002,
+        "time_unit": "seconds in downstream code; no unit declaration in XDMF",
+        "temperature_dataset": "/VisualisationVector/1084",
+        "gradient_dataset": "/VisualisationVector/1085",
+        "surface_temperature_sha256": "d6e93202d81e94797215e78de020cd8d579015e8a07785656ac1c51ceb12c6f1",
+        "surface_gradient_sha256": "44972e3e372a800ac7de09c353752378719691e74daaeea707f09afd6f7f0969",
+        "finite": true,
+        "time_attribute": {
+          "Value": "2.715000000000002e-01"
+        },
+        "fields": [
+          {
+            "Name": "Temperature",
+            "AttributeType": "Scalar",
+            "Center": "Node"
+          },
+          {
+            "Name": "HeatFluxZ",
+            "AttributeType": "Scalar",
+            "Center": "Node"
+          }
+        ]
+      },
+      {
+        "index_zero_based": 543,
+        "time_value": 0.2720000000000002,
+        "time_unit": "seconds in downstream code; no unit declaration in XDMF",
+        "temperature_dataset": "/VisualisationVector/1086",
+        "gradient_dataset": "/VisualisationVector/1087",
+        "surface_temperature_sha256": "4b458d76d6c97518b0f8c64a03f34a763241a5d6822c1f7de128f852d5517dcc",
+        "surface_gradient_sha256": "220f5dc15679f6bfe1e73085f3d3fb98aed17604d33b28145ad12abd8704a49e",
+        "finite": true,
+        "time_attribute": {
+          "Value": "2.720000000000002e-01"
+        },
+        "fields": [
+          {
+            "Name": "Temperature",
+            "AttributeType": "Scalar",
+            "Center": "Node"
+          },
+          {
+            "Name": "HeatFluxZ",
+            "AttributeType": "Scalar",
+            "Center": "Node"
+          }
+        ]
+      }
+    ],
+    "cache52_geometry_area_truth_exact": true,
+    "output56_gradient_hashes_exact": true,
+    "cached_surrogate_ambient_K": 293.1499365025225
+  }
+]

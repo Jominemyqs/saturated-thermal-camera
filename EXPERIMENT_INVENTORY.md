@@ -1,5 +1,22 @@
 # Experiment inventory
 
+**November 3 current-update follow-up:** [Output 61: matched current updates](outputs/by_experiment/61_unpinning_current_update/README.md)
+uses script 65. Two native paths at reference/320/325 K; three cached previous
+representations, full propagated covariance blocks, identical retained current
+likelihood. All 24 fits pass diagnostics; reference hot scores improve mainly
+in the conditioning bridge, but peak intervals still miss in every fit and
+unpinning has mixed posterior effects. No historical baseline replacement.
+
+**October 29 unpinning follow-up:** [Output 60: previous-state unpinning audit](outputs/by_experiment/60_previous_unpinning_audit/README.md)
+uses script 64. Two native paths at reference/320/325 K; separates all-readings
+conditioning from latent unpinning and preserves propagated cross-covariance.
+Previous-posterior/forecast diagnostic only, with no current GP or baseline replacement.
+
+**October 29 follow-up:** [Output 59: previous conditional-correlation audit](outputs/by_experiment/59_previous_conditional_correlation_audit/README.md)
+uses script 63 and frozen native output-52 caches. Correlation-only propagation
+diagnostic; no new current GP fit or baseline replacement. The separate
+unsaturated-latent comparison is now output 60 above. Older dated context follows.
+
 **September 20 focus:** see ACTIVE_RESEARCH.md. The active next experiment is
 script 49 / output 45 (censoring-severity failure decomposition). Nested-response,
 source-history and smoothing branches below are historical: their outputs are

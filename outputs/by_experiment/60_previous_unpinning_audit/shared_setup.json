@@ -1,0 +1,10 @@
+{
+  "seconds": 30.206225417,
+  "precision_inverse_max_error": 8.979179196183853e-13,
+  "operator_max_error": 8.881784197001252e-16,
+  "sparse_operator_nnz": 577515,
+  "sparse_operator_MiB": 6.633075714111328,
+  "precision_MiB": 300.4121780395508,
+  "ac_union_MiB": 117.29240417480469,
+  "peak_RSS_MiB": 965.15625
+}

@@ -1,0 +1,634 @@
+{
+  "revision": "b0d80e51f5772e1feaa5dc5c43f7613a97b1d3b7",
+  "git_status_before": " M .DS_Store\n M EXPERIMENT_INVENTORY.md\n M outputs/.DS_Store\n?? outputs/by_experiment/59_previous_conditional_correlation_audit/\n?? outputs/by_experiment/60_previous_unpinning_audit/\n?? outputs/by_experiment/61_unpinning_current_update/\n?? scripts/63_thermal_previous_correlation_audit.py\n?? scripts/64_thermal_previous_unpinning_audit.py\n?? scripts/65_thermal_unpinning_current_update.py\n?? scripts/66_thermal_physics_input_provenance.py\n?? src/previous_correlation_audit.py\n?? src/previous_unpinning_audit.py\n?? src/unpinning_current_update.py\n?? tests/test_previous_correlation_audit.py\n?? tests/test_previous_unpinning_audit.py\n?? tests/test_unpinning_current_update.py\n",
+  "files": {
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/00_make_synthetic.py": {
+      "sha256": "99a17d6f24978f9a88ce29e45a0626ebe522496bc84c6d1945aeb2d1f9fc5e76",
+      "bytes": 1456
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/01_fit_single.py": {
+      "sha256": "d053c85bf705877a98cdce4b0083336edcec3dc14f507d1088d078d93d8a0c50",
+      "bytes": 2025
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/02_sweep_censoring.py": {
+      "sha256": "67998301baf2cebfdbac587e189e7b63a26204b6baa3d01510c017aa3b1fb667",
+      "bytes": 2188
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/03_plot_sweep.py": {
+      "sha256": "18f65d0e1813490f10bf85dc715ad8009b974a8771990772f8d5aa922adca688",
+      "bytes": 1407
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/04_lambda_sensitivity.py": {
+      "sha256": "e4721e983cdde60106f7f5156886d12035390f72b33d086012bbc8d3396ebe31",
+      "bytes": 6187
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/05_noise_sweep.py": {
+      "sha256": "10491510b3ea610eada4e4955ced95987d87f77dd2ce968e00642351a024f7dc",
+      "bytes": 4388
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/06_model_misspecification.py": {
+      "sha256": "ff470795170d07b375dfdf8058045889781dd901d313685b0d8577bb096b40b8",
+      "bytes": 4876
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/07_plot_reconstruction.py": {
+      "sha256": "66822238d38fee08b12339385f7a4530b53acd7dc51f5869dd6da33f764e21c0",
+      "bytes": 2273
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/08_gp_1d_censored.py": {
+      "sha256": "8a57ea7fb6f7b6b35b54834b30f01eb11333bd1a8dfd29a688e1cee742ac71d1",
+      "bytes": 26558
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/09_gp_1d_robustness.py": {
+      "sha256": "a77596a38eb3c24d72fa93588a14da3bc333ccce84b039ce22e3925cefb1a033",
+      "bytes": 12167
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/10_gp_2d_censored.py": {
+      "sha256": "d586d6ef5ade99ada511227f1b7937716c703ef0b53496b4506ba0d2f599bba7",
+      "bytes": 35549
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/11_gp_2d_shape_density.py": {
+      "sha256": "8a343ff607bfdaa5b9e5c3274748362cc2fedab68c400446e61a99afb064c63f",
+      "bytes": 13429
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/12_gp_2d_multiseed.py": {
+      "sha256": "92ba9bbe487ff27c9c318ed388b5daad56bfdcdb62c98ffb05922b53e6efa217",
+      "bytes": 10649
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/13_gp_2d_kernel_comparison.py": {
+      "sha256": "10352d94ed8b9d1770db22c1fb45e7ef31e7c8a7581848ea06901eab1d71bd44",
+      "bytes": 18392
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/14_gp_2d_path_kernel.py": {
+      "sha256": "bc69ddd8c82f36ae1eaf82a4969331340aacd4227871f806e9fea71bc80ad29d",
+      "bytes": 17200
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/15_gp_2d_path_censored_tuning.py": {
+      "sha256": "75736425a35aa01fdb3576bac8c8a82990e342b1f20a70c287901a9126b7847c",
+      "bytes": 22094
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/16_thermal_diffusion_kernel.py": {
+      "sha256": "03a4981987e0e3523b8daa56366409043759a2c45e6646e99131690e644e83ca",
+      "bytes": 29345
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/17_thermal_spatiotemporal_physics.py": {
+      "sha256": "2f5038a19a7b4d800c7a7c125cb7ca6236408c196fd681c09ce3d2f259b41ad3",
+      "bytes": 23794
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/18_thermal_two_frame_ablation.py": {
+      "sha256": "95223f9e244f3ee07b0809c85253245a488440f6fb9260ab0ed697ebfeb1192e",
+      "bytes": 43942
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/19_thermal_corrected_crps.py": {
+      "sha256": "dd0649740c7d12435c95eb33daed97c2fc6199821cc74d56d188f63f4a566be6",
+      "bytes": 23768
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/21_thermal_stochastic_spde_ablation.py": {
+      "sha256": "69b2ca67a34c7ccaee92417b3fe840f0bcfaa8a9ae3c648480011bbb52218e5f",
+      "bytes": 32040
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/22_thermal_previous_posterior_propagation.py": {
+      "sha256": "d13f0b91c5e12ecd41cbae20d5568944b463bd27354114dfa243785ef6fca6e2",
+      "bytes": 39995
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/26_thermal_posterior_physics_advection.py": {
+      "sha256": "9403a6d1e8fd91bade663e1096d4cc69964827ed0ed6bf4c4ffb416f33e73358",
+      "bytes": 29417
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/27_thermal_broad_model_comparison.py": {
+      "sha256": "d9ac7c382f7384fc221f80f9039316513a4e2f4705c1bb2732bb14957d7dfdd1",
+      "bytes": 21013
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/28_thermal_one_step_sequential_gp.py": {
+      "sha256": "f68fb41f1f593a38ff04a6d6cff8fe2bbf21907b3a5147d0117747ef1beaf1a0",
+      "bytes": 38817
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/29_thermal_full_posterior_sequential.py": {
+      "sha256": "f4ed620a4f40cf8135ff25f9735277b6a97e218e6729462cea1c46dbd24b2bb6",
+      "bytes": 43971
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/30_hottest_tail_diagnostic.py": {
+      "sha256": "8077de4732ace996f850a1922cb77a49830812e3af74cc74acf58b08efd508ba",
+      "bytes": 42932
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/32_thermal_final_architecture_comparison.py": {
+      "sha256": "1620438bdf319bbd998653cc899313660403fe045162c204af04b93202fb8588",
+      "bytes": 61444
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/33_thermal_uncertainty_origin_oracle.py": {
+      "sha256": "b8179660d13803aad7cbd2b127bbcae316df758875aa9042b8033ef3fab90be5",
+      "bytes": 58503
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/34_thermal_uncertainty_oracle_v2.py": {
+      "sha256": "f97e25752f70e4dbf1f9a72442fd85bd9b1e4d81ab4a7aaf15139872351a57ab",
+      "bytes": 48985
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/35_thermal_single_frame_exceedance.py": {
+      "sha256": "1daa0e91c3226b322c1471294f2e101a3ca5e88b52554e046c2ae80f296c2f71",
+      "bytes": 35572
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/36_thermal_censoring_geometry.py": {
+      "sha256": "55dae16648c6862d76a5a304030c4bebdcc0939f9261a095a1d4a7bb4d1f0f14",
+      "bytes": 57979
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/37_thermal_architecture_quantitative_companion.py": {
+      "sha256": "6b548f5cbc8f2300236677824d2c26cc144ed8cc6c72108b06cde78803af7e27",
+      "bytes": 16075
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/38_thermal_lowered_ceiling_sweep.py": {
+      "sha256": "b44fa5972d7ba174cf54785599f63062560f4a169464ad8f9dd860996385f346",
+      "bytes": 49284
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/39_thermal_reference_equality_audit.py": {
+      "sha256": "1a7149d02f2e3b3812be742e695d0e867295ad1c32c522923745ed8b56765f71",
+      "bytes": 48208
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/40_thermal_canonical_converged_architectures.py": {
+      "sha256": "d31d269f5c2c65431283ac82bd7bf739c9d7028ad10e42affc795fb9eee2228f",
+      "bytes": 52247
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/41_thermal_pseudo_censoring_calibration.py": {
+      "sha256": "f9f34ce993d8ce9882d48f82d81f1dc4bcedb99f512f2d8e9507d124b33f642b",
+      "bytes": 55188
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/45_thermal_observation_bridge.py": {
+      "sha256": "8912b9581468dd3bcfaf8d4a807644bef586748a5bcf3ae4f6bf1eb496d1c264",
+      "bytes": 15813
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/47_thermal_matched_ceiling_model_gap.py": {
+      "sha256": "de0e91b7b9abb8108a9cda91129774e7269d1c5c2dd1c80d58dfd823fce4247d",
+      "bytes": 13533
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/49_thermal_severity_error_decomposition.py": {
+      "sha256": "58da8709ce28a5e69ad13793eb944df3858c87b3845ef26e3283dea5c66ca408",
+      "bytes": 13916
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/50_thermal_oracle_forecast_decomposition.py": {
+      "sha256": "a1d8de6b81fbe0a83ce858196ffe20c9ba2414c8a0606578e54202448e6bb07c",
+      "bytes": 11238
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/51_thermal_native_mesh_pilot.py": {
+      "sha256": "407dc4238775acf28ae4e0109c9cb4c8af339eb353a7a149b1f062dffde43b0a",
+      "bytes": 19113
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/52_thermal_controlled_projection_audit.py": {
+      "sha256": "3f348cd933e66acbab2db039dba3bfdb967af7becf6b0b914020f508dc056364",
+      "bytes": 14577
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/53_thermal_matched_projection_gp.py": {
+      "sha256": "11754570b9f188c890d700fdd39887f9ee27c9f5bbe5461327f4e31ea5d4af7e",
+      "bytes": 15839
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/54_thermal_native_advection.py": {
+      "sha256": "9e07678fa16be6b371610d4a6b2da71947313615227496932e0e9132b53703ed",
+      "bytes": 11883
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/55_thermal_native_forecast_attribution.py": {
+      "sha256": "c12af11fabccdd00856818c02aa287292938f195b165dd6b62557cd4554a870e",
+      "bytes": 10091
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/56_thermal_native_higher_ceiling.py": {
+      "sha256": "87c5fa409988e782f287d1d406704935eb4f0c9ea94d247d3b545690aa200398",
+      "bytes": 19428
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/57_thermal_native_observation_retention.py": {
+      "sha256": "68314586837e89336b32d17389290bf272f1b362a8f4ddd0788d48bd06409902",
+      "bytes": 12977
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/58_thermal_native_non_saturation_mask.py": {
+      "sha256": "c17e8869707a25da7865c9ebba8abc930f8ff53c8b1af4ff8c9a6a9b6a9c6e4c",
+      "bytes": 27199
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/59_thermal_mask_reliability_check.py": {
+      "sha256": "26a28bb6386bd2986c80cc717965585c31b093f7dd860f900fac2b3b1d20521a",
+      "bytes": 13174
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/60_thermal_within_step_integration.py": {
+      "sha256": "90f88af672280eec78640a011c479ece16833a9150fdff837f808c5426ecac52",
+      "bytes": 26002
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/61_thermal_remapping_attribution.py": {
+      "sha256": "50cb57de1c8c33e3048fee13941b3f38ccfa67ebc96776426af327859b884092",
+      "bytes": 11351
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/62_thermal_source_amplitude_shape.py": {
+      "sha256": "0220e9dfa4b69a064bde3072aad51856d476e7865a8e9f2d0b774173f732ea6d",
+      "bytes": 16211
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/63_thermal_previous_correlation_audit.py": {
+      "sha256": "c9c79b4af21286deda4cc389e154341f01ba2ea66a6b91d0cab021c9fe6385f2",
+      "bytes": 18992
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/64_thermal_previous_unpinning_audit.py": {
+      "sha256": "16a161aa372217436d96cb80d7584618d3417cfddc9bb628e301884372d08e5f",
+      "bytes": 24072
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/65_thermal_unpinning_current_update.py": {
+      "sha256": "5d293cb2136f35d44c07c9bcb089cfdd56b6c08b8864ce8e5800638936f0aef9",
+      "bytes": 23705
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/66_thermal_physics_input_provenance.py": {
+      "sha256": "bbb045dfe8ec15446243729a1875767b6fcb28d9cadcf15fbfe749daad24f9c4",
+      "bytes": 9019
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/archive/2026-09-20_deferred/42_thermal_nested_ceiling_response.py": {
+      "sha256": "c952eba13dd3887d7bb93fb56bf09c8e3e83679fb0a5b2d8c31d5d1a165e0b10",
+      "bytes": 12028
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/archive/2026-09-20_deferred/43_thermal_nested_ceiling_response_v2.py": {
+      "sha256": "5f28e40c53f90e710c7e04abaeb8fab8a101a639fe61f6394a03438fbc0fe5b9",
+      "bytes": 41184
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/archive/2026-09-20_deferred/44_thermal_source_history_mean.py": {
+      "sha256": "106da04196274b27063ad6e0e571b21f0b26762bb0d8db73921716912badfb56",
+      "bytes": 20031
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/archive/2026-09-20_deferred/46_thermal_one_step_smoothing_pilot.py": {
+      "sha256": "1d15582a2fa129a2b9bb44374dea825634b99a38b826beeb9cf693614cbc1b2b",
+      "bytes": 14152
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/archive/2026-09-20_deferred/48_thermal_smoothing_collapse_diagnostic.py": {
+      "sha256": "478a6ff639dff4a0b8bdb10e0cad8671941f0433fe1b14a35173f9296e9b34ba",
+      "bytes": 13308
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/ceiling_model_comparison.py": {
+      "sha256": "d028e3ff63f32c998149029e7d0204f562a870208578d5f0a734bce67acfbead",
+      "bytes": 1991
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/ceiling_sweep.py": {
+      "sha256": "d442d5122ebb3150c7765ae1e2aed42c969e66d8e31831e38b195e8a326a4078",
+      "bytes": 9517
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/censored_gp.py": {
+      "sha256": "6fb7e71634abf7810ca43b21b7764dc6b76453be02b5c61940d3290136e8bd04",
+      "bytes": 9889
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/censoring_geometry.py": {
+      "sha256": "9ed124e0c378576c2afdd898aa7da02b0e8b8381191ca6b46b7baac9fa24849e",
+      "bytes": 4604
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/dense_censored_gp.py": {
+      "sha256": "e075a45362425a013651444097561c43f72fc65e368e12e334fd054a1a055034",
+      "bytes": 27163
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/diffusion.py": {
+      "sha256": "f5d73b8c2d02ba0784585b9bda36bcbcde5403e97815e680182a6856ff737463",
+      "bytes": 6065
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/fit.py": {
+      "sha256": "3ed30a7b2cc3fcbb92ff3bfe06f0a1ef34d37399e5ecea5e6d4ada3c836d5b70",
+      "bytes": 3238
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/forecast_attribution.py": {
+      "sha256": "4e831bd5c1206bc72cebcb4323ea2a38ae752e771cc0c7173085bdcb1732c545",
+      "bytes": 2740
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/gaussian_field.py": {
+      "sha256": "f21572d2d389d04af7237b67bf28b12eaabf4bbaee58f245c1d28bce66518ca6",
+      "bytes": 2644
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/losses.py": {
+      "sha256": "04c0f13de4e8432145fee1934dc0bd384311ed770b81da4052e67b059607c27a",
+      "bytes": 2464
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/matched_projection.py": {
+      "sha256": "eb804ff4422256e753ffbc08a618bc7547c22191af296ab6311f3e7f2939319b",
+      "bytes": 6384
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/mcmc_diagnostics.py": {
+      "sha256": "63f97d9c999f7042d0c8f7bc9ca124507ce2dce9dfa3249f7d0dec0c02eeaebb",
+      "bytes": 2082
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/metrics.py": {
+      "sha256": "3e9f83ba981fb2f271d72b6306435188677a7885a4b6beb6d5e51bb7ad210cb3",
+      "bytes": 2731
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/native_ceiling_diagnostics.py": {
+      "sha256": "cb4672b12db7991f0083a04825677882208e445efe93484defb6bbec22b5f682",
+      "bytes": 2974
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/native_diagnostics.py": {
+      "sha256": "cab94a127a5ac0bf378bd72d081da671a0905d9d772df4a2c533f60584257531",
+      "bytes": 7620
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/native_mask_pilot.py": {
+      "sha256": "2f1df5100d556e41148146881ee8f9618f175c47c04c22ab11fa70f768d0c371",
+      "bytes": 5998
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/native_surface.py": {
+      "sha256": "f2f2ab484ed3f9e27721f9a9b39f0b7f71cf3c4d494fc023604579aee76e098e",
+      "bytes": 5372
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/nested_ceiling_curves.py": {
+      "sha256": "b90769b8f06cb4fe14bdc6bb9783dc45663d45a175cd54fd3dccbcd2addc873e",
+      "bytes": 5749
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/nested_ceiling_response.py": {
+      "sha256": "64234f65fd3b63627dd5db6ec89f54c066a89e00d696dd7f7bd0da26e10dc787",
+      "bytes": 11349
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/observation_bridge.py": {
+      "sha256": "334b7c018d24966d0e6d49248c7a005222ce35a73eebea9c0228adaf866a0eaa",
+      "bytes": 2349
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/one_step_smoothing.py": {
+      "sha256": "0602c236c93f1102756326e6e5065ea42bbebc5faf8e11944334f287db4668c9",
+      "bytes": 2261
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/plotting.py": {
+      "sha256": "ad466dbd5c86621d2e2064e1a3b97cea0318f5cd8b1f0ac79526094e98c5ddf2",
+      "bytes": 4288
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/preference_censored_gp.py": {
+      "sha256": "fa707488afa303299adf9879d971d775fc56a93e436faecab176f0fb3743cc8b",
+      "bytes": 12800
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/previous_correlation_audit.py": {
+      "sha256": "b0eeeb5a3e7f98dbe0e896b2753a7be2f40eb558263df1e6f9684eed1f879e1f",
+      "bytes": 4129
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/previous_unpinning_audit.py": {
+      "sha256": "5de758ea6bb49ca0303a1c33b22c09d5998e7fcf99027cf7f264adf83f5abf6e",
+      "bytes": 7253
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/projection_audit.py": {
+      "sha256": "3646310f61efc3814378238a765f6dab0fe28d8f8273241aced526f067407408",
+      "bytes": 3285
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/pseudo_censoring_calibration.py": {
+      "sha256": "dc67c04981a0f82173a6dcde9514dbd3b8d35eed16ad145e126c1c0f95337096",
+      "bytes": 8274
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/pseudo_censoring_runner.py": {
+      "sha256": "887e1b247936257a6d04cbe181bad8545e0aef2229f04b12960ad4d460d7ee6f",
+      "bytes": 9232
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/remapping_attribution.py": {
+      "sha256": "fa6fd8cd13654919d91f734261be6fa3cd63dbe00eddccd9d5882d0eda69e398",
+      "bytes": 814
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/severity_diagnostics.py": {
+      "sha256": "e36041969c4f2ce4ad65bf2a6a342460d43af3a5c852b119d6dd3c7b9814d7b8",
+      "bytes": 4242
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/smoothing_collapse.py": {
+      "sha256": "bb51554288964bbec91edb5cc8bae25ba851ffe945851b127426df726866ca36",
+      "bytes": 2429
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/source_amplitude_diagnostic.py": {
+      "sha256": "d431a6026026f73899e432ef51934db12576a05ed23eb9e9ead848da8d96f2d7",
+      "bytes": 1862
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/source_history.py": {
+      "sha256": "6fdd0ef0bc2a0ae67a76152d80b240745ee0423cc11f42c8488d3fb36dcf4721",
+      "bytes": 1157
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/stochastic_heat_gp.py": {
+      "sha256": "de5d51c2fd3d1243a815c69fadd6b826e47dbf9dc43f909f6d2dbc761c9a9087",
+      "bytes": 7305
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/synthetic_fields.py": {
+      "sha256": "d48300a0e00e73b6821e5baa68682e3c5cf4deb551aa05bb11dfb8846bfaae5d",
+      "bytes": 2462
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/thermal_plotting.py": {
+      "sha256": "f01890ffc6d533f6d26b3a8009ef4506072b53251fae6142e8c3ac253aa1be40",
+      "bytes": 1350
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/thermal_posterior_physics.py": {
+      "sha256": "c99fe3a5ffbaeedabb16e8b9fdee0ba3fcc8f19f791600bbb62ab10459ab4836",
+      "bytes": 21152
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/thermal_trajectory.py": {
+      "sha256": "c08a9396e1ec3382be230ea0f82f627d56f04a5a5b57795a4e5f60d325e5b207",
+      "bytes": 12682
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/truncated_gaussian.py": {
+      "sha256": "a2bb4b5fc9c0d8aeab34af3a031f96c02aa0ad21570feccd6b722f11fba66a6b",
+      "bytes": 5355
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/uncertainty_diagnostics.py": {
+      "sha256": "eea8b4ed4802ff19fd859b3aa8d00fbd6e3510bdc90ab7dc4266a17f68db0ab0",
+      "bytes": 5808
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/unpinning_current_update.py": {
+      "sha256": "8bf06f08848edd2a79c513ea36ebaffbb2318f0849271b895edc6997f8e72ca2",
+      "bytes": 2175
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/within_step_integration.py": {
+      "sha256": "2a6f46ef50dd4e79243e35716694728ea82919bd0348c6d3eac52b6cf52f664d",
+      "bytes": 3163
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_ceiling_model_comparison.py": {
+      "sha256": "347736d9ae944bec659455d99e5a6974c50d6b982db879825a50e6cfc319eaf2",
+      "bytes": 1204
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_ceiling_sweep.py": {
+      "sha256": "e8e176104246e9637c80d2a68b67d3d12595e46911e0e5bc83fbba61e6913315",
+      "bytes": 2669
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_censoring_geometry.py": {
+      "sha256": "00730da6df2bf432ca902ce77995c194e72daf5adbd9cdb6db6478e4641a0de4",
+      "bytes": 3905
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_forecast_attribution.py": {
+      "sha256": "f4b20633461277bd0134c1d0642198a9a02247a885736eac415fc5111f66757b",
+      "bytes": 1489
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_matched_projection.py": {
+      "sha256": "e2ce5309fe927a30de7905ea45fb0f17eb311078239c8b5c95cc085381778986",
+      "bytes": 2496
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_native_ceiling_diagnostics.py": {
+      "sha256": "d34ccd13e0b438a3e79e5e2fa14e87f03c234e75ae64fb5f9890393e22a5b0be",
+      "bytes": 2385
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_native_diagnostics.py": {
+      "sha256": "db1018036c0bf5e163412761238a704582d2e6ceedf48c671bf95cd4bf3fc1fc",
+      "bytes": 1046
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_native_mask_pilot.py": {
+      "sha256": "1a780b544b4ea25f13b77396a18da1b4234c6daa82596b4a061a32fb3abbc611",
+      "bytes": 4982
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_native_surface.py": {
+      "sha256": "f7f0bff8e12ec5bd42ee90d2492088ac605f6c4e04d1724dddf348c6c6c5fb0c",
+      "bytes": 2007
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_nested_ceiling_curves.py": {
+      "sha256": "7fb963fbc6dd4b5f9677d06d01bb9296e548d805b7c25eb62bedf6852cebb426",
+      "bytes": 3398
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_nested_ceiling_response.py": {
+      "sha256": "61f0894b043bfbef5946f5241a075c5b9da13b2cf7cae8a71a3a2bb159921400",
+      "bytes": 3662
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_observation_bridge.py": {
+      "sha256": "f6e42cf4436d560e948d33ddcf8ae170fa539b1269e4abf69764865dac6e5a72",
+      "bytes": 2343
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_one_step_smoothing.py": {
+      "sha256": "8e7800690bf70b0745fbe980ac5573e034d8199368e7221410642c2c8f88cbc3",
+      "bytes": 2272
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_oracle_forecast_diagnostic.py": {
+      "sha256": "ff752a80119113c70b4befe4a2f045bcf8026ddb69d1acf8043fc39353c0bd30",
+      "bytes": 1367
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_posterior_physics.py": {
+      "sha256": "98f359228bd06ff64b34e961a1c5e3212b048a2dfbb77a29742a08a3533278bb",
+      "bytes": 10542
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_previous_correlation_audit.py": {
+      "sha256": "f4e7cdde9b6fa9cfe2faad01ae2a5feb80f93cd3c3578263766c6d12519abe87",
+      "bytes": 4260
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_previous_unpinning_audit.py": {
+      "sha256": "be36438d180051f318bf7a31779dffdf4bd9934b30ebda9f221c26e3cce1e60e",
+      "bytes": 5338
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_projection_audit.py": {
+      "sha256": "e8df9094f8e6d831f7c6f248d2c1cb344d9f058534a7ca4ef4d9b798a18f3d76",
+      "bytes": 1895
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_pseudo_censoring_calibration.py": {
+      "sha256": "f0bde0d4526738948bcca866eac06b206014f2a2e906ac876be382e006d659d0",
+      "bytes": 2355
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_remapping_attribution.py": {
+      "sha256": "c023eed44e28f84a2658f551f7cd944988ae3128b7ec556800c2624ba4a5cc06",
+      "bytes": 1763
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_severity_diagnostics.py": {
+      "sha256": "f7970fef8b339fabe2557f506d013a0511b916467b46067b47393e0bc6f4558b",
+      "bytes": 1109
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_smoothing_collapse.py": {
+      "sha256": "aba2489124df79952578159342e77527f05e0407f1b80936bc356f308c89fe88",
+      "bytes": 1432
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_source_amplitude_diagnostic.py": {
+      "sha256": "3df809da786d89c255362adb35a26b24177b9aa476aac5e0b9536d3745290268",
+      "bytes": 1231
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_source_history.py": {
+      "sha256": "133e27f7172720b78926a656571906a0f2f232f9377525c2f8a787d4bec36f92",
+      "bytes": 1654
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_thermal_metrics.py": {
+      "sha256": "1f081930b76ae0ad38331f5cc47e1b702b92f49c878233830832fde23b4c401d",
+      "bytes": 4962
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_thermal_plotting.py": {
+      "sha256": "c6d063c884650fed89b100b843fe988baa9ef62e8ca088f9619eae0ddf8789e7",
+      "bytes": 695
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_truncated_gaussian.py": {
+      "sha256": "7943f3ab78e01a23b75d0f7228058ad03f0e14cc3770d4656f010e854a3c96e6",
+      "bytes": 2772
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_uncertainty_diagnostics.py": {
+      "sha256": "431d7ec039661f8248b7ac1563097c04c15949ccca1a61661819a5ccca91e3b1",
+      "bytes": 2926
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_unpinning_current_update.py": {
+      "sha256": "e2fd13ebfdcd8b4b87a2dbb81ff3316042669ea7612841c60c51f3e9f14bc99a",
+      "bytes": 3203
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_within_step_integration.py": {
+      "sha256": "73b6232040e0c8a7d242966d89579358c48886b814e27ccf8e24c1e9c2ca940e",
+      "bytes": 3008
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_within_step_operator.py": {
+      "sha256": "5fe4abd052e0a184a60d121f7aea0978b7e1709b9c65daad11dddcd5696e06e6",
+      "bytes": 2394
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/EXPERIMENT_PROTOCOL.md": {
+      "sha256": "62fa7598083f3509558e91f321930a9989a6190f1fefd9bca88ea86bb2aab0cc",
+      "bytes": 7302
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/EXPERIMENT_INVENTORY.md": {
+      "sha256": "fbb34c0fa68cdbe371e613afd44597517ad0d6b989da20eee7f97aceb6dd2a73",
+      "bytes": 13126
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/archive/2026-09-20_deferred/relocation_manifest.json": {
+      "sha256": "a875b14125eebec728155363acc3ac05a0ac5189e9433d3152454b6bcdc35f30",
+      "bytes": 32661
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/24_posterior_physics_mean_advection/development_physics_parameters.csv": {
+      "sha256": "6e39ecfafa26518262604c929252bf011f85567cfb09f6e457607fe708ec1f93",
+      "bytes": 812
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/24_posterior_physics_mean_advection/source_coupling_calibration.csv": {
+      "sha256": "7a47824d615487bccb87ee1ae344061dcaf79379ab2149e91d0a8037856e4f7c",
+      "bytes": 212
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/49_matched_native_grid_gp/frozen_configuration.csv": {
+      "sha256": "c7f15cf77dff969a9604f8a8186e856e120d2170e010280495e4f10d890c333e",
+      "bytes": 1528
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/52_native_higher_ceiling/frozen_configuration.csv": {
+      "sha256": "c7f15cf77dff969a9604f8a8186e856e120d2170e010280495e4f10d890c333e",
+      "bytes": 1528
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/52_native_higher_ceiling/PHYSICS_PROVENANCE.md": {
+      "sha256": "20337866496bab34220b4b8b42221f10543080928fb377bef9e1d2dd7b685e85",
+      "bytes": 3777
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/56_within_step_integration/gradient_provenance.json": {
+      "sha256": "7af2c20a3fdfb30ed55402b981fe871f7e33ab59ab15c2014c94cbc6a203ba7e",
+      "bytes": 2324
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/60_previous_unpinning_audit/frozen_configuration.json": {
+      "sha256": "38b60e7a5f405db1c36ff9042056470540548946bc6437115c7db10bfc051b0f",
+      "bytes": 4209
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/61_unpinning_current_update/frozen_configuration.json": {
+      "sha256": "d875f331ef7632f57a274ac941ed7d600ad82f39f08ed3e91b4881942b880297",
+      "bytes": 3458
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/61_unpinning_current_update/verification.json": {
+      "sha256": "28ca9dc6bddd4970cd2424be51a8faabb0bb0b3d5b45eee169828f023863f301",
+      "bytes": 798
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/docs/adrienne_review/parameter_inventory.csv": {
+      "sha256": "95743e6639a856c7bac52030492184ce12118e1c4a45e2fc54e4a6c397afd77a",
+      "bytes": 22164
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/heat_eq_laser_trajectories/Copy of DiagonalScanPath_8.xdmf": {
+      "sha256": "4f32cef4d534700174b7ba9c4cf01e683b4e679f30a536a7de9a27d41c2ca7dd",
+      "bytes": 224467
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/heat_eq_laser_trajectories/Copy of DiagonalScanPath_8.h5": {
+      "sha256": "112cacd5a8e93e3011ad42a022fc957079bb16723af46609bd71b6601101c1ad",
+      "bytes": 154229040
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/52_native_higher_ceiling/by_trajectory/DiagonalScanPath_8/level_0.npz": {
+      "sha256": "4953a85f25fef10d26f78bf42f747430a12fb4233a50cba409a6862c4365fc1a",
+      "bytes": 175624355
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/heat_eq_laser_trajectories/Copy of SpiralScanPath_13.xdmf": {
+      "sha256": "008b1038b6cfd7a4d884db11e60b77f504b4d713cfa75076ec51f4f9d7e1ebe8",
+      "bytes": 342724
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/heat_eq_laser_trajectories/Copy of SpiralScanPath_13.h5": {
+      "sha256": "13a3ba82f715b13c97d990e5c4c5f57ae0c1c4add8a77719a6be035ebb865cfe",
+      "bytes": 234879120
+    },
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/52_native_higher_ceiling/by_trajectory/SpiralScanPath_13/level_0.npz": {
+      "sha256": "3cddc9e2e38915bc6f97ba3720b6d38bd4143ec9dbef53577bef2a32cc024e62",
+      "bytes": 176029531
+    },
+    "/Users/qiushiyu/Downloads/MasterThesis_Trentini.pdf": {
+      "sha256": "f6393957765beb989ca2d0d94abf53ab490e1b455a5419fb4eb88373a4f8baa4",
+      "bytes": 5226878
+    },
+    "/Users/qiushiyu/Downloads/MasterThesis_Trentini (1).pdf": {
+      "sha256": "f6393957765beb989ca2d0d94abf53ab490e1b455a5419fb4eb88373a4f8baa4",
+      "bytes": 5226878
+    }
+  }
+}

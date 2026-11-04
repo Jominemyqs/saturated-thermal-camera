@@ -1,0 +1,18 @@
+{
+  "completed_fits": 24,
+  "reference_gate": true,
+  "all_completed_fits_pass": true,
+  "historical_replays_exact": 6,
+  "previous_caches_unchanged": true,
+  "source_inputs_unchanged": true,
+  "full_prior_cross_covariance": true,
+  "current_likelihood_noise_and_observations_matched": true,
+  "previous_inference_rerun": false,
+  "previously_completed_artifacts_preserved": true,
+  "environment_recovery": "environment_recovery.json",
+  "recovery_wall_seconds": 666.4506943749999,
+  "elapsed_since_configuration_write_seconds": 1596.9768002033234,
+  "completed_fit_seconds": 636.8992648749999,
+  "historical_replay_seconds": 51.946787084,
+  "timing_note": "Completed fit/preparation/replay timings exclude the failed unsaved fit and environment repair; elapsed wall time includes interruptions"
+}

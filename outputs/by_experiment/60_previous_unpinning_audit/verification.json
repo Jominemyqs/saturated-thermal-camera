@@ -1,0 +1,51 @@
+{
+  "completed": [
+    {
+      "trajectory": "DiagonalScanPath_8",
+      "level": 0,
+      "ceiling_K": 296.12149833303096
+    },
+    {
+      "trajectory": "SpiralScanPath_13",
+      "level": 0,
+      "ceiling_K": 296.4901280292387
+    },
+    {
+      "trajectory": "DiagonalScanPath_8",
+      "level": 1,
+      "ceiling_K": 320.0
+    },
+    {
+      "trajectory": "SpiralScanPath_13",
+      "level": 1,
+      "ceiling_K": 320.0
+    },
+    {
+      "trajectory": "DiagonalScanPath_8",
+      "level": 2,
+      "ceiling_K": 325.0
+    },
+    {
+      "trajectory": "SpiralScanPath_13",
+      "level": 2,
+      "ceiling_K": 325.0
+    }
+  ],
+  "reference_gate": {
+    "DiagonalScanPath_8": true,
+    "SpiralScanPath_13": true
+  },
+  "all_inputs_unchanged": true,
+  "current_gp_inference": false,
+  "full_latent_covariance_analytic": true,
+  "unsaturated_censored_cross_terms_preserved": true,
+  "source_noise_Q_unchanged": true,
+  "runtime_seconds": 376.44335654099996,
+  "peak_RSS_MiB": 1623.484375,
+  "cautions": [
+    "All-readings bridge changes how already-used readings enter inference",
+    "Mean uses positive floor; covariance retains the inherited linear propagation approximation",
+    "Inherited ambient/kernel/source inputs remain simulator-derived",
+    "No current posterior performance or coverage claim"
+  ]
+}

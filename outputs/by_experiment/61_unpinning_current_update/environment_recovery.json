@@ -1,0 +1,55 @@
+{
+  "cause": "Temporary ArviZ package lost its __init__.py and became an empty namespace package; from_dict was unavailable",
+  "failed_case": {
+    "trajectory": "SpiralScanPath_13",
+    "level": 0,
+    "arm": "all_readings_pinned",
+    "repeat": 0
+  },
+  "failed_attempt": "Four chains completed but diagnostics failed before fit artifacts were saved",
+  "action": "Restore identical diagnostic versions in ignored repo tmp/thermal_diagnostics; rerun unfinished fit with SAME seed/settings",
+  "package_versions": {
+    "arviz": "0.17.1",
+    "xarray": "2024.3.0",
+    "xarray_einstats": "0.7.0"
+  },
+  "PYTHONPATH": "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tmp/thermal_diagnostics",
+  "MPLCONFIGDIR": "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tmp/matplotlib",
+  "completed_artifacts_before_resume": {
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_all_readings_latent_repeat_1.json": "41f89ea634148ed84f21166882cdfea1ac942889b509bb552b567dc1c252c95c",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_all_readings_latent_repeat_1.metrics.csv": "2e65473f2ed6274db854e8763a942312f15e617543e70efffcfc26d1fd87e9e7",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_all_readings_pinned_repeat_0.metrics.csv": "14860dffd13ac4d3e7af97947f0a6ff9ff791d09e72fdb19cbcb6a45ef478f1a",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_all_readings_latent_repeat_0.npz": "75f148d017bfe7dd9e56d03b9bcbc5fbdb2bb83f29a65b1896635a1a16c3c51d",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_all_readings_latent_repeat_1.npz": "9fbf9212fc00271c42290ef00938f0406a3398666c9f15320d05fd9b283b5e89",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_legacy_hybrid_repeat_0.diagnostics.csv": "d20a62f4ff685b816cf991a3f35bdb5c3f7b74c80a9c953496f64e358f2c6d57",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_all_readings_latent_repeat_0.json": "b8458d423820d2d355ee891ba3dbf8d7ed6ed694be8fc3fea38b0427db6d83ee",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_legacy_hybrid_repeat_0.npz": "706195ecbb04b71e9632971931af407e52357539c82eb741d992cd435214087f",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_legacy_hybrid_repeat_1.diagnostics.csv": "9264ba0768210ec88d79c20751d5264ccee7d9b7c85c8bdcb94f593827dd6da1",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_legacy_hybrid_repeat_0.metrics.csv": "489a6e5d17269b3ebfb76d5874d98b11617f793df1d1967e660d3f67be59d654",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_legacy_hybrid_repeat_1.npz": "e5198427ad16b17e1cf1e173bc6850278192c038efc894146c94b947f5aee5d4",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_legacy_hybrid_repeat_0.json": "11fb1cec9b74fbb2d0b7838ff491a9eb1bae7fa1d5e9415a6934b782d5b38c20",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_all_readings_pinned_repeat_1.metrics.csv": "d0cfde235ce5f50829d4ae638e79e88ad9c7f8ee36cad98a58ac08466ffc2e07",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_legacy_hybrid_repeat_1.json": "0cb927b2d19155e78e514a123cdabfb42a847f2fc845dbeb079ddf27adcf0432",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_all_readings_latent_repeat_0.diagnostics.csv": "8d5e5c04efbc6d1a940b450089d0ad554b2aca1195ba77f5a3c3bcfe4c62dae3",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_all_readings_pinned_repeat_1.diagnostics.csv": "950c42d5b3feb9c6ce0ae0fe4765dd888837cfe3ccf32da12535500cb60684c7",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_all_readings_latent_repeat_0.metrics.csv": "0172eb0451d994916aeb5c8cc3090bf426f955b382c90a7befab1a0de8b8f9e2",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_all_readings_pinned_repeat_0.json": "71d3527ac73f7a55a653d4e8b941d9c8ce3069337e8c556f8c0b958b10f12dea",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_all_readings_latent_repeat_1.diagnostics.csv": "07342186156250877f948e184c730a085cb345a44ed01a4ff87dcdf552107067",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_all_readings_pinned_repeat_0.diagnostics.csv": "6f8e518c8fc599bf1546a7ef28508657027b13e9cbc9a708c3dd036ece7a07ff",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_all_readings_pinned_repeat_0.npz": "2f2d9a0ac29bd25f742c9999b12dccfdbfa8375222d30da3390ce5cdc8534d6c",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_all_readings_pinned_repeat_1.npz": "8a607374c76729321c284a4c5811e7bfa263ea11b5123a001db4381e2d07bf91",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_legacy_hybrid_repeat_1.metrics.csv": "cb7a40aa0d4ca11880ee9ee996c979f8d5d215665882ae5abcc20cba4d69fafa",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_all_readings_pinned_repeat_1.json": "50319d632c35b6454d0f1cd366d0a35359b7724c58c888ff5513a4605f574720",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/SpiralScanPath_13/level_0_legacy_hybrid_repeat_0.diagnostics.csv": "debac5ed06fa2af113a70133d6a0b885a4465ec2242b4c6749f2628db5ad1535",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/SpiralScanPath_13/level_0_legacy_hybrid_repeat_0.npz": "8610647855c67662ba948b76abcb34eea6563f42f91f9705ef341a4a94f2efe0",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/SpiralScanPath_13/level_0_legacy_hybrid_repeat_0.metrics.csv": "a5054f4fc95490100d198b3fb03a65e63a419ea78689ca0c22ce18d60666aa82",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/SpiralScanPath_13/level_0_legacy_hybrid_repeat_0.json": "36ba17f71fe98fa77693751db84f5487e8113cea06553cf33fde4d91c32c122a"
+  },
+  "diagnostic_replay_checks": [
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_legacy_hybrid_repeat_0",
+    "outputs/by_experiment/61_unpinning_current_update/by_trajectory/DiagonalScanPath_8/level_0_all_readings_pinned_repeat_0"
+  ],
+  "scientific_driver_unchanged": true,
+  "gate_unchanged": true,
+  "recovery_script_sha256": "a0d70bb1eca3dea91fcd63fe6d6d0d656180fd3542f728fcd223766e289702e0"
+}

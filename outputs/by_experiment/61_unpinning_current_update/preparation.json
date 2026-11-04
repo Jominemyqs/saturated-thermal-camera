@@ -1,0 +1,8 @@
+{
+  "seconds": 247.718452958,
+  "inverse_error": 8.979179196183853e-13,
+  "peak_RSS_MiB": 1612.046875,
+  "previous_inference_rerun": false,
+  "full_covariance_blocks": true,
+  "native_nodes": 6275
+}

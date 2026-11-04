@@ -1,0 +1,22 @@
+{
+  "trajectory": "SpiralScanPath_13",
+  "level": 2,
+  "ceiling_K": 325.0,
+  "arm": "all_readings_latent",
+  "repeat": 0,
+  "seconds": 10.443218584,
+  "peak_RSS_MiB": 651.25,
+  "rank_rhat_max": 1.0042109739155904,
+  "ess_bulk_min": 2426.600117258835,
+  "ess_tail_min": 2375.5261250044377,
+  "classical_rhat_max": 1.003627867963716,
+  "finite": true,
+  "samples_per_chain": 800,
+  "burn_in": 300,
+  "current_seed": 3200041,
+  "mean_sha256": "fc5cdf05b9d7ba844549d1c3ce8ec5bde63391be194de14ed845fd4a6979bfe3",
+  "cross_sha256": "30dd0ae862daf89649f19389a51fd972171dfc8d00f8c15a5af98a0716801ab5",
+  "obs_ids_sha256": "18dbee4a0cf6129348d339ab59c25e72e08358c915a682b715f9a3954b8b8740",
+  "noise_sd_K": 0.5,
+  "passed": true
+}

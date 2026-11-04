@@ -1,0 +1,22 @@
+{
+  "trajectory": "DiagonalScanPath_8",
+  "level": 0,
+  "ceiling_K": 296.12149833303096,
+  "arm": "all_readings_latent",
+  "repeat": 0,
+  "seconds": 37.2734895,
+  "peak_RSS_MiB": 699.0,
+  "rank_rhat_max": 1.004569018015869,
+  "ess_bulk_min": 2593.3775226914686,
+  "ess_tail_min": 2170.7586638162693,
+  "classical_rhat_max": 1.0029033486761243,
+  "finite": true,
+  "samples_per_chain": 800,
+  "burn_in": 300,
+  "current_seed": 700041,
+  "mean_sha256": "4191246a07e58f1a9ccb02f59c86c05dda1cf6d2b1321800f99cc72de328deba",
+  "cross_sha256": "3ad9fab7757d046631e01caae446a47346cb4ed60d8d4fe031ad32f5317b1c2e",
+  "obs_ids_sha256": "f028f0b5a7e9ff0c4511455383a26e97eae34ab2d7122a96726b95bdab3619ad",
+  "noise_sd_K": 0.5,
+  "passed": true
+}

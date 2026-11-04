@@ -1,0 +1,7 @@
+trajectory,level,ceiling_K,native_nodes,all_readings_numerical,censored,legacy_numerical_likelihood,legacy_pinned_readings,newly_likelihood_conditioned_readings
+DiagonalScanPath_8,0,296.12149833303096,6275,5062,1213,114,5062,4948
+SpiralScanPath_13,0,296.4901280292387,6275,5016,1259,114,5016,4902
+DiagonalScanPath_8,1,320.0,6275,6250,25,117,6250,6133
+SpiralScanPath_13,1,320.0,6275,6255,20,117,6255,6138
+DiagonalScanPath_8,2,325.0,6275,6258,17,117,6258,6141
+SpiralScanPath_13,2,325.0,6275,6262,13,117,6262,6145

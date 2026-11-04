@@ -1,0 +1,18 @@
+{
+  "trajectory": "DiagonalScanPath_8",
+  "level": 0,
+  "exact": true,
+  "source": "outputs/by_experiment/52_native_higher_ceiling/by_trajectory/DiagonalScanPath_8/level_0.npz",
+  "seconds": 10.941782833,
+  "chain_mean_max_rmse_from_pooled_K": 0.04074146721672445,
+  "rhat_median": 0.999671445970188,
+  "rhat_max": 1.0064756969656372,
+  "rhat_over_1_05_fraction": 0.0,
+  "selected_rhat_median": 0.9995313461568959,
+  "selected_rhat_max": 1.002752266057375,
+  "selected_rhat_over_1_05_fraction": 0.0,
+  "current_retried": false,
+  "current_samples_per_chain_used": 400,
+  "current_burn_in_used": 100,
+  "current_thin_used": 1
+}

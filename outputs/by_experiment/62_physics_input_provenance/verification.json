@@ -1,0 +1,9 @@
+{
+  "all_fingerprinted_inputs_unchanged": true,
+  "source_files_checked": 136,
+  "input_artifacts_checked": 21,
+  "native_cache_equality_cases": 2,
+  "recorded_gradient_hashes_verified": 4,
+  "source_comparison_performed": false,
+  "reason": "Missing independently specified matching generator inputs"
+}
