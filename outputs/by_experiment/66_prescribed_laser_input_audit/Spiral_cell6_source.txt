@@ -1,0 +1,142 @@
+for num_interval in num_intervals:
+  V = FunctionSpace(mesh, 'P', 1)
+
+  dt = 0.0005
+  velocity = 0.3
+
+  def generate_archimedean_spiral_path_and_length(N, L, dt_path):
+      half_length = L / 2
+      d = half_length / N
+      b = d / (2 * np.pi)
+      theta_max = half_length / b
+      num_points = int(theta_max / dt_path)
+
+      theta = np.linspace(0, theta_max, num_points)
+
+      r = b * theta
+      paths_x = r * np.cos(theta)
+      paths_y = r * np.sin(theta)
+
+      segment_lengths = np.sqrt(np.diff(paths_x)**2 + np.diff(paths_y)**2)
+
+      cumulative_lengths = np.cumsum(segment_lengths)
+      cumulative_lengths = np.insert(cumulative_lengths, 0, 0)
+
+      total_distance = cumulative_lengths[-1]
+
+      return paths_x, paths_y, segment_lengths, cumulative_lengths, total_distance
+
+
+  class SmoothLaserPath(UserExpression):
+      def __init__(self, t, paths_x, paths_y, segment_lengths, cumulative_lengths, total_distance, velocity, **kwargs):
+          super().__init__(**kwargs)
+          self.t = t
+          self.paths_x = paths_x
+          self.paths_y = paths_y
+          self.segment_lengths = segment_lengths
+          self.cumulative_lengths = cumulative_lengths
+          self.total_distance = total_distance
+          self.velocity = velocity
+
+      def eval(self, values, x):
+          traveled_distance = (self.t * self.velocity) % self.total_distance
+
+          segment_index = np.searchsorted(self.cumulative_lengths, traveled_distance) - 1
+          segment_index = max(0, min(segment_index, len(self.paths_x) - 2))
+
+          x_start, y_start = self.paths_x[segment_index], self.paths_y[segment_index]
+          x_end, y_end = self.paths_x[segment_index + 1], self.paths_y[segment_index + 1]
+          segment_length = self.segment_lengths[segment_index]
+
+          interpolation_factor = (traveled_distance - self.cumulative_lengths[segment_index]) / segment_length
+          x_focus = x_start + interpolation_factor * (x_end - x_start)
+          y_focus = y_start + interpolation_factor * (y_end - y_start)
+
+          r_focus = np.sqrt((x[0] - x_focus)**2 + (x[1] - y_focus)**2)
+
+          flux = (2 * power) / (np.pi * (2 * sigma)**2) * np.exp(-2 * r_focus**2 / (2 * sigma)**2)
+          values[0] = flux
+
+      def value_shape(self):
+          return ()
+
+  dt_path = 0.005
+  paths_x, paths_y, segment_lengths, cumulative_lengths, total_distance = generate_archimedean_spiral_path_and_length(
+      N=num_interval, L=length_x, dt_path=dt_path
+  )
+  total_time = total_distance / velocity
+  num_time_steps = int(np.ceil(total_time / dt)) - 1
+
+  T_0 = 293.15
+  T_n = interpolate(Constant(T_0), V)
+  T = Function(V)
+  T_trial = TrialFunction(V)
+  v = TestFunction(V)
+
+  def rho(T):
+      return 7860.51
+
+  def Cp(T):
+      return 472.84
+
+  def k(T):
+      return 15.11
+
+  bottom = AutoSubDomain(lambda x, on_boundary: near(x[2], z_min) and on_boundary)
+  top = AutoSubDomain(lambda x, on_boundary: near(x[2], z_max) and on_boundary)
+  boundaries = MeshFunction('size_t', mesh, mesh.topology().dim() - 1)
+  boundaries.set_all(0)
+  bottom.mark(boundaries, 1)
+  top.mark(boundaries, 2)
+
+  bc_bottom = DirichletBC(V, Constant(T_0), bottom)
+
+  file_name = f"SpiralScanPath_{num_interval}.xdmf"
+  file_path = os.path.join(dataset_dir, file_name)
+  xdmf_file = XDMFFile(file_path)
+
+  xdmf_file.parameters["flush_output"] = True
+  xdmf_file.parameters["functions_share_mesh"] = True
+  xdmf_file.parameters["rewrite_function_mesh"] = False
+
+  sigma = 100e-6
+  power = 1.0
+
+  t = 0.0
+  for n in range(num_time_steps):
+      t += dt
+
+      g = SmoothLaserPath(
+          t=t,
+          paths_x=paths_x,
+          paths_y=paths_y,
+          segment_lengths=segment_lengths,
+          cumulative_lengths=cumulative_lengths,
+          total_distance=total_distance,
+          velocity=velocity,
+          degree=2
+      )
+
+      rho_Tn = rho(T_n)
+      Cp_Tn = Cp(T_n)
+      k_Tn = k(T_n)
+      F_T = (rho_Tn * Cp_Tn / dt) * T_trial * v * dx + dot(k_Tn * grad(T_trial), grad(v)) * dx - (rho_Tn * Cp_Tn / dt) * T_n * v * dx - g * v * ds(2, domain=mesh, subdomain_data=boundaries)
+      a_T = lhs(F_T)
+      L_T = rhs(F_T)
+
+      solve(a_T == L_T, T, bc_bottom)
+      T_n.assign(T)
+
+      W_grad_z = FunctionSpace(mesh, "CG", 1)
+
+      grad_T_z = project(T.dx(2), W_grad_z)
+
+      T.rename("Temperature", "TemperatureField")
+      grad_T_z.rename("HeatFluxZ", "HeatFluxZField")
+
+      xdmf_file.write(T, t)
+      xdmf_file.write(grad_T_z, t)
+
+      print(f"Step {n+1}/{num_time_steps}, Time = {t:.4f}s, dt = {dt:.6f}s")
+
+  xdmf_file.close()

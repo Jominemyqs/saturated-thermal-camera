@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "independent_response_verified": true,
+  "ceiling_independent": true,
+  "oracle_identity_verified": true,
+  "covariance_identical": true
+}

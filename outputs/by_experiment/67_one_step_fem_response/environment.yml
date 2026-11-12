@@ -1,0 +1,10 @@
+name: thermal-one-step-fem-audit
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - fenics-dolfin=2019.1.0
+  - h5py
+  - scipy
+  - matplotlib
+  - pandas

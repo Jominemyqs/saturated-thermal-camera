@@ -1,0 +1,13 @@
+{
+  "completed_source_off_fits": 8,
+  "source_on_primary_replays_exact": 6,
+  "reference_gate_pass": true,
+  "all_fits_pass": false,
+  "historical_inputs_unchanged": true,
+  "full_covariance_identical": true,
+  "previous_inference_rerun": false,
+  "source_off_fit_seconds": 138.181005459,
+  "replay_seconds": 55.104437583000006,
+  "total_wall_seconds": 277.42832108399995,
+  "timing_note": "Fit timers exclude final compressed-cache writing; reused source-on timers are historical, not new runtime"
+}

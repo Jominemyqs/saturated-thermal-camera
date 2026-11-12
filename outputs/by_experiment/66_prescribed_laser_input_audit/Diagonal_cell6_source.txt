@@ -1,0 +1,149 @@
+for num_interval in num_intervals:
+
+  V = FunctionSpace(mesh, 'P', 1)
+
+  dt = 0.0005
+  velocity = 0.3
+  linespace = length_y / num_interval
+
+  def generate_zigzag_path_with_linespace(length_x, length_y, linespace):
+      num_interval = int(length_y / linespace)
+
+      x_start = -length_x / 2
+      y_start = -length_y / 2
+
+      paths_x, paths_y = [], []
+
+      for k in range(2 * num_interval + 1):
+          diagonal_x, diagonal_y = [], []
+
+          for i in range(num_interval + 1):
+              j = k - i
+              if 0 <= i <= num_interval and 0 <= j <= num_interval:
+                  x = x_start + i * linespace
+                  y = y_start + j * linespace
+                  diagonal_x.append(x)
+                  diagonal_y.append(y)
+
+          if k % 2 == 0:
+              paths_x.extend(diagonal_x)
+              paths_y.extend(diagonal_y)
+          else:
+              paths_x.extend(diagonal_x[::-1])
+              paths_y.extend(diagonal_y[::-1])
+
+      return paths_x, paths_y
+
+  paths_x, paths_y = generate_zigzag_path_with_linespace(length_x, length_y, linespace)
+
+  total_distance = sum(
+      np.sqrt((paths_x[i] - paths_x[i - 1])**2 + (paths_y[i] - paths_y[i - 1])**2)
+      for i in range(1, len(paths_x))
+  )
+  total_time = total_distance / velocity
+  num_time_steps = int(np.ceil(total_time / dt))-1
+
+  class SmoothZigZagLaser(UserExpression):
+      def __init__(self, t, paths_x, paths_y, velocity, **kwargs):
+          super().__init__(**kwargs)
+          self.t = t
+          self.paths_x = paths_x
+          self.paths_y = paths_y
+          self.velocity = velocity
+          self.total_distance = sum(
+              np.sqrt((paths_x[i] - paths_x[i - 1])**2 + (paths_y[i] - paths_y[i - 1])**2)
+              for i in range(1, len(paths_x))
+          )
+
+      def eval(self, values, x):
+          total_points = len(self.paths_x)
+          path_lengths = [
+              np.sqrt((self.paths_x[i] - self.paths_x[i - 1])**2 + (self.paths_y[i] - self.paths_y[i - 1])**2)
+              for i in range(1, total_points)
+          ]
+          traveled_distance = (self.t * self.velocity) % self.total_distance
+
+          segment_index = 0
+          for i, segment_length in enumerate(path_lengths):
+              if traveled_distance <= segment_length:
+                  segment_index = i
+                  break
+              traveled_distance -= segment_length
+
+          x_start, y_start = self.paths_x[segment_index], self.paths_y[segment_index]
+          x_end, y_end = self.paths_x[segment_index + 1], self.paths_y[segment_index + 1]
+          interpolation_factor = traveled_distance / path_lengths[segment_index]
+          x_focus = x_start + interpolation_factor * (x_end - x_start)
+          y_focus = y_start + interpolation_factor * (y_end - y_start)
+
+          r_focus = np.sqrt((x[0] - x_focus)**2 + (x[1] - y_focus)**2)
+          flux = (2 * power) / (np.pi * (2 * sigma)**2) * np.exp(-2 * r_focus**2 / (2 * sigma)**2)
+          values[0] = flux
+
+      def value_shape(self):
+          return ()
+
+  T_0 = 293.15
+  T_n = interpolate(Constant(T_0), V)
+  T = Function(V)
+  T_trial = TrialFunction(V)
+  v = TestFunction(V)
+
+  def rho(T):
+      return 7860.51
+
+  def Cp(T):
+      return 472.84
+
+  def k(T):
+      return 15.11
+
+  bottom = AutoSubDomain(lambda x, on_boundary: near(x[2], z_min) and on_boundary)
+  top = AutoSubDomain(lambda x, on_boundary: near(x[2], z_max) and on_boundary)
+  boundaries = MeshFunction('size_t', mesh, mesh.topology().dim() - 1)
+  boundaries.set_all(0)
+  bottom.mark(boundaries, 1)
+  top.mark(boundaries, 2)
+
+  bc_bottom = DirichletBC(V, Constant(T_0), bottom)
+
+  file_name = f"DiagonalScanPath_{num_interval}.xdmf"
+  file_path = os.path.join(dataset_dir, file_name)
+  xdmf_file = XDMFFile(file_path)
+
+  xdmf_file.parameters["flush_output"] = True
+  xdmf_file.parameters["functions_share_mesh"] = True
+  xdmf_file.parameters["rewrite_function_mesh"] = False
+
+  sigma = 100e-6
+  power = 1.0
+
+  t = 0.0
+  for n in range(num_time_steps):
+      t += dt
+
+      g = SmoothZigZagLaser(t=t, paths_x=paths_x, paths_y=paths_y, velocity=velocity, degree=2)
+
+      rho_Tn = rho(T_n)
+      Cp_Tn = Cp(T_n)
+      k_Tn = k(T_n)
+      F_T = (rho_Tn * Cp_Tn / dt) * T_trial * v * dx + dot(k_Tn * grad(T_trial), grad(v)) * dx - (rho_Tn * Cp_Tn / dt) * T_n * v * dx - g * v * ds(2, domain=mesh, subdomain_data=boundaries)
+      a_T = lhs(F_T)
+      L_T = rhs(F_T)
+
+      solve(a_T == L_T, T, bc_bottom)
+      T_n.assign(T)
+
+      W_grad_z = FunctionSpace(mesh, "CG", 1)
+
+      grad_T_z = project(T.dx(2), W_grad_z)
+
+      T.rename("Temperature", "TemperatureField")
+      grad_T_z.rename("HeatFluxZ", "HeatFluxZField")
+
+      xdmf_file.write(T, t)
+      xdmf_file.write(grad_T_z, t)
+
+      print(f"Step {n+1}/{num_time_steps}, Time = {t:.4f}s, dt = {dt:.6f}s")
+
+  xdmf_file.close()

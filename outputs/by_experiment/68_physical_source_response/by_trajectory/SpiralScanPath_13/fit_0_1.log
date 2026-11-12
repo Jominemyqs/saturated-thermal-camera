@@ -1,0 +1,5 @@
+CHAIN SpiralScanPath_13 0 1 0 physical
+CHAIN SpiralScanPath_13 0 1 1 physical
+CHAIN SpiralScanPath_13 0 1 2 physical
+CHAIN SpiralScanPath_13 0 1 3 physical
+FIT {'trajectory': 'SpiralScanPath_13', 'level': 0, 'ceiling_K': 296.4901280292387, 'arm': 'physical', 'repeat': 1, 'seconds': 228.056218041, 'peak_RSS_MiB': 684.40625, 'rank_rhat_max': 1.0053678182244676, 'ess_bulk_min': 1564.5399643563467, 'ess_tail_min': 1958.3413481710043, 'classical_rhat_max': 1.0037226490064557, 'finite': True, 'current_seed': 10200060, 'constraints': 1243, 'noise_sd_K': 0.5, 'prior_cross_sha256': '201b8fbf472dcab42d186a02cdf634bffbf1c0de3a16d60a067616f277ba8277', 'passed': True}

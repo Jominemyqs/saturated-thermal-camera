@@ -1,0 +1,22 @@
+{
+  "trajectory": "HorizontalScanPath_12",
+  "family": "Horizontal",
+  "level": 0,
+  "ceiling_K": 296.3525815864646,
+  "arm": "Cnumeric",
+  "repeat": 0,
+  "seconds": 57.7856255,
+  "peak_RSS_MiB": 737.59375,
+  "rank_rhat_max": 1.0047835068960287,
+  "ess_bulk_min": 1280.401750497053,
+  "ess_tail_min": 1747.978684613728,
+  "classical_rhat_max": 1.0036878898965629,
+  "finite": true,
+  "numeric": 371,
+  "lower": 1154,
+  "upper": 0,
+  "current_seed": 1800041,
+  "prior_mean_sha256": "ab61b1258bff4ebc0ab097bb60c151fda19b53c23a97b2d945bb5292235f3626",
+  "prior_diagonal_sha256": "9724d14e19ee2fc445e221e32dd310447a5c6240fdf3351df1ceb4cfb985ee9a",
+  "passed": true
+}

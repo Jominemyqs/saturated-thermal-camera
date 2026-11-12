@@ -1,0 +1,228 @@
+{
+  "audit_date": "2026-11-08",
+  "scope": "Read-only scientific inspection and new documentation; no new experiment number",
+  "inspected_revision": "61438c90332e82c458809dfc148290a1a56f2662",
+  "working_tree_dirty": true,
+  "initial_git_status": " M .DS_Store\n M outputs/.DS_Store\n?? outputs/by_experiment/63_native_source_on_off/\n?? outputs/by_experiment/64_full_latent_mask/\n?? outputs/by_experiment/65_mask_generalization/\n?? outputs/by_experiment/66_prescribed_laser_input_audit/\n?? outputs/by_experiment/67_one_step_fem_response/\n?? outputs/by_experiment/68_physical_source_response/\n?? scripts/67_thermal_native_source_on_off.py\n?? scripts/68_thermal_full_latent_mask.py\n?? scripts/69_thermal_mask_generalization.py\n?? scripts/70_thermal_prescribed_laser_audit.py\n?? scripts/71_thermal_one_step_fem_replay.py\n?? scripts/72_thermal_physical_source_response.py\n?? src/fem_replay.py\n?? src/latent_mask_audit.py\n?? src/mask_generalization.py\n?? src/physical_response_reporting.py\n?? src/physical_source_response.py\n?? src/prescribed_laser_audit.py\n?? src/source_off_audit.py\n?? tests/test_fem_replay.py\n?? tests/test_latent_mask_audit.py\n?? tests/test_mask_generalization.py\n?? tests/test_physical_response_reporting.py\n?? tests/test_physical_source_response.py\n?? tests/test_prescribed_laser_audit.py\n?? tests/test_source_off_audit.py\n",
+  "scientific_operations": {
+    "GP_inference": false,
+    "FEM_solve": false,
+    "parameter_fitting": false,
+    "baseline_modification": false,
+    "new_state_model": false,
+    "source_replacement": false
+  },
+  "source_sha256": {
+    "src/previous_unpinning_audit.py": "5de758ea6bb49ca0303a1c33b22c09d5998e7fcf99027cf7f264adf83f5abf6e",
+    "src/unpinning_current_update.py": "8bf06f08848edd2a79c513ea36ebaffbb2318f0849271b895edc6997f8e72ca2",
+    "src/matched_projection.py": "eb804ff4422256e753ffbc08a618bc7547c22191af296ab6311f3e7f2939319b",
+    "src/stochastic_heat_gp.py": "de5d51c2fd3d1243a815c69fadd6b826e47dbf9dc43f909f6d2dbc761c9a9087",
+    "src/physical_source_response.py": "33b604edeff09a2b4ab582328ce7314ad3345135ff76ee29a291295c2d56a000",
+    "src/fem_replay.py": "b6868ee56d813264d3cbd96e7cf4ea667c62c5e3799060efefccc93a8b8ba29e",
+    "src/prescribed_laser_audit.py": "732f0d30d7b23e004c96f3c14322807686eb65055f6f12a79361bc47a5663b3d",
+    "src/thermal_posterior_physics.py": "c99fe3a5ffbaeedabb16e8b9fdee0ba3fcc8f19f791600bbb62ab10459ab4836",
+    "src/diffusion.py": "f5d73b8c2d02ba0784585b9bda36bcbcde5403e97815e680182a6856ff737463",
+    "src/dense_censored_gp.py": "e075a45362425a013651444097561c43f72fc65e368e12e334fd054a1a055034",
+    "src/native_ceiling_diagnostics.py": "cb4672b12db7991f0083a04825677882208e445efe93484defb6bbec22b5f682",
+    "scripts/64_thermal_previous_unpinning_audit.py": "16a161aa372217436d96cb80d7584618d3417cfddc9bb628e301884372d08e5f",
+    "scripts/65_thermal_unpinning_current_update.py": "5d293cb2136f35d44c07c9bcb089cfdd56b6c08b8864ce8e5800638936f0aef9",
+    "scripts/72_thermal_physical_source_response.py": "b3a9ba494a5c3721d55f52eb4dc5ded694a7291caa40d9a4dd98cedbe849162f",
+    "EXPERIMENT_PROTOCOL.md": "62fa7598083f3509558e91f321930a9989a6190f1fefd9bca88ea86bb2aab0cc",
+    "EXPERIMENT_INVENTORY.md": "fbb34c0fa68cdbe371e613afd44597517ad0d6b989da20eee7f97aceb6dd2a73",
+    "ACTIVE_RESEARCH.md": "be8e1c1be171a448c1692a252c9ec27b70bf780861b31b5ec3e1788dd1de74b4",
+    "docs/adrienne_review/workspace_index.md": "77de04c61c91f0381c41ed31b438c66366410a4086b5be0b9ec5b933355e396a",
+    "outputs/archive/2026-09-20_deferred/relocation_manifest.json": "a875b14125eebec728155363acc3ac05a0ac5189e9433d3152454b6bcdc35f30",
+    "outputs/by_experiment/60_previous_unpinning_audit/frozen_configuration.json": "38b60e7a5f405db1c36ff9042056470540548946bc6437115c7db10bfc051b0f",
+    "outputs/by_experiment/60_previous_unpinning_audit/source_fingerprints.json": "5466c15fcd40d530e6069942d468eb749c8cf8596673c952256f705e0c5c9bb9",
+    "outputs/by_experiment/61_unpinning_current_update/frozen_configuration.json": "d875f331ef7632f57a274ac941ed7d600ad82f39f08ed3e91b4881942b880297",
+    "outputs/by_experiment/61_unpinning_current_update/source_and_input_fingerprints.json": "8fc1aed3bc698b3635e90c84b127c272800dd794be6ac9218053aa3d9e2cfd0e",
+    "outputs/by_experiment/66_prescribed_laser_input_audit/fingerprints.json": "fb1131c614d0d6e9aae6e699b423be635f1bcc69c1710d764edbbdecd357961c",
+    "outputs/by_experiment/66_prescribed_laser_input_audit/provenance.md": "19e13264de6cf568b89e2025ef23df0fc87e254e70ac82888a653589799c85b3",
+    "outputs/by_experiment/67_one_step_fem_response/verification.json": "06bb837b3c33758e81586d7d9022999502109a84e7f817685b8d4b14a2fa4420",
+    "outputs/by_experiment/67_one_step_fem_response/fingerprints.json": "1e5bce472289c655dbe4ea0297adf20ecfee7e9116bc6eb23706a21a5b2f6e26",
+    "outputs/by_experiment/68_physical_source_response/frozen_configuration.json": "76b11a4df29e69268c811465f6f2db6163b94b492e60f70248ac881159fa484b",
+    "outputs/by_experiment/68_physical_source_response/fingerprints.json": "6c673762d7e3e7f016d84d2ae33ded9fd0bf1c247050b0dca638d5ad578439ee",
+    "outputs/by_experiment/68_physical_source_response/verification.json": "86c301d25a91d53ccbe5edcc911c021f8c3c0ccfd1c747b4fbc74fefacdef7f8",
+    "outputs/by_experiment/68_physical_source_response/numerical_gate.json": "c27cff3fa22f2979b1e04d1edc862405368f05e2c3ed275b03eb2e0d9e4e82c0",
+    "outputs/by_experiment/68_physical_source_response/README.md": "8f1b497b3645ca4aef788b03e06fb8ba8655d6625533b7b25411f0eb94744960",
+    "../DiagonalScanPath.ipynb": "80aab9021417c2fb735ed3bd955a0419851f8b3dbd32c0f1ef33e7079e885899",
+    "outputs/by_experiment/66_prescribed_laser_input_audit/Diagonal_cell3_source.txt": "40590d8430cf97874dbdb0b6d0a1577376bbe00cc92ef42230607c57755c0e1c",
+    "outputs/by_experiment/66_prescribed_laser_input_audit/Diagonal_cell5_source.txt": "a59916aa81f57d384bbb43383327dcdcb3ecadcb8753510f7d3259ac08003150",
+    "outputs/by_experiment/66_prescribed_laser_input_audit/Diagonal_cell6_source.txt": "e9cc04f19b489b2233ab11230c365ee287a8607b6b5e1c07470a9aea80f4e2a7",
+    "../SpiralScanPath.ipynb": "f77f26988f338941f59b0f00d4e6606b5596ba64420fc935f0332ad42200297c",
+    "outputs/by_experiment/66_prescribed_laser_input_audit/Spiral_cell3_source.txt": "40590d8430cf97874dbdb0b6d0a1577376bbe00cc92ef42230607c57755c0e1c",
+    "outputs/by_experiment/66_prescribed_laser_input_audit/Spiral_cell5_source.txt": "c8c1e1d8d680059c094763eb24ec62c9f3938387e9dca0dbbc00647cf5d9095a",
+    "outputs/by_experiment/66_prescribed_laser_input_audit/Spiral_cell6_source.txt": "c25e82accdc2b0736f478c94d2a9131f6e9594d2c8bec01562435b65b68aa94c",
+    "outputs/by_experiment/68_physical_source_response/by_trajectory/DiagonalScanPath_8/response.json": "debe77d59e2a10e3718ff357bddce15a2c7ddfc3faca050b9ad0fe59952a00ca",
+    "outputs/by_experiment/68_physical_source_response/by_trajectory/SpiralScanPath_13/response.json": "39ca51ea0d1d2452bba03debd3aaec7d468decf9f2c7f7f1c4d984cc61e70899"
+  },
+  "notebook_extract_checks": [
+    {
+      "notebook": "DiagonalScanPath.ipynb",
+      "cell_zero_based": 3,
+      "saved_extract_matches": true
+    },
+    {
+      "notebook": "DiagonalScanPath.ipynb",
+      "cell_zero_based": 5,
+      "saved_extract_matches": true
+    },
+    {
+      "notebook": "DiagonalScanPath.ipynb",
+      "cell_zero_based": 6,
+      "saved_extract_matches": true
+    },
+    {
+      "notebook": "SpiralScanPath.ipynb",
+      "cell_zero_based": 3,
+      "saved_extract_matches": true
+    },
+    {
+      "notebook": "SpiralScanPath.ipynb",
+      "cell_zero_based": 5,
+      "saved_extract_matches": true
+    },
+    {
+      "notebook": "SpiralScanPath.ipynb",
+      "cell_zero_based": 6,
+      "saved_extract_matches": true
+    }
+  ],
+  "cached_response_metadata": {
+    "DiagonalScanPath_8": {
+      "volume_nodes": 26414,
+      "cells": 130664,
+      "surface_nodes": 6275,
+      "dt_s": 0.0005,
+      "current_time_s": 0.1775000000000001,
+      "temperature_fields_read": false,
+      "gradient_read": false
+    },
+    "SpiralScanPath_13": {
+      "volume_nodes": 26414,
+      "cells": 130664,
+      "surface_nodes": 6275,
+      "dt_s": 0.0005,
+      "current_time_s": 0.2720000000000002,
+      "temperature_fields_read": false,
+      "gradient_read": false
+    }
+  },
+  "validation": {
+    "unchanged_inspected_files": 42,
+    "checked_links": 20,
+    "links": [
+      {
+        "document": "docs/state_formulation_audit/README.md",
+        "target": "../../outputs/by_experiment/68_physical_source_response/README.md"
+      },
+      {
+        "document": "docs/state_formulation_audit/README.md",
+        "target": "formulation_and_next_control.md"
+      },
+      {
+        "document": "docs/state_formulation_audit/README.md",
+        "target": "../../outputs/by_experiment/66_prescribed_laser_input_audit/Diagonal_cell3_source.txt"
+      },
+      {
+        "document": "docs/state_formulation_audit/README.md",
+        "target": "../../outputs/by_experiment/66_prescribed_laser_input_audit/Diagonal_cell6_source.txt"
+      },
+      {
+        "document": "docs/state_formulation_audit/README.md",
+        "target": "../../outputs/by_experiment/66_prescribed_laser_input_audit/provenance.md"
+      },
+      {
+        "document": "docs/state_formulation_audit/README.md",
+        "target": "../../src/thermal_posterior_physics.py#L79"
+      },
+      {
+        "document": "docs/state_formulation_audit/README.md",
+        "target": "formulation_and_next_control.md#bounded-follow-up-design"
+      },
+      {
+        "document": "docs/state_formulation_audit/formulation_and_next_control.md",
+        "target": "../../src/previous_unpinning_audit.py#L14"
+      },
+      {
+        "document": "docs/state_formulation_audit/formulation_and_next_control.md",
+        "target": "../../scripts/64_thermal_previous_unpinning_audit.py#L196"
+      },
+      {
+        "document": "docs/state_formulation_audit/formulation_and_next_control.md",
+        "target": "../../src/matched_projection.py#L47"
+      },
+      {
+        "document": "docs/state_formulation_audit/formulation_and_next_control.md",
+        "target": "../../src/unpinning_current_update.py#L9"
+      },
+      {
+        "document": "docs/state_formulation_audit/formulation_and_next_control.md",
+        "target": "../../scripts/65_thermal_unpinning_current_update.py#L111"
+      },
+      {
+        "document": "docs/state_formulation_audit/formulation_and_next_control.md",
+        "target": "../../src/stochastic_heat_gp.py#L123"
+      },
+      {
+        "document": "docs/state_formulation_audit/formulation_and_next_control.md",
+        "target": "../../scripts/65_thermal_unpinning_current_update.py#L140"
+      },
+      {
+        "document": "docs/state_formulation_audit/formulation_and_next_control.md",
+        "target": "../../scripts/72_thermal_physical_source_response.py#L176"
+      },
+      {
+        "document": "docs/state_formulation_audit/formulation_and_next_control.md",
+        "target": "../../outputs/by_experiment/68_physical_source_response/frozen_configuration.json"
+      },
+      {
+        "document": "docs/state_formulation_audit/formulation_and_next_control.md",
+        "target": "../../src/fem_replay.py#L55"
+      },
+      {
+        "document": "docs/state_formulation_audit/formulation_and_next_control.md",
+        "target": "../../src/physical_source_response.py#L19"
+      },
+      {
+        "document": "docs/state_formulation_audit/formulation_and_next_control.md",
+        "target": "../../src/thermal_posterior_physics.py#L79"
+      },
+      {
+        "document": "docs/state_formulation_audit/formulation_and_next_control.md",
+        "target": "../../src/diffusion.py#L91"
+      }
+    ],
+    "configuration_assertions_passed": true,
+    "initial_status_preserved": true,
+    "new_git_status_entries": [
+      "?? docs/state_formulation_audit/"
+    ],
+    "dense_volume_covariance_GiB": 5.198265582323074,
+    "documentation_sha256": {
+      "docs/state_formulation_audit/README.md": "534eb358f0c44fbb9e2bfaf498023fd72f4646ac2ab5a26e36af5a42e89d2be7",
+      "docs/state_formulation_audit/formulation_and_next_control.md": "39dbb8b0413016f00f93be3db5cbf3d595553390cb78da5966e74259c79ca988"
+    },
+    "readme_verification_link": "checked in final validation after this file is written",
+    "diff_check": "git diff --check passed; untracked Markdown whitespace checked separately",
+    "unit_tests": {
+      "passed": 8,
+      "unittest_seconds": 0.016,
+      "process_wall_seconds": 2.651711042,
+      "command": "env PYTHONPYCACHEPREFIX=/tmp/thermal-state-audit-pycache OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python -m unittest tests.test_physical_source_response tests.test_unpinning_current_update.CurrentUnpinningTests.test_full_and_pinned_match_explicit_joint_covariance tests.test_unpinning_current_update.CurrentUnpinningTests.test_sparse_path_matches_dense tests.test_unpinning_current_update.CurrentUnpinningTests.test_cross_covariance_is_not_diagonal_replacement -v",
+      "scope": "Existing mocked-response and small-matrix algebra tests only. The sampler test was deliberately not run; no FEM assembly or solver invoked."
+    }
+  },
+  "unresolved": [
+    "Whether intended operation starts from an independently known cold volume or an unknown warm internal state",
+    "Available laser-command and camera history window in deployment",
+    "Independent material, absorbed-power and boundary knowledge and their uncertainty",
+    "Choice and validation of any reduced internal state or memory closure",
+    "Defensible initial covariance and model discrepancy for a new state formulation",
+    "Numerical surface-closure/observability tests have not been performed",
+    "Full-history FEM reproduction not established by the existing last-step replay",
+    "Inherited simulation-derived preparation remains in Output68; new source independence is not whole-pipeline independence"
+  ],
+  "documentation_discrepancies": "Root protocol/inventory and adrienne_review contain dated grid/hybrid and output49-53 context. They were inspected but not rewritten. Output66's no-replay statement predates Output67. Current branch established from executed Output60/61/68 configurations and drivers.",
+  "limitations": "Fingerprint checks cover the listed files, not a fresh hash of every dataset/cache in the workspace. Git status was checked to preserve all existing entries. Covariance memory is an arithmetic storage estimate, not a new runtime measurement."
+}

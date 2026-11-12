@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "thresholds": {
+    "rank_rhat_max": 1.01,
+    "ess_bulk_min": 400.0,
+    "ess_tail_min": 400.0,
+    "classical_rhat_max": 1.05,
+    "arm_seconds_max": 900.0,
+    "peak_RSS_MiB_max": 4096.0
+  },
+  "failed": [],
+  "automatic_expansion": false,
+  "note": "Any future validation requires a separately frozen trajectory/ceiling plan; no budget sweep here"
+}

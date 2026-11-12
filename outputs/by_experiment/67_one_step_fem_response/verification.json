@@ -1,0 +1,47 @@
+{
+  "source_on_gate_passed": true,
+  "decomposition_completed": true,
+  "inputs_unchanged": true,
+  "executions": [
+    {
+      "returncode": 0,
+      "timed_out": false,
+      "trajectory": "DiagonalScanPath_8",
+      "stage": "on",
+      "wall_seconds": 18.629303584000002,
+      "log": "by_trajectory/DiagonalScanPath_8/on.log",
+      "passed": true
+    },
+    {
+      "returncode": 0,
+      "timed_out": false,
+      "trajectory": "SpiralScanPath_13",
+      "stage": "on",
+      "wall_seconds": 4.4441620419999985,
+      "log": "by_trajectory/SpiralScanPath_13/on.log",
+      "passed": true
+    },
+    {
+      "returncode": 0,
+      "timed_out": false,
+      "trajectory": "DiagonalScanPath_8",
+      "stage": "off",
+      "wall_seconds": 14.817842333000002,
+      "log": "by_trajectory/DiagonalScanPath_8/off.log",
+      "passed": true
+    },
+    {
+      "returncode": 0,
+      "timed_out": false,
+      "trajectory": "SpiralScanPath_13",
+      "stage": "off",
+      "wall_seconds": 4.712320915999996,
+      "log": "by_trajectory/SpiralScanPath_13/off.log",
+      "passed": true
+    }
+  ],
+  "total_wall_seconds": 47.080963458,
+  "no_GP": true,
+  "no_fitting": true,
+  "historical_baselines_unchanged": true
+}

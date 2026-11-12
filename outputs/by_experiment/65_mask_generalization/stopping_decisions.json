@@ -1,0 +1,22 @@
+[
+  {
+    "trajectory": "DiagonalScanPath_1",
+    "level": 0,
+    "error": "Command '['/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/.venv/bin/python', '/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/69_thermal_mask_generalization.py', '--phase', 'previous', '--level', '0', '--repeat', '0', '--name', 'DiagonalScanPath_1']' timed out after 899.999938375 seconds"
+  },
+  {
+    "trajectory": "DiagonalScanPath_7",
+    "level": 0,
+    "error": "Command '['/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/.venv/bin/python', '/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/69_thermal_mask_generalization.py', '--phase', 'fit', '--level', '0', '--repeat', '0', '--name', 'DiagonalScanPath_7', '--arm', 'Cmask']' timed out after 899.9998532089999 seconds"
+  },
+  {
+    "trajectory": "HorizontalScanPath_1",
+    "level": 0,
+    "error": "Command '['/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/.venv/bin/python', '/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/69_thermal_mask_generalization.py', '--phase', 'previous', '--level', '0', '--repeat', '0', '--name', 'HorizontalScanPath_1']' timed out after 899.9997937919998 seconds"
+  },
+  {
+    "trajectory": "HorizontalScanPath_12",
+    "level": 0,
+    "error": "Command '['/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/.venv/bin/python', '/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/69_thermal_mask_generalization.py', '--phase', 'fit', '--level', '0', '--repeat', '0', '--name', 'HorizontalScanPath_12', '--arm', 'Cmask']' timed out after 899.9999306249993 seconds"
+  }
+]

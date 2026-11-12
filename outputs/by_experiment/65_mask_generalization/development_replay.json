@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "camera_and_selection_exact": true,
+  "previous_draws_exact": true,
+  "prior_max_absolute_differences": {
+    "prediction_mean": 0.0,
+    "observation_mean": 0.0,
+    "observed_covariance": 0.0,
+    "pred_observed_covariance": 0.0,
+    "prediction_variance": 0.0
+  },
+  "note": "Development pipeline validation only, excluded from generalization results"
+}

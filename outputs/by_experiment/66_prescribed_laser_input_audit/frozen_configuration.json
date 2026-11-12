@@ -1,0 +1,27 @@
+{
+  "output": 66,
+  "driver": "70_thermal_prescribed_laser_audit.py",
+  "names": [
+    "DiagonalScanPath_8",
+    "SpiralScanPath_13"
+  ],
+  "frames": "last two saved frames",
+  "near_source_radius": "3 * notebook sigma",
+  "surrogate_parameters": {
+    "diffusivity": 3.6109129986233175e-06,
+    "cooling_rate": 12.422901570529978,
+    "source_coupling": 0.1702227206133784,
+    "source_flux_threshold": 10000.0,
+    "nx": 61,
+    "ny": 41
+  },
+  "internal_propagation_grid": [
+    601,
+    401
+  ],
+  "fit": false,
+  "gp": false,
+  "fem": false,
+  "raw_flux_comparison": "g versus k*HeatFluxZ; no threshold, gamma, alignment or renormalization",
+  "oracle_reconciliation": "Latest 61/63 coefficients and 60 full-latent means; cached51 oracle checked at all three ceilings"
+}

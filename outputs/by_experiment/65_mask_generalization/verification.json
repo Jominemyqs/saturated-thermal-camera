@@ -1,0 +1,32 @@
+{
+  "completed_current_fits": 15,
+  "reference_cases_passed": 3,
+  "all_reference_cases_pass": false,
+  "mild_control_completed": false,
+  "mild_control_reason": "Predeclared all-six-reference reliability gate not met; no replacement case",
+  "failures": [
+    {
+      "trajectory": "DiagonalScanPath_1",
+      "level": 0,
+      "error": "Original predecessor-stage 900s stop preserved; not an ordering-affected fit"
+    },
+    {
+      "trajectory": "HorizontalScanPath_1",
+      "level": 0,
+      "error": "Original predecessor-stage 900s stop preserved; not an ordering-affected fit"
+    },
+    {
+      "trajectory": "SpiralScanPath_12",
+      "level": 0,
+      "error": "Command '['/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/.venv/bin/python', '/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/69_thermal_mask_generalization.py', '--phase', 'previous', '--name', 'SpiralScanPath_12', '--level', '0', '--repeat', '0']' returned non-zero exit status 1."
+    }
+  ],
+  "correction_wall_seconds": 1827.314815458,
+  "current_fit_seconds": 1564.3767424609996,
+  "historical_inputs_unchanged": true,
+  "source_on": true,
+  "same256": true,
+  "no_fitting": true,
+  "ordering_bug_corrected": true,
+  "invalid_mask_timeouts_excluded": true
+}

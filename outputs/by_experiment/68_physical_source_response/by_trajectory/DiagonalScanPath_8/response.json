@@ -1,0 +1,43 @@
+{
+  "relative_linear_residual": 1.4151044419051776e-15,
+  "seconds": 15.145793833071366,
+  "peak_RSS_MiB": 294.390625,
+  "passed": true,
+  "dolfin_version": "2019.1.0",
+  "input_keys": [
+    "cells",
+    "points",
+    "previous_time",
+    "surface_ids",
+    "time"
+  ],
+  "temperature_fields_read": false,
+  "gradient_read": false,
+  "initial_increment": 0,
+  "bottom_increment": 0,
+  "material_parameters": {
+    "width": 0.015,
+    "depth": 0.01,
+    "height": 0.002,
+    "x_center": 0.0,
+    "y_center": 0.0,
+    "z_center": 0.0,
+    "length_x": 0.004,
+    "length_y": 0.004,
+    "dt": 0.0005,
+    "velocity": 0.3,
+    "T_0": 293.15,
+    "rho": 7860.51,
+    "Cp": 472.84,
+    "k": 15.11,
+    "sigma": 0.0001,
+    "power": 1.0,
+    "t": 0.0
+  },
+  "current_time_s": 0.1775000000000001,
+  "dt_s": 0.0005,
+  "volume_nodes": 26414,
+  "cells": 130664,
+  "surface_nodes": 6275,
+  "assembled_input_W": 1.000015397619591
+}

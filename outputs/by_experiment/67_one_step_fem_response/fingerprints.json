@@ -1,0 +1,23 @@
+{
+  "revision": "61438c90332e82c458809dfc148290a1a56f2662",
+  "git_status": "?? outputs/by_experiment/63_native_source_on_off/\n?? outputs/by_experiment/64_full_latent_mask/\n?? outputs/by_experiment/65_mask_generalization/\n?? outputs/by_experiment/66_prescribed_laser_input_audit/\n?? outputs/by_experiment/67_one_step_fem_response/\n?? scripts/67_thermal_native_source_on_off.py\n?? scripts/68_thermal_full_latent_mask.py\n?? scripts/69_thermal_mask_generalization.py\n?? scripts/70_thermal_prescribed_laser_audit.py\n?? scripts/71_thermal_one_step_fem_replay.py\n?? src/fem_replay.py\n?? src/latent_mask_audit.py\n?? src/mask_generalization.py\n?? src/prescribed_laser_audit.py\n?? src/source_off_audit.py\n?? tests/test_fem_replay.py\n?? tests/test_latent_mask_audit.py\n?? tests/test_mask_generalization.py\n?? tests/test_prescribed_laser_audit.py\n?? tests/test_source_off_audit.py\n",
+  "files": {
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/71_thermal_one_step_fem_replay.py": "1978f4e6ee27bca0ea38245c943a143631a0681a1c21b1922a9844c276be49cd",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/fem_replay.py": "b6868ee56d813264d3cbd96e7cf4ea667c62c5e3799060efefccc93a8b8ba29e",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/prescribed_laser_audit.py": "732f0d30d7b23e004c96f3c14322807686eb65055f6f12a79361bc47a5663b3d",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/thermal_trajectory.py": "c08a9396e1ec3382be230ea0f82f627d56f04a5a5b57795a4e5f60d325e5b207",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/native_surface.py": "f2f2ab484ed3f9e27721f9a9b39f0b7f71cf3c4d494fc023604579aee76e098e",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_fem_replay.py": "5d9c1c8ea1efdd06bfbf483e0aba4a2de2eb6d29a513dd2c9bb51c92c59be2b5",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/66_prescribed_laser_input_audit/frozen_configuration.json": "ffb18d8dd37334c14553b405aacf5d3e2e171fa71ee3c35ff98998296291984d",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/DiagonalScanPath.ipynb": "80aab9021417c2fb735ed3bd955a0419851f8b3dbd32c0f1ef33e7079e885899",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/heat_eq_laser_trajectories/Copy of DiagonalScanPath_8.xdmf": "4f32cef4d534700174b7ba9c4cf01e683b4e679f30a536a7de9a27d41c2ca7dd",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/heat_eq_laser_trajectories/Copy of DiagonalScanPath_8.h5": "112cacd5a8e93e3011ad42a022fc957079bb16723af46609bd71b6601101c1ad",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/66_prescribed_laser_input_audit/oracle_DiagonalScanPath_8_level0.npz": "35ddba5f31d3b5abd5e2674b654febd496453373ea6abf5cf1f0c5a2243865b2",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/49_matched_native_grid_gp/native_diagnostics/cross_sections_DiagonalScanPath_8.csv": "6dc17304aa13a3b9d6c55c611abb6031ac9170fd216f6d046d57e528a47222ef",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/SpiralScanPath.ipynb": "f77f26988f338941f59b0f00d4e6606b5596ba64420fc935f0332ad42200297c",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/heat_eq_laser_trajectories/Copy of SpiralScanPath_13.xdmf": "008b1038b6cfd7a4d884db11e60b77f504b4d713cfa75076ec51f4f9d7e1ebe8",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/heat_eq_laser_trajectories/Copy of SpiralScanPath_13.h5": "13a3ba82f715b13c97d990e5c4c5f57ae0c1c4add8a77719a6be035ebb865cfe",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/66_prescribed_laser_input_audit/oracle_SpiralScanPath_13_level0.npz": "efdd0604bbb333b5f196ac05dd88bc17eb3172e2055dec4c511317554778117d",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/49_matched_native_grid_gp/native_diagnostics/cross_sections_SpiralScanPath_13.csv": "d88c6060be69f75babbe0c7edfa54c3d89bf8981a341cc85a2796590243c42c8"
+  }
+}

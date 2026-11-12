@@ -1,0 +1,58 @@
+{
+  "valid_cases": [
+    "DiagonalScanPath_7",
+    "HorizontalScanPath_12",
+    "SpiralScanPath_1"
+  ],
+  "incomplete_cases": [
+    {
+      "trajectory": "DiagonalScanPath_1",
+      "historical_role": "heldout",
+      "current_fits": 0,
+      "complete_reliable_comparison": false,
+      "reason": "Initial rank R-hat 1.010955 > 1.01; longer retry hit the 900 s predecessor-stage watchdog."
+    },
+    {
+      "trajectory": "HorizontalScanPath_1",
+      "historical_role": "heldout",
+      "current_fits": 0,
+      "complete_reliable_comparison": false,
+      "reason": "Longer previous chains passed (rank R-hat 1.003918); prior construction then exceeded the combined 900 s stage watchdog."
+    },
+    {
+      "trajectory": "SpiralScanPath_12",
+      "historical_role": "heldout",
+      "current_fits": 0,
+      "complete_reliable_comparison": false,
+      "reason": "Previous reflected HMC raised RuntimeError: Reflected HMC produced an infeasible draw; no current fit."
+    }
+  ],
+  "valid_current_fits": 15,
+  "all_valid_current_fits_pass": true,
+  "rank_rhat_max": 1.005657735180068,
+  "bulk_ess_min": 943.6671530047184,
+  "tail_ess_min": 1074.4057628428802,
+  "peak_RSS_MiB": 788.09375,
+  "fit_seconds": 1564.3767424609996,
+  "per_arm_runtime_seconds": {
+    "C0": {
+      "min": 35.719763084,
+      "max": 60.731966959000005
+    },
+    "Cmask": {
+      "min": 154.553526,
+      "max": 276.817819917
+    },
+    "Cnumeric": {
+      "min": 55.843180792,
+      "max": 62.02077274999999
+    }
+  },
+  "all_true_peaks_uncovered": true,
+  "baseline_extended_overlap_exact": true,
+  "likelihood_ID_alignment_verified": true,
+  "no_mask_arm_numerical_values_at_U": true,
+  "milder_ceiling_inference": false,
+  "elapsed_wall_from_initial_protocol_write_s": 8237.16790819168,
+  "wall_time_includes_invalid_attempts_and_correction": true
+}

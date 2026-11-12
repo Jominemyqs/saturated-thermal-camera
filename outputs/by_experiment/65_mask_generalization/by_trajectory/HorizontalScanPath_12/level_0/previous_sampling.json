@@ -1,0 +1,28 @@
+[
+  {
+    "attempt": 0,
+    "samples": 800,
+    "burn": 300,
+    "seconds": 158.79155720900002,
+    "rank_rhat_max": 1.0100673761254206,
+    "ess_bulk_min": 734.9761522861409,
+    "ess_tail_min": 963.4497118359227,
+    "classical_rhat_max": 1.0060528151326058,
+    "peak_RSS_MiB": 1080.53125,
+    "finite": true,
+    "passed": false
+  },
+  {
+    "attempt": 1,
+    "samples": 1600,
+    "burn": 600,
+    "seconds": 313.058153625,
+    "rank_rhat_max": 1.0030804312174944,
+    "ess_bulk_min": 1518.0710514560728,
+    "ess_tail_min": 1730.3704953260149,
+    "classical_rhat_max": 1.0022102530467645,
+    "peak_RSS_MiB": 1080.53125,
+    "finite": true,
+    "passed": true
+  }
+]

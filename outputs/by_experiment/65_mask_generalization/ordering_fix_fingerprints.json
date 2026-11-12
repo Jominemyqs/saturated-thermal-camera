@@ -1,0 +1,5 @@
+{
+  "scripts/69_thermal_mask_generalization.py": "0a2d49f7573df628990effc30278c69d27a6b744a6c7c941a420ee9af6497e8d",
+  "src/mask_generalization.py": "85c1e284e16cf30bc31733821d381c2b0ec3d9eb819b0801d7f952ad4649d5c2",
+  "tests/test_mask_generalization.py": "882c1ad3411608c1993ef72b3341fcbab78057e184ea74f7975a956d0123fab0"
+}

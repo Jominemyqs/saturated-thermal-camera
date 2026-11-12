@@ -1,0 +1,129 @@
+{
+  "inputs_and_existing_sources_unchanged": true,
+  "recorded_files": 174,
+  "complete_clock_checks": [
+    {
+      "trajectory": "DiagonalScanPath_8",
+      "frames": 355,
+      "last_time_s": 0.1775000000000001,
+      "maximum_clock_difference_s": 2.7755575615628914e-17,
+      "solver_dt_s": 0.0005,
+      "exports_per_step": 1,
+      "top_nodes": 6275,
+      "top_triangles": 12448,
+      "area_m2": 0.00014999999999999996,
+      "path_points": 81,
+      "path_length_m": 0.05325483399593899
+    },
+    {
+      "trajectory": "SpiralScanPath_13",
+      "frames": 544,
+      "last_time_s": 0.2720000000000002,
+      "maximum_clock_difference_s": 5.551115123125783e-17,
+      "solver_dt_s": 0.0005,
+      "exports_per_step": 1,
+      "top_nodes": 6275,
+      "top_triangles": 12448,
+      "area_m2": 0.00014999999999999996,
+      "path_points": 16336,
+      "path_length_m": 0.08174983352619701
+    }
+  ],
+  "oracle_checks": [
+    {
+      "trajectory": "DiagonalScanPath_8",
+      "level": 0,
+      "oracle51_exact": true,
+      "source51_exact": true,
+      "latest63_on_max_abs": 0.0,
+      "latest63_off_max_abs": 5.684341886080802e-14,
+      "operator_grid_shape": [
+        401,
+        601
+      ],
+      "dt": 0.0005000000000000004,
+      "diffusivity": 3.6109129986233175e-06,
+      "cooling_rate": 12.422901570529978
+    },
+    {
+      "trajectory": "DiagonalScanPath_8",
+      "level": 1,
+      "oracle51_exact": true,
+      "source51_exact": true,
+      "latest63_on_max_abs": 0.0,
+      "latest63_off_max_abs": 5.684341886080802e-14,
+      "operator_grid_shape": [
+        401,
+        601
+      ],
+      "dt": 0.0005000000000000004,
+      "diffusivity": 3.6109129986233175e-06,
+      "cooling_rate": 12.422901570529978
+    },
+    {
+      "trajectory": "DiagonalScanPath_8",
+      "level": 2,
+      "oracle51_exact": true,
+      "source51_exact": true,
+      "latest63_on_max_abs": 0.0,
+      "latest63_off_max_abs": 5.684341886080802e-14,
+      "operator_grid_shape": [
+        401,
+        601
+      ],
+      "dt": 0.0005000000000000004,
+      "diffusivity": 3.6109129986233175e-06,
+      "cooling_rate": 12.422901570529978
+    },
+    {
+      "trajectory": "SpiralScanPath_13",
+      "level": 0,
+      "oracle51_exact": true,
+      "source51_exact": true,
+      "latest63_on_max_abs": 0.0,
+      "latest63_off_max_abs": 5.684341886080802e-14,
+      "operator_grid_shape": [
+        401,
+        601
+      ],
+      "dt": 0.0005000000000000004,
+      "diffusivity": 3.6109129986233175e-06,
+      "cooling_rate": 12.422901570529978
+    },
+    {
+      "trajectory": "SpiralScanPath_13",
+      "level": 1,
+      "oracle51_exact": true,
+      "source51_exact": true,
+      "latest63_on_max_abs": 0.0,
+      "latest63_off_max_abs": 5.684341886080802e-14,
+      "operator_grid_shape": [
+        401,
+        601
+      ],
+      "dt": 0.0005000000000000004,
+      "diffusivity": 3.6109129986233175e-06,
+      "cooling_rate": 12.422901570529978
+    },
+    {
+      "trajectory": "SpiralScanPath_13",
+      "level": 2,
+      "oracle51_exact": true,
+      "source51_exact": true,
+      "latest63_on_max_abs": 0.0,
+      "latest63_off_max_abs": 5.684341886080802e-14,
+      "operator_grid_shape": [
+        401,
+        601
+      ],
+      "dt": 0.0005000000000000004,
+      "diffusivity": 3.6109129986233175e-06,
+      "cooling_rate": 12.422901570529978
+    }
+  ],
+  "runtime_seconds": 13.0232085,
+  "gp_inference": false,
+  "fem_execution": false,
+  "fitting": false,
+  "qualification": "Notebook path/material/export provenance corroborated, not bitwise FEM reproduction"
+}

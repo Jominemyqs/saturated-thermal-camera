@@ -1,0 +1,16 @@
+{
+  "native_nodes": 6275,
+  "baseline_observations": 1269,
+  "lower_constraints": 1154,
+  "mask_constraints": 1410,
+  "upper_constraints": 256,
+  "previous_censored": 1199,
+  "dense_precision_estimate_MiB": 3004.121780395508,
+  "selected_area_fraction": 0.27251736111111113,
+  "unused_area_fraction": 0.8435156250000001,
+  "seconds": 1.3697310839999999,
+  "camera_seed": 180041,
+  "ambient_K": 293.1496744898769,
+  "lengthscale_m": 0.0003125,
+  "dt_s": 0.0005000000000000004
+}

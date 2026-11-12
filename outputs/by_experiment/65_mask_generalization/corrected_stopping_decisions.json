@@ -1,0 +1,17 @@
+[
+  {
+    "trajectory": "DiagonalScanPath_1",
+    "level": 0,
+    "error": "Original predecessor-stage 900s stop preserved; not an ordering-affected fit"
+  },
+  {
+    "trajectory": "HorizontalScanPath_1",
+    "level": 0,
+    "error": "Original predecessor-stage 900s stop preserved; not an ordering-affected fit"
+  },
+  {
+    "trajectory": "SpiralScanPath_12",
+    "level": 0,
+    "error": "Command '['/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/.venv/bin/python', '/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/scripts/69_thermal_mask_generalization.py', '--phase', 'previous', '--name', 'SpiralScanPath_12', '--level', '0', '--repeat', '0']' returned non-zero exit status 1."
+  }
+]

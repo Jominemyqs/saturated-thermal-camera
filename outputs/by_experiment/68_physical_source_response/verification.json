@@ -1,0 +1,13 @@
+{
+  "numerical_checks_pass": true,
+  "baseline_primary_replays_exact": 6,
+  "candidate_fits_completed": 8,
+  "all_completed_fits_pass": true,
+  "historical_inputs_unchanged": true,
+  "covariance_changed": false,
+  "previous_inference_rerun": false,
+  "source_independent_of_temperature": true,
+  "oracle_truth_evaluation_only": true,
+  "candidate_fit_seconds": 700.991718165,
+  "runtime_note": "Fit times exclude compressed-cache write; baseline fit timings are historical. Process wall times in execution_status.json."
+}

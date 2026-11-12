@@ -1,0 +1,19 @@
+{
+  "trajectory": "SpiralScanPath_13",
+  "level": 2,
+  "ceiling_K": 325.0,
+  "arm": "source_off",
+  "repeat": 0,
+  "seconds": 8.684694417,
+  "peak_RSS_MiB": 689.75,
+  "rank_rhat_max": 1.0050488019563357,
+  "ess_bulk_min": 865.2568853288695,
+  "ess_tail_min": 788.7488193447588,
+  "classical_rhat_max": 1.004209443625619,
+  "finite": true,
+  "current_seed": 3200041,
+  "noise_sd_K": 0.5,
+  "prior_cross_sha256": "30dd0ae862daf89649f19389a51fd972171dfc8d00f8c15a5af98a0716801ab5",
+  "mean_sha256": "00bc3453f0090f85f77a22691b93d7a1ae5fcc5326db8ac5f9703a4546d96dd5",
+  "passed": true
+}

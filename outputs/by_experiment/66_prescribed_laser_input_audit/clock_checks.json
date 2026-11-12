@@ -1,0 +1,28 @@
+[
+  {
+    "trajectory": "DiagonalScanPath_8",
+    "frames": 355,
+    "last_time_s": 0.1775000000000001,
+    "maximum_clock_difference_s": 2.7755575615628914e-17,
+    "solver_dt_s": 0.0005,
+    "exports_per_step": 1,
+    "top_nodes": 6275,
+    "top_triangles": 12448,
+    "area_m2": 0.00014999999999999996,
+    "path_points": 81,
+    "path_length_m": 0.05325483399593899
+  },
+  {
+    "trajectory": "SpiralScanPath_13",
+    "frames": 544,
+    "last_time_s": 0.2720000000000002,
+    "maximum_clock_difference_s": 5.551115123125783e-17,
+    "solver_dt_s": 0.0005,
+    "exports_per_step": 1,
+    "top_nodes": 6275,
+    "top_triangles": 12448,
+    "area_m2": 0.00014999999999999996,
+    "path_points": 16336,
+    "path_length_m": 0.08174983352619701
+  }
+]

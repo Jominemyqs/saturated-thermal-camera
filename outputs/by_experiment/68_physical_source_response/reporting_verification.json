@@ -1,0 +1,37 @@
+{
+  "integral_checks": [
+    {
+      "trajectory": "DiagonalScanPath_8",
+      "arm": "baseline",
+      "explicit_sum_K_m2": 5.086063014586506e-06,
+      "dot_product_abs_difference": 0.0
+    },
+    {
+      "trajectory": "DiagonalScanPath_8",
+      "arm": "physical",
+      "explicit_sum_K_m2": 2.815045037019036e-06,
+      "dot_product_abs_difference": 0.0
+    },
+    {
+      "trajectory": "SpiralScanPath_13",
+      "arm": "baseline",
+      "explicit_sum_K_m2": 5.028007333899779e-06,
+      "dot_product_abs_difference": 1.6940658945086007e-21
+    },
+    {
+      "trajectory": "SpiralScanPath_13",
+      "arm": "physical",
+      "explicit_sum_K_m2": 2.821926967340984e-06,
+      "dot_product_abs_difference": 0.0
+    }
+  ],
+  "interpretation": "No uncertainty assigned to deterministic/oracle forecasts; Gaussian prior intervals reported separately.",
+  "files": {
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/src/physical_response_reporting.py": "0246c3deb892502c038457dd1d5c29053b6c0a0f6b72556ca96f8a79f59af5c1",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tests/test_physical_response_reporting.py": "15a962b51ff9834d61374fbdf244f99b266144093f3c3f2f5d56cf51c270fa30",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/68_physical_source_response/by_trajectory/DiagonalScanPath_8/response.npz": "c43b8bad608c4d6f66fa2f6b640dd9effcc7f88ea419da38572f882889206a01",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/68_physical_source_response/by_trajectory/DiagonalScanPath_8/response.json": "debe77d59e2a10e3718ff357bddce15a2c7ddfc3faca050b9ad0fe59952a00ca",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/68_physical_source_response/by_trajectory/SpiralScanPath_13/response.npz": "6639cb4449d6af6a00d231bff51a9983a4d05fec0b2f5ff52e8565c91e2782a6",
+    "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/outputs/by_experiment/68_physical_source_response/by_trajectory/SpiralScanPath_13/response.json": "39ca51ea0d1d2452bba03debd3aaec7d468decf9f2c7f7f1c4d984cc61e70899"
+  }
+}

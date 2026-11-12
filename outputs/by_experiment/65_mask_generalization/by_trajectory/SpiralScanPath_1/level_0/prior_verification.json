@@ -1,0 +1,11 @@
+{
+  "seconds": 213.65949799999999,
+  "peak_RSS_MiB": 1742.875,
+  "inverse_error": 8.979179196183853e-13,
+  "previous_draws_sha256": "75ae4aa93e2e04478f04f09a2b2675b646af2e5741ebf9d6912fd4f0087a2303",
+  "prior_mean_sha256": "be9135ef5f54aa76f64c490749645a537a311b9dcc8ac0c8de750def0d26cf5d",
+  "prior_diagonal_sha256": "d184a8a08da3e52c43bf48daa83ddc66c06c0ad6bbc404ef1d5854220c01e3cb",
+  "source_sha256": "be1dced834c4bd49f047852168a675db7d238efe8c644afc09644cd4756f1716",
+  "same_prior_all_arms": true,
+  "analytic_conditional_residual": true
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "phase": "replay",
+    "trajectory": "DiagonalScanPath_8",
+    "level": 0,
+    "repeat": 0,
+    "returncode": 0,
+    "timed_out": false,
+    "wall_seconds": 116.355491,
+    "log": "by_trajectory/DiagonalScanPath_8/replay_0_0.log"
+  },
+  {
+    "phase": "replay",
+    "trajectory": "DiagonalScanPath_8",
+    "level": 1,
+    "repeat": 0,
+    "returncode": 0,
+    "timed_out": false,
+    "wall_seconds": 10.720950166999984,
+    "log": "by_trajectory/DiagonalScanPath_8/replay_1_0.log"
+  },
+  {
+    "phase": "replay",
+    "trajectory": "DiagonalScanPath_8",
+    "level": 2,
+    "repeat": 0,
+    "returncode": 0,
+    "timed_out": false,
+    "wall_seconds": 10.352406540999993,
+    "log": "by_trajectory/DiagonalScanPath_8/replay_2_0.log"
+  },
+  {
+    "phase": "replay",
+    "trajectory": "SpiralScanPath_13",
+    "level": 0,
+    "repeat": 0,
+    "returncode": 0,
+    "timed_out": false,
+    "wall_seconds": 230.207937166,
+    "log": "by_trajectory/SpiralScanPath_13/replay_0_0.log"
+  },
+  {
+    "phase": "replay",
+    "trajectory": "SpiralScanPath_13",
+    "level": 1,
+    "repeat": 0,
+    "returncode": 0,
+    "timed_out": false,
+    "wall_seconds": 11.068894999999998,
+    "log": "by_trajectory/SpiralScanPath_13/replay_1_0.log"
+  },
+  {
+    "phase": "replay",
+    "trajectory": "SpiralScanPath_13",
+    "level": 2,
+    "repeat": 0,
+    "returncode": 0,
+    "timed_out": false,
+    "wall_seconds": 10.888350041000024,
+    "log": "by_trajectory/SpiralScanPath_13/replay_2_0.log"
+  },
+  {
+    "phase": "fit",
+    "trajectory": "DiagonalScanPath_8",
+    "level": 0,
+    "repeat": 0,
+    "returncode": 0,
+    "timed_out": false,
+    "wall_seconds": 139.47598816599998,
+    "log": "by_trajectory/DiagonalScanPath_8/fit_0_0.log"
+  },
+  {
+    "phase": "fit",
+    "trajectory": "DiagonalScanPath_8",
+    "level": 0,
+    "repeat": 1,
+    "returncode": 0,
+    "timed_out": false,
+    "wall_seconds": 124.98648445800006,
+    "log": "by_trajectory/DiagonalScanPath_8/fit_0_1.log"
+  },
+  {
+    "phase": "fit",
+    "trajectory": "DiagonalScanPath_8",
+    "level": 1,
+    "repeat": 0,
+    "returncode": 0,
+    "timed_out": false,
+    "wall_seconds": 34.13234558400006,
+    "log": "by_trajectory/DiagonalScanPath_8/fit_1_0.log"
+  },
+  {
+    "phase": "fit",
+    "trajectory": "DiagonalScanPath_8",
+    "level": 2,
+    "repeat": 0,
+    "returncode": 0,
+    "timed_out": false,
+    "wall_seconds": 32.03494845800003,
+    "log": "by_trajectory/DiagonalScanPath_8/fit_2_0.log"
+  },
+  {
+    "phase": "fit",
+    "trajectory": "SpiralScanPath_13",
+    "level": 0,
+    "repeat": 0,
+    "returncode": 0,
+    "timed_out": false,
+    "wall_seconds": 226.176404875,
+    "log": "by_trajectory/SpiralScanPath_13/fit_0_0.log"
+  },
+  {
+    "phase": "fit",
+    "trajectory": "SpiralScanPath_13",
+    "level": 0,
+    "repeat": 1,
+    "returncode": 0,
+    "timed_out": false,
+    "wall_seconds": 250.29474116699998,
+    "log": "by_trajectory/SpiralScanPath_13/fit_0_1.log"
+  },
+  {
+    "phase": "fit",
+    "trajectory": "SpiralScanPath_13",
+    "level": 1,
+    "repeat": 0,
+    "returncode": 0,
+    "timed_out": false,
+    "wall_seconds": 30.531216375000213,
+    "log": "by_trajectory/SpiralScanPath_13/fit_1_0.log"
+  },
+  {
+    "phase": "fit",
+    "trajectory": "SpiralScanPath_13",
+    "level": 2,
+    "repeat": 0,
+    "returncode": 0,
+    "timed_out": false,
+    "wall_seconds": 30.603241457999957,
+    "log": "by_trajectory/SpiralScanPath_13/fit_2_0.log"
+  }
+]

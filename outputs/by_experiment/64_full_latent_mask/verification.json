@@ -1,0 +1,14 @@
+{
+  "completed_fits": 10,
+  "all_fits_pass": true,
+  "baseline_replays_exact": 4,
+  "same256": true,
+  "full_latent_covariance": true,
+  "previous_inference_rerun": false,
+  "source_on": true,
+  "historical_inputs_unchanged": true,
+  "fit_seconds": 1125.77891171,
+  "total_wall_seconds": 1389.01819875,
+  "held_out_inference": false,
+  "high_ceiling_inference": false
+}

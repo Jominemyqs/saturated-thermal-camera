@@ -1,0 +1,22 @@
+{
+  "trajectory": "SpiralScanPath_1",
+  "family": "Spiral",
+  "level": 0,
+  "ceiling_K": 294.5644045668491,
+  "arm": "Cmask",
+  "repeat": 1,
+  "seconds": 157.89927716699998,
+  "peak_RSS_MiB": 726.796875,
+  "rank_rhat_max": 1.0049894567822113,
+  "ess_bulk_min": 1652.8566085552457,
+  "ess_tail_min": 2207.986595151502,
+  "classical_rhat_max": 1.0029135776358624,
+  "finite": true,
+  "numeric": 114,
+  "lower": 1180,
+  "upper": 256,
+  "current_seed": 9000060,
+  "prior_mean_sha256": "be9135ef5f54aa76f64c490749645a537a311b9dcc8ac0c8de750def0d26cf5d",
+  "prior_diagonal_sha256": "d184a8a08da3e52c43bf48daa83ddc66c06c0ad6bbc404ef1d5854220c01e3cb",
+  "passed": true
+}

@@ -1,0 +1,7 @@
+trajectory,historical_role,current_fits,complete_reliable_comparison,reason
+DiagonalScanPath_1,heldout,0,False,Initial rank R-hat 1.010955 > 1.01; longer retry hit the 900 s predecessor-stage watchdog.
+DiagonalScanPath_7,heldout,5,True,Completed
+HorizontalScanPath_1,heldout,0,False,Longer previous chains passed (rank R-hat 1.003918); prior construction then exceeded the combined 900 s stage watchdog.
+HorizontalScanPath_12,heldout,5,True,Completed
+SpiralScanPath_1,heldout,5,True,Completed
+SpiralScanPath_12,heldout,0,False,Previous reflected HMC raised RuntimeError: Reflected HMC produced an infeasible draw; no current fit.

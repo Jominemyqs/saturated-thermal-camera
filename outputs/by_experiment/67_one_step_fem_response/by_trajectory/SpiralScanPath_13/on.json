@@ -1,0 +1,71 @@
+{
+  "trajectory": "SpiralScanPath_13",
+  "stage": "on",
+  "dolfin_version": "2019.1.0",
+  "current_time_s": 0.2720000000000002,
+  "previous_time_s": 0.2715000000000002,
+  "solver_dt_s": 0.0005,
+  "material_parameters": {
+    "rho": 7860.51,
+    "Cp": 472.84,
+    "k": 15.11,
+    "T_0": 293.15
+  },
+  "form_compiler_parameters": {
+    "add_tabulate_tensor_timing": false,
+    "cache_dir": "/Users/qiushiyu/Documents/Brown/Research/saturated-thermal-camera/saturated-thermal-camera/tmp/fem_ffc",
+    "convert_exceptions_to_warnings": false,
+    "cpp_optimize": true,
+    "cpp_optimize_flags": "-O2",
+    "epsilon": 1e-14,
+    "error_control": false,
+    "external_include_dirs": "",
+    "external_includes": "",
+    "external_libraries": "",
+    "external_library_dirs": "",
+    "form_postfix": false,
+    "format": "ufc",
+    "generate_dummy_tabulate_tensor": false,
+    "log_level": 25,
+    "log_prefix": "",
+    "max_signature_length": 0,
+    "no-evaluate_basis_derivatives": true,
+    "optimize": true,
+    "output_dir": ".",
+    "precision": null,
+    "quadrature_degree": null,
+    "quadrature_rule": null,
+    "representation": "auto",
+    "split": false
+  },
+  "dofs": 26414,
+  "cells": 130664,
+  "top_nodes": 6275,
+  "top_area_m2": 0.00015000000000002416,
+  "bottom_area_m2": 0.0001499999999999997,
+  "assembled_volume_m3": 2.9999999999838215e-07,
+  "volume_sum_rtol": 5.802647251584858e-11,
+  "assembled_boundary_input_W": 1.0000063971816098,
+  "input_sha256": "a61562e1eb93a4d5ebcc9f15105d4c7168d19d062fcd3af85ab4915e067e3e02",
+  "default_linear_algebra_backend": "PETSc",
+  "relative_linear_residual": 4.484548803964635e-16,
+  "metrics": {
+    "volume": {
+      "rmse_K": 5.302557684042127e-13,
+      "bias_K": -6.882457566822119e-15,
+      "max_abs_K": 5.343281372915953e-12,
+      "relative_excess_L2": 8.373488816551721e-13
+    },
+    "surface": {
+      "rmse_K": 4.744040444563966e-13,
+      "bias_K": -1.525495779080508e-14,
+      "max_abs_K": 5.343281372915953e-12,
+      "relative_excess_L2": 2.938640740620945e-13
+    }
+  },
+  "true_peak_error_K": -3.240074875066057e-12,
+  "numerical_gate": true,
+  "runtime_seconds": 2.7288308748975396,
+  "peak_rss_MiB": 343.34375,
+  "passed": true
+}

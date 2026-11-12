@@ -1,0 +1,9 @@
+{
+  "source_and_input_hashes_unchanged": 17,
+  "relative_links_valid": 20,
+  "surface_identity_max_abs_K": 2.842170943040401e-14,
+  "numerical_CSVs_finite": true,
+  "tests_passed": 14,
+  "compilation_passed": true,
+  "git_diff_check_passed": true
+}

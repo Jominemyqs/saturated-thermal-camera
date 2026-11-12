@@ -1,0 +1,5 @@
+CHAIN DiagonalScanPath_8 0 1 0 physical
+CHAIN DiagonalScanPath_8 0 1 1 physical
+CHAIN DiagonalScanPath_8 0 1 2 physical
+CHAIN DiagonalScanPath_8 0 1 3 physical
+FIT {'trajectory': 'DiagonalScanPath_8', 'level': 0, 'ceiling_K': 296.12149833303096, 'arm': 'physical', 'repeat': 1, 'seconds': 101.69237933299999, 'peak_RSS_MiB': 720.15625, 'rank_rhat_max': 1.0045057076494104, 'ess_bulk_min': 2457.018402429085, 'ess_tail_min': 2152.8638422629133, 'classical_rhat_max': 1.0040655453278189, 'finite': True, 'current_seed': 7700060, 'constraints': 1191, 'noise_sd_K': 0.5, 'prior_cross_sha256': '3ad9fab7757d046631e01caae446a47346cb4ed60d8d4fe031ad32f5317b1c2e', 'passed': True}

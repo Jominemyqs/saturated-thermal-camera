@@ -1,0 +1,24 @@
+{
+  "experiment": 67,
+  "driver": "71_thermal_one_step_fem_replay.py",
+  "names": [
+    "DiagonalScanPath_8",
+    "SpiralScanPath_13"
+  ],
+  "scope": "Last stored transition only; source-on gate for BOTH cases before any source-off",
+  "gate": {
+    "rmse_K": 0.0001,
+    "max_abs_K": 0.001,
+    "relative_linear_residual": 1e-10,
+    "stage_seconds": 900,
+    "peak_rss_MiB": 4096
+  },
+  "units": "K; physical volume/area weights; nodal maximum",
+  "gate_note": "No relaxation after seeing replay error",
+  "coefficient_fit": false,
+  "gp": false,
+  "solver": "Supplied weak form, legacy DOLFIN solve defaults, UserExpression degree=2",
+  "quadrature": "Original FFC automatic estimate, not tuned against saved truth",
+  "previous_state": "True full-volume predecessor; not a deployable state estimate",
+  "source": "Original prescribed g evaluated at current saved time; no gradient in FEM RHS"
+}

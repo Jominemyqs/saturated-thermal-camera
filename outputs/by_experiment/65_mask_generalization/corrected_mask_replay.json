@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "posterior_and_constraint_draws_exact": true,
+  "development_only": true,
+  "excluded_from_generalization": true
+}

@@ -1,0 +1,36 @@
+from fenics import *
+import numpy as np
+
+width = 0.015
+depth = 0.01
+height = 0.002
+x_center = 0.0
+y_center = 0.0
+z_center = 0.0
+
+x_min = x_center - width / 2
+x_max = x_center + width / 2
+y_min = y_center - depth / 2
+y_max = y_center + depth / 2
+z_min = z_center - height / 2
+z_max = z_center + height / 2
+
+mesh = BoxMesh(Point(x_min, y_min, z_min), Point(x_max, y_max, z_max), 30, 20, 4)
+
+length_x = 0.004
+length_y = 0.004
+
+refinement_rectangle = CompiledSubDomain(
+    "near(x[2], z_max) && fabs(x[0]) <= 1.1 * length_x/2 && fabs(x[1]) <= 1.1* length_y/2",
+    z_max=z_max, length_x=length_x, length_y=length_y
+)
+
+for _ in range(3):
+    cells_to_refine = MeshFunction('bool', mesh, mesh.topology().dim(), False)
+    for cell in cells(mesh):
+        for vertex in vertices(cell):
+            point = np.array(vertex.point().array())
+            if refinement_rectangle.inside(point, True):
+                cells_to_refine[cell] = True
+                break
+    mesh = refine(mesh, cells_to_refine)

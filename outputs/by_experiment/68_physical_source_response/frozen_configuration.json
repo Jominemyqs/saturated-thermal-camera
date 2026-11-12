@@ -1,0 +1,62 @@
+{
+  "experiment": 68,
+  "driver": "72_thermal_physical_source_response.py",
+  "names": [
+    "DiagonalScanPath_8",
+    "SpiralScanPath_13"
+  ],
+  "ceilings": [
+    "reference",
+    320,
+    325
+  ],
+  "previous_representation": "all_readings_latent",
+  "baseline": "Output 61 source-on; Output 63 propagation-only arrays used as equality controls",
+  "candidate": "old propagated predecessor + independent FEM boundary response; no old gradient increment",
+  "independent_response": "(M/dt + K)b = f(g_current), zero bottom increment, zero initial increment",
+  "response_inputs": [
+    "volume mesh",
+    "surface node IDs",
+    "timestamps",
+    "prescribed notebook g and material/BC"
+  ],
+  "response_validation_atol_K": 1e-08,
+  "linear_residual_max": 1e-10,
+  "oracle_identity": "new oracle error = output67 propagation discrepancy + replay discrepancy",
+  "scope": "Six paired cases, two reference seeds, one preset primary seed at 320/325 K; no expansion",
+  "reference_repeats": 2,
+  "high_ceiling_repeats": 1,
+  "chains": 4,
+  "samples_per_chain": 800,
+  "burn_in": 300,
+  "thin": 1,
+  "evaluation_per_chain": 300,
+  "repeat_seed_offset": 7000019,
+  "retries": 0,
+  "current_noise_sd_K": 0.5,
+  "camera_noise_sd_K": 0.25,
+  "gate": {
+    "rank_rhat_max": 1.01,
+    "ess_bulk_min": 400.0,
+    "ess_tail_min": 400.0,
+    "classical_rhat_max": 1.05,
+    "arm_seconds_max": 900.0,
+    "peak_RSS_MiB_max": 4096.0
+  },
+  "execution_gate": "Numerical checks before ALL current updates; no deterministic-improvement gate. Each fit independently flagged by unchanged diagnostics and 900s process budget; no retuning.",
+  "previous_inference_rerun": false,
+  "covariance_changed": false,
+  "mask": false,
+  "fitting": false,
+  "baseline_replay": "All six primary fits; repeat-1 baseline reused from verified Output61 cache",
+  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "numpy": "2.0.2",
+  "scipy": "1.13.1",
+  "arviz": "0.17.1",
+  "limitations": [
+    "Linear constant-material FEM response only",
+    "Old surface propagation/covariance retained",
+    "Complete inherited pipeline not claimed camera-only",
+    "Final draws are pointwise marginals"
+  ]
+}

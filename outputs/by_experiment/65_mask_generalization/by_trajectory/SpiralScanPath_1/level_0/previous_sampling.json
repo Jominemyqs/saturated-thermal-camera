@@ -1,0 +1,15 @@
+[
+  {
+    "attempt": 0,
+    "samples": 800,
+    "burn": 300,
+    "seconds": 133.459189541,
+    "rank_rhat_max": 1.0082235961077954,
+    "ess_bulk_min": 685.6211394653884,
+    "ess_tail_min": 958.8064505197614,
+    "classical_rhat_max": 1.0071889316876592,
+    "peak_RSS_MiB": 1080.734375,
+    "finite": true,
+    "passed": true
+  }
+]
